@@ -71,6 +71,13 @@ select{padding-right:28px;appearance:none;background-image:url("data:image/svg+x
 .seg{display:inline-flex;background:var(--surface2);border:1px solid var(--line);border-radius:10px;padding:3px}
 .seg button{border:0;background:none;padding:5px 12px;border-radius:7px;cursor:pointer;font-weight:500;color:var(--muted)}
 .seg button.on{background:var(--surface);color:var(--ink);box-shadow:0 1px 2px rgba(15,23,42,.12)}
+.postabs{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--line)}
+.postabs button{border:0;background:none;padding:14px 10px 12px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:600;color:var(--muted);border-bottom:3px solid transparent;margin-bottom:-1px;white-space:nowrap}
+.postabs button:hover{color:var(--ink);background:var(--surface2)}
+.postabs button.on{color:var(--ink);border-bottom-color:var(--accent)}
+.postabs button small{font-weight:500;color:var(--muted);background:var(--surface2);border:1px solid var(--line);border-radius:999px;padding:0 7px;font-size:11px}
+@media (max-width:760px){.postabs button{flex-direction:column;gap:3px;font-size:12px;padding:10px 4px}.postabs button small{display:none}}
+@media (max-width:420px){.postabs button{font-size:0}.postabs button .pos{font-size:12px;padding:3px 10px}}
 .toggle{display:inline-flex;align-items:center;gap:8px;cursor:pointer;color:var(--ink2);font-size:13px;user-select:none}
 .toggle input{appearance:none;width:32px;height:18px;border-radius:9px;background:var(--faint);position:relative;cursor:pointer;margin:0;transition:background .15s}
 .toggle input::after{content:"";position:absolute;top:2px;left:2px;width:14px;height:14px;border-radius:50%;background:#fff;transition:left .15s}
@@ -232,11 +239,11 @@ td.rk{color:var(--muted);font-size:12px;width:1%}
   <div class="kpis" id="pKpis"></div>
   <div class="games" id="pGames"></div>
   <div class="card">
+    <div class="postabs" id="pPosSeg"></div>
     <div class="toolbar">
       <select id="pSeason" aria-label="Season"></select>
       <select id="pWeek" aria-label="Week"></select>
-      <div class="seg" id="pPosSeg"><button data-pos="" class="on">All</button><button data-pos="QB">QB</button><button data-pos="RB">RB</button><button data-pos="WR">WR</button><button data-pos="TE">TE</button></div>
-      <input type="hidden" id="pPos" value="">
+      <input type="hidden" id="pPos" value="QB">
       <select id="pTeam" aria-label="Team"><option value="">All teams</option></select>
       <label class="search"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="pSearch" type="search" placeholder="Search players"></label>
       <div class="spacer"></div>
@@ -832,21 +839,29 @@ function roleCell(P){const u=P.U,sh=P.pos==='RB'?u.cSh:P.pos==='QB'?u.pSh:u.tSh,
 let WP=null,sortP={k:'fd',d:-1},gameFilter=null;
 const dash='<span class="dim">·</span>';
 const numCell=(v,d=1)=>v==null||v<.05?dash:(d===2?f2(v):d===0?f0(v):f1(v));
-function projCols(rows){
+// Each position gets its own stat columns
+const statCol=(k,l,d,t,bold)=>({k,l,t,v:P=>P.proj[k],h:P=>{const v=P.proj[k];const s=v==null||v<.05?dash:d===0?f0(v):d===2?f2(v):f1(v);return bold&&s!==dash?`<b>${s}</b>`:s}});
+const tdCol=l=>({k:'tdp',l,v:P=>tdPct(P),t:'Chance to score at least one rushing or receiving TD',h:P=>{const p=tdPct(P);return p<.02?dash:`<span style="font-weight:600;color:${p>=.45?'var(--good)':'var(--ink)'}">${Math.round(p*100)}%</span>`}});
+const shareCol=(l,t)=>({k:'share',l,t,v:P=>P.pos==='RB'?P.U.cSh:P.U.tSh,h:P=>roleCell(P)});
+const POS_COLS={
+  QB:[statCol('pass_yds','Pass yds',0,'',1),statCol('pass_td','Pass TD',1),statCol('int','INT',1),
+    {k:'pass_att',l:'Comp / Att',v:P=>P.proj.pass_att,h:P=>P.proj.pass_att<1?dash:`${f0(P.proj.cmp)}/${f0(P.proj.pass_att)}`},
+    statCol('rush_yds','Rush yds',0),tdCol('Rush TD %')],
+  RB:[statCol('rush_att','Carries',1),statCol('rush_yds','Rush yds',0,'',1),statCol('rec','Rec',1),statCol('rec_yds','Rec yds',0),tdCol('TD %'),
+    shareCol('Carry share','Share of team carries (includes boosts for injured teammates)')],
+  WR:[statCol('tgt','Targets',1),statCol('rec','Rec',1),statCol('rec_yds','Rec yds',0,'',1),tdCol('TD %'),shareCol('Target share','Share of team targets (includes boosts for injured teammates)')],
+};
+POS_COLS.TE=POS_COLS.WR;
+const POS_NAME={QB:'Quarterbacks',RB:'Running backs',WR:'Wide receivers',TE:'Tight ends'};
+function projCols(rows,pos){
   const hasFd=rows.some(P=>P.fdSal),hasAct=rows.some(P=>P.completed);
   const maxFd=Math.max(1,...rows.map(P=>P.proj.fd));
   const cols=[
     {k:'rk',l:'#',c:'l',ns:1,v:()=>0},
     {k:'name',l:'Player',c:'l',v:P=>P.name,h:P=>`<div class="player">${avatar(P.pid,P.name)}<div><div class="pname">${esc(P.name)}${statusTag(P.status)}${newsTag(P)}${boostTag(P)}</div><div class="psub"><span class="pos ${P.pos}">${depthLbl(P)}</span>${logo(P.team)}${P.team} ${P.home?'vs':'@'} ${P.opp}</div></div></div>`},
     {k:'fd',l:'Proj FD',v:P=>P.proj.fd,h:P=>`<div class="proj"><b>${f1(P.proj.fd)}</b><span class="track"><i style="width:${P.proj.fd/maxFd*100}%"></i></span></div>`},
-    {k:'pass_yds',l:'Pass yds',v:P=>P.pos==='QB'?P.proj.pass_yds:null,h:P=>P.pos==='QB'?`<b>${f0(P.proj.pass_yds)}</b>`:dash},
-    {k:'pass_td',l:'Pass TD',v:P=>P.pos==='QB'?P.proj.pass_td:null,h:P=>P.pos==='QB'?f1(P.proj.pass_td):dash},
-    {k:'rush_yds',l:'Rush yds',v:P=>P.proj.rush_yds,h:P=>numCell(P.proj.rush_yds>=1?P.proj.rush_yds:null,0)},
-    {k:'rec',l:'Rec',v:P=>P.pos==='QB'?null:P.proj.rec,h:P=>P.pos==='QB'?dash:numCell(P.proj.rec)},
-    {k:'rec_yds',l:'Rec yds',v:P=>P.pos==='QB'?null:P.proj.rec_yds,h:P=>P.pos==='QB'?dash:numCell(P.proj.rec_yds,0)},
-    {k:'tdp',l:'TD %',v:P=>tdPct(P),t:'Chance to score a rushing or receiving TD',h:P=>{const p=tdPct(P);return p<.02?dash:`<span style="font-weight:600;color:${p>=.45?'var(--good)':'var(--ink)'}">${Math.round(p*100)}%</span>`}},
-    {k:'share',l:'Role',v:P=>P.pos==='RB'?P.U.cSh:P.pos==='QB'?P.U.pSh:P.U.tSh,t:'Share of team targets (WR/TE), carries (RB) or pass attempts (QB) — includes boosts for injured teammates',h:P=>roleCell(P)},
-    {k:'defFd',l:'Matchup',c:'l',v:P=>P.defFd,h:P=>matchChip(P.defFd,P.defRank),t:'Opponent defense vs this position; # = rank (1 = softest)'},
+    ...(POS_COLS[pos]||POS_COLS.WR),
+    {k:'defFd',l:`vs ${pos}`,c:'l',v:P=>P.defFd,h:P=>matchChip(P.defFd,P.defRank),t:`How the opponent defends ${POS_NAME[pos]||'this position'}; # = rank (1 = softest)`},
     {k:'hist',l:'vs Opp',v:P=>P.hist.length?P.hist.reduce((a,r)=>a+r.fd,0)/P.hist.length:null,h:P=>P.hist.length?`${f1(P.hist.reduce((a,r)=>a+r.fd,0)/P.hist.length)} <span class="muted">${P.hist.length}g</span>`:dash,t:'Average FanDuel pts in prior games vs this opponent'},
     {k:'implied',l:'Team pts',v:P=>P.implied,h:P=>P.implied?f1(P.implied):dash,t:'Implied team points from the spread and total'},
   ];
@@ -865,7 +880,9 @@ function fillWeekSelectors(){
   const teams=[...new Set([...S.games.values()].flatMap(g=>[g.home,g.away]))].sort();const pt=$('#pTeam'),tv=pt.value;
   pt.innerHTML='<option value="">All teams</option>'+teams.map(t=>`<option ${t===tv?'selected':''}>${t}</option>`).join('')}
 function computeWeek(){const s=+$('#pSeason').value,w=+$('#pWeek').value;WP=s&&w?weekProjections(s,w):null;gameFilter=null;renderGames();renderProj();renderProps()}
-function filteredRows(){if(!WP)return[];const pos=$('#pPos').value,tm=$('#pTeam').value,q=normName($('#pSearch').value),low=$('#pLow').checked,ho=$('#pOut').checked;
+function renderPosTabs(){const cur=$('#pPos').value;
+  $('#pPosSeg').innerHTML=POS.map(p=>`<button data-pos="${p}" class="${p===cur?'on':''}"><span class="pos ${p}">${p}</span>${POS_NAME[p]}<small>${filteredRows(p).length}</small></button>`).join('')}
+function filteredRows(posOverride){if(!WP)return[];const pos=posOverride||$('#pPos').value,tm=$('#pTeam').value,q=normName($('#pSearch').value),low=$('#pLow').checked,ho=$('#pOut').checked;
   return WP.rows.filter(P=>(!gameFilter||P.gid===gameFilter)&&(!pos||P.pos===pos)&&(!tm||P.team===tm||P.opp===tm)&&(!q||normName(P.name).includes(q))&&(low||(!P.backup&&(P.proj.fd>=4||(P.pos==='QB'&&P.proj.pass_att>=10))))&&(!ho||!isOut(P.status)))}
 
 function renderGames(){
@@ -891,7 +908,8 @@ function renderProj(){
   const t=$('#pTable'),info=$('#pInfo');renderKpis();
   if(!S.pg.length){t.innerHTML=`<tbody><tr><td class="empty"><b>Your database is empty</b>Open the Data tab and run a sync to get started.<br><br><button class="btn pri" onclick="document.querySelector('#tabs [data-t=data]').click()">Go to Data</button></td></tr></tbody>`;info.textContent='';return}
   if(!WP||!WP.games.length){t.innerHTML=`<tbody><tr><td class="empty"><b>No games for this week</b>Try syncing that season on the Data tab.</td></tr></tbody>`;info.textContent='';return}
-  const rows=filteredRows();const cols=projCols(rows);const col=cols.find(c=>c.k===sortP.k)||cols[2];
+  renderPosTabs();
+  const rows=filteredRows();const cols=projCols(rows,$('#pPos').value);const col=cols.find(c=>c.k===sortP.k)||cols[2];
   rows.sort((a,b)=>{const x=col.v(a),y=col.v(b);if(x==null)return 1;if(y==null)return -1;return (x<y?-1:x>y?1:0)*sortP.d});
   info.textContent=`${rows.length} players · click any player for the full breakdown`;
   if(!rows.length){t.innerHTML=`<tbody><tr><td class="empty"><b>No players match</b>Try clearing the filters.</td></tr></tbody>`;return}
@@ -1127,7 +1145,8 @@ function refreshAll(){dtCache.clear();fillWeekSelectors();computeWeek();renderDe
 /* ---------- wiring ---------- */
 document.querySelectorAll('#tabs button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#tabs button,section').forEach(x=>x.classList.remove('on'));b.classList.add('on');$('#'+b.dataset.t).classList.add('on');window.scrollTo(0,0)});
 $('#pSeason').onchange=()=>{$('#pWeek').value='';fillWeekSelectors();computeWeek()};$('#pWeek').onchange=computeWeek;
-$('#pPosSeg').onclick=e=>{const b=e.target.closest('button');if(!b)return;$('#pPos').value=b.dataset.pos;$('#pPosSeg').querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b));renderProj()};
+$('#pPosSeg').onclick=e=>{const b=e.target.closest('button');if(!b)return;$('#pPos').value=b.dataset.pos;try{localStorage.setItem('nflp-pos',b.dataset.pos)}catch(e){}renderProj()};
+try{const p=localStorage.getItem('nflp-pos');if(POS.includes(p))$('#pPos').value=p}catch(e){}
 $('#srcSeg').onclick=e=>{const b=e.target.closest('button');if(!b)return;$('#propSrc').value=b.dataset.src;$('#srcSeg').querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b))};
 ['#pTeam','#pLow','#pOut'].forEach(s=>$(s).onchange=renderProj);$('#pSearch').oninput=renderProj;$('#pCsv').onclick=exportProjCsv;
 $('#btRun').onclick=runBacktest;
