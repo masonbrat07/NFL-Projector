@@ -285,6 +285,12 @@ td.rk{color:var(--muted);font-size:12px;width:1%}
     <div class="tw"><table id="propTable"></table></div>
   </div>
   <div class="card">
+    <div class="card-h"><h2>Prediction markets</h2><span class="muted" id="mkSub"></span></div>
+    <div class="card-b" style="padding-bottom:0"><p class="note">Prices from Kalshi and Polymarket, refreshed by the 8 AM / 5 PM update. A price of 62¢ means the market gives it a 62% chance. For each Kalshi player line, the model's chance is figured at the line closest to 50/50. A gap of 10+ points means the model and the market disagree.</p></div>
+    <div class="tw"><table id="mkGames"></table></div>
+    <div class="tw"><table id="mkProps"></table></div>
+  </div>
+  <div class="card">
     <div class="card-h"><h2>FanDuel DFS salaries</h2></div>
     <div class="card-b">
       <p class="note">In a FanDuel NFL contest, open a lineup and choose <b>Download players list</b>. Load that file to add salaries, points per $1K and FanDuel's injury tags to Projections.</p>
@@ -334,6 +340,11 @@ td.rk{color:var(--muted);font-size:12px;width:1%}
       <div class="bar"><i id="btBar"></i></div>
     </div>
     <div class="tw"><table id="btTable"></table></div>
+  </div>
+  <div class="card">
+    <div class="card-h"><h2>Weekly report card</h2><div class="spacer"></div><select id="rvWeek" aria-label="Week to review"></select></div>
+    <div class="card-b"><p class="note">After each week, this scores the projections against what happened. It checks the average miss vs. each player's normal game, whether the Over/Under performer picks came true, and whether the model or the prediction markets were closer. The biggest misses are tagged with the likely cause, and the notes from the weekly review routine are shown with what to change next.</p></div>
+    <div id="rvBody"></div>
   </div>
 </section>
 
@@ -891,7 +902,7 @@ function fillWeekSelectors(){
   $('#btSeason').innerHTML=seasons.map(s=>`<option>${s}</option>`).join('');
   const teams=[...new Set([...S.games.values()].flatMap(g=>[g.home,g.away]))].sort();const pt=$('#pTeam'),tv=pt.value;
   pt.innerHTML='<option value="">All teams</option>'+teams.map(t=>`<option ${t===tv?'selected':''}>${t}</option>`).join('')}
-function computeWeek(){const s=+$('#pSeason').value,w=+$('#pWeek').value;WP=s&&w?weekProjections(s,w):null;gameFilter=null;renderGames();renderProj();renderProps();renderOU()}
+function computeWeek(){const s=+$('#pSeason').value,w=+$('#pWeek').value;WP=s&&w?weekProjections(s,w):null;gameFilter=null;renderGames();renderProj();renderProps();renderOU();renderMarkets()}
 function renderPosTabs(){const cur=$('#pPos').value;
   $('#pPosSeg').innerHTML=POS.map(p=>`<button data-pos="${p}" class="${p===cur?'on':''}"><span class="pos ${p}">${p}</span>${POS_NAME[p]}<small>${filteredRows(p).length}</small></button>`).join('')}
 function filteredRows(posOverride){if(!WP)return[];const pos=posOverride||$('#pPos').value,tm=$('#pTeam').value,q=normName($('#pSearch').value),low=$('#pLow').checked,ho=$('#pOut').checked;
@@ -961,12 +972,115 @@ function renderOU(){const o=$('#ouOver'),u=$('#ouUnder');
   const msg=(b,t)=>{const h=`<tbody><tr><td class="empty"><b>${b}</b>${t}</td></tr></tbody>`;o.innerHTML=h;u.innerHTML=h};
   if(!S.pg.length)return msg('Your database is empty','Open the Data tab and run a sync to get started.');
   if(!WP||!WP.games.length)return msg('No games for this week','Pick another week on the Projections tab.');
-  const rows=WP.rows.filter(P=>!P.backup&&!isOut(P.status)&&(!ouPos||P.pos===ouPos)&&ouNormal(P)>=6);
+  const L=ouLists(WP.rows,ouPos);ouTable(o,L.over,true);ouTable(u,L.under,false)}
+function ouLists(all,pos){const rows=all.filter(P=>!P.backup&&!isOut(P.status)&&(!pos||P.pos===pos)&&ouNormal(P)>=6);
   const pct=P=>P.proj.fd/ouNormal(P)-1;
-  ouTable(o,rows.filter(P=>pct(P)>0).sort((a,b)=>pct(b)-pct(a)).slice(0,10),true);
-  ouTable(u,rows.filter(P=>pct(P)<0).sort((a,b)=>pct(a)-pct(b)).slice(0,10),false)}
+  return {over:rows.filter(P=>pct(P)>0).sort((a,b)=>pct(b)-pct(a)).slice(0,10),under:rows.filter(P=>pct(P)<0).sort((a,b)=>pct(a)-pct(b)).slice(0,10)}}
 $('#ouSeg').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;ouPos=b.dataset.pos;$('#ouSeg').querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b));renderOU()});
 ['#ouOver','#ouUnder'].forEach(id=>$(id).addEventListener('click',e=>{const tr=e.target.closest('tr[data-pid]');if(tr)showDetail(WP.rows.find(p=>p.pid===tr.dataset.pid&&p.gid===tr.dataset.gid))}));
+
+/* ---------- Prediction markets (markets.json, written by scripts/update-markets.mjs) ---------- */
+const MK={cur:null,arc:new Map(),reviews:null};
+const MK_LBL={pass_yds:'Pass yds',pass_td:'Pass TDs',pass_att:'Pass att',cmp:'Completions',int:'INTs',rr_yds:'Rush+Rec yds',rush_yds:'Rush yds',rush_att:'Carries',rec_yds:'Rec yds',rec:'Receptions',any_td:'Anytime TD'};
+// next to the page on GitHub Pages; otherwise from the repo saved on the Data tab
+function siteFile(name){const f=feedUrl(S.meta.feedRepo);if(f)return f.replace(/news-feed\.json$/,name);return location.protocol.startsWith('http')?name:null}
+async function getSiteJSON(name){const u=siteFile(name);if(!u)return null;const r=await fetch(u+'?t='+Date.now(),{cache:'no-store'}).catch(()=>null);if(!r||!r.ok)return null;try{return await r.json()}catch(e){return null}}
+const arcKey=(s,w)=>`${s}-wk${String(w).padStart(2,'0')}`;
+async function marketArchive(s,w){const k=arcKey(s,w);if(!MK.arc.has(k))MK.arc.set(k,await getSiteJSON(`markets/${k}.json`));return MK.arc.get(k)}
+async function loadMarkets(){MK.cur=await getSiteJSON('markets.json');MK.reviews=await getSiteJSON('reviews.json');MK.arc.clear();rvCache.clear();renderMarkets();fillReviewWeeks();if($('#bt').classList.contains('on'))renderReview()}
+// Kalshi "N+" contracts are stored as line N-0.5; pick the rung closest to 50/50 and interpolate the 50% point
+function mkLine(lad){let best=lad[0];for(const x of lad)if(Math.abs(x.p_over-.5)<Math.abs(best.p_over-.5))best=x;
+  let med=null;for(let i=1;i<lad.length;i++){const a=lad[i-1],b=lad[i];if(a.p_over>=.5&&b.p_over<.5){med=a.line+(b.line-a.line)*(a.p_over-.5)/(a.p_over-b.p_over);break}}
+  return {line:best.line,p:best.p_over,med}}
+const mkStat=s=>s==='any_td'?'tds':s;
+function mkCompare(rows,mk){return ((mk&&mk.props)||[]).map(pr=>{const n=normName(pr.player);
+    const P=rows.find(x=>normName(x.name)===n&&(x.team===pr.home||x.team===pr.away));if(!P||!pr.ladder||!pr.ladder.length)return null;
+    const L=mkLine(pr.ladder),g=gradeLine({stat:mkStat(pr.stat),line:L.line},P);return {pr,P,L,model:g.pOver,proj:g.proj,gap:g.pOver-L.p}}).filter(Boolean)}
+const pctTxt=p=>p==null?'–':Math.round(p*100)+'%';
+function renderMarkets(){const gt=$('#mkGames'),pt=$('#mkProps'),mk=MK.cur;
+  if(!mk||(!mk.games.length&&!mk.props.length)){$('#mkSub').textContent='';gt.innerHTML='<tbody><tr><td class="empty"><b>No market prices yet</b>They appear after the next 8 AM / 5 PM update writes markets.json.</td></tr></tbody>';pt.innerHTML='';return}
+  $('#mkSub').textContent=`${mk.season} Week ${mk.week} · updated ${timeAgo(mk.generated_at)}`;
+  const G=new Map();for(const x of mk.games){const k=x.away+'@'+x.home;if(!G.has(k))G.set(k,{away:x.away,home:x.home});G.get(k)[x.source]=x}
+  const espn=k=>[...S.games.values()].find(g=>g.season===mk.season&&g.week===mk.week&&g.away+'@'+g.home===k);
+  gt.innerHTML=`<thead><tr><th class="l nosort">Game</th><th class="nosort" title="Home team's chance to win">Kalshi</th><th class="nosort" title="Home team's chance to win">Polymarket</th><th class="nosort">Market total</th><th class="nosort">ESPN line</th></tr></thead><tbody>`+
+    [...G.entries()].map(([k,x])=>{const e=espn(k),K=x.Kalshi||{},Pm=x.Polymarket||{},tot=K.total??Pm.total;
+      return `<tr><td class="l">${logo(x.away)}${x.away} @ ${logo(x.home)}${x.home}</td><td>${K.home_win!=null?`${x.home} ${pctTxt(K.home_win)}`:dash}</td><td>${Pm.home_win!=null?`${x.home} ${pctTxt(Pm.home_win)}`:dash}</td><td>${tot!=null?f1(tot):dash}</td><td>${e?esc(spreadTxt(e))||dash:dash}</td></tr>`}).join('')+'</tbody>';
+  if(!mk.props.length){pt.innerHTML='';return}
+  if(!WP||+$('#pSeason').value!==mk.season||+$('#pWeek').value!==mk.week){pt.innerHTML=`<tbody><tr><td class="empty"><b>${mk.props.length} player lines from Kalshi</b>Pick ${mk.season} Week ${mk.week} on the Projections tab to compare them with the model.</td></tr></tbody>`;return}
+  const rows=mkCompare(WP.rows,mk).sort((a,b)=>Math.abs(b.gap)-Math.abs(a.gap));
+  pt.innerHTML=`<thead><tr><th class="l nosort">Player</th><th class="l nosort">Kalshi line</th><th class="nosort" title="Market's chance of reaching the line">Market</th><th class="nosort" title="Model's chance of reaching the same line">Model</th><th class="nosort">Gap</th><th class="nosort" title="Where the market's ladder crosses 50%">Market median</th><th class="nosort">Projection</th></tr></thead><tbody>`+
+    rows.map(r=>{const g=Math.round(r.gap*100),c=Math.abs(g)<10?'n':g>0?'g':'b',lbl=Math.abs(g)<10?'Agree':g>0?'Model higher':'Model lower';
+      return `<tr class="click" data-pid="${r.P.pid}" data-gid="${r.P.gid}"><td class="l"><div class="player">${avatar(r.P.pid,r.P.name)}<div><div class="pname">${esc(r.P.name)}${statusTag(r.P.status)}</div><div class="psub"><span class="pos ${r.P.pos}">${r.P.pos}</span>${r.P.team} ${r.P.home?'vs':'@'} ${r.P.opp}</div></div></div></td>
+      <td class="l">${MK_LBL[r.pr.stat]||r.pr.stat} <b>${r.L.line+.5}+</b></td><td>${pctTxt(r.L.p)}</td><td><b>${pctTxt(r.model)}</b></td><td><span class="chip ${c}">${lbl} ${g>0?'+':''}${g}</span></td>
+      <td>${r.L.med!=null?f1(r.L.med):dash}</td><td>${f1(r.proj)}</td></tr>`}).join('')+'</tbody>'}
+$('#mkProps').addEventListener('click',e=>{const tr=e.target.closest('tr[data-pid]');if(tr)showDetail(WP.rows.find(p=>p.pid===tr.dataset.pid&&p.gid===tr.dataset.gid))});
+
+/* ---------- Weekly report card: what the model got right and missed ---------- */
+const avg=a=>a.length?a.reduce((x,y)=>x+y,0)/a.length:null;
+const volOf=(P,s)=>P.pos==='QB'?s.pass_att:P.pos==='RB'?s.rush_att+s.tgt:s.tgt;
+const tdPtsOf=s=>6*(s.rush_td+s.rec_td)+4*s.pass_td;
+// likely cause of a miss: touchdowns, workload, or efficiency
+function missWhy(P){const a=P.actual,p=P.proj,w=[];const td=tdPtsOf(a)-tdPtsOf(p);if(Math.abs(td)>=6)w.push(`${td>0?'+':''}${f0(td)} pts from TDs`);
+  const pv=volOf(P,p),av=volOf(P,a),unit=(P.pos==='QB'?'attempt':P.pos==='RB'?'touch':'target')+(Math.round(av)===1?'':P.pos==='RB'?'es':'s');
+  if(pv>=2&&av/pv>=1.4)w.push(`More work: ${f0(av)} ${unit} vs ${f0(pv)}`);else if(pv>=2&&av/pv<=.6)w.push(`Less work: ${f0(av)} ${unit} vs ${f0(pv)}`);
+  return w.length?w:['Efficiency (yards per play)']}
+async function weekReview(season,week){
+  const W=weekProjections(season,week),rel=W.rows.filter(P=>P.completed&&!P.backup&&(P.proj.fd>=5||ouNormal(P)>=6));
+  const played=rel.filter(P=>P.actual),err=P=>P.proj.fd-P.actual.fd;
+  const score=r=>({n:r.length,mae:avg(r.map(P=>Math.abs(err(P)))),bias:avg(r.map(err)),normal_mae:avg(r.map(P=>Math.abs(ouNormal(P)-P.actual.fd)))});
+  const L=ouLists(W.rows.filter(P=>P.actual),'');
+  const ouRow=(P,up)=>({name:P.name,pos:P.pos,team:P.team,opp:P.opp,normal:+ouNormal(P).toFixed(1),proj:+P.proj.fd.toFixed(1),actual:+P.actual.fd.toFixed(1),hit:up?P.actual.fd>ouNormal(P):P.actual.fd<ouNormal(P)});
+  const over=L.over.map(P=>ouRow(P,true)),under=L.under.map(P=>ouRow(P,false));
+  const arc=await marketArchive(season,week),cmp=mkCompare(played,arc);
+  const mk=cmp.map(r=>{const y=r.P.actual[mkStat(r.pr.stat)]>r.L.line?1:0;return {name:r.P.name,stat:r.pr.stat,line:r.L.line+.5,market:r.L.p,model:r.model,actual:r.P.actual[mkStat(r.pr.stat)],y}});
+  const dis=mk.filter(x=>Math.abs(x.model-x.market)>=.1);
+  const P2=P=>({name:P.name,pos:P.pos,team:P.team,opp:P.opp,proj:+P.proj.fd.toFixed(1),actual:+P.actual.fd.toFixed(1),err:+err(P).toFixed(1)});
+  return {season,week,players:played.length,dnp:rel.length-played.length,overall:score(played),byPos:Object.fromEntries(POS.map(p=>[p,score(played.filter(P=>P.pos===p))])),
+    ou:{over,under,hits:over.filter(x=>x.hit).length+under.filter(x=>x.hit).length,n:over.length+under.length},
+    markets:{has_archive:!!arc,props:mk.length,model_brier:avg(mk.map(x=>(x.model-x.y)**2)),market_brier:avg(mk.map(x=>(x.market-x.y)**2)),
+      disagreements:dis.length,model_right:dis.filter(x=>(x.model>x.market)===(x.y===1)).length,list:dis},
+    misses:played.slice().sort((a,b)=>Math.abs(err(b))-Math.abs(err(a))).slice(0,8).map(P=>({...P2(P),why:missWhy(P)})),
+    right:played.filter(P=>P.proj.fd>=10).sort((a,b)=>Math.abs(err(a))-Math.abs(err(b))).slice(0,5).map(P2)}}
+window.weekReview=weekReview;
+const rvCache=new Map();
+async function reviewCached(s,w){const k=s+'-'+w;if(!rvCache.has(k))rvCache.set(k,await weekReview(s,w));return rvCache.get(k)}
+function reviewWeeks(){const set=new Map();for(const g of S.games.values())if(g.stype===2&&g.completed)set.set(g.season*100+g.week,[g.season,g.week]);return [...set.entries()].sort((a,b)=>b[0]-a[0]).map(x=>x[1])}
+function fillReviewWeeks(){const sel=$('#rvWeek'),v=sel.value,wks=reviewWeeks().slice(0,40);
+  sel.innerHTML=wks.map(([s,w])=>`<option value="${s}-${w}" ${`${s}-${w}`===v?'selected':''}>${s} Week ${w}</option>`).join('')}
+let rvToken=0;
+async function renderReview(){const el=$('#rvBody'),v=$('#rvWeek').value;if(!v){el.innerHTML='<div class="card-b"><p class="note">No finished games yet. Sync data on the Data tab.</p></div>';return}
+  const [s,w]=v.split('-').map(Number),tok=++rvToken;el.innerHTML='<div class="card-b"><p class="muted">Scoring the week…</p></div>';await sleep(20);
+  const R=await reviewCached(s,w);if(tok!==rvToken)return;const o=R.overall,m=R.markets;
+  const sign=x=>x==null?'–':(x>0?'+':'')+f1(x);
+  const chk=x=>x.hit?'<span style="color:var(--good);font-weight:700">✓</span>':'<span style="color:var(--bad);font-weight:700">✗</span>';
+  const ouT=(list,up)=>list.length?`<table><thead><tr><th class="l nosort">${up?'Over':'Under'}-performer picks</th><th class="nosort">Normal</th><th class="nosort">Proj</th><th class="nosort">Actual</th><th class="nosort"></th></tr></thead><tbody>${list.map(x=>`<tr><td class="l">${esc(x.name)} <span class="muted">${x.pos} ${x.team}</span></td><td>${f1(x.normal)}</td><td>${f1(x.proj)}</td><td><b>${f1(x.actual)}</b></td><td>${chk(x)}</td></tr>`).join('')}</tbody></table>`:'';
+  const notes=((MK.reviews&&MK.reviews.reviews)||[]).find(r=>r.season===s&&r.week===w);
+  const li=a=>a&&a.length?`<ul class="note" style="margin:4px 0 10px;padding-left:18px">${a.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:'';
+  el.innerHTML=`<div class="card-b" style="padding-top:0"><div class="kpis">
+      ${kpi('Average miss',`${f1(o.mae)} pts`,`Normal game alone: ${f1(o.normal_mae)} pts · ${o.n} players`)}
+      ${kpi('Bias',`${sign(o.bias)} pts`,o.bias>0?'Projected too high on average':'Projected too low on average')}
+      ${kpi('Over/Under picks right',`${R.ou.hits}/${R.ou.n}`,R.ou.n?`${Math.round(R.ou.hits/R.ou.n*100)}% (50% = coin flip)`:'')}
+      ${kpi('Model vs. markets',m.props?`${m.model_right}/${m.disagreements}`:'–',m.props?`Disagreements the model won · Brier ${f2(m.model_brier)} model vs ${f2(m.market_brier)} market (lower wins)`:m.has_archive?'No player lines matched':'No market prices saved for this week')}
+    </div></div>
+    ${notes?`<div class="card-b" style="padding-top:0"><h3 style="margin:4px 0">Weekly review notes</h3><p class="note">${esc(notes.headline||'')}</p>
+      ${notes.right&&notes.right.length?'<b class="note">Got right</b>'+li(notes.right):''}${notes.missed&&notes.missed.length?'<b class="note">Missed</b>'+li(notes.missed):''}
+      ${notes.lessons&&notes.lessons.length?'<b class="note">Lessons</b>'+li(notes.lessons):''}${notes.changes&&notes.changes.length?'<b class="note">Changes</b>'+li(notes.changes):''}</div>`:''}
+    <div class="tw"><table><thead><tr><th class="l nosort">Position</th><th class="nosort">Players</th><th class="nosort">Avg miss</th><th class="nosort" title="Average miss using only the normal game, no matchup adjustments">Normal-game miss</th><th class="nosort">Bias</th></tr></thead><tbody>
+      ${POS.map(p=>{const x=R.byPos[p];return `<tr><td class="l"><span class="pos ${p}">${p}</span></td><td>${x.n}</td><td><b>${f1(x.mae)}</b></td><td>${f1(x.normal_mae)}</td><td>${sign(x.bias)}</td></tr>`}).join('')}</tbody></table></div>
+    <div class="tw">${ouT(R.ou.over,true)}</div><div class="tw">${ouT(R.ou.under,false)}</div>
+    ${m.list.length?`<div class="tw"><table><thead><tr><th class="l nosort">Model vs. market disagreements</th><th class="l nosort">Line</th><th class="nosort">Market</th><th class="nosort">Model</th><th class="nosort">Actual</th><th class="nosort">Closer</th></tr></thead><tbody>
+      ${m.list.map(x=>`<tr><td class="l">${esc(x.name)}</td><td class="l">${MK_LBL[x.stat]||x.stat} ${x.line}+</td><td>${pctTxt(x.market)}</td><td>${pctTxt(x.model)}</td><td><b>${f1(x.actual)}</b></td><td>${(x.model>x.market)===(x.y===1)?'<span class="chip g">Model</span>':'<span class="chip b">Market</span>'}</td></tr>`).join('')}</tbody></table></div>`:''}
+    <div class="tw"><table><thead><tr><th class="l nosort">Biggest misses</th><th class="nosort">Proj</th><th class="nosort">Actual</th><th class="nosort">Miss</th><th class="l nosort">Likely cause</th></tr></thead><tbody>
+      ${R.misses.map(x=>`<tr><td class="l">${esc(x.name)} <span class="muted">${x.pos} ${x.team} vs ${x.opp}</span></td><td>${f1(x.proj)}</td><td><b>${f1(x.actual)}</b></td><td style="color:${x.err>0?'var(--bad)':'var(--good)'}">${sign(-x.err)}</td><td class="l" style="white-space:normal">${x.why.map(t=>`<span class="chip n">${esc(t)}</span>`).join(' ')}</td></tr>`).join('')}</tbody></table></div>
+    <div class="tw"><table><thead><tr><th class="l nosort">Closest calls (10+ pt projections)</th><th class="nosort">Proj</th><th class="nosort">Actual</th><th class="nosort">Miss</th></tr></thead><tbody>
+      ${R.right.map(x=>`<tr><td class="l">${esc(x.name)} <span class="muted">${x.pos} ${x.team} vs ${x.opp}</span></td><td>${f1(x.proj)}</td><td><b>${f1(x.actual)}</b></td><td>${sign(-x.err)}</td></tr>`).join('')}</tbody></table></div>
+    <div class="card-b"><h3 style="margin:4px 0 8px">${s} season so far</h3><div class="tw"><table id="rvTrend"><tbody><tr><td class="muted">Scoring earlier weeks…</td></tr></tbody></table></div></div>`;
+  // season trend, one week at a time so the page stays responsive
+  const wks=reviewWeeks().filter(([ss,ww])=>ss===s&&ww<=w).reverse(),out=[];
+  for(const [ss,ww] of wks){const r=await reviewCached(ss,ww);if(tok!==rvToken)return;out.push(r);await sleep(0)}
+  $('#rvTrend').innerHTML=`<thead><tr><th class="l nosort">Week</th><th class="nosort">Avg miss</th><th class="nosort">Normal-game miss</th><th class="nosort">Bias</th><th class="nosort">O/U picks</th><th class="nosort">Model Brier</th><th class="nosort">Market Brier</th></tr></thead><tbody>`+
+    out.map(r=>`<tr><td class="l">Week ${r.week}</td><td><b>${f1(r.overall.mae)}</b></td><td>${f1(r.overall.normal_mae)}</td><td>${sign(r.overall.bias)}</td><td>${r.ou.hits}/${r.ou.n}</td><td>${r.markets.props?f2(r.markets.model_brier):dash}</td><td>${r.markets.props?f2(r.markets.market_brier):dash}</td></tr>`).join('')+'</tbody>'}
+$('#rvWeek').onchange=renderReview;
 
 /* ---------- player drawer ---------- */
 function closeDetail(){$('#detail').classList.remove('on');$('#scrim').classList.remove('on');$('#detail').setAttribute('aria-hidden','true')}
@@ -1190,11 +1304,11 @@ function renderDb(){const g=[...S.games.values()];const done=g.filter(x=>x.compl
 $('#feedSave').onclick=async()=>{const v=$('#feedRepo').value.trim();if(v&&!feedUrl(v)){toast('Paste a GitHub repo link like https://github.com/you/nfl-news');return}
   await setMeta('feedRepo',v);if(!v){await setMeta('claudeAdj',{});refreshAll();return}
   try{const r=await fetchFeed();$('#feedInfo').textContent=`${r.n} items · generated ${timeAgo(r.at)}`}catch(e){$('#feedInfo').textContent=e.message}refreshAll()};
-function refreshAll(){dtCache.clear();fillWeekSelectors();computeWeek();renderDef();renderDb();renderNews();
+function refreshAll(){dtCache.clear();rvCache.clear();fillWeekSelectors();computeWeek();fillReviewWeeks();if($('#bt').classList.contains('on'))renderReview();renderDef();renderDb();renderNews();
   $('#feedRepo').value=S.meta.feedRepo||'';if(S.meta.feedAt&&!$('#feedInfo').textContent)$('#feedInfo').textContent=`last feed ${timeAgo(S.meta.feedAt)}`;$('#fdInfo').textContent=S.fd.length?`${S.fd.length} FanDuel players loaded`:''}
 
 /* ---------- wiring ---------- */
-document.querySelectorAll('#tabs button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#tabs button,section').forEach(x=>x.classList.remove('on'));b.classList.add('on');$('#'+b.dataset.t).classList.add('on');window.scrollTo(0,0)});
+document.querySelectorAll('#tabs button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#tabs button,section').forEach(x=>x.classList.remove('on'));b.classList.add('on');$('#'+b.dataset.t).classList.add('on');window.scrollTo(0,0);if(b.dataset.t==='bt')renderReview()});
 $('#pSeason').onchange=()=>{$('#pWeek').value='';fillWeekSelectors();computeWeek()};$('#pWeek').onchange=computeWeek;
 $('#pPosSeg').onclick=e=>{const b=e.target.closest('button');if(!b)return;$('#pPos').value=b.dataset.pos;try{localStorage.setItem('nflp-pos',b.dataset.pos)}catch(e){}renderProj()};
 try{const p=localStorage.getItem('nflp-pos');if(POS.includes(p))$('#pPos').value=p}catch(e){}
@@ -1224,6 +1338,7 @@ $('#themeBtn').onclick=()=>{const cur=document.documentElement.getAttribute('dat
   $('#seasonBoxes').innerHTML=[cur-4,cur-3,cur-2,cur-1,cur].map(s=>`<label class="chk"><input type="checkbox" value="${s}" ${s>=cur-2?'checked':''}><span>${s}</span></label>`).join('');
   refreshAll();
   try{if(await fetchFeed())refreshAll()}catch(e){}
+  loadMarkets();
   autoCheck();
   if(!S.pg.length){document.querySelector('#tabs [data-t=data]').click();log('Database is empty. Pick seasons and click "Full sync" (three seasons recommended).')}
 })();

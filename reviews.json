@@ -1,0 +1,62 @@
+{
+  "reviews": [
+    {
+      "season": 2026,
+      "week": 3,
+      "generated_at": "2026-10-01T01:30:00Z",
+      "headline": "Average miss 4.97 FanDuel pts across 185 players, about the same as each player's normal game alone (4.94). Over/Under picks went 12 of 20.",
+      "right": [
+        "Over/Under picks hit 12 of 20 (60%), the third straight week at 60% or better.",
+        "Wide receivers were the most accurate group (4.6 pt average miss, almost no bias)."
+      ],
+      "missed": [
+        "Sam Darnold (SEA): projected 11.4, scored 29.7. He threw 2 passes in Week 1 before leaving and missed Week 2, so his share of team passes looked tiny and he was projected for 21 attempts. He threw 45.",
+        "QBs were projected 2.2 pts too low on average.",
+        "Shedeur Sanders (CLE): projected 14.3, threw 1 pass and scored 0.",
+        "Big TD games for Jahmyr Gibbs and Bijan Robinson (8 to 11 pts from TDs each) drove most of the other large misses."
+      ],
+      "lessons": [
+        "A game a player leaves early should not shrink their role share when they return as the starter.",
+        "Matchup adjustments did not beat the plain normal-game number this week; check whether the defense effect is still worth applying early in the season."
+      ],
+      "changes": [
+        "Proposed (not applied yet): skip injury-shortened games when computing a QB's pass share, and backtest the change on 2024, 2025 and 2026 before adopting it."
+      ]
+    },
+    {
+      "season": 2026,
+      "week": 2,
+      "generated_at": "2026-10-01T01:30:00Z",
+      "headline": "Average miss 5.18 pts, better than the normal game alone (5.33). Over/Under picks went 13 of 20.",
+      "right": [
+        "Matchup adjustments helped this week: 0.15 pts better than the normal-game baseline.",
+        "No overall bias (0.0 pts)."
+      ],
+      "missed": [
+        "Jaxon Smith-Njigba scored 24.6 more than projected: 15 pts from TDs on 11 targets (7 projected).",
+        "QBs were projected 1.7 pts too low; Josh Allen and Jared Goff each had 10+ pts from TDs above projection."
+      ],
+      "lessons": [
+        "Most big misses are touchdown swings, which no projection can call reliably; workload misses are the fixable kind."
+      ],
+      "changes": []
+    },
+    {
+      "season": 2026,
+      "week": 1,
+      "generated_at": "2026-10-01T01:30:00Z",
+      "headline": "Average miss 6.09 pts, slightly worse than the normal game alone (6.02). Over/Under picks went 12 of 20.",
+      "right": [
+        "Over/Under picks hit 12 of 20 even with no 2026 games to learn from yet."
+      ],
+      "missed": [
+        "QBs were projected 3.4 pts too low and RBs 1.9 pts too low.",
+        "Caleb Williams, Josh Allen and D'Andre Swift each scored 13 to 14 pts more from TDs than projected."
+      ],
+      "lessons": [
+        "Week 1 leans on last season's numbers and is the least accurate week; expect misses to shrink as 2026 games come in."
+      ],
+      "changes": []
+    }
+  ]
+}
