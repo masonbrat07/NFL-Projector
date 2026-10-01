@@ -225,6 +225,7 @@ td.rk{color:var(--muted);font-size:12px;width:1%}
   <nav class="tabs" id="tabs">
     <button data-t="proj" class="on">Projections</button>
     <button data-t="fd">Line finder</button>
+    <button data-t="ou">Over/Under performers</button>
     <button data-t="news">News <span id="newsCount" class="st" style="background:#e5484d;color:#fff;display:none"></span></button>
     <button data-t="def">Defense rankings</button>
     <button data-t="bt">Accuracy</button>
@@ -290,6 +291,17 @@ td.rk{color:var(--muted);font-size:12px;width:1%}
       <div class="toolbar" style="padding:12px 0 0"><label class="btn">Choose CSV…<input type="file" id="fdFile" accept=".csv" hidden></label><button class="btn" id="fdClear">Remove</button><span id="fdInfo" class="muted"></span></div>
     </div>
   </div>
+</section>
+
+<!-- ================= OVER/UNDER PERFORMERS ================= -->
+<section id="ou">
+  <div class="card">
+    <div class="card-h"><h2>Over/Under performers</h2><span class="muted" id="ouSub"></span><div class="spacer"></div>
+      <div class="seg" id="ouSeg"><button data-pos="" class="on">All</button><button data-pos="QB">QB</button><button data-pos="RB">RB</button><button data-pos="WR">WR</button><button data-pos="TE">TE</button></div></div>
+    <div class="card-b"><p class="note">This week's projection vs. each player's <b>normal game</b> (recent form before matchup adjustments), in FanDuel points, ranked by percent change. Players who normally score under 6 points, backups and players ruled out are left out. Change the week on the Projections tab; click a player for the full breakdown.</p></div>
+  </div>
+  <div class="card"><div class="card-h"><h2>Top 10 over-performers</h2></div><div class="card-b" style="padding-bottom:0"></div><div class="tw"><table id="ouOver"></table></div></div>
+  <div class="card"><div class="card-h"><h2>Top 10 under-performers</h2></div><div class="card-b" style="padding-bottom:0"></div><div class="tw"><table id="ouUnder"></table></div></div>
 </section>
 
 <!-- ================= NEWS ================= -->
@@ -879,7 +891,7 @@ function fillWeekSelectors(){
   $('#btSeason').innerHTML=seasons.map(s=>`<option>${s}</option>`).join('');
   const teams=[...new Set([...S.games.values()].flatMap(g=>[g.home,g.away]))].sort();const pt=$('#pTeam'),tv=pt.value;
   pt.innerHTML='<option value="">All teams</option>'+teams.map(t=>`<option ${t===tv?'selected':''}>${t}</option>`).join('')}
-function computeWeek(){const s=+$('#pSeason').value,w=+$('#pWeek').value;WP=s&&w?weekProjections(s,w):null;gameFilter=null;renderGames();renderProj();renderProps()}
+function computeWeek(){const s=+$('#pSeason').value,w=+$('#pWeek').value;WP=s&&w?weekProjections(s,w):null;gameFilter=null;renderGames();renderProj();renderProps();renderOU()}
 function renderPosTabs(){const cur=$('#pPos').value;
   $('#pPosSeg').innerHTML=POS.map(p=>`<button data-pos="${p}" class="${p===cur?'on':''}"><span class="pos ${p}">${p}</span>${POS_NAME[p]}<small>${filteredRows(p).length}</small></button>`).join('')}
 function filteredRows(posOverride){if(!WP)return[];const pos=posOverride||$('#pPos').value,tm=$('#pTeam').value,q=normName($('#pSearch').value),low=$('#pLow').checked,ho=$('#pOut').checked;
@@ -916,6 +928,45 @@ function renderProj(){
   t.innerHTML=sortHead(cols,sortP)+'<tbody>'+rows.map((P,i)=>`<tr class="click" data-pid="${P.pid}" data-gid="${P.gid}">${cols.map(c=>c.k==='rk'?`<td class="rk">${i+1}</td>`:`<td class="${c.c||''}">${c.h?c.h(P):esc(c.v(P))}</td>`).join('')}</tr>`).join('')+'</tbody>'}
 $('#pTable').addEventListener('click',e=>{const th=e.target.closest('th');if(th){if(th.classList.contains('nosort'))return;const k=th.dataset.k;sortP=sortP.k===k?{k,d:-sortP.d}:{k,d:k==='name'?1:-1};renderProj();return}
   const tr=e.target.closest('tr[data-pid]');if(tr){const P=WP.rows.find(p=>p.pid===tr.dataset.pid&&p.gid===tr.dataset.gid);showDetail(P)}});
+
+/* ---------- UI: Over/Under performers ---------- */
+// "Normal" = the recent-form baseline (already scaled to a typical game) before matchup adjustments
+let ouPos='';
+const ouNormal=P=>P.b.mean.fd*TYPICAL;
+function ouReasons(P){const r=[];
+  if(P.defFd>=1.04)r.push(['g',`Soft vs ${P.pos}${P.defRank?' #'+P.defRank:''}`]);else if(P.defFd<=.96)r.push(['b',`Tough vs ${P.pos}${P.defRank?' #'+P.defRank:''}`]);
+  const bt=P.U.boost,x=P.pos==='RB'?bt.car:bt.tgt;if(x>1.05)r.push(['g',`Teammate out: +${Math.round((x-1)*100)}% work`]);
+  if(P.vr!=null){if(P.vr>=1.08)r.push(['g',`Team total ${f1(P.implied)}, above usual`]);else if(P.vr<=.92)r.push(['b',`Team total ${f1(P.implied)}, below usual`])}
+  if(P.hist.length>=2){const avg=P.hist.reduce((a,q)=>a+q.fd,0)/P.hist.length,m=P.b.mean.fd;
+    if(m>0&&avg/m>=1.2)r.push(['g',`${f1(avg)} pts vs ${P.opp} (${P.hist.length}g)`]);else if(m>0&&avg/m<=.8)r.push(['b',`${f1(avg)} pts vs ${P.opp} (${P.hist.length}g)`])}
+  if(P.wxe&&P.wxe.pass<.95&&P.pos!=='RB')r.push(['b',esc(P.wxe.label)]);
+  if(P.adj&&!P.adj.out&&P.adj.mult!==1)r.push([P.adj.mult>1?'g':'b',`News ${P.adj.mult>1?'+':''}${Math.round((P.adj.mult-1)*100)}%`]);
+  // same last-game role trend as the Projections tab's share arrows
+  const sh=P.pos==='RB'?P.U.sh.car:P.U.sh.tgt,last=P.pos==='RB'?P.U.sh.lastCar:P.U.sh.lastTgt;
+  if(P.pos!=='QB'&&x<=1.05&&last!=null&&sh>.03){if(last>sh*1.2)r.push(['g','Bigger role last game']);else if(last<sh*.8)r.push(['b','Smaller role last game'])}
+  return r.length?r.map(([c,t])=>`<span class="chip ${c}">${t}</span>`).join(' '):'<span class="muted">Small edges across stats</span>'}
+function ouTable(el,rows,up){
+  if(!rows.length){el.innerHTML=`<tbody><tr><td class="empty"><b>No ${up?'over':'under'}-performers</b>No player's projection is ${up?'above':'below'} their normal game with these filters.</td></tr></tbody>`;return}
+  const hasAct=rows.some(P=>P.completed);
+  el.innerHTML=`<thead><tr><th class="l nosort">#</th><th class="l nosort">Player</th><th class="nosort" title="Recent-form baseline in FanDuel pts, before matchup adjustments">Normal</th><th class="nosort">Projected</th><th class="nosort">Change</th><th class="l nosort">Why</th>${hasAct?'<th class="nosort">Actual</th>':''}</tr></thead><tbody>`+
+    rows.map((P,i)=>{const n=ouNormal(P),d=P.proj.fd-n,col=up?'var(--good)':'var(--bad)';
+      return `<tr class="click" data-pid="${P.pid}" data-gid="${P.gid}"><td class="rk">${i+1}</td>
+      <td class="l"><div class="player">${avatar(P.pid,P.name)}<div><div class="pname">${esc(P.name)}${statusTag(P.status)}${newsTag(P)}</div><div class="psub"><span class="pos ${P.pos}">${depthLbl(P)}</span>${logo(P.team)}${P.team} ${P.home?'vs':'@'} ${P.opp}</div></div></div></td>
+      <td>${f1(n)}</td><td><b>${f1(P.proj.fd)}</b></td>
+      <td><b style="color:${col}">${d>0?'+':''}${f1(d)}</b> <span class="muted">${d>0?'+':''}${Math.round(d/n*100)}%</span></td>
+      <td class="l" style="white-space:normal;min-width:220px">${ouReasons(P)}</td>
+      ${hasAct?`<td>${P.completed?(P.actual?`<b>${f1(P.actual.fd)}</b>`:'<span class="muted">DNP</span>'):dash}</td>`:''}</tr>`}).join('')+'</tbody>'}
+function renderOU(){const o=$('#ouOver'),u=$('#ouUnder');
+  $('#ouSub').textContent=WP&&WP.games.length?`${$('#pSeason').value} · Week ${$('#pWeek').value}`:'';
+  const msg=(b,t)=>{const h=`<tbody><tr><td class="empty"><b>${b}</b>${t}</td></tr></tbody>`;o.innerHTML=h;u.innerHTML=h};
+  if(!S.pg.length)return msg('Your database is empty','Open the Data tab and run a sync to get started.');
+  if(!WP||!WP.games.length)return msg('No games for this week','Pick another week on the Projections tab.');
+  const rows=WP.rows.filter(P=>!P.backup&&!isOut(P.status)&&(!ouPos||P.pos===ouPos)&&ouNormal(P)>=6);
+  const pct=P=>P.proj.fd/ouNormal(P)-1;
+  ouTable(o,rows.filter(P=>pct(P)>0).sort((a,b)=>pct(b)-pct(a)).slice(0,10),true);
+  ouTable(u,rows.filter(P=>pct(P)<0).sort((a,b)=>pct(a)-pct(b)).slice(0,10),false)}
+$('#ouSeg').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;ouPos=b.dataset.pos;$('#ouSeg').querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b));renderOU()});
+['#ouOver','#ouUnder'].forEach(id=>$(id).addEventListener('click',e=>{const tr=e.target.closest('tr[data-pid]');if(tr)showDetail(WP.rows.find(p=>p.pid===tr.dataset.pid&&p.gid===tr.dataset.gid))}));
 
 /* ---------- player drawer ---------- */
 function closeDetail(){$('#detail').classList.remove('on');$('#scrim').classList.remove('on');$('#detail').setAttribute('aria-hidden','true')}

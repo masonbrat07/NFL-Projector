@@ -13,7 +13,7 @@ No build step, no dependencies. Pushing to `main` deploys in ~1–2 minutes.
 ## How the app works (index.html)
 - Data: ESPN public JSON (`site.api.espn.com`, core API for depth charts), Open-Meteo for weather. Stored per visitor in IndexedDB (`nfl_projector`). `loadSnapshot()` seeds it from `data.json` when that is newer than the visitor's last sync.
 - Model: final projection = blend of a recent-form model (`project` → `P.form`: weighted baseline × defense^0.5 × matchup history × Vegas × home) and a usage model (`usageProj`: team volume × role share × efficiency, with injury redistribution via `teamCtx`, game script, depth-chart QB). Weights `W_USE` (pass .7 / other .25), `DEF_W` .5, `TYPICAL` .9 were tuned on 2024–2025 backtests (Accuracy tab). Weather applied last (`wxEffect`).
-- UI: Projections has QB/RB/WR/TE tabs with per-position columns (`POS_COLS`); player drawer (`showDetail`); Line finder (PrizePicks/FanDuel lines, `gradeLine`); News (ESPN news + injury report + `news-feed.json`); Defense rankings; Accuracy (backtest); Data.
+- UI: Projections has QB/RB/WR/TE tabs with per-position columns (`POS_COLS`); player drawer (`showDetail`); Line finder (PrizePicks/FanDuel lines, `gradeLine`); Over/Under performers (top 10 each way by projected FD pts vs. form baseline `ouNormal`, `renderOU`); News (ESPN news + injury report + `news-feed.json`); Defense rankings; Accuracy (backtest); Data.
 - Auto-updates in the browser at 8 AM / 5 PM local while open (`autoCheck`).
 
 ## Conventions
