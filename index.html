@@ -143,6 +143,7 @@ td.rk{color:var(--muted);font-size:12px;width:1%}
 .chip.g{color:var(--good);background:var(--good-soft)}.chip.b{color:var(--bad);background:var(--bad-soft)}.chip.w{color:var(--warn);background:var(--warn-soft)}
 .chip.n{color:var(--muted);background:var(--surface2)}
 .chip small{font-weight:500;opacity:.8}
+.pa{display:inline-flex;flex-direction:column;align-items:flex-end;line-height:1.15}.pa small{font-size:11px;color:var(--muted);font-weight:500;white-space:nowrap}
 .st{display:inline-block;font-size:10px;font-weight:700;padding:0 5px;border-radius:4px;margin-left:6px;vertical-align:1px;letter-spacing:.03em}
 .st.b{color:var(--bad);background:var(--bad-soft)}.st.w{color:var(--warn);background:var(--warn-soft)}
 .heat{border-radius:8px;padding:3px 8px;display:inline-block;min-width:58px}
@@ -863,12 +864,19 @@ let WP=null,sortP={k:'fd',d:-1},gameFilter=null;
 const dash='<span class="dim">·</span>';
 const numCell=(v,d=1)=>v==null||v<.05?dash:(d===2?f2(v):d===0?f0(v):f1(v));
 // Each position gets its own stat columns
-const statCol=(k,l,d,t,bold)=>({k,l,t,v:P=>P.proj[k],h:P=>{const v=P.proj[k];const s=v==null||v<.05?dash:d===0?f0(v):d===2?f2(v):f1(v);return bold&&s!==dash?`<b>${s}</b>`:s}});
-const tdCol=l=>({k:'tdp',l,v:P=>tdPct(P),t:'Chance to score at least one rushing or receiving TD',h:P=>{const p=tdPct(P);return p<.02?dash:`<span style="font-weight:600;color:${p>=.45?'var(--good)':'var(--ink)'}">${Math.round(p*100)}%</span>`}});
+// Finished games: the actual stat on top, the projection underneath; green/red when it clearly beat or missed it
+const BADSTAT=new Set(['int','fum_lost']);
+const vsTone=(k,a,p)=>{const d=a-p;return Math.abs(d)<Math.max(.5,p*.15)?'':(BADSTAT.has(k)?d<0:d>0)?'var(--good)':'var(--bad)'};
+const vsCell=(actTxt,projTxt,tone)=>`<span class="pa"><b${tone?` style="color:${tone}"`:''}>${actTxt}</b><small>proj ${projTxt}</small></span>`;
+const statCol=(k,l,d,t,bold)=>({k,l,t,v:P=>P.proj[k],h:P=>{const v=P.proj[k];const s=v==null||v<.05?dash:d===0?f0(v):d===2?f2(v):f1(v);
+  if(P.actual&&(s!==dash||P.actual[k]))return vsCell(f0(P.actual[k]||0),s,vsTone(k,P.actual[k]||0,v||0));return bold&&s!==dash?`<b>${s}</b>`:s}});
+const tdCol=l=>({k:'tdp',l,v:P=>tdPct(P),t:'Chance to score at least one rushing or receiving TD',h:P=>{const p=tdPct(P);
+  if(P.actual){const n=P.pos==='QB'?P.actual.rush_td||0:P.actual.tds||0;return p<.02&&!n?dash:vsCell(n?`${n} TD`:'0',`${Math.round(p*100)}%`,n?'var(--good)':'')}
+  return p<.02?dash:`<span style="font-weight:600;color:${p>=.45?'var(--good)':'var(--ink)'}">${Math.round(p*100)}%</span>`}});
 const shareCol=(l,t)=>({k:'share',l,t,v:P=>P.pos==='RB'?P.U.cSh:P.U.tSh,h:P=>roleCell(P)});
 const POS_COLS={
   QB:[statCol('pass_yds','Pass yds',0,'',1),statCol('pass_td','Pass TD',1),statCol('int','INT',1),
-    {k:'pass_att',l:'Comp / Att',v:P=>P.proj.pass_att,h:P=>P.proj.pass_att<1?dash:`${f0(P.proj.cmp)}/${f0(P.proj.pass_att)}`},
+    {k:'pass_att',l:'Comp / Att',v:P=>P.proj.pass_att,h:P=>{const pr=P.proj.pass_att<1?dash:`${f0(P.proj.cmp)}/${f0(P.proj.pass_att)}`;return P.actual&&(P.proj.pass_att>=1||P.actual.pass_att)?vsCell(`${f0(P.actual.cmp||0)}/${f0(P.actual.pass_att||0)}`,pr,''):pr}},
     statCol('rush_yds','Rush yds',0),tdCol('Rush TD %')],
   RB:[statCol('rush_att','Carries',1),statCol('rush_yds','Rush yds',0,'',1),statCol('rec','Rec',1),statCol('rec_yds','Rec yds',0),tdCol('TD %'),
     shareCol('Carry share','Share of team carries (includes boosts for injured teammates)')],
@@ -889,7 +897,7 @@ function projCols(rows,pos){
     {k:'implied',l:'Team pts',v:P=>P.implied,h:P=>P.implied?f1(P.implied):dash,t:'Implied team points from the spread and total'},
   ];
   if(hasFd)cols.push({k:'fdSal',l:'FD $',v:P=>P.fdSal||null,h:P=>P.fdSal?'$'+P.fdSal.toLocaleString():dash},{k:'value',l:'Pts/$1K',v:P=>P.fdSal?P.proj.fd/P.fdSal*1000:null,h:P=>P.fdSal?f2(P.proj.fd/P.fdSal*1000):dash});
-  if(hasAct)cols.push({k:'actual',l:'Actual',v:P=>P.actual?P.actual.fd:null,h:P=>P.completed?(P.actual?`<b>${f1(P.actual.fd)}</b>`:'<span class="muted">DNP</span>'):dash});
+  if(hasAct)cols.push({k:'actual',l:'Actual',v:P=>P.actual?P.actual.fd:null,h:P=>P.completed?(P.actual?`<b style="color:${vsTone('fd',P.actual.fd,P.proj.fd)||'var(--ink)'}">${f1(P.actual.fd)}</b>`:'<span class="muted">DNP</span>'):dash});
   return cols}
 
 function fillWeekSelectors(){
@@ -934,7 +942,7 @@ function renderProj(){
   renderPosTabs();
   const rows=filteredRows();const cols=projCols(rows,$('#pPos').value);const col=cols.find(c=>c.k===sortP.k)||cols[2];
   rows.sort((a,b)=>{const x=col.v(a),y=col.v(b);if(x==null)return 1;if(y==null)return -1;return (x<y?-1:x>y?1:0)*sortP.d});
-  info.textContent=`${rows.length} players · click any player for the full breakdown`;
+  info.textContent=`${rows.length} players · click any player for the full breakdown`+(rows.some(P=>P.actual)?' · finished games show the actual stat with the projection underneath':'');
   if(!rows.length){t.innerHTML=`<tbody><tr><td class="empty"><b>No players match</b>Try clearing the filters.</td></tr></tbody>`;return}
   t.innerHTML=sortHead(cols,sortP)+'<tbody>'+rows.map((P,i)=>`<tr class="click" data-pid="${P.pid}" data-gid="${P.gid}">${cols.map(c=>c.k==='rk'?`<td class="rk">${i+1}</td>`:`<td class="${c.c||''}">${c.h?c.h(P):esc(c.v(P))}</td>`).join('')}</tr>`).join('')+'</tbody>'}
 $('#pTable').addEventListener('click',e=>{const th=e.target.closest('th');if(th){if(th.classList.contains('nosort'))return;const k=th.dataset.k;sortP=sortP.k===k?{k,d:-sortP.d}:{k,d:k==='name'?1:-1};renderProj();return}
@@ -1105,11 +1113,16 @@ function showDetail(P,customOpp){
     `<div><span class="muted">Weather</span><b>${esc(wx.label||(g.venue?'Forecast not out yet':'Unknown'))}</b>${wx.pass<.995?` <span style="color:var(--warn)">→ passing ×${wx.pass.toFixed(2)}</span>`:''}</div>`,
     P.adj?`<div><span class="muted">Claude news adjustment</span><b>${P.adj.out?'Ruled out':(P.adj.mult>1?'+':'−')+Math.round(Math.abs(P.adj.mult-1)*100)+'%'}</b> <span class="muted">${esc(P.adj.note)}</span></div>`:'',
     `<div><span class="muted">Teammates out</span><b>${outs.length?outs.map(o=>esc(o.name)+' ('+o.pos+')').join(', '):'None of note'}</b>${boostTag(Q)?` <span style="color:var(--good)">→ extra work for ${esc(Q.name.split(' ').slice(-1)[0])}</span>`:''}</div>`].filter(Boolean).join('');
+  // finished game: the real stat line next to what was projected
+  const done=P.completed&&!Q.custom,A=P.actual;
+  const result=!done?'':!A?`<h3>Final vs. projection</h3><p class="note">Did not play in this game.</p>`:`<h3>Final vs. projection</h3><div class="tcard"><div class="tw" style="max-height:none"><table><thead><tr><th class="l nosort">Stat</th><th class="nosort">Proj</th><th class="nosort">Actual</th><th class="nosort">+/−</th></tr></thead><tbody>${[...stats,'pp'].map(s=>{const a=A[s]||0,p=P.proj[s]||0,d=a-p,t=vsTone(s,a,p),fd=s==='fd'||s==='pp';
+    return `<tr${s==='fd'?' style="background:var(--surface2)"':''}><td class="l">${fd?'<b>'+LBL[s]+'</b>':LBL[s]}</td><td>${f1(p)}</td><td><b${t?` style="color:${t}"`:''}>${fd?f1(a):f0(a)}</b></td><td${t?` style="color:${t}"`:' class="muted"'}>${(x=>(x>0?'+':x<0?'−':'')+Math.abs(x))(+d.toFixed(fd||TDSET.has(s)||s==='rec'||s==='cmp'?1:0))}</td></tr>`}).join('')}</tbody></table></div></div>`;
   const glog=rows=>rows.length?`<div class="tcard"><div class="tw"><table><thead><tr><th class="l nosort">Game</th><th class="l nosort">Opp</th>${stats.map(s=>`<th class="nosort">${LBL[s].replace('FanDuel pts','FD')}</th>`).join('')}</tr></thead><tbody>${rows.slice().reverse().map(r=>`<tr><td class="l">${r.season} · Wk ${r.week}</td><td class="l"><span class="psub" style="margin:0">${r.home?'vs':'@'} ${logo(r.opp)}${r.opp}</span></td>${stats.map(s=>`<td>${s==='fd'?'<b>'+f1(r[s])+'</b>':f1(r[s])}</td>`).join('')}</tr>`).join('')}</tbody></table></div></div>`:'<p class="note">No prior games in the database.</p>';
   el.innerHTML=`<div class="dhead">${avatar(Q.pid,Q.name)}<div><h2>${esc(Q.name)}${statusTag(P.status)}</h2>
       <div class="psub"><span class="pos ${Q.pos}">${Q.pos}</span>${logo(Q.team)}${Q.team} ${Q.home?'vs':'@'} ${logo(Q.opp)}${Q.opp} · ${Q.b.n} games in database</div></div>
       <button class="iconbtn" id="dClose" title="Close (Esc)"><svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4"><path d="M5 5l14 14M19 5L5 19"/></svg></button></div>
     <div class="dbody">
+      ${result}${done?'<h3>Projection</h3>':''}
       <div class="mini">
         ${Q.pos==='QB'?kpi('Passing',`${f0(Q.proj.pass_yds)} yds`,`${f1(Q.proj.pass_td)} TD · ${f1(Q.proj.int)} INT · ${f0(Q.proj.cmp)}/${f0(Q.proj.pass_att)}`)
           :kpi('Receiving',`${f0(Q.proj.rec_yds)} yds`,`${f1(Q.proj.rec)} rec on ${f1(Q.proj.tgt)} targets`)}
