@@ -1,4 +1,61 @@
 {
-  "generated_at": "2026-09-30T21:06:54Z",
-  "items": []
+  "generated_at": "2026-10-02T15:20:00Z",
+  "items": [
+    {
+      "player": "Jayden Daniels", "team": "WSH", "position": "QB",
+      "status": "Out", "impact": "high", "direction": "out", "multiplier": null,
+      "headline": "Daniels (elbow) ruled out vs. Colts in London; Mariota starts again",
+      "summary": "Daniels misses a second straight game with the dislocated left elbow, so Marcus Mariota makes another start. Mariota threw 3 TDs on 31 attempts last week. Washington hopes Daniels returns in Week 5 against the Giants.",
+      "sources": [{ "name": "ESPN", "url": "https://www.espn.com/nfl/story/_/id/50084552/commanders-qb-jayden-daniels-elbow-ruled-vs-colts" }],
+      "published": "2026-10-02T14:55:36Z"
+    },
+    {
+      "player": "Chig Okonkwo", "team": "WSH", "position": "TE",
+      "status": "Active", "impact": "watch", "direction": "up", "multiplier": null,
+      "headline": "Okonkwo (hamstring) returns for Washington after missing two games",
+      "summary": "Dan Quinn said Friday that Okonkwo is back after two missed games. He's still listed as questionable on the report, but expect him to play and take back the TE1 role from Ben Sinnott.",
+      "sources": [{ "name": "ESPN", "url": "https://www.espn.com/nfl/story/_/id/50084552/commanders-qb-jayden-daniels-elbow-ruled-vs-colts" }],
+      "published": "2026-10-02T14:55:36Z"
+    },
+    {
+      "player": "Travis Etienne Jr.", "team": "NO", "position": "RB",
+      "status": "Out", "impact": "high", "direction": "out", "multiplier": null,
+      "headline": "Saints put Etienne (hamstring) on IR; out until at least Week 9",
+      "summary": "Kellen Moore said Alvin Kamara and Kendre Miller will take most of Etienne's snaps, and CJ Donaldson will handle short yardage. His carries are redistributed in the projection.",
+      "sources": [{ "name": "ESPN", "url": "https://www.espn.com/nfl/story/_/id/50079185/saints-putting-rb-travis-etienne-hamstring-ir" }],
+      "published": "2026-10-01T22:28:23Z"
+    },
+    {
+      "player": "Alvin Kamara", "team": "NO", "position": "RB",
+      "status": null, "impact": "watch", "direction": "up", "multiplier": 1.05,
+      "headline": "Kamara leads the Saints backfield with Etienne on IR",
+      "summary": "Etienne had 13 carries in Week 3 before leaving the game, compared with 9 for Kamara and 4 for Miller. Kamara should get the first shot at lead-back work, but he has been inefficient (2.8 yards per carry), and Miller will take a real share.",
+      "sources": [{ "name": "ESPN", "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis" }],
+      "published": "2026-10-01T22:28:23Z"
+    },
+    {
+      "player": "Ollie Gordon II", "team": "MIA", "position": "RB",
+      "status": null, "impact": "watch", "direction": "down", "multiplier": 0.9,
+      "headline": "Dolphins plan a split backfield with Jaylen Wright while Achane is out",
+      "summary": "Gordon had 20 touches in Week 3, but he was Miami's only other active back. Jeff Hafley expects to split the work with Jaylen Wright and ride the hot hand, so Gordon's Week 3 share probably overstates his role.",
+      "sources": [{ "name": "ESPN", "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis" }],
+      "published": "2026-10-02T12:08:09Z"
+    },
+    {
+      "player": "Mason Graham", "team": "CLE", "position": "DT",
+      "status": "Questionable", "impact": "info", "direction": "none", "multiplier": null,
+      "headline": "Browns DT Graham leaves TNF win with knee injury; Mike Hall Jr. also hurt",
+      "summary": "Graham, who leads Cleveland with 4 sacks, hurt his left knee on Pittsburgh's opening drive and did not return. Mike Hall Jr., his replacement, was carted off with an ankle injury but came back. No skill-position player on either team was hurt. Cleveland plays at the Jets on Oct. 11.",
+      "sources": [{ "name": "ESPN", "url": "https://www.espn.com/nfl/story/_/id/50081421/browns-dt-mason-graham-leaves-game-knee-injury" }],
+      "published": "2026-10-02T03:51:38Z"
+    },
+    {
+      "player": "Aaron Rodgers", "team": "PIT", "position": "QB",
+      "status": null, "impact": "info", "direction": "none", "multiplier": null,
+      "headline": "TNF: Browns 27, Steelers 24. Rodgers throws for 299 and 3 TDs in the loss",
+      "summary": "Rodgers went 22 of 40 with 2 INTs and was sacked five times. DK Metcalf had 115 yards and Roman Wilson scored for a second straight week. For Cleveland, Watson threw for 268 and Quinshon Judkins had 96 scrimmage yards, a TD and 6 catches. Andre Szmyt won it with a 56-yard field goal with 10 seconds left.",
+      "sources": [{ "name": "ESPN", "url": "https://www.espn.com/nfl/story/_/id/50079473/cleveland-browns-pittsburgh-steelers-week-4-tnf" }],
+      "published": "2026-10-02T11:49:24Z"
+    }
+  ]
 }
