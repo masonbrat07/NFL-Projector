@@ -1,6 +1,78 @@
 {
-  "generated_at": "2026-10-03T13:57:03Z",
+  "generated_at": "2026-10-04T16:03:34Z",
   "items": [
+    {
+      "player": "Tyson Bagent",
+      "team": "CHI",
+      "position": "QB",
+      "status": "Active",
+      "impact": "watch",
+      "direction": "none",
+      "multiplier": null,
+      "headline": "Bagent starts at QB for the Bears vs. Jets",
+      "summary": "Bagent took first-team reps this week and is active as the expected starter, which matches the projection's depth-chart pick. Luther Burden III is the Bears pass catcher to trust.",
+      "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nfl/story/_/id/50090746/source-bears-expected-start-qb-tyson-bagent-vs-jets"
+        }
+      ],
+      "published": "2026-10-03T16:51:00Z"
+    },
+    {
+      "player": "Terry McLaurin",
+      "team": "WSH",
+      "position": "WR",
+      "status": "Out",
+      "impact": "high",
+      "direction": "out",
+      "multiplier": null,
+      "headline": "McLaurin (hamstring) inactive in London after Friday practice injury",
+      "summary": "With Washington's top receiver out, Stefon Diggs gets more volume against a Colts defense that has allowed the most yards to slot receivers.",
+      "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nfl/story/_/id/50099334/commanders-wr-terry-mclaurin-inactive-friday-injury"
+        }
+      ],
+      "published": "2026-10-04T14:39:00Z"
+    },
+    {
+      "player": "Marcus Mariota",
+      "team": "WSH",
+      "position": "QB",
+      "status": "Out",
+      "impact": "high",
+      "direction": "none",
+      "multiplier": null,
+      "headline": "Mariota hurts right knee in London; rookie Athan Kaliakmanis takes over",
+      "summary": "Mariota was hurt on Washington's second series and ruled out at halftime, so seventh-round rookie Kaliakmanis played his first NFL snaps. With Daniels also out, keep an eye on the QB situation for Week 5.",
+      "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nfl/story/_/id/50099890/marcus-mariota-injured-commanders-turn-rookie-qb-athan-kaliakmanis"
+        }
+      ],
+      "published": "2026-10-04T15:52:00Z"
+    },
+    {
+      "player": "Saquon Barkley",
+      "team": "PHI",
+      "position": "RB",
+      "status": null,
+      "impact": "info",
+      "direction": "none",
+      "multiplier": null,
+      "headline": "Eagles RT Lane Johnson inactive (personal) vs. Rams",
+      "summary": "Losing Johnson lowers the floor for the Eagles run game. The Rams are also missing Myles Garrett and Aaron Donald on defense.",
+      "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/fantasy/football/story/_/page/FFSundayInactives-50077553/fantasy-football-injuries-nfl-week-4-inactive-active"
+        }
+      ],
+      "published": "2026-10-04T15:53:00Z"
+    },
     {
       "player": "Justin Jefferson",
       "team": "MIN",
@@ -97,17 +169,17 @@
       "position": "WR",
       "status": "Active",
       "impact": "watch",
-      "direction": "down",
-      "multiplier": 0.9,
-      "headline": "Nacua (hip) returns vs. Eagles, but his snaps may be managed",
-      "summary": "Nacua has no injury designation after missing two games. Sean McVay said the team is still working out how much he will play, so the projection is trimmed 10%.",
+      "direction": "none",
+      "multiplier": null,
+      "headline": "Nacua (hip/groin) active vs. Eagles; Rams don't plan to limit his snaps",
+      "summary": "Nacua practiced fully Friday and is active. Sources say the Rams don't intend to limit his workload, though his conditioning could still affect his snaps. Yesterday's 10% trim is removed.",
       "sources": [
         {
           "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50085994/aaron-donald-puka-nacua-play-rams-game-vs-eagles"
+          "url": "https://www.espn.com/nfl/story/_/id/50098838/sources-rams-intend-limit-puka-nacua-workload"
         }
       ],
-      "published": "2026-10-03T00:08:18Z"
+      "published": "2026-10-04T15:49:00Z"
     },
     {
       "player": "Mike Evans",
@@ -131,55 +203,37 @@
       "player": "Jalen Coker",
       "team": "CAR",
       "position": "WR",
-      "status": "Questionable",
-      "impact": "watch",
-      "direction": "down",
-      "multiplier": 0.85,
-      "headline": "Panthers' leading receiver Coker (quad) questionable for SNF",
-      "summary": "Coker missed the second half of Week 3. If he can't go, practice-squad WR Ja'seem Reed debuts, and Tetairoa McMillan leads a thin group with Xavier Legette also out.",
+      "status": "Doubtful",
+      "impact": "high",
+      "direction": "out",
+      "multiplier": null,
+      "headline": "Coker (quad) unlikely to play SNF; Legette to IR",
+      "summary": "Sources say Coker is unlikely to play against Detroit, and Carolina called up WR Ja'seem Reed from the practice squad. Xavier Legette went on IR, so Tetairoa McMillan, John Metchie III and Brycen Tremayne take the targets. Check the official inactives around 7 PM ET.",
       "sources": [
         {
           "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50085542/coker-questionable-quad-injury-panthers"
+          "url": "https://www.espn.com/nfl/story/_/id/50093238/panthers-place-wr-xavier-legette-ir-knee-injury"
         }
       ],
-      "published": "2026-10-02T18:03:28Z"
+      "published": "2026-10-04T12:50:00Z"
     },
     {
       "player": "Keenan Allen",
       "team": "IND",
       "position": "WR",
-      "status": "Questionable",
-      "impact": "watch",
-      "direction": "down",
-      "multiplier": 0.9,
-      "headline": "Allen added to the injury report with a groin injury before the London game",
-      "summary": "Allen first appeared as a rest day, then the team listed a groin injury. The game kicks off at 9:30 a.m. ET, so check his status early.",
-      "sources": [
-        {
-          "name": "ESPN",
-          "url": "https://www.espn.com/fantasy/football/story/_/page/FFSundayInactives-50077553/fantasy-football-injuries-nfl-week-4-inactive-active"
-        }
-      ],
-      "published": "2026-10-03T00:59:53Z"
-    },
-    {
-      "player": "Case Keenum",
-      "team": "CHI",
-      "position": "QB",
-      "status": null,
-      "impact": "watch",
-      "direction": "none",
+      "status": "Out",
+      "impact": "high",
+      "direction": "out",
       "multiplier": null,
-      "headline": "Bears won't name a starter between Keenum and Bagent vs. Jets",
-      "summary": "Caleb Williams is out with a hamstring injury. Keenum threw for 247 yards and 3 TDs in last week's win, but Tyson Bagent is listed higher on the depth chart, and the projection follows the depth chart. Ben Johnson says, 'We'll find out on Sunday.'",
+      "headline": "Colts WR Keenan Allen (groin) out in London",
+      "summary": "Allen didn't play against Washington, which means more volume for Josh Downs and Tyler Warren.",
       "sources": [
         {
           "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50085487/bears-coach-ben-johnson-not-ready-name-qb-starter"
+          "url": "https://www.espn.com/nfl/story/_/id/50090624/colts-wr-keenan-allen-groin-vs-commanders-london"
         }
       ],
-      "published": "2026-10-02T18:03:23Z"
+      "published": "2026-10-03T16:55:00Z"
     },
     {
       "player": "Breece Hall",
