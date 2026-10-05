@@ -9,8 +9,9 @@ No build step, no dependencies. Pushing to `main` deploys in ~1–2 minutes.
 - `news-feed.json` — Claude-written news that can adjust projections; format in README.md.
 - `markets.json`, `markets/<season>-wk<NN>.json` — Kalshi/Polymarket prices from `scripts/update-markets.mjs` (format in its header comment). The archive keeps each game's last pre-kickoff prices.
 - `reviews.json`, `reviews/<season>-wk<NN>.json` — weekly review notes and the numbers behind them (`scripts/weekly-review.py` calls the page's `weekReview()` in headless Chromium).
+- `projections/<season>-wk<NN>.json` — the next week's projections saved before kickoff by `scripts/week-projections.py` (calls the page's `weekProjections()` in headless Chromium).
 - `scripts/update-data.mjs` — Node 18+ script that refreshes `data.json` from ESPN + Open-Meteo. Its parsing must stay in sync with `parseBox`/`fetchRosters`/`fetchDepth`/`fetchWeather` in `index.html`.
-- A scheduled Claude routine (8 AM / 5 PM ET) runs both update scripts, writes `news-feed.json`, and commits. A weekly routine (Tuesday ~10 AM ET) runs the review and writes `reviews.json`. Don't change those file formats without updating the routine prompt and the app together.
+- A scheduled Claude routine (8 AM / 5 PM ET) runs both update scripts, writes `news-feed.json`, and commits. A weekly routine (Tuesday 8 AM ET) refreshes the data, runs the review, writes `reviews.json`, applies backtested model fixes, then saves the new week's projections. Don't change those file formats without updating the routine prompt and the app together.
 
 ## How the app works (index.html)
 - Data: ESPN public JSON (`site.api.espn.com`, core API for depth charts), Open-Meteo for weather. Stored per visitor in IndexedDB (`nfl_projector`). `loadSnapshot()` seeds it from `data.json` when that is newer than the visitor's last sync.
