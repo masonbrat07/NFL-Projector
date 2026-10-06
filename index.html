@@ -436,7 +436,7 @@ const zero=()=>Object.fromEntries(ALL.map(s=>[s,0]));
 const num=x=>{const n=parseFloat(x);return isFinite(n)?n:0};
 // Tuned on the 2025 backtest: defense effect at half strength, and baseline scaled to the
 // typical (median-like) game, since big games pull the plain average above the typical outcome.
-const DEF_W=.5,TYPICAL=.9;
+const DEF_W=.5,TYPICAL=.9,TYPICAL_QB=1,TYP=p=>p==='QB'?TYPICAL_QB:TYPICAL;// QB games are steadier than skill players', so their baseline isn't shaded down (backtest: QB pass-yds miss lower in 2024-26)
 // Weight on the usage model vs the recent-form model. Tuned on 2024+2025 backtests:
 // usage wins for QB passing, recent form wins for receiving/rushing.
 const W_USE={pass:.7,other:.25};
@@ -764,7 +764,7 @@ function usageProj(b,pos,team,opp,home,odds,season,D,ctx,vr){
   u.rush_att=v.rush_att*rushV*cSh;u.rush_yds=u.rush_att*R.ypc*dm('rush_yds');u.rush_td=u.rush_att*R.tdpc*dm('rush_td')*tdV;
   u.pass_att=v.pass_att*passV*pSh;u.cmp=u.pass_att*R.cmpr;u.pass_yds=u.pass_att*R.ypa*dm('pass_yds');u.pass_td=u.pass_att*R.ptd*dm('pass_td')*tdV;u.int=u.pass_att*R.intr*dm('int');
   u.fum_lost=b.mean.fum_lost;
-  for(const s of BASE)u[s]*=ha*TYPICAL;derive(u);
+  for(const s of BASE)u[s]*=ha*TYP(pos);derive(u);
   return {u,sh,R,tSh,cSh,pSh,passV,rushV,fav,boost:bt}}
 const PASS_STATS=new Set(['pass_att','cmp','pass_yds','pass_td','int']);
 function blend(form,use,w,wxe){const o={};for(const s of BASE){const x=PASS_STATS.has(s)?w.pass:w.other;o[s]=(1-x)*form[s]+x*use[s]}
@@ -795,7 +795,7 @@ function project(pid,team,opp,home,odds,cutoff,season,D,ctx){ctx=ctx||{};
   for(const s of BASE){const td=TDSET.has(s);const dm=Math.pow(D.mult(opp,pos,s),DEF_W);let hm=1;
     if(hist.length&&b.mean[s]>(td?.05:.5)){const avg=hist.reduce((a,r)=>a+r[s],0)/hist.length,n=hist.length;hm=td?clamp(1+(avg/b.mean[s]-1)*n/(n+20),.9,1.1):clamp(1+(avg/b.mean[s]-1)*n/(n+5),.8,1.2)}
     const vm=vr&&s!=='int'&&s!=='fum_lost'?clamp(Math.pow(vr,td?1.2:.6),.75,1.3):1;
-    const ha=home?1.015:.985;const bb=b.mean[s]*TYPICAL;f[s]={b:bb,dm,hm,vm,ha};proj[s]=bb*dm*hm*vm*ha}
+    const ha=home?1.015:.985;const bb=b.mean[s]*TYP(pos);f[s]={b:bb,dm,hm,vm,ha};proj[s]=bb*dm*hm*vm*ha}
   derive(proj);
   const U=usageProj(b,pos,team,opp,home,odds,season,D,ctx,vr),wxe=wxEffect(ctx.wx);
   // a QB newly promoted to starter has little relevant form history: trust the usage model
@@ -955,7 +955,7 @@ let ouPos='',ouStat='rec_yds';
 // The stats the Over/Under lists cover; min = smallest normal game that counts (keeps tiny baselines out of the % ranking)
 const OU_STATS={rec_yds:{l:'Rec yds',min:25},rush_yds:{l:'Rush yds',min:25},pass_yds:{l:'Pass yds',min:150},tds:{l:'TDs',min:.25,d:2}};
 const ouVal=(o,st)=>!o?0:st==='tds'?(o.rush_td||0)+(o.rec_td||0):o[st]||0;
-const ouNormal=(P,st='fd')=>(st==='fd'?P.b.mean.fd:ouVal(P.b.mean,st))*TYPICAL;
+const ouNormal=(P,st='fd')=>(st==='fd'?P.b.mean.fd:ouVal(P.b.mean,st))*TYP(P.pos);
 const ouFmt=(st,v)=>OU_STATS[st]&&OU_STATS[st].d===2?f2(v):f0(v);
 function ouReasons(P,st){const r=[];
   const dk=st==='tds'?(P.pos==='RB'?'rush_td':'rec_td'):st,dm=P.f&&P.f[dk]?P.f[dk].dm:null;
