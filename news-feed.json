@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T12:52:36Z",
+  "generated_at": "2026-10-07T00:03:19Z",
   "items": [
     {
       "player": "Lamar Jackson",
@@ -9,15 +9,15 @@
       "impact": "high",
       "direction": "none",
       "multiplier": null,
-      "headline": "Ravens unsure if Lamar Jackson (ankle) can play Sunday night at Atlanta",
-      "summary": "Jackson left Week 4 at halftime and wore a protective boot afterward. Coach Jesse Minter doesn't know his chances yet. Tyler Huntley starts if Jackson can't, which would cut the Ravens' passing projections.",
+      "headline": "Lamar Jackson has a sprained ankle; only an outside chance to play at Atlanta",
+      "summary": "Sources say the sprain leaves Jackson with only an outside chance for Sunday night. Tyler Huntley (5-6 as a fill-in starter) would start, which would cut Baltimore's passing projections and raise Derrick Henry's share of the offense.",
       "sources": [
         {
           "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50111347/ravens-unsure-lamar-jackson-ankle-play-vs-falcons"
+          "url": "https://www.espn.com/nfl/story/_/id/50116449/sources-ravens-qb-lamar-jackson-dealing-ankle-sprain"
         }
       ],
-      "published": "2026-10-05T20:26:00Z"
+      "published": "2026-10-06T13:39:00Z"
     },
     {
       "player": "Ja'Marr Chase",
@@ -72,6 +72,24 @@
         }
       ],
       "published": "2026-10-06T01:10:00Z"
+    },
+    {
+      "player": "Jalen Hurts",
+      "team": "PHI",
+      "position": "QB",
+      "status": null,
+      "impact": "info",
+      "direction": "none",
+      "multiplier": null,
+      "headline": "Eagles RT Lane Johnson retires; Barkley still week-to-week",
+      "summary": "Losing the All-Pro right tackle for good makes it harder to fix a struggling Eagles offense in London against Jacksonville, especially with Saquon Barkley (hamstring) uncertain and Tank Bigsby on IR.",
+      "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nfl/story/_/id/50119122/eagles-all-pro-rt-lane-johnson-reties-ending-14-season-nfl-career"
+        }
+      ],
+      "published": "2026-10-06T21:28:00Z"
     },
     {
       "player": "Tank Bigsby",
@@ -261,15 +279,15 @@
       "impact": "high",
       "direction": "out",
       "multiplier": null,
-      "headline": "Charbonnet won't come off PUP for the 49ers game; Seattle adds Joe Mixon",
-      "summary": "With Jadarian Price on IR and Charbonnet still out, Emanuel Wilson (21 carries in Week 4) leads Seattle's backfield. Joe Mixon is joining the practice squad.",
+      "headline": "Charbonnet stays on PUP for the 49ers game; Seattle passes on Joe Mixon",
+      "summary": "With Jadarian Price on IR and Charbonnet still out, Emanuel Wilson (21 carries in Week 4) leads Seattle's backfield. The Seahawks decided not to sign Joe Mixon after his physical.",
       "sources": [
         {
           "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50112493/seahawks-signing-rb-joe-mixon-workout-source-says"
+          "url": "https://www.espn.com/nfl/story/_/id/50118173/source-seahawks-decide-not-sign-rb-joe-mixon-physical"
         }
       ],
-      "published": "2026-10-06T04:44:00Z"
+      "published": "2026-10-06T21:02:00Z"
     },
     {
       "player": "Tyquan Thornton",
