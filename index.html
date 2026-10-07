@@ -906,7 +906,9 @@ function fillWeekSelectors(){
   const cur=S.meta.current||{};const ps=$('#pSeason'),pw=$('#pWeek');const sv=+ps.value||cur.season||seasons[0];
   ps.innerHTML=seasons.map(s=>`<option ${s===sv?'selected':''}>${s}</option>`).join('');
   const weeks=[...new Set([...S.games.values()].filter(g=>g.season===sv).map(g=>g.week))].sort((a,b)=>a-b);
-  const wv=+pw.value&&weeks.includes(+pw.value)?+pw.value:(sv===cur.season&&cur.stype===2?cur.week:weeks[weeks.length-1]);
+  // default to the week being played now: the earliest regular-season week with a game not yet final (e.g. Tuesday after MNF -> next week)
+  const live=[...S.games.values()].filter(g=>g.season===sv&&g.stype===2&&!g.completed).sort((a,b)=>a.date<b.date?-1:1)[0];
+  const wv=+pw.value&&weeks.includes(+pw.value)?+pw.value:live?live.week:(sv===cur.season&&cur.stype===2?cur.week:weeks[weeks.length-1]);
   pw.innerHTML=weeks.map(w=>`<option value="${w}" ${w===wv?'selected':''}>Week ${w}</option>`).join('');
   $('#btSeason').innerHTML=seasons.map(s=>`<option>${s}</option>`).join('');
   const teams=[...new Set([...S.games.values()].flatMap(g=>[g.home,g.away]))].sort();const pt=$('#pTeam'),tv=pt.value;
