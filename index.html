@@ -306,7 +306,7 @@ td.rk{color:var(--muted);font-size:12px;width:1%}
     <div class="card-h"><h2>Over/Under performers</h2><span class="muted" id="ouSub"></span><div class="spacer"></div>
       <div class="seg" id="ouStatSeg"><button data-stat="rec_yds" class="on">Rec yds</button><button data-stat="rush_yds">Rush yds</button><button data-stat="pass_yds">Pass yds</button><button data-stat="tds">TDs</button></div>
       <div class="seg" id="ouSeg"><button data-pos="" class="on">All</button><button data-pos="QB">QB</button><button data-pos="RB">RB</button><button data-pos="WR">WR</button><button data-pos="TE">TE</button></div></div>
-    <div class="card-b"><p class="note">This week's projection vs. each player's <b>normal game</b> (recent form before matchup adjustments) for the chosen stat, ranked by percent change. <b>TDs</b> are rushing + receiving touchdowns. Players with a small normal (under 25 rush or receiving yds, 150 pass yds, 0.25 TDs), backups and players ruled out are left out. Change the week on the Projections tab; click a player for the full breakdown.</p></div>
+    <div class="card-b"><p class="note">This week's projection vs. each player's <b>normal game</b> (recent form before matchup adjustments) for the chosen stat, ranked by percent change. <b>TDs</b> are rushing + receiving touchdowns. Players with a small normal (under 25 rush or receiving yds, 150 pass yds, 0.25 TDs), players ruled out or doubtful are left out. Only starters are listed (QB1, RB1, WR1&ndash;2, TE1), unless a player ahead of them on the depth chart is out or the news says their role grows. Change the week on the Projections tab; click a player for the full breakdown.</p></div>
   </div>
   <div class="card"><div class="card-h"><h2>Top 10 over-performers</h2></div><div class="card-b" style="padding-bottom:0"></div><div class="tw"><table id="ouOver"></table></div></div>
   <div class="card"><div class="card-h"><h2>Top 10 under-performers</h2></div><div class="card-b" style="padding-bottom:0"></div><div class="tw"><table id="ouUnder"></table></div></div>
@@ -987,7 +987,17 @@ function renderOU(){const o=$('#ouOver'),u=$('#ouUnder');
   if(!S.pg.length)return msg('Your database is empty','Open the Data tab and run a sync to get started.');
   if(!WP||!WP.games.length)return msg('No games for this week','Pick another week on the Projections tab.');
   const L=ouLists(WP.rows,ouPos,ouStat);ouTable(o,L.over,true,ouStat);ouTable(u,L.under,false,ouStat)}
-function ouLists(all,pos,st,n=10){const rows=all.filter(P=>!P.backup&&!isOut(P.status)&&(!pos||P.pos===pos)&&ouNormal(P,st)>=OU_STATS[st].min);
+// Over/Under picks are starters only (QB1, RB1, WR1-2, TE1). A backup counts when someone ahead on the depth chart is out or doubtful,
+// or the news feed says their role grows. Finished games have no saved depth chart, so rank by role share among the team's active players.
+const OU_SLOTS={QB:1,RB:1,WR:2,TE:1},gone=s=>isOut(s)||/^doubtful$/i.test(s||'');
+function ouStarter(P,all){const lim=OU_SLOTS[P.pos]||1;if(P.adj&&!P.adj.out&&P.adj.mult>1)return true;
+  const d=P.depth;if(d&&d.pos===P.pos){let ahead=0;
+    for(const q of S.players.values())if(q.team===P.team&&q.onRoster&&q.depth&&q.depth.pos===P.pos&&q.depth.n<d.n&&!gone(q.status)&&!(claudeAdj(q.id)||{}).out)ahead++;
+    return ahead<lim}
+  if(P.pos==='QB')return P.ctx.qbRole!=='backup';
+  const sh=x=>x.pos==='RB'?x.U.cSh:x.U.tSh;
+  return all.filter(x=>x.gid===P.gid&&x.team===P.team&&x.pos===P.pos&&x!==P&&!x.backup&&!gone(x.status)&&sh(x)>sh(P)).length<lim}
+function ouLists(all,pos,st,n=10){const rows=all.filter(P=>!P.backup&&!gone(P.status)&&(!pos||P.pos===pos)&&ouNormal(P,st)>=OU_STATS[st].min&&ouStarter(P,all));
   const pct=P=>ouVal(P.proj,st)/ouNormal(P,st)-1;
   return {over:rows.filter(P=>pct(P)>0).sort((a,b)=>pct(b)-pct(a)).slice(0,n),under:rows.filter(P=>pct(P)<0).sort((a,b)=>pct(a)-pct(b)).slice(0,n)}}
 $('#ouStatSeg').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;ouStat=b.dataset.stat;$('#ouStatSeg').querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b));renderOU()});

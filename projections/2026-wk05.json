@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-07T00:03:32Z",
+ "generated_at": "2026-10-07T14:18:49Z",
  "season": 2026,
  "week": 5,
  "games": [
@@ -6105,25 +6105,11 @@
      "proj": 36.84
     },
     {
-     "name": "Adonai Mitchell",
-     "pos": "WR",
-     "team": "NYJ",
-     "normal": 39.44,
-     "proj": 48.83
-    },
-    {
      "name": "Michael Wilson",
      "pos": "WR",
      "team": "ARI",
      "normal": 64.19,
      "proj": 79.1
-    },
-    {
-     "name": "Kendrick Bourne",
-     "pos": "WR",
-     "team": "ARI",
-     "normal": 27.68,
-     "proj": 33.27
     },
     {
      "name": "Jaylen Waddle",
@@ -6133,28 +6119,28 @@
      "proj": 49.46
     },
     {
-     "name": "Pat Freiermuth",
+     "name": "T.J. Hockenson",
+     "pos": "TE",
+     "team": "MIN",
+     "normal": 41.01,
+     "proj": 47.27
+    },
+    {
+     "name": "Darnell Washington",
      "pos": "TE",
      "team": "PIT",
-     "normal": 28.59,
-     "proj": 33.28
+     "normal": 26.98,
+     "proj": 29.76
+    },
+    {
+     "name": "Wan'Dale Robinson",
+     "pos": "WR",
+     "team": "TEN",
+     "normal": 38.17,
+     "proj": 41.82
     }
    ],
    "under": [
-    {
-     "name": "Jordan Watkins",
-     "pos": "WR",
-     "team": "SF",
-     "normal": 35.57,
-     "proj": 23.73
-    },
-    {
-     "name": "Kalif Raymond",
-     "pos": "WR",
-     "team": "CHI",
-     "normal": 39.53,
-     "proj": 27.08
-    },
     {
      "name": "George Kittle",
      "pos": "TE",
@@ -6198,18 +6184,32 @@
      "proj": 25.42
     },
     {
-     "name": "Mark Redman",
+     "name": "AJ Barner",
      "pos": "TE",
-     "team": "GB",
-     "normal": 26.1,
+     "team": "SEA",
+     "normal": 25.31,
      "proj": 19.99
     },
     {
-     "name": "Cooper Kupp",
+     "name": "DJ Moore",
      "pos": "WR",
-     "team": "SEA",
-     "normal": 26.29,
-     "proj": 20.23
+     "team": "BUF",
+     "normal": 35.23,
+     "proj": 27.84
+    },
+    {
+     "name": "Mike Evans",
+     "pos": "WR",
+     "team": "SF",
+     "normal": 47.62,
+     "proj": 37.8
+    },
+    {
+     "name": "Ashton Jeanty",
+     "pos": "RB",
+     "team": "LV",
+     "normal": 32.5,
+     "proj": 26.14
     }
    ]
   },
@@ -6228,13 +6228,6 @@
      "team": "WSH",
      "normal": 36.46,
      "proj": 51.36
-    },
-    {
-     "name": "Breece Hall",
-     "pos": "RB",
-     "team": "NYJ",
-     "normal": 51.28,
-     "proj": 69.76
     },
     {
      "name": "Aaron Jones Sr.",
@@ -6265,13 +6258,6 @@
      "proj": 78.47
     },
     {
-     "name": "Woody Marks",
-     "pos": "RB",
-     "team": "HOU",
-     "normal": 28.03,
-     "proj": 32.2
-    },
-    {
      "name": "Jalon Daniels",
      "pos": "QB",
      "team": "TB",
@@ -6284,6 +6270,20 @@
      "team": "SEA",
      "normal": 40.63,
      "proj": 46.34
+    },
+    {
+     "name": "Jahmyr Gibbs",
+     "pos": "RB",
+     "team": "DET",
+     "normal": 69.12,
+     "proj": 77.83
+    },
+    {
+     "name": "Alvin Kamara",
+     "pos": "RB",
+     "team": "NO",
+     "normal": 27.7,
+     "proj": 31.1
     }
    ],
    "under": [
@@ -6293,13 +6293,6 @@
      "team": "BAL",
      "normal": 31.09,
      "proj": 21.04
-    },
-    {
-     "name": "Kimani Vidal",
-     "pos": "RB",
-     "team": "LAC",
-     "normal": 27.65,
-     "proj": 21.44
     },
     {
      "name": "Christian McCaffrey",
@@ -6356,6 +6349,13 @@
      "team": "NYG",
      "normal": 50.74,
      "proj": 44.69
+    },
+    {
+     "name": "Deshaun Watson",
+     "pos": "QB",
+     "team": "CLE",
+     "normal": 29.51,
+     "proj": 26.33
     }
    ]
   },
@@ -6515,13 +6515,6 @@
      "proj": 0.5
     },
     {
-     "name": "Breece Hall",
-     "pos": "RB",
-     "team": "NYJ",
-     "normal": 0.3,
-     "proj": 0.43
-    },
-    {
      "name": "Garrett Wilson",
      "pos": "WR",
      "team": "NYJ",
@@ -6557,11 +6550,18 @@
      "proj": 0.55
     },
     {
-     "name": "Tyler Allgeier",
+     "name": "Terry McLaurin",
+     "pos": "WR",
+     "team": "WSH",
+     "normal": 0.35,
+     "proj": 0.43
+    },
+    {
+     "name": "Quinshon Judkins",
      "pos": "RB",
-     "team": "ARI",
-     "normal": 0.31,
-     "proj": 0.39
+     "team": "CLE",
+     "normal": 0.33,
+     "proj": 0.4
     }
    ],
    "under": [
@@ -6571,20 +6571,6 @@
      "team": "SF",
      "normal": 0.9,
      "proj": 0.53
-    },
-    {
-     "name": "Darius Cooper",
-     "pos": "WR",
-     "team": "PHI",
-     "normal": 0.67,
-     "proj": 0.4
-    },
-    {
-     "name": "Matthew Hibner",
-     "pos": "TE",
-     "team": "BAL",
-     "normal": 0.3,
-     "proj": 0.18
     },
     {
      "name": "Deebo Samuel Sr.",
@@ -6615,13 +6601,6 @@
      "proj": 0.74
     },
     {
-     "name": "Noah Fant",
-     "pos": "TE",
-     "team": "NO",
-     "normal": 0.5,
-     "proj": 0.32
-    },
-    {
      "name": "Derrick Henry",
      "pos": "RB",
      "team": "BAL",
@@ -6629,11 +6608,32 @@
      "proj": 0.76
     },
     {
-     "name": "Jahdae Walker",
-     "pos": "WR",
-     "team": "CHI",
-     "normal": 0.73,
+     "name": "George Kittle",
+     "pos": "TE",
+     "team": "SF",
+     "normal": 0.71,
+     "proj": 0.47
+    },
+    {
+     "name": "James Cook III",
+     "pos": "RB",
+     "team": "BUF",
+     "normal": 0.72,
      "proj": 0.48
+    },
+    {
+     "name": "Daniel Jones",
+     "pos": "QB",
+     "team": "IND",
+     "normal": 0.3,
+     "proj": 0.2
+    },
+    {
+     "name": "Dalton Kincaid",
+     "pos": "TE",
+     "team": "BUF",
+     "normal": 0.27,
+     "proj": 0.19
     }
    ]
   }
