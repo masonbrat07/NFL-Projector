@@ -2,6 +2,33 @@
   "reviews": [
     {
       "season": 2026,
+      "week": 4,
+      "generated_at": "2026-10-06T12:51:49Z",
+      "headline": "Average miss 5.27 FanDuel pts across 171 players, better than each player's normal game alone (5.41). Over/Under picks went 22 of 40 on the new per-stat lists, and the betting markets were slightly sharper than the model (Brier 0.232 vs 0.243).",
+      "right": [
+        "Pass-yards over picks went 4 of 5: C.J. Stroud (projected 239, threw 347), Bryce Young (253, 329), Deshaun Watson (185, 268) and Cam Ward (173, 222).",
+        "Near-exact projections for Michael Wilson (13.0 vs 13.0), Harold Fannin Jr. (10.3 vs 10.2), Josh Allen (19.2 vs 19.5) and Drake London (12.4 vs 12.1).",
+        "TD under picks went 4 of 5, and QBs beat their normal-game number for a second week (4.05 vs about 4.9 pt average miss)."
+      ],
+      "missed": [
+        "Running backs were projected 2.95 pts too low. Kyren Williams (12.1 vs 31.7), Kyle Monangai (7.7 vs 27.5), Javonte Williams (9.9 vs 28.8) and Brian Robinson Jr. (5.7 vs 25.2) all got far more touches and short TDs than their usual share.",
+        "Target spikes after injuries: Tetairoa McMillan had 16 targets with Jalen Coker out (projected 10.8, scored 38.2), and CeeDee Lamb had 21 targets against about 7 projected (11.7 vs 32.8).",
+        "Pass-yards under picks went 1 of 5. Matthew Stafford, Josh Allen, Lamar Jackson and Drake Maye all beat their normal game, the same QB under-projection seen every week.",
+        "Emanuel Wilson (5.5 vs 25.5) took over Seattle's backfield once Jadarian Price went on IR, but the model still split the work as before."
+      ],
+      "lessons": [
+        "QBs have been projected too low in all four weeks (bias -3.4, -1.7, -2.2, -0.7), so the 0.9 typical-game discount was too strong for QBs.",
+        "RB bias flips between weeks (-1.9, +1.7, +1.2, -2.95), so it reads as touchdown and game-script noise rather than a fixed offset.",
+        "When the No. 1 or No. 2 receiver or the lead back is ruled out, the replacement's role grows more than the share redistribution gives them (McMillan, Wilson)."
+      ],
+      "changes": [
+        "Applied: QBs no longer get the 0.9 typical-game discount (TYPICAL_QB = 1.0). Backtest average miss 2024 5.33 to 5.29, 2025 5.25 to 5.26, 2026 5.14 to 5.14. QB pass-yards miss fell in every season (66.7 to 63.8, 66.2 to 64.4, 63.3 to 59.1). Rescoring Week 4 with it gives 5.31 overall, with bias -1.40 to -1.09.",
+        "Proposed (not applied): give a larger share boost to the direct backup when a starter is ruled out, and backtest it on 2024-2026 before adopting.",
+        "Still proposed from Week 3: skip injury-shortened games when computing a QB's pass share."
+      ]
+    },
+    {
+      "season": 2026,
       "week": 3,
       "generated_at": "2026-10-01T01:30:00Z",
       "headline": "Average miss 4.97 FanDuel pts across 185 players, about the same as each player's normal game alone (4.94). Over/Under picks went 12 of 20.",

@@ -20,6 +20,8 @@ PrizePicks/FanDuel line finder and a news feed.
 | `reviews.json` | Weekly review notes (got right, missed, lessons, changes) shown in the Accuracy tab's Weekly report card. |
 | `reviews/<season>-wk<NN>.json` | The numbers behind each review, produced by `scripts/weekly-review.py`. |
 | `scripts/weekly-review.py` | Scores the latest finished week with the site's own model (headless Chromium). Run with `python3 scripts/weekly-review.py [season week]`; needs `pip install playwright`. |
+| `projections/<season>-wk<NN>.json` | The site's projections for each week, saved before the games are played (every fantasy-relevant player's stat line plus the Over/Under picks), so the review can check them against what happened. |
+| `scripts/week-projections.py` | Saves the next week's projections. Run with `python3 scripts/week-projections.py [season week]`; needs `pip install playwright`. |
 
 ## Updates
 
@@ -27,9 +29,9 @@ A Claude routine runs every day at 8 AM and 5 PM Eastern. It runs `scripts/updat
 reviews ESPN and CBS Sports news, writes `news-feed.json`, and commits both files. GitHub Pages
 then serves the new data to everyone.
 
-A second routine runs every Tuesday morning after Monday Night Football. It runs `scripts/weekly-review.py`,
+A second routine runs every Tuesday at 8 AM Eastern, after Monday Night Football. It refreshes the data, runs `scripts/weekly-review.py`,
 writes what the model got right and missed into `reviews.json`, and proposes model changes. Model changes are
-only applied after a backtest on 2024, 2025 and the current season shows they help.
+only applied after a backtest on 2024, 2025 and the current season shows they help. It then saves the new week's projections with `scripts/week-projections.py`.
 
 ### `reviews.json` format
 

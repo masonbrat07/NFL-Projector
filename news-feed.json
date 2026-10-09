@@ -1,77 +1,77 @@
 {
-  "generated_at": "2026-10-05T12:02:18Z",
+  "generated_at": "2026-10-09T14:52:16Z",
   "items": [
     {
-      "player": "Travis Etienne Jr.",
-      "team": "NO",
-      "position": "RB",
-      "status": "Out",
-      "impact": "high",
-      "direction": "out",
-      "multiplier": null,
-      "headline": "Saints put Etienne (hamstring) on IR; out until at least Week 9",
-      "summary": "Kellen Moore said Alvin Kamara and Kendre Miller will take most of Etienne's snaps, and CJ Donaldson will handle short yardage. His carries are redistributed in the projection.",
-      "sources": [
-        {
-          "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50079185/saints-putting-rb-travis-etienne-hamstring-ir"
-        }
-      ],
-      "published": "2026-10-01T22:28:23Z"
-    },
-    {
-      "player": "Alvin Kamara",
-      "team": "NO",
-      "position": "RB",
-      "status": null,
+      "player": "CeeDee Lamb",
+      "team": "DAL",
+      "position": "WR",
+      "status": "Questionable",
       "impact": "watch",
-      "direction": "up",
-      "multiplier": 1.05,
-      "headline": "Kamara leads the Saints backfield with Etienne on IR",
-      "summary": "Etienne had 13 carries in Week 3 before leaving the game, compared with 9 for Kamara and 4 for Miller. Kamara should get the first shot at lead-back work, but he has been inefficient (2.8 yards per carry), and Miller will take a real share.",
+      "direction": "none",
+      "multiplier": null,
+      "headline": "Lamb (quad) leaves TNF loss; George Pickens has 130 yards",
+      "summary": "Lamb played through a quad injury, caught 2 passes for 9 yards and left in the fourth quarter. Pickens (9 catches, 130 yards, TD) would lead Dallas if Lamb misses time. Dallas hosts Green Bay in Week 6.",
       "sources": [
         {
           "name": "ESPN",
           "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis"
         }
       ],
-      "published": "2026-10-01T22:28:23Z"
+      "published": "2026-10-09T13:07:00Z"
     },
     {
-      "player": "Noah Fant",
-      "team": "NO",
-      "position": "TE",
-      "status": "Questionable",
-      "impact": "watch",
-      "direction": "down",
-      "multiplier": 0.9,
-      "headline": "Saints TE Fant (abdomen) questionable for Monday night vs. Falcons",
-      "summary": "Fant is listed questionable on the Saints' final injury report for MNF, so his projection is trimmed 10%. Check inactives around 7:00 PM ET.",
+      "player": "Bucky Irving",
+      "team": "TB",
+      "position": "RB",
+      "status": null,
+      "impact": "info",
+      "direction": "none",
+      "multiplier": null,
+      "headline": "TNF: Bucs 24, Cowboys 16. Bucky Irving runs for 165 yards and scores twice",
+      "summary": "Rookie QB Jalon Daniels won his first start as an 8.5-point underdog. Irving had 21 carries for 165 yards plus a receiving TD. Tampa Bay ran for 241 yards. Kenny Gainwell and Sean Tucker are still part of the backfield.",
       "sources": [
         {
           "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50101403/falcons-bijan-robinson-prime-mnf"
+          "url": "https://www.espn.com/nfl/story/_/id/50136406/buccaneers-explode-first-win-cowboys-tnf"
         }
       ],
-      "published": "2026-10-05T11:48:00Z"
+      "published": "2026-10-09T05:23:00Z"
     },
     {
-      "player": "Lamar Jackson",
-      "team": "BAL",
+      "player": "Michael Pittman Jr.",
+      "team": "PIT",
+      "position": "WR",
+      "status": "Out",
+      "impact": "high",
+      "direction": "out",
+      "multiplier": null,
+      "headline": "Steelers WR Michael Pittman Jr. ruled out vs. Colts",
+      "summary": "Pittman is listed out on the injury report, so Roman Wilson (6+ targets every week, TDs in two of his last three games) moves up as Pittsburgh's No. 2 receiver.",
+      "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-09T12:00:00Z"
+    },
+    {
+      "player": "Jayden Daniels",
+      "team": "WSH",
       "position": "QB",
       "status": "Questionable",
       "impact": "high",
       "direction": "none",
       "multiplier": null,
-      "headline": "Lamar Jackson (ankle) leaves win over Titans; Week 5 status unclear",
-      "summary": "Jackson hurt his ankle on a sack late in the second quarter and didn't return. Tyler Huntley played the second half. Watch practice reports before the Week 5 game against Atlanta. If Huntley starts, expect more play-action looks for Zay Flowers.",
+      "headline": "Jayden Daniels set to return for Washington vs. Giants",
+      "summary": "Daniels is listed questionable after practicing on his elbow, and the game preview says he's set to return. Washington could still be missing several other players: Terry McLaurin, Stefon Diggs, Chig Okonkwo and Jacory Croskey-Merritt are all questionable.",
       "sources": [
         {
           "name": "ESPN",
-          "url": "https://www.espn.com/fantasy/football/story/_/page/FFSundayHighLows-50102250/nfl-week-4-fantasy-football-winners-losers-injuries-rankings-more"
+          "url": "http://www.espn.com/nfl/preview?gameId=401872988"
         }
       ],
-      "published": "2026-10-05T05:04:00Z"
+      "published": "2026-10-08T22:00:00Z"
     },
     {
       "player": "Ja'Marr Chase",
@@ -81,15 +81,51 @@
       "impact": "high",
       "direction": "none",
       "multiplier": null,
-      "headline": "Ja'Marr Chase (concussion) exits loss to Jaguars",
-      "summary": "Chase left in the second quarter after a hard hit and is in the concussion protocol. Cincinnati could hold him out against Miami, with the Week 6 bye after that. Tee Higgins (16 targets Sunday) would be the No. 1 receiver.",
+      "headline": "Ja'Marr Chase and Tee Higgins both questionable vs. Dolphins",
+      "summary": "Chase is in the concussion protocol and Higgins has an adductor injury. Joe Burrow may need other targets on Sunday. Check the final injury report Friday.",
       "sources": [
         {
           "name": "ESPN",
-          "url": "https://www.espn.com/fantasy/football/story/_/page/FFSundayHighLows-50102250/nfl-week-4-fantasy-football-winners-losers-injuries-rankings-more"
+          "url": "http://www.espn.com/nfl/preview?gameId=401872982"
         }
       ],
-      "published": "2026-10-05T05:04:00Z"
+      "published": "2026-10-08T23:42:00Z"
+    },
+    {
+      "player": "Bo Nix",
+      "team": "DEN",
+      "position": "QB",
+      "status": null,
+      "impact": "info",
+      "direction": "none",
+      "multiplier": null,
+      "headline": "Sean Payton takes back Broncos play-calling",
+      "summary": "Payton replaces offensive coordinator Davis Webb as play caller. Denver ranks 27th in yards and scoring, but ESPN warns the change may not help right away. Denver plays at the Chargers on Sunday.",
+      "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis"
+        }
+      ],
+      "published": "2026-10-08T12:00:00Z"
+    },
+    {
+      "player": "Lamar Jackson",
+      "team": "BAL",
+      "position": "QB",
+      "status": "Questionable",
+      "impact": "high",
+      "direction": "none",
+      "multiplier": null,
+      "headline": "Lamar Jackson has a sprained ankle; only an outside chance to play at Atlanta",
+      "summary": "Sources say the sprain leaves Jackson with only an outside chance for Sunday night. Tyler Huntley (5-6 as a fill-in starter) would start, which would cut Baltimore's passing projections and raise Derrick Henry's share of the offense.",
+      "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nfl/story/_/id/50116449/sources-ravens-qb-lamar-jackson-dealing-ankle-sprain"
+        }
+      ],
+      "published": "2026-10-06T13:39:00Z"
     },
     {
       "player": "Saquon Barkley",
@@ -99,8 +135,80 @@
       "impact": "high",
       "direction": "none",
       "multiplier": null,
-      "headline": "Saquon Barkley (hamstring) and Tank Bigsby both hurt vs. Rams",
-      "summary": "Barkley got hurt in the first quarter after three touches. Bigsby ran 14 times for 55 yards in relief before leaving with a lower-body injury. The Eagles backfield is uncertain for Week 5 at Jacksonville.",
+      "headline": "Barkley (hamstring) week-to-week; backup Tank Bigsby headed to IR",
+      "summary": "Barkley's injury isn't seen as long term, but his status for the London game against Jacksonville is unclear. Bigsby needs core muscle surgery, so the Eagles backfield is thin behind Barkley.",
+      "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nfl/story/_/id/50111928/sources-eagles-rb-tank-bigsby-surgery-headed-ir"
+        }
+      ],
+      "published": "2026-10-06T01:10:00Z"
+    },
+    {
+      "player": "Tank Bigsby",
+      "team": "PHI",
+      "position": "RB",
+      "status": "Out",
+      "impact": "high",
+      "direction": "out",
+      "multiplier": null,
+      "headline": "Tank Bigsby to IR after core muscle surgery",
+      "summary": "Bigsby led the Eagles in rushing after Barkley left Week 4. He is expected back in about six weeks.",
+      "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nfl/story/_/id/50111928/sources-eagles-rb-tank-bigsby-surgery-headed-ir"
+        }
+      ],
+      "published": "2026-10-06T01:10:00Z"
+    },
+    {
+      "player": "Marcus Mariota",
+      "team": "WSH",
+      "position": "QB",
+      "status": "Doubtful",
+      "impact": "high",
+      "direction": "out",
+      "multiplier": null,
+      "headline": "Mariota sprained his right MCL; timeline to be determined",
+      "summary": "This is the same knee injury Mariota had in the preseason. He won't start Week 5.",
+      "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nfl/story/_/id/50112842/mcl-sprain-sidelines-mariota-daniels-preps-practice"
+        }
+      ],
+      "published": "2026-10-06T01:32:00Z"
+    },
+    {
+      "player": "Tyson Bagent",
+      "team": "CHI",
+      "position": "QB",
+      "status": null,
+      "impact": "high",
+      "direction": "none",
+      "multiplier": null,
+      "headline": "Bagent named Bears starter at Green Bay; Caleb Williams won't practice",
+      "summary": "Ben Johnson confirmed Bagent starts after going 25-of-34 for 268 yards in Week 4. Williams' hamstring is still week-to-week.",
+      "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nfl/story/_/id/50110486/ben-johnson-tyson-bagent-start-qb-bears-vs-packers"
+        }
+      ],
+      "published": "2026-10-05T21:30:00Z"
+    },
+    {
+      "player": "Kyle Monangai",
+      "team": "CHI",
+      "position": "RB",
+      "status": "Questionable",
+      "impact": "watch",
+      "direction": "none",
+      "multiplier": null,
+      "headline": "Monangai (thumb) day-to-day after taking over the Bears backfield",
+      "summary": "Monangai had 31 touches and 2 TDs in Week 4 after D'Andre Swift fumbled and was benched. The thumb injury could shift carries back to Swift against Green Bay.",
       "sources": [
         {
           "name": "ESPN",
@@ -117,87 +225,69 @@
       "impact": "watch",
       "direction": "none",
       "multiplier": null,
-      "headline": "McConkey (foot) suffers setback, ruled out early in third quarter",
-      "summary": "If McConkey misses Week 5 against Denver, Quentin Johnston and Tre' Harris lead the Chargers receivers, and Marquez Valdes-Scantling would see more work.",
+      "headline": "Chargers call McConkey (foot) week-to-week",
+      "summary": "McConkey left Week 4 early after a setback. If he sits against Denver, Quentin Johnston and Tre' Harris lead the receivers.",
       "sources": [
         {
           "name": "ESPN",
-          "url": "https://www.espn.com/fantasy/football/story/_/page/FFSundayHighLows-50102250/nfl-week-4-fantasy-football-winners-losers-injuries-rankings-more"
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-05T05:04:00Z"
+      "published": "2026-10-05T20:00:00Z"
     },
     {
-      "player": "DJ Moore",
-      "team": "BUF",
-      "position": "WR",
-      "status": "Questionable",
+      "player": "Zach Charbonnet",
+      "team": "SEA",
+      "position": "RB",
+      "status": "Out",
+      "impact": "high",
+      "direction": "out",
+      "multiplier": null,
+      "headline": "Charbonnet stays on PUP for the 49ers game; Seattle passes on Joe Mixon",
+      "summary": "With Jadarian Price on IR and Charbonnet still out, Emanuel Wilson (21 carries in Week 4) leads Seattle's backfield. The Seahawks decided not to sign Joe Mixon after his physical.",
+      "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nfl/story/_/id/50118173/source-seahawks-decide-not-sign-rb-joe-mixon-physical"
+        }
+      ],
+      "published": "2026-10-06T21:02:00Z"
+    },
+    {
+      "player": "Rico Dowdle",
+      "team": "PIT",
+      "position": "RB",
+      "status": "Out",
       "impact": "watch",
       "direction": "none",
       "multiplier": null,
-      "headline": "Bills WR DJ Moore (shoulder) leaves loss to Patriots",
-      "summary": "Moore hurt his shoulder diving for a catch in the first half and didn't return. He was already playing through a shoulder issue this week.",
+      "headline": "Steelers unsure if Rico Dowdle (toe) returns vs. Colts",
+      "summary": "Mike McCarthy said Dowdle had a good workout Friday and is making progress. Jaylen Warren keeps the lead role until Dowdle is cleared.",
       "sources": [
         {
           "name": "ESPN",
-          "url": "https://www.espn.com/fantasy/football/story/_/page/FFSundayHighLows-50102250/nfl-week-4-fantasy-football-winners-losers-injuries-rankings-more"
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-05T05:04:00Z"
+      "published": "2026-10-05T20:00:00Z"
     },
     {
-      "player": "Marcus Mariota",
-      "team": "WSH",
+      "player": "Jalen Hurts",
+      "team": "PHI",
       "position": "QB",
-      "status": "Out",
-      "impact": "high",
-      "direction": "none",
-      "multiplier": null,
-      "headline": "Mariota reinjured the MCL in his right knee; could miss several weeks",
-      "summary": "Dan Quinn ruled Mariota out at halftime in London. Washington hopes Jayden Daniels (elbow) returns for Week 5 against the Giants. Otherwise rookie Athan Kaliakmanis starts.",
-      "sources": [
-        {
-          "name": "ESPN",
-          "url": "https://www.espn.com/fantasy/football/story/_/page/FFSundayHighLows-50102250/nfl-week-4-fantasy-football-winners-losers-injuries-rankings-more"
-        }
-      ],
-      "published": "2026-10-05T05:04:00Z"
-    },
-    {
-      "player": "Tyquan Thornton",
-      "team": "KC",
-      "position": "WR",
-      "status": "Out",
+      "status": null,
       "impact": "info",
       "direction": "none",
       "multiplier": null,
-      "headline": "Chiefs WR Thornton dislocates ankle; Rashee Rice hurts hamstring",
-      "summary": "Thornton is out indefinitely after a 55-yard catch, and Rice left early with a hamstring injury. Kansas City has a Week 5 bye and is talking with free agent Tyreek Hill. Xavier Worthy moves up.",
+      "headline": "Eagles RT Lane Johnson retires; Barkley still week-to-week",
+      "summary": "Losing the All-Pro right tackle for good makes it harder to fix a struggling Eagles offense in London against Jacksonville, especially with Saquon Barkley (hamstring) uncertain and Tank Bigsby on IR.",
       "sources": [
         {
           "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50104571/chiefs-rule-rashee-rice-doubtful-return-injury"
+          "url": "https://www.espn.com/nfl/story/_/id/50119122/eagles-all-pro-rt-lane-johnson-reties-ending-14-season-nfl-career"
         }
       ],
-      "published": "2026-10-05T06:34:00Z"
-    },
-    {
-      "player": "Kyle Monangai",
-      "team": "CHI",
-      "position": "RB",
-      "status": null,
-      "impact": "watch",
-      "direction": "none",
-      "multiplier": null,
-      "headline": "Monangai takes over Bears backfield from Swift, but hurt his thumb",
-      "summary": "Monangai turned 31 touches into 28 points with two short TDs after D'Andre Swift fumbled and was benched in the third quarter. The thumb injury could shift work back to Swift for Week 5 against Green Bay.",
-      "sources": [
-        {
-          "name": "ESPN",
-          "url": "https://www.espn.com/fantasy/football/story/_/page/FFSundayHighLows-50102250/nfl-week-4-fantasy-football-winners-losers-injuries-rankings-more"
-        }
-      ],
-      "published": "2026-10-05T05:04:00Z"
+      "published": "2026-10-06T21:28:00Z"
     }
   ]
 }
