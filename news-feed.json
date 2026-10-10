@@ -738,23 +738,6 @@
       "published": "2026-10-10T00:37:00Z"
     },
     {
-      "player": "Colbie Young",
-      "team": "CIN",
-      "position": "WR",
-      "status": "Questionable",
-      "impact": "info",
-      "direction": "none",
-      "headline": "Young questionable at Miami",
-      "summary": "Young (knee) is listed questionable; he was a full-go in Thursday's practice.",
-      "sources": [
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-09T21:24:00Z"
-    },
-    {
       "player": "Barion Brown",
       "team": "NO",
       "position": "WR",
