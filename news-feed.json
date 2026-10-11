@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T20:57:28Z",
+  "generated_at": "2026-10-11T11:57:55Z",
   "items": [
     {
       "player": "Lamar Jackson",
@@ -249,16 +249,16 @@
       "status": "Questionable",
       "impact": "high",
       "direction": "down",
-      "multiplier": 0.9,
-      "headline": "McConkey questionable with foot injury",
-      "summary": "He aggravated a foot injury last week. If he plays he may be limited.",
+      "multiplier": 0.7,
+      "headline": "McConkey not expected to play vs. Broncos",
+      "summary": "ESPN reports McConkey (foot) isn't expected to play, though he is officially questionable. Quentin Johnston is out, so the Chargers' targets are thin.",
       "sources": [
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-09T18:00:00Z"
+      "published": "2026-10-11T11:36:00Z"
     },
     {
       "player": "Dillon Gabriel",
@@ -380,15 +380,15 @@
       "impact": "watch",
       "direction": "down",
       "multiplier": 0.9,
-      "headline": "McLaurin a game-time decision",
-      "summary": "McLaurin (hamstring) is questionable and will be a game-time decision, with Diggs out. If he plays he may be limited.",
+      "headline": "McLaurin a game-time decision with a lean toward playing",
+      "summary": "ESPN's Washington reporter sees a slight lean toward McLaurin (hamstring) playing. Stefon Diggs is out, so he is the lead receiver if healthy.",
       "sources": [
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-10T00:04:00Z"
+      "published": "2026-10-11T00:32:00Z"
     },
     {
       "player": "Tee Higgins",
@@ -414,9 +414,9 @@
       "status": "Questionable",
       "impact": "watch",
       "direction": "down",
-      "multiplier": 0.92,
-      "headline": "Jefferson questionable with ankle injury",
-      "summary": "Jefferson (ankle) is listed questionable for New Orleans. Jordan Addison (hamstring) is also questionable, so Minnesota's receiving group is uncertain.",
+      "multiplier": 0.85,
+      "headline": "Jefferson set for a pregame workout",
+      "summary": "Jefferson (ankle) will be evaluated before kickoff in New Orleans. Jordan Addison is also questionable and Odell Beckham Jr. was elevated.",
       "sources": [
         {
           "name": "ESPN",
@@ -427,7 +427,7 @@
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-09T19:50:00Z"
+      "published": "2026-10-11T11:49:00Z"
     },
     {
       "player": "Jordan Addison",
@@ -480,9 +480,9 @@
       "status": "Questionable",
       "impact": "watch",
       "direction": "down",
-      "multiplier": 0.9,
-      "headline": "Jeanty questionable at New England",
-      "summary": "Jeanty (ankle/foot) will \"do his best to go,\" per Klint Kubiak. A limited workload or timeshare is possible.",
+      "multiplier": 0.85,
+      "headline": "Jeanty faces a pregame workout",
+      "summary": "Jeanty (ankle/foot) is hopeful to play but will be evaluated before kickoff. A limited workload is possible if he suits up.",
       "sources": [
         {
           "name": "ESPN",
@@ -493,7 +493,7 @@
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-09T19:34:00Z"
+      "published": "2026-10-11T11:11:00Z"
     },
     {
       "player": "Rhamondre Stevenson",
@@ -501,17 +501,16 @@
       "position": "RB",
       "status": "Questionable",
       "impact": "watch",
-      "direction": "down",
-      "multiplier": 0.9,
-      "headline": "Stevenson questionable vs. Raiders",
-      "summary": "Stevenson (knee) is listed questionable; Mack Hollins is out, so New England's skill group is thinner.",
+      "direction": "none",
+      "headline": "Stevenson expected to play",
+      "summary": "NFL Network reports Stevenson (knee) is expected to play against the Raiders.",
       "sources": [
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-09T18:00:00Z"
+      "published": "2026-10-11T11:21:00Z"
     },
     {
       "player": "Alvin Kamara",
@@ -519,17 +518,16 @@
       "position": "RB",
       "status": "Questionable",
       "impact": "watch",
-      "direction": "down",
-      "multiplier": 0.9,
-      "headline": "Kamara questionable with back injury",
-      "summary": "Kamara is listed questionable for Minnesota. His workload could shrink if he plays.",
+      "direction": "none",
+      "headline": "Kamara expected to play",
+      "summary": "NFL Network reports Kamara (back) is expected to play against the Vikings.",
       "sources": [
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-09T18:00:00Z"
+      "published": "2026-10-11T11:28:00Z"
     },
     {
       "player": "Rico Dowdle",
@@ -538,16 +536,16 @@
       "status": "Questionable",
       "impact": "watch",
       "direction": "down",
-      "multiplier": 0.92,
-      "headline": "Dowdle questionable with toe injury",
-      "summary": "Dowdle (toe) is listed questionable against Indianapolis.",
+      "multiplier": 0.7,
+      "headline": "Dowdle unlikely to play, decision after warmups",
+      "summary": "ESPN reports Dowdle (toe) is unlikely to play against the Colts, with a final call after pregame warmups. Pittsburgh's other backs would take his carries if he sits.",
       "sources": [
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-09T18:00:00Z"
+      "published": "2026-10-11T11:16:00Z"
     },
     {
       "player": "Keenan Allen",
@@ -613,17 +611,16 @@
       "position": "WR",
       "status": "Questionable",
       "impact": "watch",
-      "direction": "down",
-      "multiplier": 0.92,
-      "headline": "Flowers questionable with foot injury",
-      "summary": "Flowers is listed questionable for Sunday night with Huntley under center.",
+      "direction": "none",
+      "headline": "Flowers slated to play Sunday night",
+      "summary": "Flowers (foot) is expected to play against Atlanta per ESPN. Tyler Huntley is still the quarterback with Lamar Jackson out.",
       "sources": [
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-09T18:00:00Z"
+      "published": "2026-10-11T11:42:00Z"
     },
     {
       "player": "Carnell Tate",
@@ -703,6 +700,23 @@
       "published": "2026-10-10T17:44:00Z"
     },
     {
+      "player": null,
+      "team": "PIT",
+      "position": null,
+      "status": null,
+      "impact": "watch",
+      "direction": "none",
+      "headline": "Wind near 16 mph forecast for Colts at Steelers",
+      "summary": "Forecast sustained wind around 16 mph at Acrisure Stadium can cut deep passing. Treat it as a mild negative for passing yards.",
+      "sources": [
+        {
+          "name": "Open-Meteo forecast (data.json)",
+          "url": "https://open-meteo.com/"
+        }
+      ],
+      "published": "2026-10-11T11:57:00Z"
+    },
+    {
       "player": "Chris Brooks",
       "team": "GB",
       "position": "RB",
@@ -720,55 +734,38 @@
       "published": "2026-10-10T20:06:00Z"
     },
     {
-      "player": "Marcus Mariota",
-      "team": "WSH",
-      "position": "QB",
-      "status": "Out",
-      "impact": "info",
-      "direction": "out",
-      "headline": "Mariota out; Daniels set to start",
-      "summary": "Mariota (knee) is out against the Giants, so Jayden Daniels returning is Washington's quarterback plan.",
-      "sources": [
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-09T21:35:00Z"
-    },
-    {
-      "player": "Brenen Thompson",
-      "team": "LAC",
+      "player": "Tim Patrick",
+      "team": "NYJ",
       "position": "WR",
-      "status": "Out",
-      "impact": "info",
-      "direction": "out",
-      "headline": "Thompson out vs. Broncos",
-      "summary": "Thompson (quadriceps) joins Quentin Johnston on the Chargers' out list, thinning their receiver group.",
-      "sources": [
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-10T00:37:00Z"
-    },
-    {
-      "player": "Charlie Kolar",
-      "team": "LAC",
-      "position": "TE",
-      "status": "Questionable",
+      "status": "Active",
       "impact": "info",
       "direction": "none",
-      "headline": "Kolar questionable with forearm injury",
-      "summary": "Kolar is listed questionable against Denver; Colby Parkinson is also questionable.",
+      "headline": "Patrick activated from injured reserve",
+      "summary": "Patrick (groin) was activated Saturday, which gives the Jets another receiver with Adonai Mitchell and Breece Hall out.",
       "sources": [
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-10T16:17:00Z"
+      "published": "2026-10-11T00:24:00Z"
+    },
+    {
+      "player": "Jeremy McNichols",
+      "team": "WSH",
+      "position": "RB",
+      "status": "Out",
+      "impact": "info",
+      "direction": "out",
+      "headline": "McNichols ruled out vs. Giants",
+      "summary": "McNichols (quadriceps) is out, so Washington's backfield depth is thinner.",
+      "sources": [
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-11T01:00:00Z"
     }
   ]
 }
