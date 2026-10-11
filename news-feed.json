@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T11:57:55Z",
+  "generated_at": "2026-10-11T20:58:34Z",
   "items": [
     {
       "player": "Lamar Jackson",
@@ -8,19 +8,19 @@
       "status": "Out",
       "impact": "high",
       "direction": "out",
-      "headline": "Jackson ruled out for SNF; Huntley starts",
-      "summary": "Jackson (ankle) did not practice all week and is out against Atlanta. Tyler Huntley takes the first-team snaps, which lowers Baltimore's passing ceiling and removes Jackson's rushing production.",
+      "headline": "Jackson out for Sunday night, real chance to return vs. Browns",
+      "summary": "Jackson (ankle) is inactive against Atlanta, and ESPN reports he has a \"real chance\" to play next week at Cleveland. Tyler Huntley starts tonight.",
       "sources": [
         {
           "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50141743/ravens-qb-lamar-jackson-huntley-start-snf-vs-falcons"
+          "url": "https://www.espn.com/nfl/story/_/id/50116111"
         },
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-09T18:46:00Z"
+      "published": "2026-10-11T12:34:00Z"
     },
     {
       "player": "Tyler Huntley",
@@ -29,201 +29,15 @@
       "status": "Active",
       "impact": "high",
       "direction": "none",
-      "headline": "Huntley named Ravens starter vs. Falcons",
-      "summary": "Huntley handled all first-team reps this week and has 16 career starts. The offense should lean on Derrick Henry and Mark Andrews more than on a deep passing game.",
+      "headline": "Huntley starts at quarterback for Baltimore",
+      "summary": "Huntley takes the first-team snaps with Jackson out, which lowers the ceiling for Baltimore's passing game and removes Jackson's rushing yards.",
       "sources": [
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-09T17:40:00Z"
-    },
-    {
-      "player": "Saquon Barkley",
-      "team": "PHI",
-      "position": "RB",
-      "status": "Out",
-      "impact": "high",
-      "direction": "out",
-      "headline": "Barkley out for the London game",
-      "summary": "Barkley (hamstring) is ruled out against Jacksonville, so Philadelphia's backfield carries and targets move to the remaining backs.",
-      "sources": [
-        {
-          "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50142553/saquon-barkley-devonta-smith-eagles-players-ruled-london-game-vs-jaguars"
-        },
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-09T20:47:00Z"
-    },
-    {
-      "player": "DeVonta Smith",
-      "team": "PHI",
-      "position": "WR",
-      "status": "Out",
-      "impact": "high",
-      "direction": "out",
-      "headline": "Smith and Hollywood Brown both out vs. Jaguars",
-      "summary": "Smith (hamstring) is out along with Hollywood Brown, which thins Philadelphia's receiver group.",
-      "sources": [
-        {
-          "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50142553/saquon-barkley-devonta-smith-eagles-players-ruled-london-game-vs-jaguars"
-        },
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-09T20:47:00Z"
-    },
-    {
-      "player": "Breece Hall",
-      "team": "NYJ",
-      "position": "RB",
-      "status": "Out",
-      "impact": "high",
-      "direction": "out",
-      "headline": "Hall out vs. Browns",
-      "summary": "Hall (quadriceps) is ruled out, so New York's carries and receiving work shift to the other backs in a team coming off a historically poor offensive game.",
-      "sources": [
-        {
-          "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50140789/sputtering-jets-offense-rb-hall-wr-mitchell-vs-browns"
-        },
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-09T15:42:00Z"
-    },
-    {
-      "player": "Adonai Mitchell",
-      "team": "NYJ",
-      "position": "WR",
-      "status": "Out",
-      "impact": "high",
-      "direction": "out",
-      "headline": "Mitchell out vs. Browns",
-      "summary": "Mitchell (finger) is ruled out, leaving the Jets with fewer receiving options alongside the missing Hall.",
-      "sources": [
-        {
-          "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50140789/sputtering-jets-offense-rb-hall-wr-mitchell-vs-browns"
-        },
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-09T15:42:00Z"
-    },
-    {
-      "player": "Kyle Monangai",
-      "team": "CHI",
-      "position": "RB",
-      "status": "Out",
-      "impact": "high",
-      "direction": "out",
-      "headline": "Monangai ruled out vs. Packers",
-      "summary": "Monangai (toe) is out, so Chicago's backfield work goes to D'Andre Swift and Roschon Johnson.",
-      "sources": [
-        {
-          "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50142140/bears-rb-monangai-qb-williams-now-questionable-vs-packers"
-        },
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-09T19:36:00Z"
-    },
-    {
-      "player": "Tyson Bagent",
-      "team": "CHI",
-      "position": "QB",
-      "status": "Active",
-      "impact": "high",
-      "direction": "none",
-      "headline": "Bagent starts for Chicago despite Williams' questionable tag",
-      "summary": "Ben Johnson already named Bagent the starter. Caleb Williams (hamstring) is questionable and may only be a backup, so expect Bagent under center.",
-      "sources": [
-        {
-          "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50142140/bears-rb-monangai-qb-williams-now-questionable-vs-packers"
-        },
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-09T19:03:00Z"
-    },
-    {
-      "player": "Jayden Daniels",
-      "team": "WSH",
-      "position": "QB",
-      "status": "Active",
-      "impact": "high",
-      "direction": "none",
-      "headline": "Daniels returns from elbow injury vs. Giants",
-      "summary": "Dan Quinn confirmed Daniels starts after a two-game absence, which lifts Washington's offense over the Mariota version.",
-      "sources": [
-        {
-          "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50141410/commanders-qb-daniels-play-wr-diggs-giants"
-        },
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-09T16:54:00Z"
-    },
-    {
-      "player": "Stefon Diggs",
-      "team": "WSH",
-      "position": "WR",
-      "status": "Out",
-      "impact": "high",
-      "direction": "out",
-      "headline": "Diggs out with hamstring injury",
-      "summary": "Diggs will not play against the Giants, and Terry McLaurin is only questionable, which concentrates Washington's targets.",
-      "sources": [
-        {
-          "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50141410/commanders-qb-daniels-play-wr-diggs-giants"
-        },
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-09T16:00:00Z"
-    },
-    {
-      "player": "Ja'Marr Chase",
-      "team": "CIN",
-      "position": "WR",
-      "status": "Questionable",
-      "impact": "high",
-      "direction": "down",
-      "multiplier": 0.85,
-      "headline": "Chase in concussion protocol, questionable at Miami",
-      "summary": "Chase remains in the protocol and is questionable. A late scratch is possible; Tee Higgins is also questionable but practiced fully Friday.",
-      "sources": [
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-09T18:00:00Z"
+      "published": "2026-10-11T12:34:00Z"
     },
     {
       "player": "Quentin Johnston",
@@ -232,50 +46,70 @@
       "status": "Out",
       "impact": "high",
       "direction": "out",
-      "headline": "Johnston out vs. Denver",
-      "summary": "Johnston (chest) is out and Ladd McConkey (foot) is questionable, leaving the Chargers thin at receiver.",
+      "headline": "Johnston and Thompson inactive vs. Broncos",
+      "summary": "Johnston (chest) and Brenen Thompson are inactive, while Ladd McConkey is active, so Chargers targets concentrate on McConkey, the tight ends and the backs.",
       "sources": [
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-09T18:00:00Z"
+      "published": "2026-10-11T18:52:00Z"
     },
     {
-      "player": "Ladd McConkey",
-      "team": "LAC",
+      "player": "Marvin Harrison Jr.",
+      "team": "ARI",
       "position": "WR",
-      "status": "Questionable",
-      "impact": "high",
-      "direction": "down",
-      "multiplier": 0.7,
-      "headline": "McConkey not expected to play vs. Broncos",
-      "summary": "ESPN reports McConkey (foot) isn't expected to play, though he is officially questionable. Quentin Johnston is out, so the Chargers' targets are thin.",
-      "sources": [
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-11T11:36:00Z"
-    },
-    {
-      "player": "Dillon Gabriel",
-      "team": "CLE",
-      "position": "QB",
       "status": "Out",
       "impact": "high",
       "direction": "out",
-      "headline": "Gabriel ruled out; Watson starts vs. Jets",
-      "summary": "Gabriel (back) is out against the Jets, so Deshaun Watson remains Cleveland's quarterback.",
+      "headline": "Harrison traded to Houston, out for Arizona tonight",
+      "summary": "The Texans completed a trade for Harrison. He is listed out for Arizona's game against Detroit, so Arizona has one fewer receiver.",
+      "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nfl/story/_/id/50160631"
+        },
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-11T20:50:00Z"
+    },
+    {
+      "player": "Marvin Harrison Jr.",
+      "team": "HOU",
+      "position": "WR",
+      "status": null,
+      "impact": "high",
+      "direction": "none",
+      "headline": "Harrison joins Houston for next week",
+      "summary": "Houston acquired Harrison from Arizona. His snap count and target share with the Texans are unknown.",
+      "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nfl/story/_/id/50160631"
+        }
+      ],
+      "published": "2026-10-11T20:50:00Z"
+    },
+    {
+      "player": "Zach Charbonnet",
+      "team": "SEA",
+      "position": "RB",
+      "status": "Out",
+      "impact": "high",
+      "direction": "out",
+      "headline": "Charbonnet stays out vs. 49ers",
+      "summary": "Charbonnet (knee) will not be activated from reserve before Seattle's game with San Francisco. George Holani is active.",
       "sources": [
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-10T00:37:00Z"
+      "published": "2026-10-05T17:05:00Z"
     },
     {
       "player": "Joshua Palmer",
@@ -284,326 +118,154 @@
       "status": "Out",
       "impact": "high",
       "direction": "out",
-      "headline": "Palmer out for Monday night; Bell makes debut",
-      "summary": "Palmer (shoulder) is ruled out against the Rams. Skyler Bell makes his NFL regular-season debut, and DJ Moore is questionable.",
-      "sources": [
-        {
-          "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50149505/bills-rule-out-ed-oliver-joshua-palmer-wait-on-wr-dj-moore"
-        },
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-10T19:28:00Z"
-    },
-    {
-      "player": "Darius Slayton",
-      "team": "IND",
-      "position": "WR",
-      "status": "Out",
-      "impact": "high",
-      "direction": "out",
-      "headline": "Slayton downgraded to out vs. Steelers",
-      "summary": "Slayton (knee) will not play, which concentrates Indianapolis' targets among the remaining receivers.",
+      "headline": "Palmer out for Monday night",
+      "summary": "Palmer (shoulder) is ruled out against the Rams. Skyler Bell is expected to make his NFL regular-season debut.",
       "sources": [
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-10T15:55:00Z"
+      "published": "2026-10-10T18:00:00Z"
     },
     {
-      "player": "Hollywood Brown",
+      "player": "Will Shipley",
       "team": "PHI",
-      "position": "WR",
-      "status": "Out",
-      "impact": "watch",
-      "direction": "out",
-      "headline": "Hollywood Brown ruled out in London",
-      "summary": "Brown is out for Sunday's game against the Jaguars alongside DeVonta Smith.",
-      "sources": [
-        {
-          "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50142553/saquon-barkley-devonta-smith-eagles-players-ruled-london-game-vs-jaguars"
-        },
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-09T20:47:00Z"
-    },
-    {
-      "player": "D'Andre Swift",
-      "team": "CHI",
       "position": "RB",
-      "status": "Active",
-      "impact": "watch",
-      "direction": "up",
-      "multiplier": 1.08,
-      "headline": "Swift expected to keep the RB1 role with Monangai out",
-      "summary": "ESPN's fantasy desk expects Swift to be the lead back, with Roschon Johnson possibly getting some work. His workload should grow modestly.",
-      "sources": [
-        {
-          "name": "ESPN Fantasy",
-          "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis"
-        }
-      ],
-      "published": "2026-10-09T19:10:00Z"
-    },
-    {
-      "player": "Caleb Williams",
-      "team": "CHI",
-      "position": "QB",
       "status": "Questionable",
-      "impact": "watch",
-      "direction": "down",
-      "multiplier": 0.9,
-      "headline": "Williams questionable, not expected to start",
-      "summary": "Williams was limited in practice with a hamstring strain. Bagent is the announced starter, so Williams is unlikely to play a full role.",
-      "sources": [
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-09T19:03:00Z"
-    },
-    {
-      "player": "Terry McLaurin",
-      "team": "WSH",
-      "position": "WR",
-      "status": "Questionable",
-      "impact": "watch",
-      "direction": "down",
-      "multiplier": 0.9,
-      "headline": "McLaurin a game-time decision with a lean toward playing",
-      "summary": "ESPN's Washington reporter sees a slight lean toward McLaurin (hamstring) playing. Stefon Diggs is out, so he is the lead receiver if healthy.",
-      "sources": [
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-11T00:32:00Z"
-    },
-    {
-      "player": "Tee Higgins",
-      "team": "CIN",
-      "position": "WR",
-      "status": "Questionable",
-      "impact": "watch",
+      "impact": "high",
       "direction": "none",
-      "headline": "Higgins full practice but still questionable",
-      "summary": "Higgins (groin/neck) was a full participant Friday. His role could grow if Chase sits.",
-      "sources": [
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-09T18:00:00Z"
-    },
-    {
-      "player": "Justin Jefferson",
-      "team": "MIN",
-      "position": "WR",
-      "status": "Questionable",
-      "impact": "watch",
-      "direction": "down",
-      "multiplier": 0.85,
-      "headline": "Jefferson set for a pregame workout",
-      "summary": "Jefferson (ankle) will be evaluated before kickoff in New Orleans. Jordan Addison is also questionable and Odell Beckham Jr. was elevated.",
+      "headline": "Eagles back Shipley hurt in London",
+      "summary": "Shipley (foot) left the loss to Jacksonville. Philadelphia was already without Saquon Barkley, so the backfield looks depleted heading into next week.",
       "sources": [
         {
           "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50142102/vikings-list-wrs-justin-jefferson-jordan-addison-questionable"
+          "url": "https://www.espn.com/nfl/story/_/id/50158323"
         },
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-11T11:49:00Z"
+      "published": "2026-10-11T15:53:00Z"
     },
     {
-      "player": "Jordan Addison",
-      "team": "MIN",
-      "position": "WR",
-      "status": "Questionable",
-      "impact": "watch",
-      "direction": "down",
-      "multiplier": 0.92,
-      "headline": "Addison questionable with hamstring injury",
-      "summary": "Addison is listed questionable and might see a reduced role if he plays.",
-      "sources": [
-        {
-          "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50142102/vikings-list-wrs-justin-jefferson-jordan-addison-questionable"
-        },
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-09T19:50:00Z"
-    },
-    {
-      "player": "Jeremiyah Love",
-      "team": "ARI",
+      "player": "David Montgomery",
+      "team": "HOU",
       "position": "RB",
       "status": "Questionable",
-      "impact": "watch",
-      "direction": "down",
-      "multiplier": 0.93,
-      "headline": "Love trending to play after ankle aggravation",
-      "summary": "Love was limited in practice but is trending toward playing against Detroit.",
+      "impact": "high",
+      "direction": "none",
+      "headline": "Montgomery ruled out of Texans win with groin injury",
+      "summary": "Montgomery left the win over Tennessee with a groin injury. Next week's status is unknown, so Houston's backfield share is uncertain.",
       "sources": [
         {
           "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50142254/jeremiyah-love-trending-well-play-ankle-reinjury"
+          "url": "https://www.espn.com/nfl/story/_/id/50159624"
         },
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-09T19:48:00Z"
+      "published": "2026-10-11T18:45:00Z"
     },
     {
-      "player": "Ashton Jeanty",
-      "team": "LV",
-      "position": "RB",
-      "status": "Questionable",
-      "impact": "watch",
-      "direction": "down",
-      "multiplier": 0.85,
-      "headline": "Jeanty faces a pregame workout",
-      "summary": "Jeanty (ankle/foot) is hopeful to play but will be evaluated before kickoff. A limited workload is possible if he suits up.",
-      "sources": [
-        {
-          "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50142192/raiders-rb-ashton-jeanty-ankle-foot-questionable-vs-pats"
-        },
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-11T11:11:00Z"
-    },
-    {
-      "player": "Rhamondre Stevenson",
+      "player": "TreVeyon Henderson",
       "team": "NE",
       "position": "RB",
       "status": "Questionable",
-      "impact": "watch",
+      "impact": "high",
       "direction": "none",
-      "headline": "Stevenson expected to play",
-      "summary": "NFL Network reports Stevenson (knee) is expected to play against the Raiders.",
-      "sources": [
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-11T11:21:00Z"
-    },
-    {
-      "player": "Alvin Kamara",
-      "team": "NO",
-      "position": "RB",
-      "status": "Questionable",
-      "impact": "watch",
-      "direction": "none",
-      "headline": "Kamara expected to play",
-      "summary": "NFL Network reports Kamara (back) is expected to play against the Vikings.",
-      "sources": [
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-11T11:28:00Z"
-    },
-    {
-      "player": "Rico Dowdle",
-      "team": "PIT",
-      "position": "RB",
-      "status": "Questionable",
-      "impact": "watch",
-      "direction": "down",
-      "multiplier": 0.7,
-      "headline": "Dowdle unlikely to play, decision after warmups",
-      "summary": "ESPN reports Dowdle (toe) is unlikely to play against the Colts, with a final call after pregame warmups. Pittsburgh's other backs would take his carries if he sits.",
-      "sources": [
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-11T11:16:00Z"
-    },
-    {
-      "player": "Keenan Allen",
-      "team": "IND",
-      "position": "WR",
-      "status": "Questionable",
-      "impact": "watch",
-      "direction": "down",
-      "multiplier": 0.9,
-      "headline": "Allen questionable with groin injury",
-      "summary": "Allen (groin) is questionable. Darius Slayton was downgraded to out and Alec Pierce is on injured reserve, so Indianapolis is thin at receiver.",
-      "sources": [
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-09T18:00:00Z"
-    },
-    {
-      "player": "Mike Evans",
-      "team": "SF",
-      "position": "WR",
-      "status": "Questionable",
-      "impact": "watch",
-      "direction": "down",
-      "multiplier": 0.92,
-      "headline": "Evans questionable with rib injury",
-      "summary": "Evans was preparing to practice Friday and is listed questionable for Seattle.",
-      "sources": [
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-09T18:00:00Z"
-    },
-    {
-      "player": "DJ Moore",
-      "team": "BUF",
-      "position": "WR",
-      "status": "Questionable",
-      "impact": "watch",
-      "direction": "down",
-      "multiplier": 0.85,
-      "headline": "Moore back in noncontact jersey, questionable for Monday",
-      "summary": "Moore (shoulder) returned to practice in a noncontact jersey and is questionable for Monday night. Joshua Palmer is out, so Buffalo's receiver group is thin.",
+      "headline": "Henderson leaves Patriots win with ankle injury",
+      "summary": "Henderson was ruled out for the rest of the Raiders game. Rhamondre Stevenson is the other main back, so New England's workload could shift next week.",
       "sources": [
         {
           "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50149505/bills-rule-out-ed-oliver-joshua-palmer-wait-on-wr-dj-moore"
+          "url": "https://www.espn.com/nfl/story/_/id/50159892"
         },
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-10T19:28:00Z"
+      "published": "2026-10-11T19:12:00Z"
+    },
+    {
+      "player": "KC Concepcion",
+      "team": "CLE",
+      "position": "WR",
+      "status": "Questionable",
+      "impact": "high",
+      "direction": "none",
+      "headline": "Concepcion exits Browns loss with head injury",
+      "summary": "Concepcion left the game at the Jets after a hit to the head and was ruled out. A concussion would put next week in doubt.",
+      "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nfl/story/_/id/50159137"
+        },
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-11T17:37:00Z"
+    },
+    {
+      "player": "T.J. Hockenson",
+      "team": "MIN",
+      "position": "TE",
+      "status": "Questionable",
+      "impact": "high",
+      "direction": "none",
+      "headline": "Hockenson suffers a concussion vs. Saints",
+      "summary": "Hockenson left Minnesota's win with a concussion, which puts his availability next week in question. Ben Yurosek was active today.",
+      "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nfl/story/_/id/50158965"
+        },
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-11T17:42:00Z"
+    },
+    {
+      "player": "Ladd McConkey",
+      "team": "LAC",
+      "position": "WR",
+      "status": "Active",
+      "impact": "watch",
+      "direction": "none",
+      "headline": "McConkey active despite foot injury",
+      "summary": "He is active against Denver after being questionable, but he may be below full speed with a foot injury he aggravated earlier this season.",
+      "sources": [
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-11T18:49:00Z"
+    },
+    {
+      "player": "George Kittle",
+      "team": "SF",
+      "position": "TE",
+      "status": "Active",
+      "impact": "watch",
+      "direction": "none",
+      "headline": "Kittle plays through illness",
+      "summary": "The 49ers announced Kittle has an illness but will play against Seattle. A reduced snap count is possible.",
+      "sources": [
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-11T17:08:00Z"
     },
     {
       "player": "Zay Flowers",
@@ -613,8 +275,12 @@
       "impact": "watch",
       "direction": "none",
       "headline": "Flowers slated to play Sunday night",
-      "summary": "Flowers (foot) is expected to play against Atlanta per ESPN. Tyler Huntley is still the quarterback with Lamar Jackson out.",
+      "summary": "ESPN reports Flowers (foot) is expected to play in Atlanta, but ESPN's inactives story still lists him as questionable.",
       "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nfl/story/_/id/50116111"
+        },
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
@@ -623,149 +289,208 @@
       "published": "2026-10-11T11:42:00Z"
     },
     {
-      "player": "Carnell Tate",
-      "team": "TEN",
+      "player": "DJ Moore",
+      "team": "BUF",
       "position": "WR",
-      "status": "Questionable",
-      "impact": "watch",
-      "direction": "none",
-      "headline": "Tate questionable with back injury",
-      "summary": "Tate is listed questionable against Houston.",
-      "sources": [
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-09T18:00:00Z"
-    },
-    {
-      "player": "Jaylen Wright",
-      "team": "MIA",
-      "position": "RB",
       "status": "Questionable",
       "impact": "watch",
       "direction": "down",
-      "multiplier": 0.92,
-      "headline": "Wright questionable with foot injury",
-      "summary": "Wright is questionable against Cincinnati; Caleb Douglas is out.",
-      "sources": [
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-09T18:00:00Z"
-    },
-    {
-      "player": "Odell Beckham Jr.",
-      "team": "MIN",
-      "position": "WR",
-      "status": "Active",
-      "impact": "watch",
-      "direction": "none",
-      "headline": "Beckham elevated for Sunday, role unclear",
-      "summary": "Minnesota elevated Beckham from the practice squad with Justin Jefferson and Jordan Addison both questionable. His snap count is unknown.",
+      "multiplier": 0.85,
+      "headline": "Moore questionable for Monday night",
+      "summary": "Moore (shoulder) is questionable after practicing in a noncontact jersey, and Joshua Palmer is out, so Buffalo's receiver group is thin against the Rams.",
       "sources": [
         {
           "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50149803/source-odell-beckham-jr-joins-vikings-roster-status-unclear"
+          "url": "https://www.espn.com/nfl/story/_/id/50116111"
         },
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-10T20:36:00Z"
+      "published": "2026-10-11T19:11:00Z"
     },
     {
-      "player": "Marvin Harrison Jr.",
-      "team": "ARI",
-      "position": "WR",
+      "player": "Saquon Barkley",
+      "team": "PHI",
+      "position": "RB",
       "status": "Out",
       "impact": "watch",
       "direction": "none",
-      "headline": "Harrison trade expected after Sunday",
-      "summary": "Arizona is finalizing a trade for Harrison that will not be completed until after Sunday's games, and ESPN lists him out. His role against Detroit is unclear.",
+      "headline": "Barkley missed London game with hamstring injury",
+      "summary": "Barkley was inactive against Jacksonville. His availability for next week is unknown, and Dameon Pierce led the backfield with 11 carries for 14 yards.",
       "sources": [
         {
           "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50148005/sources-cardinals-finalizing-deal-to-trade-wr-marvin-harrison-jr"
+          "url": "https://www.espn.com/nfl/story/_/id/50142553"
         },
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-10T17:44:00Z"
+      "published": "2026-10-11T12:03:00Z"
     },
     {
-      "player": null,
-      "team": "PIT",
-      "position": null,
-      "status": null,
+      "player": "Aaron Jones Sr.",
+      "team": "MIN",
+      "position": "RB",
+      "status": "Active",
       "impact": "watch",
       "direction": "none",
-      "headline": "Wind near 16 mph forecast for Colts at Steelers",
-      "summary": "Forecast sustained wind around 16 mph at Acrisure Stadium can cut deep passing. Treat it as a mild negative for passing yards.",
+      "headline": "Jones returned after knee scare",
+      "summary": "Jones returned to the game in New Orleans after a knee issue, so he should keep his normal role if he practices this week.",
       "sources": [
         {
-          "name": "Open-Meteo forecast (data.json)",
-          "url": "https://open-meteo.com/"
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-11T11:57:00Z"
+      "published": "2026-10-11T17:55:00Z"
     },
     {
-      "player": "Chris Brooks",
-      "team": "GB",
+      "player": "Kenyon Sadiq",
+      "team": "NYJ",
+      "position": "TE",
+      "status": "Questionable",
+      "impact": "watch",
+      "direction": "none",
+      "headline": "Sadiq enters concussion protocol after Jets win",
+      "summary": "Sadiq did not return to the win over Cleveland because of a concussion, which makes next week uncertain.",
+      "sources": [
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-11T19:45:00Z"
+    },
+    {
+      "player": "Rico Dowdle",
+      "team": "PIT",
       "position": "RB",
+      "status": "Out",
+      "impact": "watch",
+      "direction": "none",
+      "headline": "Dowdle inactive, Warren dominates",
+      "summary": "Dowdle (toe) was inactive and Jaylen Warren had 188 yards from scrimmage and two touchdowns in the win. Warren is the clear lead back if Dowdle misses more time.",
+      "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nfl/story/_/id/50160632"
+        },
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-11T15:49:00Z"
+    },
+    {
+      "player": "Ben Skowronek",
+      "team": "PIT",
+      "position": "WR",
+      "status": "Questionable",
+      "impact": "watch",
+      "direction": "none",
+      "headline": "Two Steelers receivers hurt vs. Colts",
+      "summary": "Skowronek (leg) and Roman Wilson (finger) were ruled out for the rest of the game, which could thin Pittsburgh's receiver group.",
+      "sources": [
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-11T18:49:00Z"
+    },
+    {
+      "player": "Caleb Williams",
+      "team": "CHI",
+      "position": "QB",
+      "status": "Out",
+      "impact": "watch",
+      "direction": "none",
+      "headline": "Williams inactive, Bagent starts in loss",
+      "summary": "Williams (hamstring) was inactive in Green Bay and Tyson Bagent started. ESPN notes Williams may be ready for next week against Atlanta.",
+      "sources": [
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-11T15:47:00Z"
+    },
+    {
+      "player": "Jeremiyah Love",
+      "team": "ARI",
+      "position": "RB",
+      "status": "Active",
+      "impact": "info",
+      "direction": "none",
+      "headline": "Love has no injury designation vs. Lions",
+      "summary": "Arizona's beat reporter says Love (ankle) carries no designation into the game, so he should keep his normal workload.",
+      "sources": [
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-09T21:08:00Z"
+    },
+    {
+      "player": "Irv Charles",
+      "team": "SEA",
+      "position": "WR",
       "status": "Injured Reserve",
       "impact": "info",
       "direction": "out",
-      "headline": "Brooks placed on injured reserve",
-      "summary": "Brooks (ankle) is on injured reserve, so the Packers lean on Kaleb Johnson and MarShawn Lloyd.",
+      "headline": "Charles out for 49ers game",
+      "summary": "Charles (knee) is ruled out. Montorie Foster Jr. is also inactive, which thins Seattle's receiver depth.",
       "sources": [
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-10T20:06:00Z"
+      "published": "2026-10-11T02:02:00Z"
     },
     {
-      "player": "Tim Patrick",
-      "team": "NYJ",
+      "player": "Skyy Moore",
+      "team": "GB",
       "position": "WR",
-      "status": "Active",
+      "status": "Questionable",
       "impact": "info",
       "direction": "none",
-      "headline": "Patrick activated from injured reserve",
-      "summary": "Patrick (groin) was activated Saturday, which gives the Jets another receiver with Adonai Mitchell and Breece Hall out.",
+      "headline": "Moore leaves Packers win with ankle injury",
+      "summary": "Moore left the 31-7 win over Chicago. Christian Watson had 143 yards and two touchdowns, so his role looks secure.",
       "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nfl/story/_/id/50160520"
+        },
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-11T00:24:00Z"
+      "published": "2026-10-11T18:37:00Z"
     },
     {
-      "player": "Jeremy McNichols",
-      "team": "WSH",
+      "player": "Kyle Monangai",
+      "team": "CHI",
       "position": "RB",
       "status": "Out",
       "impact": "info",
-      "direction": "out",
-      "headline": "McNichols ruled out vs. Giants",
-      "summary": "McNichols (quadriceps) is out, so Washington's backfield depth is thinner.",
+      "direction": "none",
+      "headline": "Monangai inactive vs. Packers",
+      "summary": "Monangai (toe) was inactive in Chicago's loss, so D'Andre Swift handled the lead role. His availability next week is unknown.",
       "sources": [
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-11T01:00:00Z"
+      "published": "2026-10-11T15:57:00Z"
     }
   ]
 }
