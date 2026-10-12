@@ -1,99 +1,6 @@
 {
-  "generated_at": "2026-10-11T20:58:34Z",
+  "generated_at": "2026-10-12T11:59:03Z",
   "items": [
-    {
-      "player": "Lamar Jackson",
-      "team": "BAL",
-      "position": "QB",
-      "status": "Out",
-      "impact": "high",
-      "direction": "out",
-      "headline": "Jackson out for Sunday night, real chance to return vs. Browns",
-      "summary": "Jackson (ankle) is inactive against Atlanta, and ESPN reports he has a \"real chance\" to play next week at Cleveland. Tyler Huntley starts tonight.",
-      "sources": [
-        {
-          "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50116111"
-        },
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-11T12:34:00Z"
-    },
-    {
-      "player": "Tyler Huntley",
-      "team": "BAL",
-      "position": "QB",
-      "status": "Active",
-      "impact": "high",
-      "direction": "none",
-      "headline": "Huntley starts at quarterback for Baltimore",
-      "summary": "Huntley takes the first-team snaps with Jackson out, which lowers the ceiling for Baltimore's passing game and removes Jackson's rushing yards.",
-      "sources": [
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-11T12:34:00Z"
-    },
-    {
-      "player": "Quentin Johnston",
-      "team": "LAC",
-      "position": "WR",
-      "status": "Out",
-      "impact": "high",
-      "direction": "out",
-      "headline": "Johnston and Thompson inactive vs. Broncos",
-      "summary": "Johnston (chest) and Brenen Thompson are inactive, while Ladd McConkey is active, so Chargers targets concentrate on McConkey, the tight ends and the backs.",
-      "sources": [
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-11T18:52:00Z"
-    },
-    {
-      "player": "Marvin Harrison Jr.",
-      "team": "ARI",
-      "position": "WR",
-      "status": "Out",
-      "impact": "high",
-      "direction": "out",
-      "headline": "Harrison traded to Houston, out for Arizona tonight",
-      "summary": "The Texans completed a trade for Harrison. He is listed out for Arizona's game against Detroit, so Arizona has one fewer receiver.",
-      "sources": [
-        {
-          "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50160631"
-        },
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-11T20:50:00Z"
-    },
-    {
-      "player": "Marvin Harrison Jr.",
-      "team": "HOU",
-      "position": "WR",
-      "status": null,
-      "impact": "high",
-      "direction": "none",
-      "headline": "Harrison joins Houston for next week",
-      "summary": "Houston acquired Harrison from Arizona. His snap count and target share with the Texans are unknown.",
-      "sources": [
-        {
-          "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50160631"
-        }
-      ],
-      "published": "2026-10-11T20:50:00Z"
-    },
     {
       "player": "Zach Charbonnet",
       "team": "SEA",
@@ -101,15 +8,15 @@
       "status": "Out",
       "impact": "high",
       "direction": "out",
-      "headline": "Charbonnet stays out vs. 49ers",
-      "summary": "Charbonnet (knee) will not be activated from reserve before Seattle's game with San Francisco. George Holani is active.",
+      "headline": "Charbonnet will not be activated for Thursday vs. Broncos",
+      "summary": "Seahawks coach Mike Macdonald said Charbonnet (knee) stays on reserve for Thursday night's game against Denver, so George Holani remains in the lead role.",
       "sources": [
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-05T17:05:00Z"
+      "published": "2026-10-12T00:48:00Z"
     },
     {
       "player": "Joshua Palmer",
@@ -234,48 +141,77 @@
       "published": "2026-10-11T17:42:00Z"
     },
     {
-      "player": "Ladd McConkey",
-      "team": "LAC",
+      "player": "Roman Wilson",
+      "team": "PIT",
       "position": "WR",
-      "status": "Active",
-      "impact": "watch",
+      "status": "Injured Reserve",
+      "impact": "high",
       "direction": "none",
-      "headline": "McConkey active despite foot injury",
-      "summary": "He is active against Denver after being questionable, but he may be below full speed with a foot injury he aggravated earlier this season.",
+      "headline": "Roman Wilson expected to miss multiple weeks",
+      "summary": "A source told ESPN Wilson (finger) will miss multiple weeks, joining a growing list of injured Steelers receivers. Pittsburgh's wide receiver room is thin.",
       "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nfl/story/_/id/50165164"
+        },
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-11T18:49:00Z"
+      "published": "2026-10-12T11:36:00Z"
     },
     {
-      "player": "George Kittle",
+      "player": "Michael Penix Jr.",
+      "team": "ATL",
+      "position": "QB",
+      "status": "Questionable",
+      "impact": "high",
+      "direction": "none",
+      "headline": "Penix left overtime loss with rib injury",
+      "summary": "Penix (ribs) did not return in overtime, and Tua Tagovailoa played in relief. ESPN says Penix does not believe it is serious, so next week's starter is unclear.",
+      "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nfl/story/_/id/50164195"
+        },
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-12T06:05:00Z"
+    },
+    {
+      "player": "Deebo Samuel Sr.",
       "team": "SF",
-      "position": "TE",
-      "status": "Active",
-      "impact": "watch",
-      "direction": "none",
-      "headline": "Kittle plays through illness",
-      "summary": "The 49ers announced Kittle has an illness but will play against Seattle. A reduced snap count is possible.",
-      "sources": [
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-11T17:08:00Z"
-    },
-    {
-      "player": "Zay Flowers",
-      "team": "BAL",
       "position": "WR",
       "status": "Questionable",
+      "impact": "high",
+      "direction": "none",
+      "headline": "49ers lose Samuel to hamstring injury",
+      "summary": "Samuel left the win over Seattle in the third quarter, leaving San Francisco with just three healthy receivers. His availability next week is unknown.",
+      "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nfl/story/_/id/50161984"
+        },
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-11T23:06:00Z"
+    },
+    {
+      "player": "Lamar Jackson",
+      "team": "BAL",
+      "position": "QB",
+      "status": "Out",
       "impact": "watch",
       "direction": "none",
-      "headline": "Flowers slated to play Sunday night",
-      "summary": "ESPN reports Flowers (foot) is expected to play in Atlanta, but ESPN's inactives story still lists him as questionable.",
+      "headline": "Jackson inactive again, real chance to return vs. Browns",
+      "summary": "Jackson (ankle) missed Sunday night, a win for Tyler Huntley in overtime. ESPN reports he has a real chance to play next week at Cleveland, pending how he responds.",
       "sources": [
         {
           "name": "ESPN",
@@ -286,7 +222,28 @@
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-11T11:42:00Z"
+      "published": "2026-10-11T12:34:00Z"
+    },
+    {
+      "player": "Marvin Harrison Jr.",
+      "team": "HOU",
+      "position": "WR",
+      "status": null,
+      "impact": "watch",
+      "direction": "none",
+      "headline": "Harrison joins Texans after trade",
+      "summary": "Houston acquired Harrison from Arizona. ESPN's fantasy desk calls C.J. Stroud the clear winner and Michael Wilson and Trey McBride the top options in Arizona. His role in Houston is not yet defined.",
+      "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nfl/story/_/id/40699880"
+        },
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nfl/story/_/id/50148192"
+        }
+      ],
+      "published": "2026-10-12T03:49:00Z"
     },
     {
       "player": "DJ Moore",
@@ -332,23 +289,6 @@
       "published": "2026-10-11T12:03:00Z"
     },
     {
-      "player": "Aaron Jones Sr.",
-      "team": "MIN",
-      "position": "RB",
-      "status": "Active",
-      "impact": "watch",
-      "direction": "none",
-      "headline": "Jones returned after knee scare",
-      "summary": "Jones returned to the game in New Orleans after a knee issue, so he should keep his normal role if he practices this week.",
-      "sources": [
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-11T17:55:00Z"
-    },
-    {
       "player": "Kenyon Sadiq",
       "team": "NYJ",
       "position": "TE",
@@ -373,35 +313,18 @@
       "impact": "watch",
       "direction": "none",
       "headline": "Dowdle inactive, Warren dominates",
-      "summary": "Dowdle (toe) was inactive and Jaylen Warren had 188 yards from scrimmage and two touchdowns in the win. Warren is the clear lead back if Dowdle misses more time.",
+      "summary": "Dowdle (toe) was inactive and Jaylen Warren had his third straight game of at least 125 all-purpose yards. Warren stays the lead back while Dowdle is out.",
       "sources": [
         {
           "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50160632"
+          "url": "https://www.espn.com/nfl/story/_/id/50161191"
         },
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-11T15:49:00Z"
-    },
-    {
-      "player": "Ben Skowronek",
-      "team": "PIT",
-      "position": "WR",
-      "status": "Questionable",
-      "impact": "watch",
-      "direction": "none",
-      "headline": "Two Steelers receivers hurt vs. Colts",
-      "summary": "Skowronek (leg) and Roman Wilson (finger) were ruled out for the rest of the game, which could thin Pittsburgh's receiver group.",
-      "sources": [
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-11T18:49:00Z"
+      "published": "2026-10-12T10:00:00Z"
     },
     {
       "player": "Caleb Williams",
@@ -410,49 +333,57 @@
       "status": "Out",
       "impact": "watch",
       "direction": "none",
-      "headline": "Williams inactive, Bagent starts in loss",
-      "summary": "Williams (hamstring) was inactive in Green Bay and Tyson Bagent started. ESPN notes Williams may be ready for next week against Atlanta.",
+      "headline": "Williams close to returning, no date set",
+      "summary": "Ben Johnson did not commit to a return date for Williams (hamstring) after the loss in Green Bay, and said it could be Atlanta or later. Tyson Bagent remains the starter until then.",
+      "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nfl/story/_/id/50161771"
+        },
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-11T23:41:00Z"
+    },
+    {
+      "player": "Quinshon Judkins",
+      "team": "CLE",
+      "position": "RB",
+      "status": "Questionable",
+      "impact": "watch",
+      "direction": "none",
+      "headline": "Judkins seen in a walking boot after Jets loss",
+      "summary": "Judkins was wearing a boot on his right foot after Sunday's loss. Raheim Sanders is the main alternative if he misses time.",
       "sources": [
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-11T15:47:00Z"
+      "published": "2026-10-11T21:13:00Z"
     },
     {
-      "player": "Jeremiyah Love",
-      "team": "ARI",
-      "position": "RB",
+      "player": "Tyler Huntley",
+      "team": "BAL",
+      "position": "QB",
       "status": "Active",
       "impact": "info",
       "direction": "none",
-      "headline": "Love has no injury designation vs. Lions",
-      "summary": "Arizona's beat reporter says Love (ankle) carries no designation into the game, so he should keep his normal workload.",
+      "headline": "Huntley leads Ravens to overtime win",
+      "summary": "Huntley led a late tying drive and scored in overtime against Atlanta. He stays the starter until Jackson is cleared.",
       "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nfl/story/_/id/50164378"
+        },
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-09T21:08:00Z"
-    },
-    {
-      "player": "Irv Charles",
-      "team": "SEA",
-      "position": "WR",
-      "status": "Injured Reserve",
-      "impact": "info",
-      "direction": "out",
-      "headline": "Charles out for 49ers game",
-      "summary": "Charles (knee) is ruled out. Montorie Foster Jr. is also inactive, which thins Seattle's receiver depth.",
-      "sources": [
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-11T02:02:00Z"
+      "published": "2026-10-12T06:35:00Z"
     },
     {
       "player": "Skyy Moore",
@@ -476,21 +407,38 @@
       "published": "2026-10-11T18:37:00Z"
     },
     {
-      "player": "Kyle Monangai",
-      "team": "CHI",
-      "position": "RB",
-      "status": "Out",
+      "player": "Tom Kennedy",
+      "team": "DET",
+      "position": "WR",
+      "status": "Questionable",
       "impact": "info",
       "direction": "none",
-      "headline": "Monangai inactive vs. Packers",
-      "summary": "Monangai (toe) was inactive in Chicago's loss, so D'Andre Swift handled the lead role. His availability next week is unknown.",
+      "headline": "Kennedy leaves Lions win on crutches",
+      "summary": "Kennedy (knee) left the win over Arizona on crutches. He is a depth receiver.",
       "sources": [
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-11T15:57:00Z"
+      "published": "2026-10-11T23:56:00Z"
+    },
+    {
+      "player": "Tre' Harris",
+      "team": "LAC",
+      "position": "WR",
+      "status": "Questionable",
+      "impact": "info",
+      "direction": "none",
+      "headline": "Harris hurt his hamstring vs. Broncos",
+      "summary": "Harris (hamstring) was questionable to return in the loss to Denver. The winless Chargers lack receivers with Quentin Johnston out.",
+      "sources": [
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-11T22:11:00Z"
     }
   ]
 }
