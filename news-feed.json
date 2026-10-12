@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T11:59:03Z",
+  "generated_at": "2026-10-12T20:57:30Z",
   "items": [
     {
       "player": "Zach Charbonnet",
@@ -9,14 +9,14 @@
       "impact": "high",
       "direction": "out",
       "headline": "Charbonnet will not be activated for Thursday vs. Broncos",
-      "summary": "Seahawks coach Mike Macdonald said Charbonnet (knee) stays on reserve for Thursday night's game against Denver, so George Holani remains in the lead role.",
+      "summary": "Seahawks coach Mike Macdonald said Charbonnet (knee) stays on reserve for Thursday night's game against Denver, even though he was listed as limited on the Monday practice estimate. George Holani remains the lead back.",
       "sources": [
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-12T00:48:00Z"
+      "published": "2026-10-12T20:40:00Z"
     },
     {
       "player": "Joshua Palmer",
@@ -39,32 +39,32 @@
       "player": "Will Shipley",
       "team": "PHI",
       "position": "RB",
-      "status": "Questionable",
+      "status": "Doubtful",
       "impact": "high",
       "direction": "none",
-      "headline": "Eagles back Shipley hurt in London",
-      "summary": "Shipley (foot) left the loss to Jacksonville. Philadelphia was already without Saquon Barkley, so the backfield looks depleted heading into next week.",
+      "headline": "Shipley has partial plantar fascia tear, out multiple weeks",
+      "summary": "ESPN reports Shipley could be sidelined multiple weeks, and Saquon Barkley is only hoped to return. Philadelphia's backfield is thin heading into Sunday against Carolina.",
       "sources": [
         {
           "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50158323"
+          "url": "https://www.espn.com/nfl/story/_/id/50166619"
         },
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-11T15:53:00Z"
+      "published": "2026-10-12T17:09:00Z"
     },
     {
       "player": "David Montgomery",
       "team": "HOU",
       "position": "RB",
-      "status": "Questionable",
+      "status": "Doubtful",
       "impact": "high",
       "direction": "none",
-      "headline": "Montgomery ruled out of Texans win with groin injury",
-      "summary": "Montgomery left the win over Tennessee with a groin injury. Next week's status is unknown, so Houston's backfield share is uncertain.",
+      "headline": "Montgomery week-to-week with groin injury",
+      "summary": "Texans coach DeMeco Ryans called Montgomery week-to-week, so Houston's backfield share is shifting to the other backs.",
       "sources": [
         {
           "name": "ESPN",
@@ -75,7 +75,7 @@
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-11T18:45:00Z"
+      "published": "2026-10-12T16:33:00Z"
     },
     {
       "player": "TreVeyon Henderson",
@@ -84,8 +84,8 @@
       "status": "Questionable",
       "impact": "high",
       "direction": "none",
-      "headline": "Henderson leaves Patriots win with ankle injury",
-      "summary": "Henderson was ruled out for the rest of the Raiders game. Rhamondre Stevenson is the other main back, so New England's workload could shift next week.",
+      "headline": "Henderson to get further testing on ankle",
+      "summary": "NFL Network reports Henderson was set for more testing Monday after leaving the win over Las Vegas. Rhamondre Stevenson is the main alternative.",
       "sources": [
         {
           "name": "ESPN",
@@ -96,7 +96,7 @@
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-11T19:12:00Z"
+      "published": "2026-10-12T14:28:00Z"
     },
     {
       "player": "KC Concepcion",
@@ -146,9 +146,9 @@
       "position": "WR",
       "status": "Injured Reserve",
       "impact": "high",
-      "direction": "none",
-      "headline": "Roman Wilson expected to miss multiple weeks",
-      "summary": "A source told ESPN Wilson (finger) will miss multiple weeks, joining a growing list of injured Steelers receivers. Pittsburgh's wide receiver room is thin.",
+      "direction": "out",
+      "headline": "Roman Wilson will not play vs. Buccaneers",
+      "summary": "Mike McCarthy said Wilson (finger) will miss Sunday's game against Tampa Bay. Ben Skowronek is also out, so the Steelers are thin at receiver.",
       "sources": [
         {
           "name": "ESPN",
@@ -159,7 +159,7 @@
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-12T11:36:00Z"
+      "published": "2026-10-12T19:17:00Z"
     },
     {
       "player": "Michael Penix Jr.",
@@ -168,40 +168,40 @@
       "status": "Questionable",
       "impact": "high",
       "direction": "none",
-      "headline": "Penix left overtime loss with rib injury",
-      "summary": "Penix (ribs) did not return in overtime, and Tua Tagovailoa played in relief. ESPN says Penix does not believe it is serious, so next week's starter is unclear.",
+      "headline": "Penix expected to be available vs. Bears",
+      "summary": "The Athletic and ESPN report the Falcons are optimistic that Penix's rib injury is not serious and that he will play Sunday against Chicago.",
       "sources": [
         {
           "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50164195"
+          "url": "https://www.espn.com/nfl/story/_/id/50168293"
         },
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-12T06:05:00Z"
+      "published": "2026-10-12T20:10:00Z"
     },
     {
       "player": "Deebo Samuel Sr.",
       "team": "SF",
       "position": "WR",
-      "status": "Questionable",
+      "status": "Out",
       "impact": "high",
-      "direction": "none",
-      "headline": "49ers lose Samuel to hamstring injury",
-      "summary": "Samuel left the win over Seattle in the third quarter, leaving San Francisco with just three healthy receivers. His availability next week is unknown.",
+      "direction": "out",
+      "headline": "Samuel expected to miss at least a couple of weeks",
+      "summary": "Kyle Shanahan said Samuel (hamstring) will miss at least a couple of weeks. San Francisco has only three healthy receivers.",
       "sources": [
         {
           "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50161984"
+          "url": "https://www.espn.com/nfl/story/_/id/50168446"
         },
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-11T23:06:00Z"
+      "published": "2026-10-12T20:42:00Z"
     },
     {
       "player": "Lamar Jackson",
@@ -211,7 +211,7 @@
       "impact": "watch",
       "direction": "none",
       "headline": "Jackson inactive again, real chance to return vs. Browns",
-      "summary": "Jackson (ankle) missed Sunday night, a win for Tyler Huntley in overtime. ESPN reports he has a real chance to play next week at Cleveland, pending how he responds.",
+      "summary": "Jackson (ankle) is \"definitely doing better,\" per Jesse Minter. ESPN reported earlier he has a real chance to play at Cleveland on Sunday, pending how he responds.",
       "sources": [
         {
           "name": "ESPN",
@@ -222,7 +222,7 @@
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-11T12:34:00Z"
+      "published": "2026-10-12T19:13:00Z"
     },
     {
       "player": "Marvin Harrison Jr.",
@@ -274,8 +274,8 @@
       "status": "Out",
       "impact": "watch",
       "direction": "none",
-      "headline": "Barkley missed London game with hamstring injury",
-      "summary": "Barkley was inactive against Jacksonville. His availability for next week is unknown, and Dameon Pierce led the backfield with 11 carries for 14 yards.",
+      "headline": "Sirianni hopeful Barkley and Smith play vs. Panthers",
+      "summary": "Nick Sirianni said he is hopeful that Barkley (hamstring) and DeVonta Smith (hamstring) are cleared for Sunday. Both remain out until they are cleared.",
       "sources": [
         {
           "name": "ESPN",
@@ -286,7 +286,7 @@
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-11T12:03:00Z"
+      "published": "2026-10-12T19:54:00Z"
     },
     {
       "player": "Kenyon Sadiq",
@@ -312,8 +312,8 @@
       "status": "Out",
       "impact": "watch",
       "direction": "none",
-      "headline": "Dowdle inactive, Warren dominates",
-      "summary": "Dowdle (toe) was inactive and Jaylen Warren had his third straight game of at least 125 all-purpose yards. Warren stays the lead back while Dowdle is out.",
+      "headline": "Dowdle expected back for Tampa Bay game",
+      "summary": "Pittsburgh's offensive coordinator anticipates Dowdle (toe) returning Sunday against the Buccaneers. Jaylen Warren had 188 yards from scrimmage last week and could share the workload.",
       "sources": [
         {
           "name": "ESPN",
@@ -324,7 +324,7 @@
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-12T10:00:00Z"
+      "published": "2026-10-12T20:07:00Z"
     },
     {
       "player": "Caleb Williams",
@@ -334,7 +334,7 @@
       "impact": "watch",
       "direction": "none",
       "headline": "Williams close to returning, no date set",
-      "summary": "Ben Johnson did not commit to a return date for Williams (hamstring) after the loss in Green Bay, and said it could be Atlanta or later. Tyson Bagent remains the starter until then.",
+      "summary": "Ben Johnson has not decided whether Tyson Bagent, Case Keenum or Caleb Williams (hamstring) takes first-team reps this week. Williams is on track but his return date is not set.",
       "sources": [
         {
           "name": "ESPN",
@@ -345,7 +345,7 @@
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-11T23:41:00Z"
+      "published": "2026-10-12T20:20:00Z"
     },
     {
       "player": "Quinshon Judkins",
@@ -355,14 +355,53 @@
       "impact": "watch",
       "direction": "none",
       "headline": "Judkins seen in a walking boot after Jets loss",
-      "summary": "Judkins was wearing a boot on his right foot after Sunday's loss. Raheim Sanders is the main alternative if he misses time.",
+      "summary": "Todd Monken called Judkins day-to-day with an ankle tweak and he has not been ruled out for Sunday's game against Baltimore.",
+      "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nfl/story/_/id/50167865"
+        },
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-12T18:16:00Z"
+    },
+    {
+      "player": "Jaxon Smith-Njigba",
+      "team": "SEA",
+      "position": "WR",
+      "status": "Questionable",
+      "impact": "watch",
+      "direction": "down",
+      "multiplier": 0.9,
+      "headline": "Smith-Njigba limited with ankle injury",
+      "summary": "Smith-Njigba was a limited practice participant Monday ahead of Thursday night's game against Denver. A reduced role is possible if he plays.",
       "sources": [
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-11T21:13:00Z"
+      "published": "2026-10-12T20:28:00Z"
+    },
+    {
+      "player": "Baker Mayfield",
+      "team": "TB",
+      "position": "QB",
+      "status": "Out",
+      "impact": "watch",
+      "direction": "none",
+      "headline": "Mayfield still out with thumb injury",
+      "summary": "Todd Bowles said Mayfield's thumb is in a smaller splint and he is being checked on gripping the ball. Tampa Bay's starter for Sunday at Pittsburgh is unclear.",
+      "sources": [
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-12T19:43:00Z"
     },
     {
       "player": "Tyler Huntley",
@@ -410,18 +449,18 @@
       "player": "Tom Kennedy",
       "team": "DET",
       "position": "WR",
-      "status": "Questionable",
+      "status": "Out",
       "impact": "info",
-      "direction": "none",
-      "headline": "Kennedy leaves Lions win on crutches",
-      "summary": "Kennedy (knee) left the win over Arizona on crutches. He is a depth receiver.",
+      "direction": "out",
+      "headline": "Kennedy out for the season with MCL injury",
+      "summary": "NFL Network reports Kennedy suffered a season-ending MCL injury against Arizona. He is a depth receiver for Detroit.",
       "sources": [
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-11T23:56:00Z"
+      "published": "2026-10-12T17:05:00Z"
     },
     {
       "player": "Tre' Harris",
@@ -439,6 +478,23 @@
         }
       ],
       "published": "2026-10-11T22:11:00Z"
+    },
+    {
+      "player": "Jalen Coker",
+      "team": "CAR",
+      "position": "WR",
+      "status": "Questionable",
+      "impact": "info",
+      "direction": "none",
+      "headline": "Coker on track to return vs. Eagles",
+      "summary": "Dave Canales says Coker (quadriceps) is on track to play Sunday against Philadelphia after a one-game absence.",
+      "sources": [
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-12T17:35:00Z"
     }
   ]
 }
