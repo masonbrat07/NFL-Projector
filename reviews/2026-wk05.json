@@ -1,0 +1,4947 @@
+{
+ "season": 2026,
+ "week": 5,
+ "players": 162,
+ "dnp": 39,
+ "overall": {
+  "n": 162,
+  "mae": 5.791189258035641,
+  "bias": -0.709189054305143,
+  "normal_mae": 6.07144355842468
+ },
+ "byPos": {
+  "QB": {
+   "n": 32,
+   "mae": 6.5843432299971285,
+   "bias": -1.114925149224297,
+   "normal_mae": 7.553215393112097
+  },
+  "RB": {
+   "n": 42,
+   "mae": 6.183821630428325,
+   "bias": -1.0348151710222568,
+   "normal_mae": 6.289473707575864
+  },
+  "WR": {
+   "n": 59,
+   "mae": 5.4072441434795016,
+   "bias": -0.4844614288414271,
+   "normal_mae": 5.417623960617857
+  },
+  "TE": {
+   "n": 29,
+   "mae": 5.1284746033994955,
+   "bias": -0.24708829440264227,
+   "normal_mae": 5.450801878985223
+  }
+ },
+ "ou": {
+  "over": [
+   {
+    "name": "Greg Dulcich",
+    "pos": "TE",
+    "team": "MIA",
+    "opp": "CIN",
+    "stat": "rec_yds",
+    "normal": 30.9,
+    "proj": 42.29,
+    "actual": 37,
+    "hit": true
+   },
+   {
+    "name": "Trey McBride",
+    "pos": "TE",
+    "team": "ARI",
+    "opp": "DET",
+    "stat": "rec_yds",
+    "normal": 56.92,
+    "proj": 73.13,
+    "actual": 66,
+    "hit": true
+   },
+   {
+    "name": "Michael Wilson",
+    "pos": "WR",
+    "team": "ARI",
+    "opp": "DET",
+    "stat": "rec_yds",
+    "normal": 64.19,
+    "proj": 82.19,
+    "actual": 30,
+    "hit": false
+   },
+   {
+    "name": "Kendrick Bourne",
+    "pos": "WR",
+    "team": "ARI",
+    "opp": "DET",
+    "stat": "rec_yds",
+    "normal": 27.68,
+    "proj": 34.38,
+    "actual": 70,
+    "hit": true
+   },
+   {
+    "name": "Courtland Sutton",
+    "pos": "WR",
+    "team": "DEN",
+    "opp": "LAC",
+    "stat": "rec_yds",
+    "normal": 29.64,
+    "proj": 36.41,
+    "actual": 18,
+    "hit": false
+   },
+   {
+    "name": "Braelon Allen",
+    "pos": "RB",
+    "team": "NYJ",
+    "opp": "CLE",
+    "stat": "rush_yds",
+    "normal": 25.5,
+    "proj": 44.92,
+    "actual": 116,
+    "hit": true
+   },
+   {
+    "name": "Jacory Croskey-Merritt",
+    "pos": "RB",
+    "team": "WSH",
+    "opp": "NYG",
+    "stat": "rush_yds",
+    "normal": 36.46,
+    "proj": 53.36,
+    "actual": 82,
+    "hit": true
+   },
+   {
+    "name": "Quinshon Judkins",
+    "pos": "RB",
+    "team": "CLE",
+    "opp": "NYJ",
+    "stat": "rush_yds",
+    "normal": 42.24,
+    "proj": 51.27,
+    "actual": 44,
+    "hit": true
+   },
+   {
+    "name": "J.K. Dobbins",
+    "pos": "RB",
+    "team": "DEN",
+    "opp": "LAC",
+    "stat": "rush_yds",
+    "normal": 46.91,
+    "proj": 56.7,
+    "actual": 68,
+    "hit": true
+   },
+   {
+    "name": "Jayden Daniels",
+    "pos": "QB",
+    "team": "WSH",
+    "opp": "NYG",
+    "stat": "rush_yds",
+    "normal": 45.91,
+    "proj": 53.96,
+    "actual": 103,
+    "hit": true
+   },
+   {
+    "name": "Jacoby Brissett",
+    "pos": "QB",
+    "team": "ARI",
+    "opp": "DET",
+    "stat": "pass_yds",
+    "normal": 216.89,
+    "proj": 281.73,
+    "actual": 292,
+    "hit": true
+   },
+   {
+    "name": "Malik Willis",
+    "pos": "QB",
+    "team": "MIA",
+    "opp": "CIN",
+    "stat": "pass_yds",
+    "normal": 157.06,
+    "proj": 188.03,
+    "actual": 137,
+    "hit": false
+   },
+   {
+    "name": "Jalen Hurts",
+    "pos": "QB",
+    "team": "PHI",
+    "opp": "JAX",
+    "stat": "pass_yds",
+    "normal": 177.01,
+    "proj": 192.22,
+    "actual": 220,
+    "hit": true
+   },
+   {
+    "name": "Justin Herbert",
+    "pos": "QB",
+    "team": "LAC",
+    "opp": "DEN",
+    "stat": "pass_yds",
+    "normal": 209.63,
+    "proj": 227.26,
+    "actual": 121,
+    "hit": false
+   },
+   {
+    "name": "Aaron Rodgers",
+    "pos": "QB",
+    "team": "PIT",
+    "opp": "IND",
+    "stat": "pass_yds",
+    "normal": 243.56,
+    "proj": 262.51,
+    "actual": 235,
+    "hit": false
+   },
+   {
+    "name": "Jaylen Warren",
+    "pos": "RB",
+    "team": "PIT",
+    "opp": "IND",
+    "stat": "tds",
+    "normal": 0.25,
+    "proj": 0.4,
+    "actual": 2,
+    "hit": true
+   },
+   {
+    "name": "Michael Wilson",
+    "pos": "WR",
+    "team": "ARI",
+    "opp": "DET",
+    "stat": "tds",
+    "normal": 0.34,
+    "proj": 0.51,
+    "actual": 0,
+    "hit": false
+   },
+   {
+    "name": "Trey McBride",
+    "pos": "TE",
+    "team": "ARI",
+    "opp": "DET",
+    "stat": "tds",
+    "normal": 0.52,
+    "proj": 0.77,
+    "actual": 1,
+    "hit": true
+   },
+   {
+    "name": "Garrett Wilson",
+    "pos": "WR",
+    "team": "NYJ",
+    "opp": "CLE",
+    "stat": "tds",
+    "normal": 0.46,
+    "proj": 0.61,
+    "actual": 1,
+    "hit": true
+   },
+   {
+    "name": "Jacory Croskey-Merritt",
+    "pos": "RB",
+    "team": "WSH",
+    "opp": "NYG",
+    "stat": "tds",
+    "normal": 0.34,
+    "proj": 0.44,
+    "actual": 1,
+    "hit": true
+   }
+  ],
+  "under": [
+   {
+    "name": "George Kittle",
+    "pos": "TE",
+    "team": "SF",
+    "opp": "SEA",
+    "stat": "rec_yds",
+    "normal": 58.28,
+    "proj": 40.92,
+    "actual": 24,
+    "hit": true
+   },
+   {
+    "name": "Dalton Kincaid",
+    "pos": "TE",
+    "team": "BUF",
+    "opp": "LAR",
+    "stat": "rec_yds",
+    "normal": 48.04,
+    "proj": 36.94,
+    "actual": 7,
+    "hit": true
+   },
+   {
+    "name": "Dalton Schultz",
+    "pos": "TE",
+    "team": "HOU",
+    "opp": "TEN",
+    "stat": "rec_yds",
+    "normal": 43.48,
+    "proj": 35.87,
+    "actual": 30,
+    "hit": true
+   },
+   {
+    "name": "Ashton Jeanty",
+    "pos": "RB",
+    "team": "LV",
+    "opp": "NE",
+    "stat": "rec_yds",
+    "normal": 32.5,
+    "proj": 27.18,
+    "actual": 50,
+    "hit": false
+   },
+   {
+    "name": "Mike Evans",
+    "pos": "WR",
+    "team": "SF",
+    "opp": "SEA",
+    "stat": "rec_yds",
+    "normal": 47.62,
+    "proj": 39.85,
+    "actual": 113,
+    "hit": false
+   },
+   {
+    "name": "James Cook III",
+    "pos": "RB",
+    "team": "BUF",
+    "opp": "LAR",
+    "stat": "rush_yds",
+    "normal": 89.33,
+    "proj": 69.16,
+    "actual": 111,
+    "hit": false
+   },
+   {
+    "name": "Christian McCaffrey",
+    "pos": "RB",
+    "team": "SF",
+    "opp": "SEA",
+    "stat": "rush_yds",
+    "normal": 55.77,
+    "proj": 44.3,
+    "actual": 68,
+    "hit": false
+   },
+   {
+    "name": "Derrick Henry",
+    "pos": "RB",
+    "team": "BAL",
+    "opp": "ATL",
+    "stat": "rush_yds",
+    "normal": 88.17,
+    "proj": 70.38,
+    "actual": 102,
+    "hit": false
+   },
+   {
+    "name": "Jonathan Taylor",
+    "pos": "RB",
+    "team": "IND",
+    "opp": "PIT",
+    "stat": "rush_yds",
+    "normal": 76.1,
+    "proj": 64.08,
+    "actual": 45,
+    "hit": true
+   },
+   {
+    "name": "Justin Herbert",
+    "pos": "QB",
+    "team": "LAC",
+    "opp": "DEN",
+    "stat": "rush_yds",
+    "normal": 26.05,
+    "proj": 22.63,
+    "actual": 54,
+    "hit": false
+   },
+   {
+    "name": "Brock Purdy",
+    "pos": "QB",
+    "team": "SF",
+    "opp": "SEA",
+    "stat": "pass_yds",
+    "normal": 247.42,
+    "proj": 194.45,
+    "actual": 189,
+    "hit": true
+   },
+   {
+    "name": "Trevor Lawrence",
+    "pos": "QB",
+    "team": "JAX",
+    "opp": "PHI",
+    "stat": "pass_yds",
+    "normal": 223.4,
+    "proj": 193.9,
+    "actual": 331,
+    "hit": false
+   },
+   {
+    "name": "Josh Allen",
+    "pos": "QB",
+    "team": "BUF",
+    "opp": "LAR",
+    "stat": "pass_yds",
+    "normal": 242.73,
+    "proj": 212.95,
+    "actual": 210,
+    "hit": true
+   },
+   {
+    "name": "Case Keenum",
+    "pos": "QB",
+    "team": "CHI",
+    "opp": "GB",
+    "stat": "pass_yds",
+    "normal": 247,
+    "proj": 221.07,
+    "actual": 108,
+    "hit": true
+   },
+   {
+    "name": "C.J. Stroud",
+    "pos": "QB",
+    "team": "HOU",
+    "opp": "TEN",
+    "stat": "pass_yds",
+    "normal": 261.77,
+    "proj": 234.81,
+    "actual": 261,
+    "hit": true
+   },
+   {
+    "name": "Christian McCaffrey",
+    "pos": "RB",
+    "team": "SF",
+    "opp": "SEA",
+    "stat": "tds",
+    "normal": 0.9,
+    "proj": 0.54,
+    "actual": 1,
+    "hit": false
+   },
+   {
+    "name": "Jonathan Taylor",
+    "pos": "RB",
+    "team": "IND",
+    "opp": "PIT",
+    "stat": "tds",
+    "normal": 1.15,
+    "proj": 0.72,
+    "actual": 0,
+    "hit": true
+   },
+   {
+    "name": "Deebo Samuel Sr.",
+    "pos": "WR",
+    "team": "SF",
+    "opp": "SEA",
+    "stat": "tds",
+    "normal": 0.46,
+    "proj": 0.3,
+    "actual": 0,
+    "hit": true
+   },
+   {
+    "name": "Derrick Henry",
+    "pos": "RB",
+    "team": "BAL",
+    "opp": "ATL",
+    "stat": "tds",
+    "normal": 1.18,
+    "proj": 0.77,
+    "actual": 1,
+    "hit": true
+   },
+   {
+    "name": "Daniel Jones",
+    "pos": "QB",
+    "team": "IND",
+    "opp": "PIT",
+    "stat": "tds",
+    "normal": 0.3,
+    "proj": 0.2,
+    "actual": 0,
+    "hit": true
+   }
+  ],
+  "hits": 26,
+  "n": 40
+ },
+ "markets": {
+  "has_archive": true,
+  "props": 1064,
+  "model_brier": 0.23550780824980497,
+  "market_brier": 0.22716517857142782,
+  "disagreements": 478,
+  "model_right": 243,
+  "list": [
+   {
+    "name": "Parker Washington",
+    "stat": "rec_yds",
+    "line": 25,
+    "market": 0.485,
+    "model": 0.715862731404806,
+    "actual": 124,
+    "y": 1
+   },
+   {
+    "name": "Josh Cameron",
+    "stat": "rec_yds",
+    "line": 15,
+    "market": 0.4,
+    "model": 0.6851072611649037,
+    "actual": 43,
+    "y": 1
+   },
+   {
+    "name": "Dontayvion Wicks",
+    "stat": "rec_yds",
+    "line": 40,
+    "market": 0.55,
+    "model": 0.4409594613981147,
+    "actual": 63,
+    "y": 1
+   },
+   {
+    "name": "Darius Cooper",
+    "stat": "rec_yds",
+    "line": 25,
+    "market": 0.445,
+    "model": 0.6316942199512399,
+    "actual": 71,
+    "y": 1
+   },
+   {
+    "name": "Dallas Goedert",
+    "stat": "rec_yds",
+    "line": 40,
+    "market": 0.515,
+    "model": 0.36975498320935807,
+    "actual": 38,
+    "y": 0
+   },
+   {
+    "name": "Matthew Golden",
+    "stat": "rec_yds",
+    "line": 60,
+    "market": 0.46,
+    "model": 0.3570996866220213,
+    "actual": 123,
+    "y": 1
+   },
+   {
+    "name": "Tucker Kraft",
+    "stat": "rec_yds",
+    "line": 50,
+    "market": 0.49,
+    "model": 0.3788343504614,
+    "actual": 64,
+    "y": 1
+   },
+   {
+    "name": "D'Andre Swift",
+    "stat": "rec_yds",
+    "line": 15,
+    "market": 0.585,
+    "model": 0.48108805398643417,
+    "actual": 30,
+    "y": 1
+   },
+   {
+    "name": "Greg Dulcich",
+    "stat": "rec_yds",
+    "line": 25,
+    "market": 0.525,
+    "model": 0.8523967934486927,
+    "actual": 37,
+    "y": 1
+   },
+   {
+    "name": "Ollie Gordon II",
+    "stat": "rec_yds",
+    "line": 15,
+    "market": 0.355,
+    "model": 0.0870553173015427,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Chase Brown",
+    "stat": "rec_yds",
+    "line": 25,
+    "market": 0.41,
+    "model": 0.5756684837333051,
+    "actual": 21,
+    "y": 0
+   },
+   {
+    "name": "Mike Gesicki",
+    "stat": "rec_yds",
+    "line": 25,
+    "market": 0.595,
+    "model": 0.7312242911781481,
+    "actual": 4,
+    "y": 0
+   },
+   {
+    "name": "Garrett Wilson",
+    "stat": "rec_yds",
+    "line": 70,
+    "market": 0.475,
+    "model": 0.33510046133469285,
+    "actual": 104,
+    "y": 1
+   },
+   {
+    "name": "Denzel Boston",
+    "stat": "rec_yds",
+    "line": 50,
+    "market": 0.455,
+    "model": 0.6131846735782532,
+    "actual": 46,
+    "y": 0
+   },
+   {
+    "name": "KC Concepcion",
+    "stat": "rec_yds",
+    "line": 40,
+    "market": 0.49,
+    "model": 0.38909762828140737,
+    "actual": 5,
+    "y": 0
+   },
+   {
+    "name": "Quinshon Judkins",
+    "stat": "rec_yds",
+    "line": 15,
+    "market": 0.52,
+    "model": 0.6290407512891563,
+    "actual": 6,
+    "y": 0
+   },
+   {
+    "name": "Braelon Allen",
+    "stat": "rec_yds",
+    "line": 15,
+    "market": 0.475,
+    "model": 0.11467467984039359,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Isaiah Williams",
+    "stat": "rec_yds",
+    "line": 25,
+    "market": 0.475,
+    "model": 0.6218259874760459,
+    "actual": 16,
+    "y": 0
+   },
+   {
+    "name": "Wan'Dale Robinson",
+    "stat": "rec_yds",
+    "line": 40,
+    "market": 0.385,
+    "model": 0.5397332612953117,
+    "actual": 53,
+    "y": 1
+   },
+   {
+    "name": "Carnell Tate",
+    "stat": "rec_yds",
+    "line": 50,
+    "market": 0.45,
+    "model": 0.681899841509308,
+    "actual": 6,
+    "y": 0
+   },
+   {
+    "name": "Kayshon Boutte",
+    "stat": "rec_yds",
+    "line": 25,
+    "market": 0.51,
+    "model": 0.6552188446104183,
+    "actual": 38,
+    "y": 1
+   },
+   {
+    "name": "Xavier Hutchinson",
+    "stat": "rec_yds",
+    "line": 15,
+    "market": 0.535,
+    "model": 0.8473947909624603,
+    "actual": 65,
+    "y": 1
+   },
+   {
+    "name": "David Montgomery",
+    "stat": "rec_yds",
+    "line": 10,
+    "market": 0.415,
+    "model": 0.5236382325720793,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Pat Freiermuth",
+    "stat": "rec_yds",
+    "line": 25,
+    "market": 0.555,
+    "model": 0.7448655984612054,
+    "actual": 44,
+    "y": 1
+   },
+   {
+    "name": "Darnell Washington",
+    "stat": "rec_yds",
+    "line": 25,
+    "market": 0.46,
+    "model": 0.6259383128454414,
+    "actual": 12,
+    "y": 0
+   },
+   {
+    "name": "Josh Downs",
+    "stat": "rec_yds",
+    "line": 60,
+    "market": 0.44,
+    "model": 0.28388601332501406,
+    "actual": 47,
+    "y": 0
+   },
+   {
+    "name": "Tyler Warren",
+    "stat": "rec_yds",
+    "line": 40,
+    "market": 0.565,
+    "model": 0.2713207741817022,
+    "actual": 83,
+    "y": 1
+   },
+   {
+    "name": "Jaylen Warren",
+    "stat": "rec_yds",
+    "line": 25,
+    "market": 0.405,
+    "model": 0.6190844806812468,
+    "actual": 87,
+    "y": 1
+   },
+   {
+    "name": "Brock Bowers",
+    "stat": "rec_yds",
+    "line": 70,
+    "market": 0.535,
+    "model": 0.42232444396203606,
+    "actual": 110,
+    "y": 1
+   },
+   {
+    "name": "Ashton Jeanty",
+    "stat": "rec_yds",
+    "line": 15,
+    "market": 0.49,
+    "model": 0.7160239453017074,
+    "actual": 50,
+    "y": 1
+   },
+   {
+    "name": "Tre Tucker",
+    "stat": "rec_yds",
+    "line": 40,
+    "market": 0.52,
+    "model": 0.6268498061538672,
+    "actual": 41,
+    "y": 1
+   },
+   {
+    "name": "Juwan Johnson",
+    "stat": "rec_yds",
+    "line": 40,
+    "market": 0.545,
+    "model": 0.7033426935602359,
+    "actual": 16,
+    "y": 0
+   },
+   {
+    "name": "Chris Olave",
+    "stat": "rec_yds",
+    "line": 80,
+    "market": 0.52,
+    "model": 0.62871185335589,
+    "actual": 46,
+    "y": 0
+   },
+   {
+    "name": "Devaughn Vele",
+    "stat": "rec_yds",
+    "line": 40,
+    "market": 0.505,
+    "model": 0.6234312677510561,
+    "actual": 26,
+    "y": 0
+   },
+   {
+    "name": "T.J. Hockenson",
+    "stat": "rec_yds",
+    "line": 40,
+    "market": 0.435,
+    "model": 0.5704745721294114,
+    "actual": 7,
+    "y": 0
+   },
+   {
+    "name": "Noah Fant",
+    "stat": "rec_yds",
+    "line": 15,
+    "market": 0.465,
+    "model": 0.7199586147395534,
+    "actual": 7,
+    "y": 0
+   },
+   {
+    "name": "Antonio Williams",
+    "stat": "rec_yds",
+    "line": 40,
+    "market": 0.405,
+    "model": 0.2780771853070242,
+    "actual": 31,
+    "y": 0
+   },
+   {
+    "name": "Omarion Hampton",
+    "stat": "rec_yds",
+    "line": 15,
+    "market": 0.255,
+    "model": 0.4268758346441561,
+    "actual": 6,
+    "y": 0
+   },
+   {
+    "name": "Trey McBride",
+    "stat": "rec_yds",
+    "line": 80,
+    "market": 0.525,
+    "model": 0.411057597292419,
+    "actual": 66,
+    "y": 0
+   },
+   {
+    "name": "Isaac TeSlaa",
+    "stat": "rec_yds",
+    "line": 25,
+    "market": 0.52,
+    "model": 0.6510267955204787,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Tyler Allgeier",
+    "stat": "rec_yds",
+    "line": 15,
+    "market": 0.345,
+    "model": 0.18319047496690777,
+    "actual": 9,
+    "y": 0
+   },
+   {
+    "name": "Jaxon Smith-Njigba",
+    "stat": "rec_yds",
+    "line": 100,
+    "market": 0.465,
+    "model": 0.35592388491964466,
+    "actual": 102,
+    "y": 1
+   },
+   {
+    "name": "Mike Evans",
+    "stat": "rec_yds",
+    "line": 50,
+    "market": 0.505,
+    "model": 0.3510555465207472,
+    "actual": 113,
+    "y": 1
+   },
+   {
+    "name": "George Kittle",
+    "stat": "rec_yds",
+    "line": 50,
+    "market": 0.555,
+    "model": 0.3821454185211466,
+    "actual": 24,
+    "y": 0
+   },
+   {
+    "name": "Christian McCaffrey",
+    "stat": "rec_yds",
+    "line": 40,
+    "market": 0.43,
+    "model": 0.3098999366917088,
+    "actual": 15,
+    "y": 0
+   },
+   {
+    "name": "Trevor Lawrence",
+    "stat": "pass_td",
+    "line": 2,
+    "market": 0.51,
+    "model": 0.3351920884628954,
+    "actual": 2,
+    "y": 1
+   },
+   {
+    "name": "Tyson Bagent",
+    "stat": "pass_td",
+    "line": 2,
+    "market": 0.48,
+    "model": 0.040398169654053295,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Geno Smith",
+    "stat": "pass_td",
+    "line": 2,
+    "market": 0.385,
+    "model": 0.4946299558725227,
+    "actual": 1,
+    "y": 0
+   },
+   {
+    "name": "Daniel Jones",
+    "stat": "pass_td",
+    "line": 2,
+    "market": 0.355,
+    "model": 0.21831520483778555,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Kyler Murray",
+    "stat": "pass_td",
+    "line": 2,
+    "market": 0.4,
+    "model": 0.27835236310369704,
+    "actual": 1,
+    "y": 0
+   },
+   {
+    "name": "Jacoby Brissett",
+    "stat": "pass_td",
+    "line": 2,
+    "market": 0.575,
+    "model": 0.684735807756212,
+    "actual": 3,
+    "y": 1
+   },
+   {
+    "name": "Sam Darnold",
+    "stat": "pass_td",
+    "line": 2,
+    "market": 0.515,
+    "model": 0.3569127766003666,
+    "actual": 1,
+    "y": 0
+   },
+   {
+    "name": "Trevor Lawrence",
+    "stat": "pass_yds",
+    "line": 225,
+    "market": 0.495,
+    "model": 0.2639656113640092,
+    "actual": 331,
+    "y": 1
+   },
+   {
+    "name": "Tyson Bagent",
+    "stat": "pass_yds",
+    "line": 225,
+    "market": 0.455,
+    "model": 0.11761680438178168,
+    "actual": 87,
+    "y": 0
+   },
+   {
+    "name": "Aaron Rodgers",
+    "stat": "pass_yds",
+    "line": 225,
+    "market": 0.495,
+    "model": 0.718767244863074,
+    "actual": 235,
+    "y": 1
+   },
+   {
+    "name": "Kyler Murray",
+    "stat": "pass_yds",
+    "line": 225,
+    "market": 0.435,
+    "model": 0.2553298368896637,
+    "actual": 229,
+    "y": 1
+   },
+   {
+    "name": "Tyler Shough",
+    "stat": "pass_yds",
+    "line": 225,
+    "market": 0.565,
+    "model": 0.7006804093941812,
+    "actual": 96,
+    "y": 0
+   },
+   {
+    "name": "Jameis Winston",
+    "stat": "pass_yds",
+    "line": 200,
+    "market": 0.495,
+    "model": 0.38791158151060223,
+    "actual": 326,
+    "y": 1
+   },
+   {
+    "name": "Justin Herbert",
+    "stat": "pass_yds",
+    "line": 200,
+    "market": 0.505,
+    "model": 0.6874250639339228,
+    "actual": 121,
+    "y": 0
+   },
+   {
+    "name": "Sam Darnold",
+    "stat": "pass_yds",
+    "line": 225,
+    "market": 0.545,
+    "model": 0.4375726693657833,
+    "actual": 195,
+    "y": 0
+   },
+   {
+    "name": "Brock Purdy",
+    "stat": "pass_yds",
+    "line": 225,
+    "market": 0.525,
+    "model": 0.2885551925349349,
+    "actual": 189,
+    "y": 0
+   },
+   {
+    "name": "Parker Washington",
+    "stat": "rec",
+    "line": 5,
+    "market": 0.525,
+    "model": 0.3007445014739629,
+    "actual": 6,
+    "y": 1
+   },
+   {
+    "name": "Dontayvion Wicks",
+    "stat": "rec",
+    "line": 4,
+    "market": 0.5,
+    "model": 0.2717404550577035,
+    "actual": 5,
+    "y": 1
+   },
+   {
+    "name": "Darius Cooper",
+    "stat": "rec",
+    "line": 8,
+    "market": 0.49,
+    "model": 1.0180481857524626e-07,
+    "actual": 2,
+    "y": 0
+   },
+   {
+    "name": "Dallas Goedert",
+    "stat": "rec",
+    "line": 11,
+    "market": 0.49,
+    "model": 4.668740569502283e-05,
+    "actual": 6,
+    "y": 0
+   },
+   {
+    "name": "Matthew Golden",
+    "stat": "rec",
+    "line": 5,
+    "market": 0.52,
+    "model": 0.2205014449218642,
+    "actual": 6,
+    "y": 1
+   },
+   {
+    "name": "Tucker Kraft",
+    "stat": "rec",
+    "line": 5,
+    "market": 0.49,
+    "model": 0.33303221305331343,
+    "actual": 5,
+    "y": 1
+   },
+   {
+    "name": "Christian Watson",
+    "stat": "rec",
+    "line": 5,
+    "market": 0.46,
+    "model": 0.31792833892606076,
+    "actual": 6,
+    "y": 1
+   },
+   {
+    "name": "Luther Burden III",
+    "stat": "rec",
+    "line": 11,
+    "market": 0.495,
+    "model": 8.260890768896356e-05,
+    "actual": 4,
+    "y": 0
+   },
+   {
+    "name": "Colston Loveland",
+    "stat": "rec",
+    "line": 4,
+    "market": 0.585,
+    "model": 0.4709309973549478,
+    "actual": 2,
+    "y": 0
+   },
+   {
+    "name": "D'Andre Swift",
+    "stat": "rec",
+    "line": 3,
+    "market": 0.495,
+    "model": 0.30305261189078436,
+    "actual": 4,
+    "y": 1
+   },
+   {
+    "name": "Greg Dulcich",
+    "stat": "rec",
+    "line": 3,
+    "market": 0.54,
+    "model": 0.7074737357771108,
+    "actual": 4,
+    "y": 1
+   },
+   {
+    "name": "Ollie Gordon II",
+    "stat": "rec",
+    "line": 2,
+    "market": 0.545,
+    "model": 0.4443288055225495,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Malik Washington",
+    "stat": "rec",
+    "line": 5,
+    "market": 0.53,
+    "model": 0.22604891629622959,
+    "actual": 6,
+    "y": 1
+   },
+   {
+    "name": "Garrett Wilson",
+    "stat": "rec",
+    "line": 13,
+    "market": 0.495,
+    "model": 0.004327599572226837,
+    "actual": 7,
+    "y": 0
+   },
+   {
+    "name": "Denzel Boston",
+    "stat": "rec",
+    "line": 4,
+    "market": 0.42,
+    "model": 0.3181620786591186,
+    "actual": 3,
+    "y": 0
+   },
+   {
+    "name": "KC Concepcion",
+    "stat": "rec",
+    "line": 5,
+    "market": 0.425,
+    "model": 0.3051345013152158,
+    "actual": 1,
+    "y": 0
+   },
+   {
+    "name": "Quinshon Judkins",
+    "stat": "rec",
+    "line": 8,
+    "market": 0.495,
+    "model": 0.009737468001008831,
+    "actual": 3,
+    "y": 0
+   },
+   {
+    "name": "Braelon Allen",
+    "stat": "rec",
+    "line": 3,
+    "market": 0.47,
+    "model": 0.26007441362985406,
+    "actual": 1,
+    "y": 0
+   },
+   {
+    "name": "Kenyon Sadiq",
+    "stat": "rec",
+    "line": 9,
+    "market": 0.495,
+    "model": 0.028654292577503293,
+    "actual": 2,
+    "y": 0
+   },
+   {
+    "name": "Isaiah Williams",
+    "stat": "rec",
+    "line": 3,
+    "market": 0.455,
+    "model": 0.5560103820184852,
+    "actual": 1,
+    "y": 0
+   },
+   {
+    "name": "Carnell Tate",
+    "stat": "rec",
+    "line": 11,
+    "market": 0.495,
+    "model": 0.018964220440075508,
+    "actual": 1,
+    "y": 0
+   },
+   {
+    "name": "Kayshon Boutte",
+    "stat": "rec",
+    "line": 7,
+    "market": 0.495,
+    "model": 1.4126886408005745e-05,
+    "actual": 3,
+    "y": 0
+   },
+   {
+    "name": "Xavier Hutchinson",
+    "stat": "rec",
+    "line": 2,
+    "market": 0.445,
+    "model": 0.8003258349166337,
+    "actual": 4,
+    "y": 1
+   },
+   {
+    "name": "Tony Pollard",
+    "stat": "rec",
+    "line": 2,
+    "market": 0.525,
+    "model": 0.6325404062605842,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "DK Metcalf",
+    "stat": "rec",
+    "line": 5,
+    "market": 0.42,
+    "model": 0.31557978681888565,
+    "actual": 3,
+    "y": 0
+   },
+   {
+    "name": "Roman Wilson",
+    "stat": "rec",
+    "line": 4,
+    "market": 0.395,
+    "model": 0.2902524449652615,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Josh Downs",
+    "stat": "rec",
+    "line": 12,
+    "market": 0.49,
+    "model": 1.0201030055445592e-05,
+    "actual": 3,
+    "y": 0
+   },
+   {
+    "name": "Jonathan Taylor",
+    "stat": "rec",
+    "line": 3,
+    "market": 0.485,
+    "model": 0.34256275399597935,
+    "actual": 3,
+    "y": 1
+   },
+   {
+    "name": "Tyler Warren",
+    "stat": "rec",
+    "line": 12,
+    "market": 0.49,
+    "model": 0.00013483004565340018,
+    "actual": 7,
+    "y": 0
+   },
+   {
+    "name": "Jaylen Warren",
+    "stat": "rec",
+    "line": 3,
+    "market": 0.6,
+    "model": 0.7112647146986835,
+    "actual": 6,
+    "y": 1
+   },
+   {
+    "name": "Ashton Jeanty",
+    "stat": "rec",
+    "line": 2,
+    "market": 0.49,
+    "model": 0.8870205772984195,
+    "actual": 3,
+    "y": 1
+   },
+   {
+    "name": "Brock Bowers",
+    "stat": "rec",
+    "line": 7,
+    "market": 0.515,
+    "model": 0.3340733204674753,
+    "actual": 8,
+    "y": 1
+   },
+   {
+    "name": "Cody White",
+    "stat": "rec",
+    "line": 2,
+    "market": 0.605,
+    "model": 0.4691220306960755,
+    "actual": 2,
+    "y": 1
+   },
+   {
+    "name": "Juwan Johnson",
+    "stat": "rec",
+    "line": 11,
+    "market": 0.495,
+    "model": 0.00029470954086663337,
+    "actual": 4,
+    "y": 0
+   },
+   {
+    "name": "Chris Olave",
+    "stat": "rec",
+    "line": 3,
+    "market": 0.495,
+    "model": 0.9906235175614571,
+    "actual": 4,
+    "y": 1
+   },
+   {
+    "name": "Devaughn Vele",
+    "stat": "rec",
+    "line": 10,
+    "market": 0.495,
+    "model": 0.002839142385425597,
+    "actual": 4,
+    "y": 0
+   },
+   {
+    "name": "Aaron Jones Sr.",
+    "stat": "rec",
+    "line": 3,
+    "market": 0.565,
+    "model": 0.4586254127717866,
+    "actual": 3,
+    "y": 1
+   },
+   {
+    "name": "T.J. Hockenson",
+    "stat": "rec",
+    "line": 5,
+    "market": 0.445,
+    "model": 0.5506197764293064,
+    "actual": 1,
+    "y": 0
+   },
+   {
+    "name": "Noah Fant",
+    "stat": "rec",
+    "line": 2,
+    "market": 0.55,
+    "model": 0.7201040928628862,
+    "actual": 1,
+    "y": 0
+   },
+   {
+    "name": "Isaiah Likely",
+    "stat": "rec",
+    "line": 5,
+    "market": 0.485,
+    "model": 0.3507726994486208,
+    "actual": 11,
+    "y": 1
+   },
+   {
+    "name": "Malik Nabers",
+    "stat": "rec",
+    "line": 12,
+    "market": 0.49,
+    "model": 0.0014214342108763711,
+    "actual": 11,
+    "y": 0
+   },
+   {
+    "name": "Cam Skattebo",
+    "stat": "rec",
+    "line": 7,
+    "market": 0.49,
+    "model": 0.0025609304957361356,
+    "actual": 2,
+    "y": 0
+   },
+   {
+    "name": "Jacory Croskey-Merritt",
+    "stat": "rec",
+    "line": 2,
+    "market": 0.365,
+    "model": 0.23353270128698533,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Antonio Williams",
+    "stat": "rec",
+    "line": 4,
+    "market": 0.435,
+    "model": 0.26288650019772253,
+    "actual": 3,
+    "y": 0
+   },
+   {
+    "name": "RJ Harvey",
+    "stat": "rec",
+    "line": 7,
+    "market": 0.48,
+    "model": 0.23033312836099074,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Jaylen Waddle",
+    "stat": "rec",
+    "line": 2,
+    "market": 0.495,
+    "model": 0.8272183909305798,
+    "actual": 2,
+    "y": 1
+   },
+   {
+    "name": "Omarion Hampton",
+    "stat": "rec",
+    "line": 2,
+    "market": 0.385,
+    "model": 0.5853758726170721,
+    "actual": 1,
+    "y": 0
+   },
+   {
+    "name": "Tyler Allgeier",
+    "stat": "rec",
+    "line": 8,
+    "market": 0.495,
+    "model": 5.353143534003735e-07,
+    "actual": 2,
+    "y": 0
+   },
+   {
+    "name": "Jahmyr Gibbs",
+    "stat": "rec",
+    "line": 5,
+    "market": 0.51,
+    "model": 0.3770270404373206,
+    "actual": 5,
+    "y": 1
+   },
+   {
+    "name": "Emanuel Wilson",
+    "stat": "rec",
+    "line": 2,
+    "market": 0.595,
+    "model": 0.39491983666754704,
+    "actual": 2,
+    "y": 1
+   },
+   {
+    "name": "George Kittle",
+    "stat": "rec",
+    "line": 5,
+    "market": 0.49,
+    "model": 0.3143483280650581,
+    "actual": 5,
+    "y": 1
+   },
+   {
+    "name": "Deebo Samuel Sr.",
+    "stat": "rec",
+    "line": 4,
+    "market": 0.52,
+    "model": 0.39264990749820716,
+    "actual": 2,
+    "y": 0
+   },
+   {
+    "name": "Mike Evans",
+    "stat": "rec",
+    "line": 4,
+    "market": 0.585,
+    "model": 0.4540778219916479,
+    "actual": 7,
+    "y": 1
+   },
+   {
+    "name": "Bhayshul Tuten",
+    "stat": "rr_yds",
+    "line": 80,
+    "market": 0.515,
+    "model": 0.26881863018515073,
+    "actual": 96,
+    "y": 1
+   },
+   {
+    "name": "MarShawn Lloyd",
+    "stat": "rr_yds",
+    "line": 50,
+    "market": 0.44,
+    "model": 0.16565352650808263,
+    "actual": 37,
+    "y": 0
+   },
+   {
+    "name": "D'Andre Swift",
+    "stat": "rr_yds",
+    "line": 110,
+    "market": 0.465,
+    "model": 0.19338080610711572,
+    "actual": 73,
+    "y": 0
+   },
+   {
+    "name": "Ollie Gordon II",
+    "stat": "rr_yds",
+    "line": 60,
+    "market": 0.475,
+    "model": 0.3223032239622283,
+    "actual": 88,
+    "y": 1
+   },
+   {
+    "name": "Quinshon Judkins",
+    "stat": "rr_yds",
+    "line": 80,
+    "market": 0.495,
+    "model": 0.3719016598286793,
+    "actual": 50,
+    "y": 0
+   },
+   {
+    "name": "Braelon Allen",
+    "stat": "rr_yds",
+    "line": 90,
+    "market": 0.495,
+    "model": 0.04631003106092668,
+    "actual": 116,
+    "y": 1
+   },
+   {
+    "name": "Woody Marks",
+    "stat": "rr_yds",
+    "line": 40,
+    "market": 0.615,
+    "model": 0.5108857453298679,
+    "actual": 85,
+    "y": 1
+   },
+   {
+    "name": "David Montgomery",
+    "stat": "rr_yds",
+    "line": 60,
+    "market": 0.415,
+    "model": 0.18829111991435654,
+    "actual": 11,
+    "y": 0
+   },
+   {
+    "name": "Jonathan Taylor",
+    "stat": "rr_yds",
+    "line": 110,
+    "market": 0.465,
+    "model": 0.2079862252657183,
+    "actual": 82,
+    "y": 0
+   },
+   {
+    "name": "Ashton Jeanty",
+    "stat": "rr_yds",
+    "line": 90,
+    "market": 0.515,
+    "model": 0.4053088720021254,
+    "actual": 77,
+    "y": 0
+   },
+   {
+    "name": "Aaron Jones Sr.",
+    "stat": "rr_yds",
+    "line": 100,
+    "market": 0.455,
+    "model": 0.32443713841709565,
+    "actual": 117,
+    "y": 1
+   },
+   {
+    "name": "Rachaad White",
+    "stat": "rr_yds",
+    "line": 40,
+    "market": 0.455,
+    "model": 0.6053801918744686,
+    "actual": 20,
+    "y": 0
+   },
+   {
+    "name": "Cam Skattebo",
+    "stat": "rr_yds",
+    "line": 70,
+    "market": 0.555,
+    "model": 0.3774207713688633,
+    "actual": 71,
+    "y": 1
+   },
+   {
+    "name": "Omarion Hampton",
+    "stat": "rr_yds",
+    "line": 50,
+    "market": 0.515,
+    "model": 0.6936413429260655,
+    "actual": 39,
+    "y": 0
+   },
+   {
+    "name": "Tyler Allgeier",
+    "stat": "rr_yds",
+    "line": 40,
+    "market": 0.525,
+    "model": 0.40919387844896016,
+    "actual": 16,
+    "y": 0
+   },
+   {
+    "name": "Jahmyr Gibbs",
+    "stat": "rr_yds",
+    "line": 130,
+    "market": 0.515,
+    "model": 0.37635648205185623,
+    "actual": 207,
+    "y": 1
+   },
+   {
+    "name": "Emanuel Wilson",
+    "stat": "rr_yds",
+    "line": 80,
+    "market": 0.5,
+    "model": 0.31954876465703386,
+    "actual": 72,
+    "y": 0
+   },
+   {
+    "name": "Christian McCaffrey",
+    "stat": "rr_yds",
+    "line": 100,
+    "market": 0.41,
+    "model": 0.2494508021056766,
+    "actual": 83,
+    "y": 0
+   },
+   {
+    "name": "Chris Rodriguez Jr.",
+    "stat": "rush_att",
+    "line": 7,
+    "market": 0.505,
+    "model": 0.6909729466400651,
+    "actual": 2,
+    "y": 0
+   },
+   {
+    "name": "Bhayshul Tuten",
+    "stat": "rush_att",
+    "line": 15,
+    "market": 0.535,
+    "model": 0.2771324114224134,
+    "actual": 22,
+    "y": 1
+   },
+   {
+    "name": "Jalen Hurts",
+    "stat": "rush_att",
+    "line": 7,
+    "market": 0.445,
+    "model": 0.27302324396296185,
+    "actual": 2,
+    "y": 0
+   },
+   {
+    "name": "D'Andre Swift",
+    "stat": "rush_att",
+    "line": 20,
+    "market": 0.485,
+    "model": 0.1993519312556813,
+    "actual": 9,
+    "y": 0
+   },
+   {
+    "name": "Ollie Gordon II",
+    "stat": "rush_att",
+    "line": 12,
+    "market": 0.455,
+    "model": 0.24131878943829665,
+    "actual": 18,
+    "y": 1
+   },
+   {
+    "name": "Chase Brown",
+    "stat": "rush_att",
+    "line": 17,
+    "market": 0.485,
+    "model": 0.18442418640923286,
+    "actual": 13,
+    "y": 0
+   },
+   {
+    "name": "Braelon Allen",
+    "stat": "rush_att",
+    "line": 18,
+    "market": 0.475,
+    "model": 0.06277477158527367,
+    "actual": 24,
+    "y": 1
+   },
+   {
+    "name": "Deshaun Watson",
+    "stat": "rush_att",
+    "line": 6,
+    "market": 0.555,
+    "model": 0.8271013822208919,
+    "actual": 6,
+    "y": 1
+   },
+   {
+    "name": "David Montgomery",
+    "stat": "rush_att",
+    "line": 13,
+    "market": 0.56,
+    "model": 0.2592855135241423,
+    "actual": 5,
+    "y": 0
+   },
+   {
+    "name": "Jonathan Taylor",
+    "stat": "rush_att",
+    "line": 20,
+    "market": 0.475,
+    "model": 0.15069720611455462,
+    "actual": 15,
+    "y": 0
+   },
+   {
+    "name": "Jaylen Warren",
+    "stat": "rush_att",
+    "line": 16,
+    "market": 0.605,
+    "model": 0.4299257574636449,
+    "actual": 15,
+    "y": 0
+   },
+   {
+    "name": "Drake Maye",
+    "stat": "rush_att",
+    "line": 6,
+    "market": 0.555,
+    "model": 0.7082068551928828,
+    "actual": 7,
+    "y": 1
+   },
+   {
+    "name": "Jayden Daniels",
+    "stat": "rush_att",
+    "line": 7,
+    "market": 0.435,
+    "model": 0.9065232035399882,
+    "actual": 9,
+    "y": 1
+   },
+   {
+    "name": "Cam Skattebo",
+    "stat": "rush_att",
+    "line": 16,
+    "market": 0.485,
+    "model": 0.28294663266100195,
+    "actual": 13,
+    "y": 0
+   },
+   {
+    "name": "Omarion Hampton",
+    "stat": "rush_att",
+    "line": 11,
+    "market": 0.505,
+    "model": 0.7032149204679718,
+    "actual": 14,
+    "y": 1
+   },
+   {
+    "name": "Keaton Mitchell",
+    "stat": "rush_att",
+    "line": 8,
+    "market": 0.495,
+    "model": 0.26949793056583116,
+    "actual": 6,
+    "y": 0
+   },
+   {
+    "name": "Bo Nix",
+    "stat": "rush_att",
+    "line": 5,
+    "market": 0.435,
+    "model": 0.601201996216406,
+    "actual": 4,
+    "y": 0
+   },
+   {
+    "name": "Jahmyr Gibbs",
+    "stat": "rush_att",
+    "line": 20,
+    "market": 0.505,
+    "model": 0.325376806844752,
+    "actual": 25,
+    "y": 1
+   },
+   {
+    "name": "Jeremiyah Love",
+    "stat": "rush_att",
+    "line": 13,
+    "market": 0.455,
+    "model": 0.5652925244322713,
+    "actual": 12,
+    "y": 0
+   },
+   {
+    "name": "Emanuel Wilson",
+    "stat": "rush_att",
+    "line": 17,
+    "market": 0.485,
+    "model": 0.2892391865560754,
+    "actual": 20,
+    "y": 1
+   },
+   {
+    "name": "Christian McCaffrey",
+    "stat": "rush_att",
+    "line": 15,
+    "market": 0.485,
+    "model": 0.2888428319795826,
+    "actual": 11,
+    "y": 0
+   },
+   {
+    "name": "Bhayshul Tuten",
+    "stat": "rush_yds",
+    "line": 70,
+    "market": 0.475,
+    "model": 0.22930654674039586,
+    "actual": 72,
+    "y": 1
+   },
+   {
+    "name": "Chris Rodriguez Jr.",
+    "stat": "rush_yds",
+    "line": 25,
+    "market": 0.515,
+    "model": 0.7056152487052816,
+    "actual": 5,
+    "y": 0
+   },
+   {
+    "name": "D'Andre Swift",
+    "stat": "rush_yds",
+    "line": 90,
+    "market": 0.445,
+    "model": 0.288125960190303,
+    "actual": 43,
+    "y": 0
+   },
+   {
+    "name": "MarShawn Lloyd",
+    "stat": "rush_yds",
+    "line": 30,
+    "market": 0.475,
+    "model": 0.22558221777946708,
+    "actual": 31,
+    "y": 1
+   },
+   {
+    "name": "Tyson Bagent",
+    "stat": "rush_yds",
+    "line": 10,
+    "market": 0.525,
+    "model": 0.0031046556040327244,
+    "actual": 17,
+    "y": 1
+   },
+   {
+    "name": "Ollie Gordon II",
+    "stat": "rush_yds",
+    "line": 40,
+    "market": 0.565,
+    "model": 0.4555470499077896,
+    "actual": 88,
+    "y": 1
+   },
+   {
+    "name": "Chase Brown",
+    "stat": "rush_yds",
+    "line": 70,
+    "market": 0.455,
+    "model": 0.2981830366117454,
+    "actual": 39,
+    "y": 0
+   },
+   {
+    "name": "Braelon Allen",
+    "stat": "rush_yds",
+    "line": 70,
+    "market": 0.525,
+    "model": 0.10951501481445791,
+    "actual": 116,
+    "y": 1
+   },
+   {
+    "name": "Geno Smith",
+    "stat": "rush_yds",
+    "line": 10,
+    "market": 0.525,
+    "model": 0.3732335173457557,
+    "actual": 7,
+    "y": 0
+   },
+   {
+    "name": "Quinshon Judkins",
+    "stat": "rush_yds",
+    "line": 60,
+    "market": 0.495,
+    "model": 0.3574382825168617,
+    "actual": 44,
+    "y": 0
+   },
+   {
+    "name": "Deshaun Watson",
+    "stat": "rush_yds",
+    "line": 25,
+    "market": 0.505,
+    "model": 0.6386951633555877,
+    "actual": 40,
+    "y": 1
+   },
+   {
+    "name": "Cam Ward",
+    "stat": "rush_yds",
+    "line": 10,
+    "market": 0.525,
+    "model": 0.675294869375413,
+    "actual": 2,
+    "y": 0
+   },
+   {
+    "name": "David Montgomery",
+    "stat": "rush_yds",
+    "line": 40,
+    "market": 0.575,
+    "model": 0.3448885129507644,
+    "actual": 11,
+    "y": 0
+   },
+   {
+    "name": "C.J. Stroud",
+    "stat": "rush_yds",
+    "line": 10,
+    "market": 0.505,
+    "model": 0.6469694668714109,
+    "actual": 5,
+    "y": 0
+   },
+   {
+    "name": "Jonathan Taylor",
+    "stat": "rush_yds",
+    "line": 90,
+    "market": 0.455,
+    "model": 0.20785061844174457,
+    "actual": 45,
+    "y": 0
+   },
+   {
+    "name": "Kirk Cousins",
+    "stat": "rush_yds",
+    "line": 10,
+    "market": 0.145,
+    "model": 0.0028737710338764266,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Kyler Murray",
+    "stat": "rush_yds",
+    "line": 20,
+    "market": 0.455,
+    "model": 0.6473975337525942,
+    "actual": 51,
+    "y": 1
+   },
+   {
+    "name": "Tyler Shough",
+    "stat": "rush_yds",
+    "line": 10,
+    "market": 0.535,
+    "model": 0.6880678516033513,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Cam Skattebo",
+    "stat": "rush_yds",
+    "line": 60,
+    "market": 0.455,
+    "model": 0.2566784732960383,
+    "actual": 59,
+    "y": 0
+   },
+   {
+    "name": "Jameis Winston",
+    "stat": "rush_yds",
+    "line": 10,
+    "market": 0.235,
+    "model": 0.3361839389308251,
+    "actual": 27,
+    "y": 1
+   },
+   {
+    "name": "Jayden Daniels",
+    "stat": "rush_yds",
+    "line": 30,
+    "market": 0.495,
+    "model": 0.8750479965731087,
+    "actual": 103,
+    "y": 1
+   },
+   {
+    "name": "Rachaad White",
+    "stat": "rush_yds",
+    "line": 25,
+    "market": 0.465,
+    "model": 0.7602609542371135,
+    "actual": 18,
+    "y": 0
+   },
+   {
+    "name": "Omarion Hampton",
+    "stat": "rush_yds",
+    "line": 40,
+    "market": 0.515,
+    "model": 0.7171653801719744,
+    "actual": 33,
+    "y": 0
+   },
+   {
+    "name": "J.K. Dobbins",
+    "stat": "rush_yds",
+    "line": 50,
+    "market": 0.535,
+    "model": 0.6373164010272541,
+    "actual": 68,
+    "y": 1
+   },
+   {
+    "name": "Jacoby Brissett",
+    "stat": "rush_yds",
+    "line": 10,
+    "market": 0.455,
+    "model": 0.6641193668043543,
+    "actual": 19,
+    "y": 1
+   },
+   {
+    "name": "Jahmyr Gibbs",
+    "stat": "rush_yds",
+    "line": 90,
+    "market": 0.515,
+    "model": 0.4080621913902349,
+    "actual": 151,
+    "y": 1
+   },
+   {
+    "name": "Jeremiyah Love",
+    "stat": "rush_yds",
+    "line": 45,
+    "market": 0.525,
+    "model": 0.6848258607016292,
+    "actual": 22,
+    "y": 0
+   },
+   {
+    "name": "Emanuel Wilson",
+    "stat": "rush_yds",
+    "line": 60,
+    "market": 0.575,
+    "model": 0.35720302861122577,
+    "actual": 61,
+    "y": 1
+   },
+   {
+    "name": "Trevor Lawrence",
+    "stat": "pass_att",
+    "line": 30,
+    "market": 0.505,
+    "model": 0.346832554602027,
+    "actual": 39,
+    "y": 1
+   },
+   {
+    "name": "Jalen Hurts",
+    "stat": "pass_att",
+    "line": 32,
+    "market": 0.475,
+    "model": 0.2805045626986873,
+    "actual": 40,
+    "y": 1
+   },
+   {
+    "name": "Tyson Bagent",
+    "stat": "pass_att",
+    "line": 32,
+    "market": 0.485,
+    "model": 0.09307913262202894,
+    "actual": 21,
+    "y": 0
+   },
+   {
+    "name": "Malik Willis",
+    "stat": "pass_att",
+    "line": 29,
+    "market": 0.48,
+    "model": 0.35750236220003795,
+    "actual": 27,
+    "y": 0
+   },
+   {
+    "name": "Joe Burrow",
+    "stat": "pass_att",
+    "line": 34,
+    "market": 0.455,
+    "model": 0.6219030562218446,
+    "actual": 32,
+    "y": 0
+   },
+   {
+    "name": "Aaron Rodgers",
+    "stat": "pass_att",
+    "line": 35,
+    "market": 0.505,
+    "model": 0.6284097222956275,
+    "actual": 31,
+    "y": 0
+   },
+   {
+    "name": "Daniel Jones",
+    "stat": "pass_att",
+    "line": 32,
+    "market": 0.505,
+    "model": 0.3798977992443855,
+    "actual": 44,
+    "y": 1
+   },
+   {
+    "name": "Kyler Murray",
+    "stat": "pass_att",
+    "line": 32,
+    "market": 0.515,
+    "model": 0.34847093174722676,
+    "actual": 30,
+    "y": 0
+   },
+   {
+    "name": "Tyler Shough",
+    "stat": "pass_att",
+    "line": 36,
+    "market": 0.525,
+    "model": 0.6480967414064653,
+    "actual": 25,
+    "y": 0
+   },
+   {
+    "name": "Jameis Winston",
+    "stat": "pass_att",
+    "line": 31,
+    "market": 0.495,
+    "model": 0.28218864571638913,
+    "actual": 54,
+    "y": 1
+   },
+   {
+    "name": "Justin Herbert",
+    "stat": "pass_att",
+    "line": 31,
+    "market": 0.485,
+    "model": 0.6023816097662842,
+    "actual": 24,
+    "y": 0
+   },
+   {
+    "name": "Jacoby Brissett",
+    "stat": "pass_att",
+    "line": 38,
+    "market": 0.475,
+    "model": 0.6882721939375891,
+    "actual": 47,
+    "y": 1
+   },
+   {
+    "name": "Brock Purdy",
+    "stat": "pass_att",
+    "line": 33,
+    "market": 0.475,
+    "model": 0.19705282642464672,
+    "actual": 29,
+    "y": 0
+   },
+   {
+    "name": "Parker Washington",
+    "stat": "rec",
+    "line": 5,
+    "market": 0.515,
+    "model": 0.3007445014739629,
+    "actual": 6,
+    "y": 1
+   },
+   {
+    "name": "Dontayvion Wicks",
+    "stat": "rec",
+    "line": 4,
+    "market": 0.495,
+    "model": 0.2717404550577035,
+    "actual": 5,
+    "y": 1
+   },
+   {
+    "name": "Dallas Goedert",
+    "stat": "rec",
+    "line": 5,
+    "market": 0.465,
+    "model": 0.17565360842004862,
+    "actual": 6,
+    "y": 1
+   },
+   {
+    "name": "Matthew Golden",
+    "stat": "rec",
+    "line": 5,
+    "market": 0.495,
+    "model": 0.2205014449218642,
+    "actual": 6,
+    "y": 1
+   },
+   {
+    "name": "Tucker Kraft",
+    "stat": "rec",
+    "line": 5,
+    "market": 0.465,
+    "model": 0.33303221305331343,
+    "actual": 5,
+    "y": 1
+   },
+   {
+    "name": "Christian Watson",
+    "stat": "rec",
+    "line": 5,
+    "market": 0.445,
+    "model": 0.31792833892606076,
+    "actual": 6,
+    "y": 1
+   },
+   {
+    "name": "Colston Loveland",
+    "stat": "rec",
+    "line": 4,
+    "market": 0.595,
+    "model": 0.4709309973549478,
+    "actual": 2,
+    "y": 0
+   },
+   {
+    "name": "D'Andre Swift",
+    "stat": "rec",
+    "line": 3,
+    "market": 0.495,
+    "model": 0.30305261189078436,
+    "actual": 4,
+    "y": 1
+   },
+   {
+    "name": "Greg Dulcich",
+    "stat": "rec",
+    "line": 3,
+    "market": 0.525,
+    "model": 0.7074737357771108,
+    "actual": 4,
+    "y": 1
+   },
+   {
+    "name": "Malik Washington",
+    "stat": "rec",
+    "line": 5,
+    "market": 0.505,
+    "model": 0.22604891629622959,
+    "actual": 6,
+    "y": 1
+   },
+   {
+    "name": "Garrett Wilson",
+    "stat": "rec",
+    "line": 6,
+    "market": 0.545,
+    "model": 0.4315953326001234,
+    "actual": 7,
+    "y": 1
+   },
+   {
+    "name": "Denzel Boston",
+    "stat": "rec",
+    "line": 4,
+    "market": 0.425,
+    "model": 0.3181620786591186,
+    "actual": 3,
+    "y": 0
+   },
+   {
+    "name": "KC Concepcion",
+    "stat": "rec",
+    "line": 5,
+    "market": 0.435,
+    "model": 0.3051345013152158,
+    "actual": 1,
+    "y": 0
+   },
+   {
+    "name": "Braelon Allen",
+    "stat": "rec",
+    "line": 3,
+    "market": 0.465,
+    "model": 0.26007441362985406,
+    "actual": 1,
+    "y": 0
+   },
+   {
+    "name": "Isaiah Williams",
+    "stat": "rec",
+    "line": 3,
+    "market": 0.455,
+    "model": 0.5560103820184852,
+    "actual": 1,
+    "y": 0
+   },
+   {
+    "name": "Carnell Tate",
+    "stat": "rec",
+    "line": 5,
+    "market": 0.445,
+    "model": 0.6755351826375458,
+    "actual": 1,
+    "y": 0
+   },
+   {
+    "name": "Xavier Hutchinson",
+    "stat": "rec",
+    "line": 2,
+    "market": 0.435,
+    "model": 0.8003258349166337,
+    "actual": 4,
+    "y": 1
+   },
+   {
+    "name": "Tony Pollard",
+    "stat": "rec",
+    "line": 2,
+    "market": 0.525,
+    "model": 0.6325404062605842,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "DK Metcalf",
+    "stat": "rec",
+    "line": 5,
+    "market": 0.425,
+    "model": 0.31557978681888565,
+    "actual": 3,
+    "y": 0
+   },
+   {
+    "name": "Roman Wilson",
+    "stat": "rec",
+    "line": 4,
+    "market": 0.395,
+    "model": 0.2902524449652615,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Josh Downs",
+    "stat": "rec",
+    "line": 5,
+    "market": 0.535,
+    "model": 0.38524340733632423,
+    "actual": 3,
+    "y": 0
+   },
+   {
+    "name": "Jonathan Taylor",
+    "stat": "rec",
+    "line": 3,
+    "market": 0.495,
+    "model": 0.34256275399597935,
+    "actual": 3,
+    "y": 1
+   },
+   {
+    "name": "Tyler Warren",
+    "stat": "rec",
+    "line": 5,
+    "market": 0.565,
+    "model": 0.40324360181864516,
+    "actual": 7,
+    "y": 1
+   },
+   {
+    "name": "Jaylen Warren",
+    "stat": "rec",
+    "line": 3,
+    "market": 0.595,
+    "model": 0.7112647146986835,
+    "actual": 6,
+    "y": 1
+   },
+   {
+    "name": "Brock Bowers",
+    "stat": "rec",
+    "line": 7,
+    "market": 0.515,
+    "model": 0.3340733204674753,
+    "actual": 8,
+    "y": 1
+   },
+   {
+    "name": "Cody White",
+    "stat": "rec",
+    "line": 2,
+    "market": 0.585,
+    "model": 0.4691220306960755,
+    "actual": 2,
+    "y": 1
+   },
+   {
+    "name": "Chris Olave",
+    "stat": "rec",
+    "line": 7,
+    "market": 0.465,
+    "model": 0.5868475000672124,
+    "actual": 4,
+    "y": 0
+   },
+   {
+    "name": "Aaron Jones Sr.",
+    "stat": "rec",
+    "line": 3,
+    "market": 0.585,
+    "model": 0.4586254127717866,
+    "actual": 3,
+    "y": 1
+   },
+   {
+    "name": "Noah Fant",
+    "stat": "rec",
+    "line": 2,
+    "market": 0.535,
+    "model": 0.7201040928628862,
+    "actual": 1,
+    "y": 0
+   },
+   {
+    "name": "Isaiah Likely",
+    "stat": "rec",
+    "line": 5,
+    "market": 0.505,
+    "model": 0.3507726994486208,
+    "actual": 11,
+    "y": 1
+   },
+   {
+    "name": "Jacory Croskey-Merritt",
+    "stat": "rec",
+    "line": 2,
+    "market": 0.345,
+    "model": 0.23353270128698533,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Antonio Williams",
+    "stat": "rec",
+    "line": 4,
+    "market": 0.44,
+    "model": 0.26288650019772253,
+    "actual": 3,
+    "y": 0
+   },
+   {
+    "name": "Jaylen Waddle",
+    "stat": "rec",
+    "line": 5,
+    "market": 0.525,
+    "model": 0.3876887723370168,
+    "actual": 2,
+    "y": 0
+   },
+   {
+    "name": "Omarion Hampton",
+    "stat": "rec",
+    "line": 2,
+    "market": 0.395,
+    "model": 0.5853758726170721,
+    "actual": 1,
+    "y": 0
+   },
+   {
+    "name": "Trey McBride",
+    "stat": "rec",
+    "line": 8,
+    "market": 0.535,
+    "model": 0.6558184931377846,
+    "actual": 9,
+    "y": 1
+   },
+   {
+    "name": "Jahmyr Gibbs",
+    "stat": "rec",
+    "line": 5,
+    "market": 0.515,
+    "model": 0.3770270404373206,
+    "actual": 5,
+    "y": 1
+   },
+   {
+    "name": "Emanuel Wilson",
+    "stat": "rec",
+    "line": 2,
+    "market": 0.575,
+    "model": 0.39491983666754704,
+    "actual": 2,
+    "y": 1
+   },
+   {
+    "name": "George Kittle",
+    "stat": "rec",
+    "line": 5,
+    "market": 0.505,
+    "model": 0.3143483280650581,
+    "actual": 5,
+    "y": 1
+   },
+   {
+    "name": "Deebo Samuel Sr.",
+    "stat": "rec",
+    "line": 4,
+    "market": 0.535,
+    "model": 0.39264990749820716,
+    "actual": 2,
+    "y": 0
+   },
+   {
+    "name": "Mike Evans",
+    "stat": "rec",
+    "line": 4,
+    "market": 0.595,
+    "model": 0.4540778219916479,
+    "actual": 7,
+    "y": 1
+   },
+   {
+    "name": "Trevor Lawrence",
+    "stat": "pass_yds",
+    "line": 225,
+    "market": 0.515,
+    "model": 0.2639656113640092,
+    "actual": 331,
+    "y": 1
+   },
+   {
+    "name": "Jalen Hurts",
+    "stat": "pass_yds",
+    "line": 325,
+    "market": 0.49,
+    "model": 0.020777127372008874,
+    "actual": 220,
+    "y": 0
+   },
+   {
+    "name": "Tyson Bagent",
+    "stat": "pass_yds",
+    "line": 225,
+    "market": 0.445,
+    "model": 0.11761680438178168,
+    "actual": 87,
+    "y": 0
+   },
+   {
+    "name": "Aaron Rodgers",
+    "stat": "pass_yds",
+    "line": 225,
+    "market": 0.49,
+    "model": 0.718767244863074,
+    "actual": 235,
+    "y": 1
+   },
+   {
+    "name": "Kyler Murray",
+    "stat": "pass_yds",
+    "line": 225,
+    "market": 0.42,
+    "model": 0.2553298368896637,
+    "actual": 229,
+    "y": 1
+   },
+   {
+    "name": "Tyler Shough",
+    "stat": "pass_yds",
+    "line": 250,
+    "market": 0.43,
+    "model": 0.5631079816897855,
+    "actual": 96,
+    "y": 0
+   },
+   {
+    "name": "Jameis Winston",
+    "stat": "pass_yds",
+    "line": 200,
+    "market": 0.5,
+    "model": 0.38791158151060223,
+    "actual": 326,
+    "y": 1
+   },
+   {
+    "name": "Justin Herbert",
+    "stat": "pass_yds",
+    "line": 200,
+    "market": 0.515,
+    "model": 0.6874250639339228,
+    "actual": 121,
+    "y": 0
+   },
+   {
+    "name": "Sam Darnold",
+    "stat": "pass_yds",
+    "line": 225,
+    "market": 0.545,
+    "model": 0.4375726693657833,
+    "actual": 195,
+    "y": 0
+   },
+   {
+    "name": "Brock Purdy",
+    "stat": "pass_yds",
+    "line": 225,
+    "market": 0.52,
+    "model": 0.2885551925349349,
+    "actual": 189,
+    "y": 0
+   },
+   {
+    "name": "Trevor Lawrence",
+    "stat": "cmp",
+    "line": 20,
+    "market": 0.505,
+    "model": 0.2892565098326537,
+    "actual": 24,
+    "y": 1
+   },
+   {
+    "name": "Jordan Love",
+    "stat": "cmp",
+    "line": 22,
+    "market": 0.48,
+    "model": 0.3797255506866898,
+    "actual": 25,
+    "y": 1
+   },
+   {
+    "name": "Tyson Bagent",
+    "stat": "cmp",
+    "line": 21,
+    "market": 0.505,
+    "model": 0.1332186027755804,
+    "actual": 12,
+    "y": 0
+   },
+   {
+    "name": "Aaron Rodgers",
+    "stat": "cmp",
+    "line": 22,
+    "market": 0.43,
+    "model": 0.6244700708955928,
+    "actual": 22,
+    "y": 1
+   },
+   {
+    "name": "Kyler Murray",
+    "stat": "cmp",
+    "line": 21,
+    "market": 0.515,
+    "model": 0.3813297042902646,
+    "actual": 24,
+    "y": 1
+   },
+   {
+    "name": "Tyler Shough",
+    "stat": "cmp",
+    "line": 23,
+    "market": 0.495,
+    "model": 0.7081563021449229,
+    "actual": 16,
+    "y": 0
+   },
+   {
+    "name": "Jameis Winston",
+    "stat": "cmp",
+    "line": 19,
+    "market": 0.515,
+    "model": 0.2385584244550354,
+    "actual": 33,
+    "y": 1
+   },
+   {
+    "name": "Justin Herbert",
+    "stat": "cmp",
+    "line": 19,
+    "market": 0.485,
+    "model": 0.6388971272005659,
+    "actual": 14,
+    "y": 0
+   },
+   {
+    "name": "Jacoby Brissett",
+    "stat": "cmp",
+    "line": 26,
+    "market": 0.435,
+    "model": 0.6263035466489066,
+    "actual": 29,
+    "y": 1
+   },
+   {
+    "name": "Sam Darnold",
+    "stat": "cmp",
+    "line": 20,
+    "market": 0.565,
+    "model": 0.42827498643356476,
+    "actual": 18,
+    "y": 0
+   },
+   {
+    "name": "Brock Purdy",
+    "stat": "cmp",
+    "line": 21,
+    "market": 0.515,
+    "model": 0.3136885674956372,
+    "actual": 19,
+    "y": 0
+   },
+   {
+    "name": "Parker Washington",
+    "stat": "rec_yds",
+    "line": 60,
+    "market": 0.525,
+    "model": 0.376588939667883,
+    "actual": 124,
+    "y": 1
+   },
+   {
+    "name": "Josh Cameron",
+    "stat": "rec_yds",
+    "line": 15,
+    "market": 0.405,
+    "model": 0.6851072611649037,
+    "actual": 43,
+    "y": 1
+   },
+   {
+    "name": "Dontayvion Wicks",
+    "stat": "rec_yds",
+    "line": 40,
+    "market": 0.545,
+    "model": 0.4409594613981147,
+    "actual": 63,
+    "y": 1
+   },
+   {
+    "name": "Darius Cooper",
+    "stat": "rec_yds",
+    "line": 25,
+    "market": 0.465,
+    "model": 0.6316942199512399,
+    "actual": 71,
+    "y": 1
+   },
+   {
+    "name": "Dallas Goedert",
+    "stat": "rec_yds",
+    "line": 40,
+    "market": 0.525,
+    "model": 0.36975498320935807,
+    "actual": 38,
+    "y": 0
+   },
+   {
+    "name": "Matthew Golden",
+    "stat": "rec_yds",
+    "line": 60,
+    "market": 0.465,
+    "model": 0.3570996866220213,
+    "actual": 123,
+    "y": 1
+   },
+   {
+    "name": "Colston Loveland",
+    "stat": "rec_yds",
+    "line": 40,
+    "market": 0.475,
+    "model": 0.3737338822723051,
+    "actual": 19,
+    "y": 0
+   },
+   {
+    "name": "D'Andre Swift",
+    "stat": "rec_yds",
+    "line": 15,
+    "market": 0.585,
+    "model": 0.48108805398643417,
+    "actual": 30,
+    "y": 1
+   },
+   {
+    "name": "Greg Dulcich",
+    "stat": "rec_yds",
+    "line": 25,
+    "market": 0.525,
+    "model": 0.8523967934486927,
+    "actual": 37,
+    "y": 1
+   },
+   {
+    "name": "Ollie Gordon II",
+    "stat": "rec_yds",
+    "line": 15,
+    "market": 0.365,
+    "model": 0.0870553173015427,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Chase Brown",
+    "stat": "rec_yds",
+    "line": 25,
+    "market": 0.42,
+    "model": 0.5756684837333051,
+    "actual": 21,
+    "y": 0
+   },
+   {
+    "name": "Mike Gesicki",
+    "stat": "rec_yds",
+    "line": 25,
+    "market": 0.58,
+    "model": 0.7312242911781481,
+    "actual": 4,
+    "y": 0
+   },
+   {
+    "name": "Garrett Wilson",
+    "stat": "rec_yds",
+    "line": 70,
+    "market": 0.475,
+    "model": 0.33510046133469285,
+    "actual": 104,
+    "y": 1
+   },
+   {
+    "name": "Denzel Boston",
+    "stat": "rec_yds",
+    "line": 50,
+    "market": 0.455,
+    "model": 0.6131846735782532,
+    "actual": 46,
+    "y": 0
+   },
+   {
+    "name": "KC Concepcion",
+    "stat": "rec_yds",
+    "line": 40,
+    "market": 0.495,
+    "model": 0.38909762828140737,
+    "actual": 5,
+    "y": 0
+   },
+   {
+    "name": "Quinshon Judkins",
+    "stat": "rec_yds",
+    "line": 15,
+    "market": 0.495,
+    "model": 0.6290407512891563,
+    "actual": 6,
+    "y": 0
+   },
+   {
+    "name": "Braelon Allen",
+    "stat": "rec_yds",
+    "line": 15,
+    "market": 0.485,
+    "model": 0.11467467984039359,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Isaiah Williams",
+    "stat": "rec_yds",
+    "line": 25,
+    "market": 0.465,
+    "model": 0.6218259874760459,
+    "actual": 16,
+    "y": 0
+   },
+   {
+    "name": "Wan'Dale Robinson",
+    "stat": "rec_yds",
+    "line": 40,
+    "market": 0.405,
+    "model": 0.5397332612953117,
+    "actual": 53,
+    "y": 1
+   },
+   {
+    "name": "Carnell Tate",
+    "stat": "rec_yds",
+    "line": 50,
+    "market": 0.455,
+    "model": 0.681899841509308,
+    "actual": 6,
+    "y": 0
+   },
+   {
+    "name": "Kayshon Boutte",
+    "stat": "rec_yds",
+    "line": 25,
+    "market": 0.495,
+    "model": 0.6552188446104183,
+    "actual": 38,
+    "y": 1
+   },
+   {
+    "name": "Xavier Hutchinson",
+    "stat": "rec_yds",
+    "line": 15,
+    "market": 0.515,
+    "model": 0.8473947909624603,
+    "actual": 65,
+    "y": 1
+   },
+   {
+    "name": "Pat Freiermuth",
+    "stat": "rec_yds",
+    "line": 25,
+    "market": 0.545,
+    "model": 0.7448655984612054,
+    "actual": 44,
+    "y": 1
+   },
+   {
+    "name": "Darnell Washington",
+    "stat": "rec_yds",
+    "line": 25,
+    "market": 0.435,
+    "model": 0.6259383128454414,
+    "actual": 12,
+    "y": 0
+   },
+   {
+    "name": "Josh Downs",
+    "stat": "rec_yds",
+    "line": 60,
+    "market": 0.445,
+    "model": 0.28388601332501406,
+    "actual": 47,
+    "y": 0
+   },
+   {
+    "name": "Tyler Warren",
+    "stat": "rec_yds",
+    "line": 40,
+    "market": 0.56,
+    "model": 0.2713207741817022,
+    "actual": 83,
+    "y": 1
+   },
+   {
+    "name": "Jaylen Warren",
+    "stat": "rec_yds",
+    "line": 25,
+    "market": 0.41,
+    "model": 0.6190844806812468,
+    "actual": 87,
+    "y": 1
+   },
+   {
+    "name": "Brock Bowers",
+    "stat": "rec_yds",
+    "line": 70,
+    "market": 0.535,
+    "model": 0.42232444396203606,
+    "actual": 110,
+    "y": 1
+   },
+   {
+    "name": "Tre Tucker",
+    "stat": "rec_yds",
+    "line": 40,
+    "market": 0.525,
+    "model": 0.6268498061538672,
+    "actual": 41,
+    "y": 1
+   },
+   {
+    "name": "Juwan Johnson",
+    "stat": "rec_yds",
+    "line": 40,
+    "market": 0.525,
+    "model": 0.7033426935602359,
+    "actual": 16,
+    "y": 0
+   },
+   {
+    "name": "Chris Olave",
+    "stat": "rec_yds",
+    "line": 80,
+    "market": 0.505,
+    "model": 0.62871185335589,
+    "actual": 46,
+    "y": 0
+   },
+   {
+    "name": "Devaughn Vele",
+    "stat": "rec_yds",
+    "line": 40,
+    "market": 0.515,
+    "model": 0.6234312677510561,
+    "actual": 26,
+    "y": 0
+   },
+   {
+    "name": "T.J. Hockenson",
+    "stat": "rec_yds",
+    "line": 40,
+    "market": 0.435,
+    "model": 0.5704745721294114,
+    "actual": 7,
+    "y": 0
+   },
+   {
+    "name": "Noah Fant",
+    "stat": "rec_yds",
+    "line": 15,
+    "market": 0.455,
+    "model": 0.7199586147395534,
+    "actual": 7,
+    "y": 0
+   },
+   {
+    "name": "Antonio Williams",
+    "stat": "rec_yds",
+    "line": 40,
+    "market": 0.41,
+    "model": 0.2780771853070242,
+    "actual": 31,
+    "y": 0
+   },
+   {
+    "name": "Omarion Hampton",
+    "stat": "rec_yds",
+    "line": 15,
+    "market": 0.255,
+    "model": 0.4268758346441561,
+    "actual": 6,
+    "y": 0
+   },
+   {
+    "name": "Trey McBride",
+    "stat": "rec_yds",
+    "line": 80,
+    "market": 0.525,
+    "model": 0.411057597292419,
+    "actual": 66,
+    "y": 0
+   },
+   {
+    "name": "Isaac TeSlaa",
+    "stat": "rec_yds",
+    "line": 25,
+    "market": 0.505,
+    "model": 0.6510267955204787,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Tyler Allgeier",
+    "stat": "rec_yds",
+    "line": 15,
+    "market": 0.355,
+    "model": 0.18319047496690777,
+    "actual": 9,
+    "y": 0
+   },
+   {
+    "name": "Jeremiyah Love",
+    "stat": "rec_yds",
+    "line": 15,
+    "market": 0.405,
+    "model": 0.2969118146056833,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Mike Evans",
+    "stat": "rec_yds",
+    "line": 50,
+    "market": 0.515,
+    "model": 0.3510555465207472,
+    "actual": 113,
+    "y": 1
+   },
+   {
+    "name": "George Kittle",
+    "stat": "rec_yds",
+    "line": 50,
+    "market": 0.545,
+    "model": 0.3821454185211466,
+    "actual": 24,
+    "y": 0
+   },
+   {
+    "name": "Christian McCaffrey",
+    "stat": "rec_yds",
+    "line": 40,
+    "market": 0.425,
+    "model": 0.3098999366917088,
+    "actual": 15,
+    "y": 0
+   },
+   {
+    "name": "Josh Cameron",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.105,
+    "model": 0.31981877808218473,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Chris Rodriguez Jr.",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.205,
+    "model": 0.34003088740344567,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Bhayshul Tuten",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.465,
+    "model": 0.3492046498551006,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Parker Washington",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.375,
+    "model": 0.24862097119797266,
+    "actual": 2,
+    "y": 1
+   },
+   {
+    "name": "Darius Cooper",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.125,
+    "model": 0.33593371755381995,
+    "actual": 1,
+    "y": 1
+   },
+   {
+    "name": "Dallas Goedert",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.215,
+    "model": 0.38511522299400713,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "MarShawn Lloyd",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.395,
+    "model": 0.25443856508576623,
+    "actual": 2,
+    "y": 1
+   },
+   {
+    "name": "Christian Watson",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.355,
+    "model": 0.5044786843127859,
+    "actual": 2,
+    "y": 1
+   },
+   {
+    "name": "Tyson Bagent",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.135,
+    "model": 0.022097771704672642,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Luther Burden III",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.275,
+    "model": 0.16622966754552493,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Rome Odunze",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.275,
+    "model": 0.16010243033906735,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Chase Brown",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.575,
+    "model": 0.4407829903849432,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Mike Gesicki",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.235,
+    "model": 0.34287837697111245,
+    "actual": 1,
+    "y": 1
+   },
+   {
+    "name": "Dohnte Meyers",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.225,
+    "model": 0.04456511152996656,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Braelon Allen",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.465,
+    "model": 0.3142912830983303,
+    "actual": 1,
+    "y": 1
+   },
+   {
+    "name": "Kenyon Sadiq",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.245,
+    "model": 0.407034611133974,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "KC Concepcion",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.215,
+    "model": 0.06125989190376657,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Harold Fannin Jr.",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.265,
+    "model": 0.37772901149278093,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Wan'Dale Robinson",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.155,
+    "model": 0.293909120127655,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Carnell Tate",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.195,
+    "model": 0.07909071307847082,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Cam Ward",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.105,
+    "model": 0.22696960482567186,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Jaylen Warren",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.525,
+    "model": 0.33147362162889105,
+    "actual": 2,
+    "y": 1
+   },
+   {
+    "name": "Josh Downs",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.27,
+    "model": 0.12030683389644947,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Cody White",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.155,
+    "model": 0.4104499263665965,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Jauan Jennings",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.105,
+    "model": 0.30329497987145193,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Aaron Jones Sr.",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.485,
+    "model": 0.28544635285091247,
+    "actual": 1,
+    "y": 1
+   },
+   {
+    "name": "Noah Fant",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.105,
+    "model": 0.27549352475968547,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "J.K. Dobbins",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.355,
+    "model": 0.23918949279864488,
+    "actual": 1,
+    "y": 1
+   },
+   {
+    "name": "Omarion Hampton",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.305,
+    "model": 0.42907237060366865,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Tre' Harris",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.245,
+    "model": 0.08755893726084152,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Kimani Vidal",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.125,
+    "model": 0.2549077762595513,
+    "actual": 1,
+    "y": 1
+   },
+   {
+    "name": "Jameson Williams",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.335,
+    "model": 0.22546868901503436,
+    "actual": 2,
+    "y": 1
+   },
+   {
+    "name": "Kendrick Bourne",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.195,
+    "model": 0.05457435335395777,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Bam Knight",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.045,
+    "model": 0.3257339257298342,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Emanuel Wilson",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.495,
+    "model": 0.2812835927192626,
+    "actual": 1,
+    "y": 1
+   },
+   {
+    "name": "Christian McCaffrey",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.535,
+    "model": 0.4200130722216562,
+    "actual": 1,
+    "y": 1
+   },
+   {
+    "name": "Trevor Lawrence",
+    "stat": "pass_td",
+    "line": 2,
+    "market": 0.495,
+    "model": 0.3351920884628954,
+    "actual": 2,
+    "y": 1
+   },
+   {
+    "name": "Tyson Bagent",
+    "stat": "pass_td",
+    "line": 2,
+    "market": 0.445,
+    "model": 0.040398169654053295,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Geno Smith",
+    "stat": "pass_td",
+    "line": 2,
+    "market": 0.385,
+    "model": 0.4946299558725227,
+    "actual": 1,
+    "y": 0
+   },
+   {
+    "name": "Daniel Jones",
+    "stat": "pass_td",
+    "line": 2,
+    "market": 0.345,
+    "model": 0.21831520483778555,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Jacoby Brissett",
+    "stat": "pass_td",
+    "line": 2,
+    "market": 0.555,
+    "model": 0.684735807756212,
+    "actual": 3,
+    "y": 1
+   },
+   {
+    "name": "Sam Darnold",
+    "stat": "pass_td",
+    "line": 2,
+    "market": 0.515,
+    "model": 0.3569127766003666,
+    "actual": 1,
+    "y": 0
+   },
+   {
+    "name": "Bhayshul Tuten",
+    "stat": "rush_yds",
+    "line": 70,
+    "market": 0.455,
+    "model": 0.22930654674039586,
+    "actual": 72,
+    "y": 1
+   },
+   {
+    "name": "Chris Rodriguez Jr.",
+    "stat": "rush_yds",
+    "line": 25,
+    "market": 0.525,
+    "model": 0.7056152487052816,
+    "actual": 5,
+    "y": 0
+   },
+   {
+    "name": "D'Andre Swift",
+    "stat": "rush_yds",
+    "line": 30,
+    "market": 0.49,
+    "model": 0.9351104299529336,
+    "actual": 43,
+    "y": 1
+   },
+   {
+    "name": "MarShawn Lloyd",
+    "stat": "rush_yds",
+    "line": 30,
+    "market": 0.455,
+    "model": 0.22558221777946708,
+    "actual": 31,
+    "y": 1
+   },
+   {
+    "name": "Tyson Bagent",
+    "stat": "rush_yds",
+    "line": 10,
+    "market": 0.575,
+    "model": 0.0031046556040327244,
+    "actual": 17,
+    "y": 1
+   },
+   {
+    "name": "Chase Brown",
+    "stat": "rush_yds",
+    "line": 70,
+    "market": 0.47,
+    "model": 0.2981830366117454,
+    "actual": 39,
+    "y": 0
+   },
+   {
+    "name": "Braelon Allen",
+    "stat": "rush_yds",
+    "line": 70,
+    "market": 0.515,
+    "model": 0.10951501481445791,
+    "actual": 116,
+    "y": 1
+   },
+   {
+    "name": "Geno Smith",
+    "stat": "rush_yds",
+    "line": 10,
+    "market": 0.54,
+    "model": 0.3732335173457557,
+    "actual": 7,
+    "y": 0
+   },
+   {
+    "name": "Quinshon Judkins",
+    "stat": "rush_yds",
+    "line": 60,
+    "market": 0.5,
+    "model": 0.3574382825168617,
+    "actual": 44,
+    "y": 0
+   },
+   {
+    "name": "Deshaun Watson",
+    "stat": "rush_yds",
+    "line": 25,
+    "market": 0.535,
+    "model": 0.6386951633555877,
+    "actual": 40,
+    "y": 1
+   },
+   {
+    "name": "Cam Ward",
+    "stat": "rush_yds",
+    "line": 10,
+    "market": 0.535,
+    "model": 0.675294869375413,
+    "actual": 2,
+    "y": 0
+   },
+   {
+    "name": "David Montgomery",
+    "stat": "rush_yds",
+    "line": 40,
+    "market": 0.56,
+    "model": 0.3448885129507644,
+    "actual": 11,
+    "y": 0
+   },
+   {
+    "name": "C.J. Stroud",
+    "stat": "rush_yds",
+    "line": 10,
+    "market": 0.53,
+    "model": 0.6469694668714109,
+    "actual": 5,
+    "y": 0
+   },
+   {
+    "name": "Jonathan Taylor",
+    "stat": "rush_yds",
+    "line": 90,
+    "market": 0.455,
+    "model": 0.20785061844174457,
+    "actual": 45,
+    "y": 0
+   },
+   {
+    "name": "Ashton Jeanty",
+    "stat": "rush_yds",
+    "line": 30,
+    "market": 0.49,
+    "model": 0.8249980819173666,
+    "actual": 27,
+    "y": 0
+   },
+   {
+    "name": "Kirk Cousins",
+    "stat": "rush_yds",
+    "line": 10,
+    "market": 0.145,
+    "model": 0.0028737710338764266,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Kyler Murray",
+    "stat": "rush_yds",
+    "line": 20,
+    "market": 0.45,
+    "model": 0.6473975337525942,
+    "actual": 51,
+    "y": 1
+   },
+   {
+    "name": "Tyler Shough",
+    "stat": "rush_yds",
+    "line": 10,
+    "market": 0.545,
+    "model": 0.6880678516033513,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Cam Skattebo",
+    "stat": "rush_yds",
+    "line": 60,
+    "market": 0.475,
+    "model": 0.2566784732960383,
+    "actual": 59,
+    "y": 0
+   },
+   {
+    "name": "Jameis Winston",
+    "stat": "rush_yds",
+    "line": 10,
+    "market": 0.225,
+    "model": 0.3361839389308251,
+    "actual": 27,
+    "y": 1
+   },
+   {
+    "name": "Jayden Daniels",
+    "stat": "rush_yds",
+    "line": 30,
+    "market": 0.525,
+    "model": 0.8750479965731087,
+    "actual": 103,
+    "y": 1
+   },
+   {
+    "name": "Rachaad White",
+    "stat": "rush_yds",
+    "line": 25,
+    "market": 0.485,
+    "model": 0.7602609542371135,
+    "actual": 18,
+    "y": 0
+   },
+   {
+    "name": "Omarion Hampton",
+    "stat": "rush_yds",
+    "line": 80,
+    "market": 0.49,
+    "model": 0.11800605689079202,
+    "actual": 33,
+    "y": 0
+   },
+   {
+    "name": "J.K. Dobbins",
+    "stat": "rush_yds",
+    "line": 50,
+    "market": 0.53,
+    "model": 0.6373164010272541,
+    "actual": 68,
+    "y": 1
+   },
+   {
+    "name": "Jacoby Brissett",
+    "stat": "rush_yds",
+    "line": 10,
+    "market": 0.455,
+    "model": 0.6641193668043543,
+    "actual": 19,
+    "y": 1
+   },
+   {
+    "name": "Jeremiyah Love",
+    "stat": "rush_yds",
+    "line": 45,
+    "market": 0.49,
+    "model": 0.6848258607016292,
+    "actual": 22,
+    "y": 0
+   },
+   {
+    "name": "Sam Darnold",
+    "stat": "rush_yds",
+    "line": 15,
+    "market": 0.495,
+    "model": 0.05790221543088847,
+    "actual": 5,
+    "y": 0
+   },
+   {
+    "name": "Emanuel Wilson",
+    "stat": "rush_yds",
+    "line": 60,
+    "market": 0.545,
+    "model": 0.35720302861122577,
+    "actual": 61,
+    "y": 1
+   },
+   {
+    "name": "Josh Cameron",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.075,
+    "model": 0.31981877808218473,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Chris Rodriguez Jr.",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.185,
+    "model": 0.34003088740344567,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Bhayshul Tuten",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.465,
+    "model": 0.3492046498551006,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Parker Washington",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.37,
+    "model": 0.24862097119797266,
+    "actual": 2,
+    "y": 1
+   },
+   {
+    "name": "Darius Cooper",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.115,
+    "model": 0.33593371755381995,
+    "actual": 1,
+    "y": 1
+   },
+   {
+    "name": "Dallas Goedert",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.205,
+    "model": 0.38511522299400713,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Tucker Kraft",
+    "stat": "any_td",
+    "line": 3,
+    "market": 0.47,
+    "model": 0.009725939448041121,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "MarShawn Lloyd",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.41,
+    "model": 0.25443856508576623,
+    "actual": 2,
+    "y": 1
+   },
+   {
+    "name": "Christian Watson",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.315,
+    "model": 0.5044786843127859,
+    "actual": 2,
+    "y": 1
+   },
+   {
+    "name": "Luther Burden III",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.27,
+    "model": 0.16622966754552493,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Rome Odunze",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.275,
+    "model": 0.16010243033906735,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Chase Brown",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.55,
+    "model": 0.4407829903849432,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Mike Gesicki",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.24,
+    "model": 0.34287837697111245,
+    "actual": 1,
+    "y": 1
+   },
+   {
+    "name": "Dohnte Meyers",
+    "stat": "any_td",
+    "line": 3,
+    "market": 0.47,
+    "model": 1.5261143075151473e-05,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Braelon Allen",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.455,
+    "model": 0.3142912830983303,
+    "actual": 1,
+    "y": 1
+   },
+   {
+    "name": "Kenyon Sadiq",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.23,
+    "model": 0.407034611133974,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "KC Concepcion",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.215,
+    "model": 0.06125989190376657,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Harold Fannin Jr.",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.26,
+    "model": 0.37772901149278093,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Wan'Dale Robinson",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.135,
+    "model": 0.293909120127655,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Cam Ward",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.095,
+    "model": 0.22696960482567186,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Jaylen Warren",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.535,
+    "model": 0.33147362162889105,
+    "actual": 2,
+    "y": 1
+   },
+   {
+    "name": "Roman Wilson",
+    "stat": "any_td",
+    "line": 3,
+    "market": 0.47,
+    "model": 0.006772529423962892,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Josh Downs",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.265,
+    "model": 0.12030683389644947,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Aaron Rodgers",
+    "stat": "any_td",
+    "line": 2,
+    "market": 0.47,
+    "model": 0.0013567106798328954,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Cody White",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.135,
+    "model": 0.4104499263665965,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Juwan Johnson",
+    "stat": "any_td",
+    "line": 3,
+    "market": 0.47,
+    "model": 0.0033895801454795205,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Tyler Shough",
+    "stat": "any_td",
+    "line": 3,
+    "market": 0.47,
+    "model": 0.0010874264337670247,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Jauan Jennings",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.09,
+    "model": 0.30329497987145193,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Aaron Jones Sr.",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.48,
+    "model": 0.28544635285091247,
+    "actual": 1,
+    "y": 1
+   },
+   {
+    "name": "Noah Fant",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.085,
+    "model": 0.27549352475968547,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Isaiah Likely",
+    "stat": "any_td",
+    "line": 3,
+    "market": 0.47,
+    "model": 0.002786634729336157,
+    "actual": 2,
+    "y": 0
+   },
+   {
+    "name": "Antonio Williams",
+    "stat": "any_td",
+    "line": 3,
+    "market": 0.47,
+    "model": 0.001965105574900705,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "J.K. Dobbins",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.36,
+    "model": 0.23918949279864488,
+    "actual": 1,
+    "y": 1
+   },
+   {
+    "name": "Omarion Hampton",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.305,
+    "model": 0.42907237060366865,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Tre' Harris",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.245,
+    "model": 0.08755893726084152,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Kimani Vidal",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.095,
+    "model": 0.2549077762595513,
+    "actual": 1,
+    "y": 1
+   },
+   {
+    "name": "Kendrick Bourne",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.2,
+    "model": 0.05457435335395777,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Bam Knight",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.03,
+    "model": 0.3257339257298342,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Emanuel Wilson",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.5,
+    "model": 0.2812835927192626,
+    "actual": 1,
+    "y": 1
+   },
+   {
+    "name": "Christian McCaffrey",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.535,
+    "model": 0.4200130722216562,
+    "actual": 1,
+    "y": 1
+   },
+   {
+    "name": "Michael Penix Jr.",
+    "stat": "pass_td",
+    "line": 2,
+    "market": 0.425,
+    "model": 0.274155175972822,
+    "actual": 1,
+    "y": 0
+   },
+   {
+    "name": "Tyler Huntley",
+    "stat": "pass_td",
+    "line": 2,
+    "market": 0.315,
+    "model": 0.17436205292182938,
+    "actual": 2,
+    "y": 1
+   },
+   {
+    "name": "Derrick Henry",
+    "stat": "rr_yds",
+    "line": 90,
+    "market": 0.485,
+    "model": 0.37365264833297995,
+    "actual": 120,
+    "y": 1
+   },
+   {
+    "name": "Tyler Huntley",
+    "stat": "pass_yds",
+    "line": 175,
+    "market": 0.515,
+    "model": 0.4055642550282509,
+    "actual": 201,
+    "y": 1
+   },
+   {
+    "name": "Drake London",
+    "stat": "rec",
+    "line": 6,
+    "market": 0.565,
+    "model": 0.4527194012338619,
+    "actual": 7,
+    "y": 1
+   },
+   {
+    "name": "Mark Andrews",
+    "stat": "rec",
+    "line": 4,
+    "market": 0.56,
+    "model": 0.4244886066624616,
+    "actual": 4,
+    "y": 1
+   },
+   {
+    "name": "Michael Penix Jr.",
+    "stat": "pass_yds",
+    "line": 200,
+    "market": 0.49,
+    "model": 0.6219937198365615,
+    "actual": 240,
+    "y": 1
+   },
+   {
+    "name": "Tyler Huntley",
+    "stat": "pass_yds",
+    "line": 175,
+    "market": 0.515,
+    "model": 0.4055642550282509,
+    "actual": 201,
+    "y": 1
+   },
+   {
+    "name": "Michael Penix Jr.",
+    "stat": "pass_att",
+    "line": 30,
+    "market": 0.465,
+    "model": 0.3540873595090739,
+    "actual": 32,
+    "y": 1
+   },
+   {
+    "name": "Tyler Huntley",
+    "stat": "pass_att",
+    "line": 28,
+    "market": 0.485,
+    "model": 0.27945042663574404,
+    "actual": 32,
+    "y": 1
+   },
+   {
+    "name": "Zay Flowers",
+    "stat": "rec_yds",
+    "line": 70,
+    "market": 0.475,
+    "model": 0.6180732934254627,
+    "actual": 53,
+    "y": 0
+   },
+   {
+    "name": "Derrick Henry",
+    "stat": "rush_att",
+    "line": 21,
+    "market": 0.415,
+    "model": 0.20304247700663225,
+    "actual": 24,
+    "y": 1
+   },
+   {
+    "name": "Tyler Huntley",
+    "stat": "rush_att",
+    "line": 6,
+    "market": 0.525,
+    "model": 0.6860572492559931,
+    "actual": 6,
+    "y": 1
+   },
+   {
+    "name": "Drake London",
+    "stat": "rec",
+    "line": 6,
+    "market": 0.565,
+    "model": 0.4527194012338619,
+    "actual": 7,
+    "y": 1
+   },
+   {
+    "name": "Mark Andrews",
+    "stat": "rec",
+    "line": 4,
+    "market": 0.565,
+    "model": 0.4244886066624616,
+    "actual": 4,
+    "y": 1
+   },
+   {
+    "name": "Michael Penix Jr.",
+    "stat": "rush_yds",
+    "line": 10,
+    "market": 0.17,
+    "model": 0.31420168181509134,
+    "actual": 8,
+    "y": 0
+   },
+   {
+    "name": "Zay Flowers",
+    "stat": "rec_yds",
+    "line": 70,
+    "market": 0.49,
+    "model": 0.6180732934254627,
+    "actual": 53,
+    "y": 0
+   },
+   {
+    "name": "Michael Penix Jr.",
+    "stat": "rush_yds",
+    "line": 10,
+    "market": 0.175,
+    "model": 0.31420168181509134,
+    "actual": 8,
+    "y": 0
+   },
+   {
+    "name": "Michael Penix Jr.",
+    "stat": "any_td",
+    "line": 2,
+    "market": 0.47,
+    "model": 0.005564169651066431,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Drake London",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.42,
+    "model": 0.25144083996307853,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Brian Robinson Jr.",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.245,
+    "model": 0.38889377087226296,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Michael Penix Jr.",
+    "stat": "pass_td",
+    "line": 2,
+    "market": 0.46,
+    "model": 0.274155175972822,
+    "actual": 1,
+    "y": 0
+   },
+   {
+    "name": "Tyler Huntley",
+    "stat": "pass_td",
+    "line": 2,
+    "market": 0.325,
+    "model": 0.17436205292182938,
+    "actual": 2,
+    "y": 1
+   },
+   {
+    "name": "Drake London",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.425,
+    "model": 0.25144083996307853,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Brian Robinson Jr.",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.265,
+    "model": 0.38889377087226296,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Michael Penix Jr.",
+    "stat": "cmp",
+    "line": 19,
+    "market": 0.485,
+    "model": 0.3811933307683031,
+    "actual": 19,
+    "y": 1
+   },
+   {
+    "name": "Tyler Huntley",
+    "stat": "cmp",
+    "line": 19,
+    "market": 0.445,
+    "model": 0.30380187429372896,
+    "actual": 24,
+    "y": 1
+   },
+   {
+    "name": "Matthew Stafford",
+    "stat": "pass_att",
+    "line": 38,
+    "market": 0.475,
+    "model": 0.5954188434310864,
+    "actual": 54,
+    "y": 1
+   },
+   {
+    "name": "Josh Allen",
+    "stat": "pass_att",
+    "line": 33,
+    "market": 0.515,
+    "model": 0.26485265867374475,
+    "actual": 19,
+    "y": 0
+   },
+   {
+    "name": "James Cook III",
+    "stat": "rr_yds",
+    "line": 90,
+    "market": 0.535,
+    "model": 0.3835141537962874,
+    "actual": 118,
+    "y": 1
+   },
+   {
+    "name": "Puka Nacua",
+    "stat": "rr_yds",
+    "line": 100,
+    "market": 0.505,
+    "model": 0.6585884938931765,
+    "actual": 147,
+    "y": 1
+   },
+   {
+    "name": "Davante Adams",
+    "stat": "rec",
+    "line": 5,
+    "market": 0.435,
+    "model": 0.6338235758336342,
+    "actual": 5,
+    "y": 1
+   },
+   {
+    "name": "Tyler Higbee",
+    "stat": "rec",
+    "line": 3,
+    "market": 0.51,
+    "model": 0.7314836616964064,
+    "actual": 5,
+    "y": 1
+   },
+   {
+    "name": "Puka Nacua",
+    "stat": "rec",
+    "line": 8,
+    "market": 0.455,
+    "model": 0.6354492274261321,
+    "actual": 17,
+    "y": 1
+   },
+   {
+    "name": "Dalton Kincaid",
+    "stat": "rec",
+    "line": 5,
+    "market": 0.47,
+    "model": 0.19775452255842452,
+    "actual": 1,
+    "y": 0
+   },
+   {
+    "name": "Josh Allen",
+    "stat": "pass_yds",
+    "line": 250,
+    "market": 0.475,
+    "model": 0.25214731141406066,
+    "actual": 210,
+    "y": 0
+   },
+   {
+    "name": "Kyren Williams",
+    "stat": "rush_att",
+    "line": 15,
+    "market": 0.505,
+    "model": 0.6244955398159542,
+    "actual": 16,
+    "y": 1
+   },
+   {
+    "name": "James Cook III",
+    "stat": "rush_att",
+    "line": 18,
+    "market": 0.4,
+    "model": 0.2214246471286634,
+    "actual": 25,
+    "y": 1
+   },
+   {
+    "name": "Blake Corum",
+    "stat": "rush_att",
+    "line": 8,
+    "market": 0.465,
+    "model": 0.5725105987026492,
+    "actual": 5,
+    "y": 0
+   },
+   {
+    "name": "Matthew Stafford",
+    "stat": "cmp",
+    "line": 24,
+    "market": 0.51,
+    "model": 0.6127500819622045,
+    "actual": 40,
+    "y": 1
+   },
+   {
+    "name": "Josh Allen",
+    "stat": "cmp",
+    "line": 21,
+    "market": 0.545,
+    "model": 0.33455625773915865,
+    "actual": 12,
+    "y": 0
+   },
+   {
+    "name": "Puka Nacua",
+    "stat": "rec_yds",
+    "line": 100,
+    "market": 0.455,
+    "model": 0.6169089074221208,
+    "actual": 138,
+    "y": 1
+   },
+   {
+    "name": "Kyren Williams",
+    "stat": "rec_yds",
+    "line": 25,
+    "market": 0.44,
+    "model": 0.603361576953199,
+    "actual": 27,
+    "y": 1
+   },
+   {
+    "name": "Tyler Higbee",
+    "stat": "rec_yds",
+    "line": 25,
+    "market": 0.545,
+    "model": 0.7145163414172372,
+    "actual": 83,
+    "y": 1
+   },
+   {
+    "name": "Blake Corum",
+    "stat": "rec_yds",
+    "line": 15,
+    "market": 0.17,
+    "model": 0.03135372605642506,
+    "actual": 53,
+    "y": 1
+   },
+   {
+    "name": "Josh Allen",
+    "stat": "pass_yds",
+    "line": 250,
+    "market": 0.48,
+    "model": 0.25214731141406066,
+    "actual": 210,
+    "y": 0
+   },
+   {
+    "name": "Josh Allen",
+    "stat": "pass_td",
+    "line": 2,
+    "market": 0.495,
+    "model": 0.34890702301425003,
+    "actual": 1,
+    "y": 0
+   },
+   {
+    "name": "Davante Adams",
+    "stat": "rec",
+    "line": 5,
+    "market": 0.445,
+    "model": 0.6338235758336342,
+    "actual": 5,
+    "y": 1
+   },
+   {
+    "name": "Tyler Higbee",
+    "stat": "rec",
+    "line": 3,
+    "market": 0.515,
+    "model": 0.7314836616964064,
+    "actual": 5,
+    "y": 1
+   },
+   {
+    "name": "Puka Nacua",
+    "stat": "rec",
+    "line": 8,
+    "market": 0.455,
+    "model": 0.6354492274261321,
+    "actual": 17,
+    "y": 1
+   },
+   {
+    "name": "Kyren Williams",
+    "stat": "rec",
+    "line": 4,
+    "market": 0.405,
+    "model": 0.5658951414351745,
+    "actual": 6,
+    "y": 1
+   },
+   {
+    "name": "Dalton Kincaid",
+    "stat": "rec",
+    "line": 5,
+    "market": 0.475,
+    "model": 0.19775452255842452,
+    "actual": 1,
+    "y": 0
+   },
+   {
+    "name": "James Cook III",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.495,
+    "model": 0.37943296697992523,
+    "actual": 2,
+    "y": 1
+   },
+   {
+    "name": "Dalton Kincaid",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.325,
+    "model": 0.18471427286146547,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Khalil Shakir",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.285,
+    "model": 0.15074914422364272,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Josh Allen",
+    "stat": "pass_td",
+    "line": 2,
+    "market": 0.495,
+    "model": 0.34890702301425003,
+    "actual": 1,
+    "y": 0
+   },
+   {
+    "name": "Kyren Williams",
+    "stat": "rush_yds",
+    "line": 70,
+    "market": 0.49,
+    "model": 0.6011319003543089,
+    "actual": 49,
+    "y": 0
+   },
+   {
+    "name": "Josh Allen",
+    "stat": "rush_yds",
+    "line": 40,
+    "market": 0.45,
+    "model": 0.34320224367715335,
+    "actual": 121,
+    "y": 1
+   },
+   {
+    "name": "Blake Corum",
+    "stat": "any_td",
+    "line": 3,
+    "market": 0.49,
+    "model": 0.0020614502696523207,
+    "actual": 1,
+    "y": 0
+   },
+   {
+    "name": "Josh Allen",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.505,
+    "model": 0.6098057266887649,
+    "actual": 1,
+    "y": 1
+   },
+   {
+    "name": "James Cook III",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.495,
+    "model": 0.37943296697992523,
+    "actual": 2,
+    "y": 1
+   },
+   {
+    "name": "Dalton Kincaid",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.33,
+    "model": 0.18471427286146547,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Khalil Shakir",
+    "stat": "any_td",
+    "line": 1,
+    "market": 0.28,
+    "model": 0.15074914422364272,
+    "actual": 0,
+    "y": 0
+   },
+   {
+    "name": "Puka Nacua",
+    "stat": "rec_yds",
+    "line": 95,
+    "market": 0.485,
+    "model": 0.6559482995126413,
+    "actual": 138,
+    "y": 1
+   },
+   {
+    "name": "Kyren Williams",
+    "stat": "rec_yds",
+    "line": 25,
+    "market": 0.465,
+    "model": 0.603361576953199,
+    "actual": 27,
+    "y": 1
+   },
+   {
+    "name": "Dalton Kincaid",
+    "stat": "rec_yds",
+    "line": 50,
+    "market": 0.555,
+    "model": 0.38460486388284576,
+    "actual": 7,
+    "y": 0
+   },
+   {
+    "name": "Tyler Higbee",
+    "stat": "rec_yds",
+    "line": 25,
+    "market": 0.535,
+    "model": 0.7145163414172372,
+    "actual": 83,
+    "y": 1
+   },
+   {
+    "name": "Blake Corum",
+    "stat": "rec_yds",
+    "line": 15,
+    "market": 0.185,
+    "model": 0.03135372605642506,
+    "actual": 53,
+    "y": 1
+   },
+   {
+    "name": "Kyren Williams",
+    "stat": "rush_yds",
+    "line": 70,
+    "market": 0.495,
+    "model": 0.6011319003543089,
+    "actual": 49,
+    "y": 0
+   },
+   {
+    "name": "Josh Allen",
+    "stat": "rush_yds",
+    "line": 40,
+    "market": 0.45,
+    "model": 0.34320224367715335,
+    "actual": 121,
+    "y": 1
+   }
+  ]
+ },
+ "misses": [
+  {
+   "name": "Drake Maye",
+   "pos": "QB",
+   "team": "NE",
+   "opp": "LV",
+   "proj": 18,
+   "actual": 39.5,
+   "err": -21.5,
+   "why": [
+    "+15 pts from TDs"
+   ]
+  },
+  {
+   "name": "Bucky Irving",
+   "pos": "RB",
+   "team": "TB",
+   "opp": "DAL",
+   "proj": 9.4,
+   "actual": 30.5,
+   "err": -21.1,
+   "why": [
+    "+10 pts from TDs",
+    "More work: 24 touches vs 15"
+   ]
+  },
+  {
+   "name": "Jaylen Warren",
+   "pos": "RB",
+   "team": "PIT",
+   "opp": "IND",
+   "proj": 13.8,
+   "actual": 33.8,
+   "err": -20,
+   "why": [
+    "+10 pts from TDs"
+   ]
+  },
+  {
+   "name": "Isaiah Likely",
+   "pos": "TE",
+   "team": "NYG",
+   "opp": "WSH",
+   "proj": 7,
+   "actual": 26.9,
+   "err": -19.9,
+   "why": [
+    "+10 pts from TDs",
+    "More work: 13 targets vs 6"
+   ]
+  },
+  {
+   "name": "Parker Washington",
+   "pos": "WR",
+   "team": "JAX",
+   "opp": "PHI",
+   "proj": 8.1,
+   "actual": 27.4,
+   "err": -19.3,
+   "why": [
+    "+10 pts from TDs",
+    "More work: 9 targets vs 6"
+   ]
+  },
+  {
+   "name": "Case Keenum",
+   "pos": "QB",
+   "team": "CHI",
+   "opp": "GB",
+   "proj": 19.8,
+   "actual": 1.7,
+   "err": 18.1,
+   "why": [
+    "-10 pts from TDs",
+    "Less work: 19 attempts vs 32"
+   ]
+  },
+  {
+   "name": "Christian Watson",
+   "pos": "WR",
+   "team": "GB",
+   "opp": "CHI",
+   "proj": 12.9,
+   "actual": 29.3,
+   "err": -16.4,
+   "why": [
+    "+8 pts from TDs"
+   ]
+  },
+  {
+   "name": "Tyler Shough",
+   "pos": "QB",
+   "team": "NO",
+   "opp": "MIN",
+   "proj": 16.8,
+   "actual": 1.8,
+   "err": 15,
+   "why": [
+    "-7 pts from TDs"
+   ]
+  }
+ ],
+ "right": [
+  {
+   "name": "Daniel Jones",
+   "pos": "QB",
+   "team": "IND",
+   "opp": "PIT",
+   "proj": 11.4,
+   "actual": 11.1,
+   "err": 0.3
+  },
+  {
+   "name": "Brock Purdy",
+   "pos": "QB",
+   "team": "SF",
+   "opp": "SEA",
+   "proj": 15.9,
+   "actual": 15.2,
+   "err": 0.8
+  },
+  {
+   "name": "Javonte Williams",
+   "pos": "RB",
+   "team": "DAL",
+   "opp": "TB",
+   "proj": 14,
+   "actual": 13.2,
+   "err": 0.8
+  },
+  {
+   "name": "Trey McBride",
+   "pos": "TE",
+   "team": "ARI",
+   "opp": "DET",
+   "proj": 16.1,
+   "actual": 17.1,
+   "err": -1
+  },
+  {
+   "name": "Michael Penix Jr.",
+   "pos": "QB",
+   "team": "ATL",
+   "opp": "BAL",
+   "proj": 13.3,
+   "actual": 14.4,
+   "err": -1.1
+  }
+ ]
+}
