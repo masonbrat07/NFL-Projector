@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T12:29:40Z",
+  "generated_at": "2026-10-13T20:57:49Z",
   "items": [
     {
       "player": "Deebo Samuel Sr.",
@@ -154,6 +154,44 @@
       "published": "2026-10-12T03:49:00Z"
     },
     {
+      "player": "TreVeyon Henderson",
+      "team": "NE",
+      "position": "RB",
+      "status": "Doubtful",
+      "impact": "high",
+      "direction": "out",
+      "headline": "Henderson out multiple weeks with high ankle sprain",
+      "summary": "An MRI showed a high-ankle sprain, and ESPN reports Henderson will miss multiple weeks. Corey Kiner moves up to the No. 2 back behind Rhamondre Stevenson against the Jets.",
+      "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nfl/story/_/id/50173985"
+        },
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-13T14:26:00Z"
+    },
+    {
+      "player": "Woody Marks",
+      "team": "HOU",
+      "position": "RB",
+      "status": "Active",
+      "impact": "high",
+      "direction": "none",
+      "headline": "Marks set for the lead role in London",
+      "summary": "With Montgomery week-to-week, Marks is expected to handle the lead role against Jacksonville. He played 56 of 66 snaps last week after Montgomery left.",
+      "sources": [
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-13T15:30:00Z"
+    },
+    {
       "player": "Michael Penix Jr.",
       "team": "ATL",
       "position": "QB",
@@ -203,7 +241,7 @@
       "impact": "watch",
       "direction": "none",
       "headline": "Montgomery week-to-week with groin injury",
-      "summary": "DeMeco Ryans called Montgomery week-to-week, so Houston's backfield share is uncertain for Sunday morning in London.",
+      "summary": "Houston coach DeMeco Ryans called Montgomery week-to-week, and he looks headed to miss his first game of the season in London. Woody Marks is expected to take the lead role.",
       "sources": [
         {
           "name": "ESPN injury report",
@@ -340,23 +378,6 @@
       "published": "2026-10-12T19:43:00Z"
     },
     {
-      "player": "TreVeyon Henderson",
-      "team": "NE",
-      "position": "RB",
-      "status": "Questionable",
-      "impact": "watch",
-      "direction": "none",
-      "headline": "Henderson has more ankle testing after Raiders game",
-      "summary": "Henderson was set for further tests Monday after leaving the win. Rhamondre Stevenson is the other main back against the Jets.",
-      "sources": [
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-12T14:28:00Z"
-    },
-    {
       "player": "Breece Hall",
       "team": "NYJ",
       "position": "RB",
@@ -398,8 +419,8 @@
       "status": null,
       "impact": "watch",
       "direction": "none",
-      "headline": "About 19 mph wind forecast for Steelers at Buccaneers",
-      "summary": "A forecast of around 19 mph wind at Raymond James Stadium can cut deep passing and kicking. Treat it as a negative for passing yards.",
+      "headline": "About 20 mph wind forecast for Steelers at Buccaneers",
+      "summary": "A forecast of around 20 mph wind at Raymond James Stadium can cut deep passing and kicking. Treat it as a negative for passing yards.",
       "sources": [
         {
           "name": "Open-Meteo forecast (data.json)",
@@ -415,8 +436,8 @@
       "status": null,
       "impact": "watch",
       "direction": "none",
-      "headline": "About 19 mph wind forecast for Cowboys at Packers",
-      "summary": "A forecast of around 19 mph wind at Lambeau Field on Sunday night can cut deep passing. Treat it as a negative for passing yards.",
+      "headline": "About 18 mph wind forecast for Cowboys at Packers",
+      "summary": "A forecast of around 18 mph wind at Lambeau Field on Sunday night can cut deep passing. Treat it as a negative for passing yards.",
       "sources": [
         {
           "name": "Open-Meteo forecast (data.json)",
@@ -426,21 +447,38 @@
       "published": "2026-10-13T12:30:00Z"
     },
     {
-      "player": "Jalen Coker",
-      "team": "CAR",
-      "position": "WR",
-      "status": "Questionable",
-      "impact": "info",
-      "direction": "none",
-      "headline": "Coker on track to return at Philadelphia",
-      "summary": "Dave Canales says Coker (quadriceps) is on track after missing one game.",
+      "player": "Raheim Sanders",
+      "team": "CLE",
+      "position": "RB",
+      "status": "Injured Reserve",
+      "impact": "watch",
+      "direction": "out",
+      "headline": "Sanders placed on injured reserve",
+      "summary": "Sanders (hip) is on injured reserve, so Cleveland has fewer backs behind Quinshon Judkins, who is day-to-day with an ankle injury.",
       "sources": [
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-12T17:35:00Z"
+      "published": "2026-10-13T20:36:00Z"
+    },
+    {
+      "player": "Jalen Coker",
+      "team": "CAR",
+      "position": "WR",
+      "status": "Questionable",
+      "impact": "info",
+      "direction": "none",
+      "headline": "Coker practiced Tuesday, on track vs. Eagles",
+      "summary": "Coker (quadriceps) took part in Carolina's unofficial practice Tuesday after missing one game.",
+      "sources": [
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-13T18:21:00Z"
     }
   ]
 }
