@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T20:57:49Z",
+  "generated_at": "2026-10-14T11:58:13Z",
   "items": [
     {
       "player": "Deebo Samuel Sr.",
@@ -68,14 +68,14 @@
       "impact": "high",
       "direction": "out",
       "headline": "Charbonnet stays out for Thursday night",
-      "summary": "Mike Macdonald said Charbonnet (knee) will not be activated from reserve for Thursday against Denver, even though he was listed as limited on the practice estimate. George Holani keeps the lead role.",
+      "summary": "Seahawks coach Mike Macdonald said Charbonnet (knee) will not be activated from reserve for Thursday against Denver, though he was a limited participant on Tuesday's estimate. George Holani keeps the lead role.",
       "sources": [
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-12T20:40:00Z"
+      "published": "2026-10-14T00:15:00Z"
     },
     {
       "player": "Lamar Jackson",
@@ -161,7 +161,7 @@
       "impact": "high",
       "direction": "out",
       "headline": "Henderson out multiple weeks with high ankle sprain",
-      "summary": "An MRI showed a high-ankle sprain, and ESPN reports Henderson will miss multiple weeks. Corey Kiner moves up to the No. 2 back behind Rhamondre Stevenson against the Jets.",
+      "summary": "An MRI showed a high-ankle sprain, and ESPN reports Henderson will miss multiple weeks. Rhamondre Stevenson is expected to carry a heavier workload, with Corey Kiner moving to No. 2 against the Jets.",
       "sources": [
         {
           "name": "ESPN",
@@ -190,6 +190,28 @@
         }
       ],
       "published": "2026-10-13T15:30:00Z"
+    },
+    {
+      "player": "Rhamondre Stevenson",
+      "team": "NE",
+      "position": "RB",
+      "status": "Active",
+      "impact": "high",
+      "direction": "up",
+      "multiplier": 1.08,
+      "headline": "Stevenson expected to carry a heavier workload",
+      "summary": "ESPN reports Stevenson will take on more work for the next few weeks while TreVeyon Henderson (high-ankle sprain) recovers. Corey Kiner is the No. 2 back.",
+      "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nfl/story/_/id/50173985"
+        },
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-13T23:07:00Z"
     },
     {
       "player": "Michael Penix Jr.",
@@ -403,14 +425,14 @@
       "direction": "down",
       "multiplier": 0.92,
       "headline": "Smith-Njigba limited with ankle injury",
-      "summary": "Smith-Njigba was a limited participant on Monday's practice estimate ahead of Thursday night at Denver. A reduced role is possible. Drew Lock (forearm) is also limited as the backup quarterback.",
+      "summary": "Smith-Njigba was a limited participant again on Tuesday's estimated report ahead of Thursday night at Denver. A reduced role is possible. Drew Lock (forearm) is also limited as the backup quarterback.",
       "sources": [
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-12T20:28:00Z"
+      "published": "2026-10-13T23:56:00Z"
     },
     {
       "player": null,
@@ -419,15 +441,15 @@
       "status": null,
       "impact": "watch",
       "direction": "none",
-      "headline": "About 20 mph wind forecast for Steelers at Buccaneers",
-      "summary": "A forecast of around 20 mph wind at Raymond James Stadium can cut deep passing and kicking. Treat it as a negative for passing yards.",
+      "headline": "About 21 mph wind forecast for Steelers at Buccaneers",
+      "summary": "A forecast of around 21 mph wind at Raymond James Stadium can cut deep passing and kicking. Treat it as a negative for passing yards.",
       "sources": [
         {
           "name": "Open-Meteo forecast (data.json)",
           "url": "https://open-meteo.com/"
         }
       ],
-      "published": "2026-10-13T12:30:00Z"
+      "published": "2026-10-14T11:30:00Z"
     },
     {
       "player": null,
@@ -436,15 +458,15 @@
       "status": null,
       "impact": "watch",
       "direction": "none",
-      "headline": "About 18 mph wind forecast for Cowboys at Packers",
-      "summary": "A forecast of around 18 mph wind at Lambeau Field on Sunday night can cut deep passing. Treat it as a negative for passing yards.",
+      "headline": "About 17 mph wind forecast for Cowboys at Packers",
+      "summary": "A forecast of around 17 mph wind at Lambeau Field on Sunday night can cut deep passing. Treat it as a negative for passing yards.",
       "sources": [
         {
           "name": "Open-Meteo forecast (data.json)",
           "url": "https://open-meteo.com/"
         }
       ],
-      "published": "2026-10-13T12:30:00Z"
+      "published": "2026-10-14T11:30:00Z"
     },
     {
       "player": "Raheim Sanders",
@@ -479,6 +501,57 @@
         }
       ],
       "published": "2026-10-13T18:21:00Z"
+    },
+    {
+      "player": "Irv Charles",
+      "team": "SEA",
+      "position": "WR",
+      "status": "Active",
+      "impact": "info",
+      "direction": "none",
+      "headline": "Charles activated from injured reserve",
+      "summary": "Seattle activated Charles (knee) from injured reserve Tuesday, adding depth at receiver for Thursday night while Jaxon Smith-Njigba is limited.",
+      "sources": [
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-13T21:39:00Z"
+    },
+    {
+      "player": "Trevor Etienne",
+      "team": "CAR",
+      "position": "RB",
+      "status": "Injured Reserve",
+      "impact": "info",
+      "direction": "none",
+      "headline": "Etienne designated to return from injured reserve",
+      "summary": "Carolina designated Etienne (ankle) to return from injured reserve, which opens his practice window. He is not yet active for Sunday at Philadelphia.",
+      "sources": [
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-13T20:53:00Z"
+    },
+    {
+      "player": "James Cook III",
+      "team": "BUF",
+      "position": "RB",
+      "status": "Active",
+      "impact": "info",
+      "direction": "none",
+      "headline": "Bills coach warns Cook about fumbles",
+      "summary": "Joe Brady warned Cook of \"consequences\" for costly fumbles, including one in overtime Monday. No change to his role has been announced.",
+      "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nfl/story/_/id/50177135"
+        }
+      ],
+      "published": "2026-10-13T23:32:00Z"
     }
   ]
 }
