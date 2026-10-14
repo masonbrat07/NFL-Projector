@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T11:58:13Z",
+  "generated_at": "2026-10-14T20:57:48Z",
   "items": [
     {
       "player": "Deebo Samuel Sr.",
@@ -84,15 +84,19 @@
       "status": "Out",
       "impact": "high",
       "direction": "none",
-      "headline": "Jackson improving, real chance to play at Cleveland",
-      "summary": "Jesse Minter says Jackson (ankle) is \"definitely doing better,\" and ESPN earlier reported a real chance he plays Sunday. Tyler Huntley beat Atlanta in overtime and starts if Jackson sits. Status is unknown until the week's injury reports.",
+      "headline": "Jackson has a realistic chance to play at Cleveland",
+      "summary": "A league source told ESPN Jackson (ankle) has a realistic chance to return Sunday, though he was not present for the media portion of Wednesday's practice. Tyler Huntley starts if he sits.",
       "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nfl/story/_/id/50181398"
+        },
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-12T19:13:00Z"
+      "published": "2026-10-14T17:31:00Z"
     },
     {
       "player": "Caleb Williams",
@@ -101,8 +105,8 @@
       "status": "Out",
       "impact": "high",
       "direction": "none",
-      "headline": "Bears undecided on quarterback at Atlanta",
-      "summary": "Ben Johnson has not said whether Williams (hamstring), Tyson Bagent or Case Keenum will start Sunday. Williams is \"close,\" so Chicago's passing projection depends on who is announced.",
+      "headline": "Williams listed as a full participant Wednesday",
+      "summary": "Ben Johnson said Williams (hamstring) would be a full participant on Wednesday's estimated report. The Bears have not named a starter for Sunday at Atlanta, but his return looks more likely.",
       "sources": [
         {
           "name": "ESPN",
@@ -113,7 +117,7 @@
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-12T21:51:00Z"
+      "published": "2026-10-14T16:30:00Z"
     },
     {
       "player": "Saquon Barkley",
@@ -122,15 +126,15 @@
       "status": "Out",
       "impact": "high",
       "direction": "none",
-      "headline": "Barkley and Smith hopeful to return vs. Panthers",
-      "summary": "Nick Sirianni says he is hopeful that both Barkley and DeVonta Smith (hamstrings) return Sunday. Will Shipley is out for multiple weeks, so Philadelphia's backfield depends on Barkley's status.",
+      "headline": "Barkley not seen at practice, Smith working on side",
+      "summary": "Barkley (hamstring) was not spotted at the open part of Wednesday's practice, while DeVonta Smith (hamstring) worked on the JUGS machine. Both are still being evaluated for Sunday.",
       "sources": [
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-12T19:54:00Z"
+      "published": "2026-10-14T18:48:00Z"
     },
     {
       "player": "Marvin Harrison Jr.",
@@ -139,8 +143,8 @@
       "status": null,
       "impact": "high",
       "direction": "none",
-      "headline": "Harrison joins Houston ahead of London game",
-      "summary": "The Texans completed a trade for Harrison. How much he plays against Jacksonville after a week with the team is unknown, and David Montgomery is week-to-week.",
+      "headline": "Harrison will make his Texans debut in London",
+      "summary": "DeMeco Ryans confirmed Harrison will play Sunday against Jacksonville after the trade. His snap count and target share are unknown, and David Montgomery is not practicing.",
       "sources": [
         {
           "name": "ESPN",
@@ -151,7 +155,7 @@
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-12T03:49:00Z"
+      "published": "2026-10-14T19:40:00Z"
     },
     {
       "player": "TreVeyon Henderson",
@@ -214,25 +218,46 @@
       "published": "2026-10-13T23:07:00Z"
     },
     {
-      "player": "Michael Penix Jr.",
-      "team": "ATL",
-      "position": "QB",
-      "status": "Questionable",
-      "impact": "watch",
-      "direction": "none",
-      "headline": "Penix expected to be available vs. Bears",
-      "summary": "ESPN reports Penix's rib injury is not considered serious after he left the loss to Baltimore. Tua Tagovailoa played in relief, so he is the backup if Penix is limited.",
+      "player": "Adonai Mitchell",
+      "team": "NYJ",
+      "position": "WR",
+      "status": "Doubtful",
+      "impact": "high",
+      "direction": "out",
+      "headline": "Mitchell expected to miss a fourth straight game",
+      "summary": "ESPN reports Mitchell had a procedure on his finger and is expected to miss Sunday against New England. With Breece Hall also out, the Jets are thin on offense.",
       "sources": [
         {
           "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50168293"
+          "url": "https://www.espn.com/nfl/story/_/id/50183688"
         },
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-12T20:10:00Z"
+      "published": "2026-10-14T19:48:00Z"
+    },
+    {
+      "player": "Michael Penix Jr.",
+      "team": "ATL",
+      "position": "QB",
+      "status": "Questionable",
+      "impact": "watch",
+      "direction": "none",
+      "headline": "Penix on track to start vs. Bears",
+      "summary": "Kevin Stefanski said Penix (ribs) will start Sunday if there are no setbacks, and he was a limited practice participant Wednesday.",
+      "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nfl/story/_/id/50182471"
+        },
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-14T20:11:00Z"
     },
     {
       "player": "Will Shipley",
@@ -262,15 +287,15 @@
       "status": "Doubtful",
       "impact": "watch",
       "direction": "none",
-      "headline": "Montgomery week-to-week with groin injury",
-      "summary": "Houston coach DeMeco Ryans called Montgomery week-to-week, and he looks headed to miss his first game of the season in London. Woody Marks is expected to take the lead role.",
+      "headline": "Montgomery not practicing, week-to-week",
+      "summary": "Montgomery (groin) did not practice Wednesday and Ryans called him week-to-week, so Woody Marks is expected to lead the backfield in London.",
       "sources": [
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-12T16:33:00Z"
+      "published": "2026-10-14T18:04:00Z"
     },
     {
       "player": "DJ Moore",
@@ -313,15 +338,15 @@
       "status": "Questionable",
       "impact": "watch",
       "direction": "none",
-      "headline": "Rice (hamstring) could be back after the bye",
-      "summary": "Rice's hamstring injury was described as relatively minor and Kansas City had a bye in Week 5, so he could return against the Chargers. His status has not been updated this week.",
+      "headline": "Rice did not practice Wednesday",
+      "summary": "Andy Reid said Rice (hamstring) would not practice Wednesday. His availability against the Chargers is uncertain, so Kansas City's target share is uncertain.",
       "sources": [
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-05T19:09:00Z"
+      "published": "2026-10-14T17:24:00Z"
     },
     {
       "player": "Quinshon Judkins",
@@ -330,8 +355,8 @@
       "status": "Questionable",
       "impact": "watch",
       "direction": "none",
-      "headline": "Judkins day-to-day with ankle injury",
-      "summary": "Todd Monken called the ankle a \"tweak,\" and Judkins has not been ruled out for the Ravens game. Raheim Sanders (hip) is also questionable.",
+      "headline": "Judkins moving without a boot",
+      "summary": "Judkins was seen without a boot on his ankle Wednesday and has not been ruled out. Dylan Sampson was designated to return from injured reserve.",
       "sources": [
         {
           "name": "ESPN",
@@ -342,7 +367,7 @@
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-12T18:16:00Z"
+      "published": "2026-10-14T16:07:00Z"
     },
     {
       "player": "KC Concepcion",
@@ -351,15 +376,15 @@
       "status": "Questionable",
       "impact": "watch",
       "direction": "none",
-      "headline": "Concepcion is in concussion protocol",
-      "summary": "He left the loss to the Jets after a hit to the head. Cleveland already lost Tylan Wallace, so its receivers are thin.",
+      "headline": "Concepcion set to practice after concussion",
+      "summary": "Concepcion is progressing well and was set to practice Wednesday, which is a good sign for Sunday against Baltimore.",
       "sources": [
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-11T20:48:00Z"
+      "published": "2026-10-14T16:02:00Z"
     },
     {
       "player": "Rico Dowdle",
@@ -368,8 +393,8 @@
       "status": "Out",
       "impact": "watch",
       "direction": "none",
-      "headline": "Dowdle expected back vs. Buccaneers",
-      "summary": "Steelers offensive coordinator Brian Angelichio anticipates Dowdle (toe) returns Sunday. Jaylen Warren had 188 yards from scrimmage while he was out, so the workload could be shared.",
+      "headline": "Dowdle limited in practice, expected back",
+      "summary": "Dowdle (toe) was a limited participant Wednesday and the offensive coordinator expects him to return against the Buccaneers. Jaylen Warren could still share the workload.",
       "sources": [
         {
           "name": "ESPN",
@@ -380,24 +405,24 @@
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-12T20:07:00Z"
+      "published": "2026-10-14T20:11:00Z"
     },
     {
       "player": "Baker Mayfield",
       "team": "TB",
       "position": "QB",
-      "status": "Out",
+      "status": "Doubtful",
       "impact": "watch",
       "direction": "none",
-      "headline": "Mayfield's thumb status is unknown",
-      "summary": "Mayfield's thumb was in a smaller splint last week, and ESPN still lists him as out. Tampa Bay's starter against Pittsburgh is unclear.",
+      "headline": "Mayfield did not practice, listed doubtful",
+      "summary": "Mayfield (right thumb) did not practice Wednesday and is listed as doubtful, so Tampa Bay's quarterback against Pittsburgh is unclear.",
       "sources": [
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-12T19:43:00Z"
+      "published": "2026-10-14T20:25:00Z"
     },
     {
       "player": "Breece Hall",
@@ -406,15 +431,15 @@
       "status": "Out",
       "impact": "watch",
       "direction": "none",
-      "headline": "Hall and Mitchell still listed out",
-      "summary": "ESPN still lists Hall and Adonai Mitchell as out after they missed the win over Cleveland. Their status at New England is unknown.",
+      "headline": "Hall not practicing, week-to-week",
+      "summary": "Aaron Glenn said Hall (quadriceps) did not practice Wednesday and remains week-to-week, so New York's backfield stays thin against the Patriots.",
       "sources": [
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-12T19:32:00Z"
+      "published": "2026-10-14T16:49:00Z"
     },
     {
       "player": "Jaxon Smith-Njigba",
@@ -441,15 +466,15 @@
       "status": null,
       "impact": "watch",
       "direction": "none",
-      "headline": "About 21 mph wind forecast for Steelers at Buccaneers",
-      "summary": "A forecast of around 21 mph wind at Raymond James Stadium can cut deep passing and kicking. Treat it as a negative for passing yards.",
+      "headline": "About 22 mph wind forecast for Steelers at Buccaneers",
+      "summary": "A forecast of around 22 mph wind at Raymond James Stadium can cut deep passing and kicking. Treat it as a negative for passing yards.",
       "sources": [
         {
           "name": "Open-Meteo forecast (data.json)",
           "url": "https://open-meteo.com/"
         }
       ],
-      "published": "2026-10-14T11:30:00Z"
+      "published": "2026-10-14T20:50:00Z"
     },
     {
       "player": null,
@@ -486,21 +511,93 @@
       "published": "2026-10-13T20:36:00Z"
     },
     {
-      "player": "Jalen Coker",
-      "team": "CAR",
+      "player": "A.J. Brown",
+      "team": "NE",
       "position": "WR",
-      "status": "Questionable",
-      "impact": "info",
+      "status": "Injured Reserve",
+      "impact": "watch",
       "direction": "none",
-      "headline": "Coker practiced Tuesday, on track vs. Eagles",
-      "summary": "Coker (quadriceps) took part in Carolina's unofficial practice Tuesday after missing one game.",
+      "headline": "Brown returns to practice from injured reserve",
+      "summary": "New England designated Brown (ankle) for return, which opens his practice window. He is not yet active for Sunday against the Jets.",
+      "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nfl/story/_/id/50183044"
+        },
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-14T17:12:00Z"
+    },
+    {
+      "player": "Keenan Allen",
+      "team": "IND",
+      "position": "WR",
+      "status": "Active",
+      "impact": "watch",
+      "direction": "none",
+      "headline": "Allen not practicing, Downs limited",
+      "summary": "Allen (groin) did not practice Wednesday and Josh Downs (hamstring) was limited, so Indianapolis' receiver group is uncertain against Tennessee.",
       "sources": [
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-13T18:21:00Z"
+      "published": "2026-10-14T18:18:00Z"
+    },
+    {
+      "player": "Chris Olave",
+      "team": "NO",
+      "position": "WR",
+      "status": "Questionable",
+      "impact": "watch",
+      "direction": "none",
+      "headline": "Olave missed Wednesday practice with illness",
+      "summary": "Olave did not practice Wednesday with an illness. His availability against the Giants is not yet in doubt.",
+      "sources": [
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-14T20:33:00Z"
+    },
+    {
+      "player": "Ladd McConkey",
+      "team": "LAC",
+      "position": "WR",
+      "status": "Questionable",
+      "impact": "watch",
+      "direction": "none",
+      "headline": "McConkey will practice Wednesday",
+      "summary": "Jim Harbaugh said McConkey (foot) will practice, after he was active but played no snaps against Denver. Quentin Johnston is still out.",
+      "sources": [
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-14T19:11:00Z"
+    },
+    {
+      "player": "Jalen Coker",
+      "team": "CAR",
+      "position": "WR",
+      "status": "Questionable",
+      "impact": "info",
+      "direction": "none",
+      "headline": "Coker a full participant Wednesday",
+      "summary": "Coker (quadriceps) was a full participant on the estimated report, so he should return at Philadelphia.",
+      "sources": [
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-14T20:11:00Z"
     },
     {
       "player": "Irv Charles",
@@ -552,6 +649,40 @@
         }
       ],
       "published": "2026-10-13T23:32:00Z"
+    },
+    {
+      "player": "Dylan Sampson",
+      "team": "CLE",
+      "position": "RB",
+      "status": "Injured Reserve",
+      "impact": "info",
+      "direction": "none",
+      "headline": "Sampson designated to return from injured reserve",
+      "summary": "Cleveland opened Sampson's (knee) return window, adding a back behind Quinshon Judkins. He is not active yet.",
+      "sources": [
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-14T16:15:00Z"
+    },
+    {
+      "player": "Tyjae Spears",
+      "team": "TEN",
+      "position": "RB",
+      "status": "Questionable",
+      "impact": "info",
+      "direction": "none",
+      "headline": "Spears limited with knee injury",
+      "summary": "Spears was a limited participant Wednesday, while Tony Pollard rested.",
+      "sources": [
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-14T20:28:00Z"
     }
   ]
 }
