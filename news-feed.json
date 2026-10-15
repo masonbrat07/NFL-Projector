@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T20:57:48Z",
+  "generated_at": "2026-10-15T11:58:49Z",
   "items": [
     {
       "player": "Deebo Samuel Sr.",
@@ -67,15 +67,19 @@
       "status": "Out",
       "impact": "high",
       "direction": "out",
-      "headline": "Charbonnet stays out for Thursday night",
-      "summary": "Seahawks coach Mike Macdonald said Charbonnet (knee) will not be activated from reserve for Thursday against Denver, though he was a limited participant on Tuesday's estimate. George Holani keeps the lead role.",
+      "headline": "Seahawks rule out Charbonnet for Thursday",
+      "summary": "Seattle officially ruled out Charbonnet (knee) for tonight's game at Denver, so George Holani keeps the lead role.",
       "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nfl/story/_/id/50185443"
+        },
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-14T00:15:00Z"
+      "published": "2026-10-14T22:14:00Z"
     },
     {
       "player": "Lamar Jackson",
@@ -84,8 +88,8 @@
       "status": "Out",
       "impact": "high",
       "direction": "none",
-      "headline": "Jackson has a realistic chance to play at Cleveland",
-      "summary": "A league source told ESPN Jackson (ankle) has a realistic chance to return Sunday, though he was not present for the media portion of Wednesday's practice. Tyler Huntley starts if he sits.",
+      "headline": "Jackson did not practice Wednesday",
+      "summary": "Jackson (ankle) was a non-participant Wednesday, though a league source told ESPN he has a realistic chance to play at Cleveland. Tyler Huntley starts if he sits.",
       "sources": [
         {
           "name": "ESPN",
@@ -96,7 +100,7 @@
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-14T17:31:00Z"
+      "published": "2026-10-14T22:01:00Z"
     },
     {
       "player": "Caleb Williams",
@@ -126,15 +130,15 @@
       "status": "Out",
       "impact": "high",
       "direction": "none",
-      "headline": "Barkley not seen at practice, Smith working on side",
-      "summary": "Barkley (hamstring) was not spotted at the open part of Wednesday's practice, while DeVonta Smith (hamstring) worked on the JUGS machine. Both are still being evaluated for Sunday.",
+      "headline": "Barkley and Smith both missed Wednesday practice",
+      "summary": "Barkley (hamstring) and DeVonta Smith (hamstring/toe) did not practice, while Hollywood Brown and Dontayvion Wicks were limited. Philadelphia's skill group is uncertain against Carolina.",
       "sources": [
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-14T18:48:00Z"
+      "published": "2026-10-14T22:24:00Z"
     },
     {
       "player": "Marvin Harrison Jr.",
@@ -156,27 +160,6 @@
         }
       ],
       "published": "2026-10-14T19:40:00Z"
-    },
-    {
-      "player": "TreVeyon Henderson",
-      "team": "NE",
-      "position": "RB",
-      "status": "Doubtful",
-      "impact": "high",
-      "direction": "out",
-      "headline": "Henderson out multiple weeks with high ankle sprain",
-      "summary": "An MRI showed a high-ankle sprain, and ESPN reports Henderson will miss multiple weeks. Rhamondre Stevenson is expected to carry a heavier workload, with Corey Kiner moving to No. 2 against the Jets.",
-      "sources": [
-        {
-          "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50173985"
-        },
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-13T14:26:00Z"
     },
     {
       "player": "Woody Marks",
@@ -239,14 +222,35 @@
       "published": "2026-10-14T19:48:00Z"
     },
     {
+      "player": "TreVeyon Henderson",
+      "team": "NE",
+      "position": "RB",
+      "status": "Questionable",
+      "impact": "watch",
+      "direction": "none",
+      "headline": "Henderson was limited in practice",
+      "summary": "ESPN reported Henderson (high-ankle sprain) would miss multiple weeks, but New England listed him as a limited participant Wednesday. His status for the Jets game is unclear, and Rhamondre Stevenson is the lead back either way.",
+      "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nfl/story/_/id/50173985"
+        },
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-14T21:07:00Z"
+    },
+    {
       "player": "Michael Penix Jr.",
       "team": "ATL",
       "position": "QB",
       "status": "Questionable",
       "impact": "watch",
       "direction": "none",
-      "headline": "Penix on track to start vs. Bears",
-      "summary": "Kevin Stefanski said Penix (ribs) will start Sunday if there are no setbacks, and he was a limited practice participant Wednesday.",
+      "headline": "Penix a full participant Wednesday",
+      "summary": "Penix (ribs) practiced fully and Kevin Stefanski said he will start Sunday against Chicago if there are no setbacks.",
       "sources": [
         {
           "name": "ESPN",
@@ -257,7 +261,7 @@
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-14T20:11:00Z"
+      "published": "2026-10-14T21:29:00Z"
     },
     {
       "player": "Will Shipley",
@@ -301,18 +305,18 @@
       "player": "DJ Moore",
       "team": "BUF",
       "position": "WR",
-      "status": "Out",
+      "status": "Questionable",
       "impact": "watch",
       "direction": "none",
-      "headline": "Moore was inactive Monday with a shoulder injury",
-      "summary": "Moore missed the overtime win over the Rams. His status for Sunday at Las Vegas is not yet known, and Joshua Palmer was also inactive.",
+      "headline": "Moore did not practice Wednesday",
+      "summary": "Moore (shoulder) was a non-participant on the estimated report and Joshua Palmer (shoulder) was limited. Buffalo's receivers are uncertain at Las Vegas.",
       "sources": [
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-12T22:49:00Z"
+      "published": "2026-10-14T23:27:00Z"
     },
     {
       "player": "Tre' Harris",
@@ -321,15 +325,15 @@
       "status": "Doubtful",
       "impact": "watch",
       "direction": "none",
-      "headline": "Harris week-to-week with hamstring injury",
-      "summary": "Jim Harbaugh called Harris week-to-week after the loss to Denver. Ladd McConkey was active but played no snaps, and Quentin Johnston is out, so the Chargers' receivers are very thin at Kansas City.",
+      "headline": "Harris did not practice Wednesday",
+      "summary": "Harris (hamstring) was a non-participant, while Quentin Johnston (chest) and Brenen Thompson were limited. The Chargers' receivers remain thin at Kansas City.",
       "sources": [
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-12T23:12:00Z"
+      "published": "2026-10-14T22:33:00Z"
     },
     {
       "player": "Rashee Rice",
@@ -355,8 +359,8 @@
       "status": "Questionable",
       "impact": "watch",
       "direction": "none",
-      "headline": "Judkins moving without a boot",
-      "summary": "Judkins was seen without a boot on his ankle Wednesday and has not been ruled out. Dylan Sampson was designated to return from injured reserve.",
+      "headline": "Judkins did not practice Wednesday",
+      "summary": "Judkins (foot) did not participate, and Denzel Boston (foot) was limited. Cleveland's skill group is uncertain against Baltimore.",
       "sources": [
         {
           "name": "ESPN",
@@ -367,7 +371,7 @@
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-14T16:07:00Z"
+      "published": "2026-10-14T21:30:00Z"
     },
     {
       "player": "KC Concepcion",
@@ -442,39 +446,21 @@
       "published": "2026-10-14T16:49:00Z"
     },
     {
-      "player": "Jaxon Smith-Njigba",
-      "team": "SEA",
-      "position": "WR",
-      "status": "Questionable",
-      "impact": "watch",
-      "direction": "down",
-      "multiplier": 0.92,
-      "headline": "Smith-Njigba limited with ankle injury",
-      "summary": "Smith-Njigba was a limited participant again on Tuesday's estimated report ahead of Thursday night at Denver. A reduced role is possible. Drew Lock (forearm) is also limited as the backup quarterback.",
-      "sources": [
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-13T23:56:00Z"
-    },
-    {
       "player": null,
       "team": "TB",
       "position": null,
       "status": null,
       "impact": "watch",
       "direction": "none",
-      "headline": "About 22 mph wind forecast for Steelers at Buccaneers",
-      "summary": "A forecast of around 22 mph wind at Raymond James Stadium can cut deep passing and kicking. Treat it as a negative for passing yards.",
+      "headline": "About 20 mph wind forecast for Steelers at Buccaneers",
+      "summary": "A forecast of around 20 mph wind at Raymond James Stadium can cut deep passing and kicking. Treat it as a negative for passing yards.",
       "sources": [
         {
           "name": "Open-Meteo forecast (data.json)",
           "url": "https://open-meteo.com/"
         }
       ],
-      "published": "2026-10-14T20:50:00Z"
+      "published": "2026-10-15T11:50:00Z"
     },
     {
       "player": null,
@@ -483,15 +469,15 @@
       "status": null,
       "impact": "watch",
       "direction": "none",
-      "headline": "About 17 mph wind forecast for Cowboys at Packers",
-      "summary": "A forecast of around 17 mph wind at Lambeau Field on Sunday night can cut deep passing. Treat it as a negative for passing yards.",
+      "headline": "About 16 mph wind forecast for Cowboys at Packers",
+      "summary": "A forecast of around 16 mph wind at Lambeau Field on Sunday night can cut deep passing. Treat it as a negative for passing yards.",
       "sources": [
         {
           "name": "Open-Meteo forecast (data.json)",
           "url": "https://open-meteo.com/"
         }
       ],
-      "published": "2026-10-14T11:30:00Z"
+      "published": "2026-10-15T11:50:00Z"
     },
     {
       "player": "Raheim Sanders",
@@ -583,6 +569,146 @@
       "published": "2026-10-14T19:11:00Z"
     },
     {
+      "player": "Jeremiyah Love",
+      "team": "ARI",
+      "position": "RB",
+      "status": "Questionable",
+      "impact": "watch",
+      "direction": "none",
+      "headline": "Love rested from Wednesday practice",
+      "summary": "Mike LaFleur said Arizona wants to \"get this ankle right,\" so Love sat out Wednesday. His status against the Rams is not yet known.",
+      "sources": [
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nfl/story/_/id/50185425"
+        },
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-14T21:05:00Z"
+    },
+    {
+      "player": "Brock Bowers",
+      "team": "LV",
+      "position": "TE",
+      "status": "Questionable",
+      "impact": "watch",
+      "direction": "none",
+      "headline": "Bowers limited with a knee injury",
+      "summary": "Bowers was a limited participant Wednesday, so his role against Buffalo is uncertain.",
+      "sources": [
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-14T23:42:00Z"
+    },
+    {
+      "player": "Quentin Johnston",
+      "team": "LAC",
+      "position": "WR",
+      "status": "Questionable",
+      "impact": "watch",
+      "direction": "none",
+      "headline": "Johnston limited in practice",
+      "summary": "Johnston (chest) was a limited participant, which is a step toward returning at Kansas City after missing last week.",
+      "sources": [
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-14T22:31:00Z"
+    },
+    {
+      "player": "Alvin Kamara",
+      "team": "NO",
+      "position": "RB",
+      "status": "Questionable",
+      "impact": "watch",
+      "direction": "none",
+      "headline": "Kamara limited with back injury",
+      "summary": "Kamara was a limited participant Wednesday ahead of the Giants game.",
+      "sources": [
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-14T21:41:00Z"
+    },
+    {
+      "player": "Kyle Monangai",
+      "team": "CHI",
+      "position": "RB",
+      "status": "Questionable",
+      "impact": "watch",
+      "direction": "none",
+      "headline": "Monangai did not practice Wednesday",
+      "summary": "Monangai (thumb/toe) was a non-participant. D'Andre Swift handled the lead role last week.",
+      "sources": [
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-14T22:38:00Z"
+    },
+    {
+      "player": "Darnell Mooney",
+      "team": "NYG",
+      "position": "WR",
+      "status": "Questionable",
+      "impact": "watch",
+      "direction": "none",
+      "headline": "Mooney and Theo Johnson limited with neck injuries",
+      "summary": "Both were limited participants Wednesday ahead of New Orleans.",
+      "sources": [
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-14T23:24:00Z"
+    },
+    {
+      "player": "Denzel Boston",
+      "team": "CLE",
+      "position": "WR",
+      "status": "Questionable",
+      "impact": "watch",
+      "direction": "none",
+      "headline": "Boston limited with foot injury",
+      "summary": "Boston was a limited participant Wednesday, and KC Concepcion is progressing from a concussion.",
+      "sources": [
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-14T21:43:00Z"
+    },
+    {
+      "player": "Jaxon Smith-Njigba",
+      "team": "SEA",
+      "position": "WR",
+      "status": "Active",
+      "impact": "info",
+      "direction": "none",
+      "headline": "Smith-Njigba practiced fully, no designation",
+      "summary": "Smith-Njigba (ankle) was a full participant Wednesday and carries no injury designation into Thursday night at Denver. Drew Lock also has no designation.",
+      "sources": [
+        {
+          "name": "ESPN injury report",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
+        }
+      ],
+      "published": "2026-10-14T22:33:00Z"
+    },
+    {
       "player": "Jalen Coker",
       "team": "CAR",
       "position": "WR",
@@ -600,89 +726,21 @@
       "published": "2026-10-14T20:11:00Z"
     },
     {
-      "player": "Irv Charles",
-      "team": "SEA",
+      "player": "Ja'Kobi Lane",
+      "team": "BAL",
       "position": "WR",
-      "status": "Active",
-      "impact": "info",
-      "direction": "none",
-      "headline": "Charles activated from injured reserve",
-      "summary": "Seattle activated Charles (knee) from injured reserve Tuesday, adding depth at receiver for Thursday night while Jaxon Smith-Njigba is limited.",
-      "sources": [
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-13T21:39:00Z"
-    },
-    {
-      "player": "Trevor Etienne",
-      "team": "CAR",
-      "position": "RB",
       "status": "Injured Reserve",
       "impact": "info",
       "direction": "none",
-      "headline": "Etienne designated to return from injured reserve",
-      "summary": "Carolina designated Etienne (ankle) to return from injured reserve, which opens his practice window. He is not yet active for Sunday at Philadelphia.",
+      "headline": "Lane a full participant after return designation",
+      "summary": "Lane (wrist) practiced fully after being designated to return, and Jesse Minter says he has a shot to play Sunday.",
       "sources": [
         {
           "name": "ESPN injury report",
           "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
         }
       ],
-      "published": "2026-10-13T20:53:00Z"
-    },
-    {
-      "player": "James Cook III",
-      "team": "BUF",
-      "position": "RB",
-      "status": "Active",
-      "impact": "info",
-      "direction": "none",
-      "headline": "Bills coach warns Cook about fumbles",
-      "summary": "Joe Brady warned Cook of \"consequences\" for costly fumbles, including one in overtime Monday. No change to his role has been announced.",
-      "sources": [
-        {
-          "name": "ESPN",
-          "url": "https://www.espn.com/nfl/story/_/id/50177135"
-        }
-      ],
-      "published": "2026-10-13T23:32:00Z"
-    },
-    {
-      "player": "Dylan Sampson",
-      "team": "CLE",
-      "position": "RB",
-      "status": "Injured Reserve",
-      "impact": "info",
-      "direction": "none",
-      "headline": "Sampson designated to return from injured reserve",
-      "summary": "Cleveland opened Sampson's (knee) return window, adding a back behind Quinshon Judkins. He is not active yet.",
-      "sources": [
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-14T16:15:00Z"
-    },
-    {
-      "player": "Tyjae Spears",
-      "team": "TEN",
-      "position": "RB",
-      "status": "Questionable",
-      "impact": "info",
-      "direction": "none",
-      "headline": "Spears limited with knee injury",
-      "summary": "Spears was a limited participant Wednesday, while Tony Pollard rested.",
-      "sources": [
-        {
-          "name": "ESPN injury report",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries"
-        }
-      ],
-      "published": "2026-10-14T20:28:00Z"
+      "published": "2026-10-14T22:37:00Z"
     }
   ]
 }
