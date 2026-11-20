@@ -26,7 +26,7 @@ JS = """([season,week])=>{const W=weekProjections(season,week),r1=v=>Math.round(
 
 
 def chromium_path():
-    for p in sorted(glob.glob("/opt/pw-browsers/chromium-*/chrome-linux/chrome"), reverse=True):
+    for p in sorted(glob.glob("/opt/pw-browsers/chromium-*/chrome-linux*/chrome"), reverse=True):
         return p
     return None
 

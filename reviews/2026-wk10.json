@@ -1,0 +1,644 @@
+{
+ "season": 2026,
+ "week": 10,
+ "players": 146,
+ "dnp": 42,
+ "overall": {
+  "n": 146,
+  "mae": 6.132037892747914,
+  "bias": -0.47008317673383093,
+  "normal_mae": 6.048503827000224
+ },
+ "byPos": {
+  "QB": {
+   "n": 25,
+   "mae": 7.476087236174874,
+   "bias": -0.9439032813238422,
+   "normal_mae": 7.128278400247036
+  },
+  "RB": {
+   "n": 42,
+   "mae": 6.887273646856412,
+   "bias": -1.969830888208631,
+   "normal_mae": 6.719058169254052
+  },
+  "WR": {
+   "n": 52,
+   "mae": 5.7146286458765605,
+   "bias": -0.3439110400626463,
+   "normal_mae": 5.8351801996772
+  },
+  "TE": {
+   "n": 27,
+   "mae": 4.516635877158265,
+   "bias": 2.0585818377028464,
+   "normal_mae": 4.4164735275545315
+  }
+ },
+ "ou": {
+  "over": [
+   {
+    "name": "Tyler Warren",
+    "pos": "TE",
+    "team": "IND",
+    "opp": "MIA",
+    "stat": "rec_yds",
+    "normal": 36.67,
+    "proj": 55.65,
+    "actual": 1,
+    "hit": false
+   },
+   {
+    "name": "Tre' Harris",
+    "pos": "WR",
+    "team": "LAC",
+    "opp": "BAL",
+    "stat": "rec_yds",
+    "normal": 28.7,
+    "proj": 42.66,
+    "actual": 86,
+    "hit": true
+   },
+   {
+    "name": "Wan'Dale Robinson",
+    "pos": "WR",
+    "team": "TEN",
+    "opp": "JAX",
+    "stat": "rec_yds",
+    "normal": 34.39,
+    "proj": 47.4,
+    "actual": 10,
+    "hit": false
+   },
+   {
+    "name": "Justin Jefferson",
+    "pos": "WR",
+    "team": "MIN",
+    "opp": "GB",
+    "stat": "rec_yds",
+    "normal": 48.44,
+    "proj": 65.81,
+    "actual": 74,
+    "hit": true
+   },
+   {
+    "name": "Kyle Pitts Sr.",
+    "pos": "TE",
+    "team": "ATL",
+    "opp": "KC",
+    "stat": "rec_yds",
+    "normal": 26.71,
+    "proj": 35.95,
+    "actual": 50,
+    "hit": true
+   },
+   {
+    "name": "Zach Charbonnet",
+    "pos": "RB",
+    "team": "SEA",
+    "opp": "LV",
+    "stat": "rush_yds",
+    "normal": 48.3,
+    "proj": 68.17,
+    "actual": 94,
+    "hit": true
+   },
+   {
+    "name": "Jayden Daniels",
+    "pos": "QB",
+    "team": "WSH",
+    "opp": "NYG",
+    "stat": "rush_yds",
+    "normal": 38.07,
+    "proj": 53.14,
+    "actual": 28,
+    "hit": false
+   },
+   {
+    "name": "Derrick Henry",
+    "pos": "RB",
+    "team": "BAL",
+    "opp": "LAC",
+    "stat": "rush_yds",
+    "normal": 66.53,
+    "proj": 86.9,
+    "actual": 10,
+    "hit": false
+   },
+   {
+    "name": "Jonathan Taylor",
+    "pos": "RB",
+    "team": "IND",
+    "opp": "MIA",
+    "stat": "rush_yds",
+    "normal": 60.73,
+    "proj": 75.65,
+    "actual": 83,
+    "hit": true
+   },
+   {
+    "name": "Audric Estime",
+    "pos": "RB",
+    "team": "NO",
+    "opp": "CAR",
+    "stat": "rush_yds",
+    "normal": 40.15,
+    "proj": 47.59,
+    "actual": 6,
+    "hit": false
+   },
+   {
+    "name": "Drew Lock",
+    "pos": "QB",
+    "team": "SEA",
+    "opp": "LV",
+    "stat": "pass_yds",
+    "normal": 154.6,
+    "proj": 195.84,
+    "actual": 240,
+    "hit": true
+   },
+   {
+    "name": "Daniel Jones",
+    "pos": "QB",
+    "team": "IND",
+    "opp": "MIA",
+    "stat": "pass_yds",
+    "normal": 188.62,
+    "proj": 223.14,
+    "actual": 108,
+    "hit": false
+   },
+   {
+    "name": "Justin Herbert",
+    "pos": "QB",
+    "team": "LAC",
+    "opp": "BAL",
+    "stat": "pass_yds",
+    "normal": 203.33,
+    "proj": 229.81,
+    "actual": 129,
+    "hit": false
+   },
+   {
+    "name": "Cam Ward",
+    "pos": "QB",
+    "team": "TEN",
+    "opp": "JAX",
+    "stat": "pass_yds",
+    "normal": 192.39,
+    "proj": 208.55,
+    "actual": 231,
+    "hit": true
+   },
+   {
+    "name": "Tyler Shough",
+    "pos": "QB",
+    "team": "NO",
+    "opp": "CAR",
+    "stat": "pass_yds",
+    "normal": 239.05,
+    "proj": 252.38,
+    "actual": 187,
+    "hit": false
+   },
+   {
+    "name": "Tyler Warren",
+    "pos": "TE",
+    "team": "IND",
+    "opp": "MIA",
+    "stat": "tds",
+    "normal": 0.31,
+    "proj": 0.5,
+    "actual": 0,
+    "hit": false
+   },
+   {
+    "name": "Zach Charbonnet",
+    "pos": "RB",
+    "team": "SEA",
+    "opp": "LV",
+    "stat": "tds",
+    "normal": 0.51,
+    "proj": 0.74,
+    "actual": 0,
+    "hit": false
+   },
+   {
+    "name": "Justin Jefferson",
+    "pos": "WR",
+    "team": "MIN",
+    "opp": "GB",
+    "stat": "tds",
+    "normal": 0.33,
+    "proj": 0.46,
+    "actual": 0,
+    "hit": false
+   },
+   {
+    "name": "Isaiah Likely",
+    "pos": "TE",
+    "team": "NYG",
+    "opp": "WSH",
+    "stat": "tds",
+    "normal": 0.5,
+    "proj": 0.71,
+    "actual": 1,
+    "hit": true
+   },
+   {
+    "name": "Audric Estime",
+    "pos": "RB",
+    "team": "NO",
+    "opp": "CAR",
+    "stat": "tds",
+    "normal": 0.44,
+    "proj": 0.63,
+    "actual": 0,
+    "hit": false
+   }
+  ],
+  "under": [
+   {
+    "name": "Khalil Shakir",
+    "pos": "WR",
+    "team": "BUF",
+    "opp": "NYJ",
+    "stat": "rec_yds",
+    "normal": 46.98,
+    "proj": 33.39,
+    "actual": 26,
+    "hit": true
+   },
+   {
+    "name": "Brenton Strange",
+    "pos": "TE",
+    "team": "JAX",
+    "opp": "TEN",
+    "stat": "rec_yds",
+    "normal": 40.74,
+    "proj": 29.11,
+    "actual": 9,
+    "hit": true
+   },
+   {
+    "name": "Jahan Dotson",
+    "pos": "WR",
+    "team": "ATL",
+    "opp": "KC",
+    "stat": "rec_yds",
+    "normal": 35.84,
+    "proj": 28.98,
+    "actual": 63,
+    "hit": false
+   },
+   {
+    "name": "Tre Tucker",
+    "pos": "WR",
+    "team": "LV",
+    "opp": "SEA",
+    "stat": "rec_yds",
+    "normal": 48.79,
+    "proj": 40.34,
+    "actual": 9,
+    "hit": true
+   },
+   {
+    "name": "Nico Collins",
+    "pos": "WR",
+    "team": "HOU",
+    "opp": "CLE",
+    "stat": "rec_yds",
+    "normal": 56.27,
+    "proj": 46.79,
+    "actual": 94,
+    "hit": false
+   },
+   {
+    "name": "Bhayshul Tuten",
+    "pos": "RB",
+    "team": "JAX",
+    "opp": "TEN",
+    "stat": "rush_yds",
+    "normal": 51.03,
+    "proj": 43.25,
+    "actual": 88,
+    "hit": false
+   },
+   {
+    "name": "Jaylen Warren",
+    "pos": "RB",
+    "team": "PIT",
+    "opp": "CIN",
+    "stat": "rush_yds",
+    "normal": 81.66,
+    "proj": 69.67,
+    "actual": 15,
+    "hit": true
+   },
+   {
+    "name": "Bijan Robinson",
+    "pos": "RB",
+    "team": "ATL",
+    "opp": "KC",
+    "stat": "rush_yds",
+    "normal": 83.56,
+    "proj": 71.52,
+    "actual": 71,
+    "hit": true
+   },
+   {
+    "name": "Mike Washington Jr.",
+    "pos": "RB",
+    "team": "LV",
+    "opp": "SEA",
+    "stat": "rush_yds",
+    "normal": 27.73,
+    "proj": 23.87,
+    "actual": 23,
+    "hit": true
+   },
+   {
+    "name": "Josh Allen",
+    "pos": "QB",
+    "team": "BUF",
+    "opp": "NYJ",
+    "stat": "rush_yds",
+    "normal": 33.51,
+    "proj": 30.5,
+    "actual": 5,
+    "hit": true
+   },
+   {
+    "name": "C.J. Stroud",
+    "pos": "QB",
+    "team": "HOU",
+    "opp": "CLE",
+    "stat": "pass_yds",
+    "normal": 273.44,
+    "proj": 217.99,
+    "actual": 211,
+    "hit": true
+   },
+   {
+    "name": "Josh Allen",
+    "pos": "QB",
+    "team": "BUF",
+    "opp": "NYJ",
+    "stat": "pass_yds",
+    "normal": 246.13,
+    "proj": 199.11,
+    "actual": 196,
+    "hit": true
+   },
+   {
+    "name": "Jordan Love",
+    "pos": "QB",
+    "team": "GB",
+    "opp": "MIN",
+    "stat": "pass_yds",
+    "normal": 288.01,
+    "proj": 249.75,
+    "actual": 220,
+    "hit": true
+   },
+   {
+    "name": "Trevor Lawrence",
+    "pos": "QB",
+    "team": "JAX",
+    "opp": "TEN",
+    "stat": "pass_yds",
+    "normal": 246.95,
+    "proj": 220.32,
+    "actual": 352,
+    "hit": false
+   },
+   {
+    "name": "Bryce Young",
+    "pos": "QB",
+    "team": "CAR",
+    "opp": "NO",
+    "stat": "pass_yds",
+    "normal": 250.64,
+    "proj": 233.12,
+    "actual": 200,
+    "hit": true
+   },
+   {
+    "name": "Joe Burrow",
+    "pos": "QB",
+    "team": "CIN",
+    "opp": "PIT",
+    "stat": "tds",
+    "normal": 0.3,
+    "proj": 0.2,
+    "actual": 0,
+    "hit": true
+   },
+   {
+    "name": "Nico Collins",
+    "pos": "WR",
+    "team": "HOU",
+    "opp": "CLE",
+    "stat": "tds",
+    "normal": 0.51,
+    "proj": 0.34,
+    "actual": 1,
+    "hit": false
+   },
+   {
+    "name": "Brock Bowers",
+    "pos": "TE",
+    "team": "LV",
+    "opp": "SEA",
+    "stat": "tds",
+    "normal": 0.68,
+    "proj": 0.47,
+    "actual": 0,
+    "hit": true
+   },
+   {
+    "name": "Tre Tucker",
+    "pos": "WR",
+    "team": "LV",
+    "opp": "SEA",
+    "stat": "tds",
+    "normal": 0.33,
+    "proj": 0.24,
+    "actual": 0,
+    "hit": true
+   },
+   {
+    "name": "Mike Gesicki",
+    "pos": "TE",
+    "team": "CIN",
+    "opp": "PIT",
+    "stat": "tds",
+    "normal": 0.53,
+    "proj": 0.38,
+    "actual": 0,
+    "hit": true
+   }
+  ],
+  "hits": 23,
+  "n": 40
+ },
+ "markets": {
+  "has_archive": false,
+  "props": 0,
+  "model_brier": null,
+  "market_brier": null,
+  "disagreements": 0,
+  "model_right": 0,
+  "list": []
+ },
+ "misses": [
+  {
+   "name": "George Pickens",
+   "pos": "WR",
+   "team": "DAL",
+   "opp": "SF",
+   "proj": 10.1,
+   "actual": 38,
+   "err": -27.9,
+   "why": [
+    "+16 pts from TDs",
+    "More work: 18 targets vs 7"
+   ]
+  },
+  {
+   "name": "Christian McCaffrey",
+   "pos": "RB",
+   "team": "SF",
+   "opp": "DAL",
+   "proj": 16.1,
+   "actual": 42.3,
+   "err": -26.2,
+   "why": [
+    "+12 pts from TDs"
+   ]
+  },
+  {
+   "name": "Emmett Johnson",
+   "pos": "RB",
+   "team": "KC",
+   "opp": "ATL",
+   "proj": 7.6,
+   "actual": 32.1,
+   "err": -24.5,
+   "why": [
+    "+10 pts from TDs",
+    "More work: 29 touches vs 6"
+   ]
+  },
+  {
+   "name": "Jahmyr Gibbs",
+   "pos": "RB",
+   "team": "DET",
+   "opp": "NE",
+   "proj": 17.6,
+   "actual": 40.7,
+   "err": -23.1,
+   "why": [
+    "+6 pts from TDs"
+   ]
+  },
+  {
+   "name": "Chuba Hubbard",
+   "pos": "RB",
+   "team": "CAR",
+   "opp": "NO",
+   "proj": 12.4,
+   "actual": 31.7,
+   "err": -19.3,
+   "why": [
+    "+8 pts from TDs",
+    "More work: 32 touches vs 16"
+   ]
+  },
+  {
+   "name": "Patrick Mahomes",
+   "pos": "QB",
+   "team": "KC",
+   "opp": "ATL",
+   "proj": 18.2,
+   "actual": 35.4,
+   "err": -17.2,
+   "why": [
+    "+12 pts from TDs"
+   ]
+  },
+  {
+   "name": "Drake Maye",
+   "pos": "QB",
+   "team": "NE",
+   "opp": "DET",
+   "proj": 19.4,
+   "actual": 3,
+   "err": 16.4,
+   "why": [
+    "-9 pts from TDs",
+    "Less work: 4 attempts vs 29"
+   ]
+  },
+  {
+   "name": "Parker Washington",
+   "pos": "WR",
+   "team": "JAX",
+   "opp": "TEN",
+   "proj": 8.3,
+   "actual": 24.7,
+   "err": -16.4,
+   "why": [
+    "More work: 9 targets vs 5"
+   ]
+  }
+ ],
+ "right": [
+  {
+   "name": "Michael Penix Jr.",
+   "pos": "QB",
+   "team": "ATL",
+   "opp": "KC",
+   "proj": 13.3,
+   "actual": 13.3,
+   "err": -0.0
+  },
+  {
+   "name": "Justin Jefferson",
+   "pos": "WR",
+   "team": "MIN",
+   "opp": "GB",
+   "proj": 12,
+   "actual": 11.9,
+   "err": 0.1
+  },
+  {
+   "name": "Drew Lock",
+   "pos": "QB",
+   "team": "SEA",
+   "opp": "LV",
+   "proj": 15.4,
+   "actual": 15.6,
+   "err": -0.2
+  },
+  {
+   "name": "CeeDee Lamb",
+   "pos": "WR",
+   "team": "DAL",
+   "opp": "SF",
+   "proj": 17,
+   "actual": 16.7,
+   "err": 0.3
+  },
+  {
+   "name": "Garrett Wilson",
+   "pos": "WR",
+   "team": "NYJ",
+   "opp": "BUF",
+   "proj": 11.8,
+   "actual": 12.1,
+   "err": -0.3
+  }
+ ]
+}

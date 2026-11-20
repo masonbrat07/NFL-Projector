@@ -1,0 +1,640 @@
+{
+ "season": 2026,
+ "week": 9,
+ "players": 161,
+ "dnp": 42,
+ "overall": {
+  "n": 161,
+  "mae": 5.020676674458462,
+  "bias": 0.2656500164123245,
+  "normal_mae": 4.746085506588094
+ },
+ "byPos": {
+  "QB": {
+   "n": 28,
+   "mae": 5.833497010292353,
+   "bias": 0.6720813784043889,
+   "normal_mae": 5.55621332059673
+  },
+  "RB": {
+   "n": 44,
+   "mae": 5.203428561982399,
+   "bias": 1.0666662516734322,
+   "normal_mae": 4.766383427827729
+  },
+  "WR": {
+   "n": 60,
+   "mae": 4.914596621303974,
+   "bias": -0.8024072785204047,
+   "normal_mae": 4.767520736333849
+  },
+  "TE": {
+   "n": 29,
+   "mae": 4.178081872212504,
+   "bias": 0.8676722649880894,
+   "normal_mae": 3.888747537224968
+  }
+ },
+ "ou": {
+  "over": [
+   {
+    "name": "Quentin Johnston",
+    "pos": "WR",
+    "team": "LAC",
+    "opp": "HOU",
+    "stat": "rec_yds",
+    "normal": 37.02,
+    "proj": 57.05,
+    "actual": 58,
+    "hit": true
+   },
+   {
+    "name": "Kyle Pitts Sr.",
+    "pos": "TE",
+    "team": "ATL",
+    "opp": "CIN",
+    "stat": "rec_yds",
+    "normal": 27.97,
+    "proj": 40.19,
+    "actual": 23,
+    "hit": false
+   },
+   {
+    "name": "Makai Lemon",
+    "pos": "WR",
+    "team": "PHI",
+    "opp": "NYG",
+    "stat": "rec_yds",
+    "normal": 34.28,
+    "proj": 47.37,
+    "actual": 61,
+    "hit": true
+   },
+   {
+    "name": "Tyler Warren",
+    "pos": "TE",
+    "team": "IND",
+    "opp": "DAL",
+    "stat": "rec_yds",
+    "normal": 36.02,
+    "proj": 47.95,
+    "actual": 44,
+    "hit": true
+   },
+   {
+    "name": "Tre' Harris",
+    "pos": "WR",
+    "team": "LAC",
+    "opp": "HOU",
+    "stat": "rec_yds",
+    "normal": 33.85,
+    "proj": 44.22,
+    "actual": 6,
+    "hit": false
+   },
+   {
+    "name": "Jadarian Price",
+    "pos": "RB",
+    "team": "SEA",
+    "opp": "ARI",
+    "stat": "rush_yds",
+    "normal": 31.42,
+    "proj": 56.34,
+    "actual": 24,
+    "hit": false
+   },
+   {
+    "name": "Saquon Barkley",
+    "pos": "RB",
+    "team": "PHI",
+    "opp": "NYG",
+    "stat": "rush_yds",
+    "normal": 46.51,
+    "proj": 76.72,
+    "actual": 22,
+    "hit": false
+   },
+   {
+    "name": "J.K. Dobbins",
+    "pos": "RB",
+    "team": "DEN",
+    "opp": "CAR",
+    "stat": "rush_yds",
+    "normal": 36.95,
+    "proj": 48.28,
+    "actual": 18,
+    "hit": false
+   },
+   {
+    "name": "Quinshon Judkins",
+    "pos": "RB",
+    "team": "CLE",
+    "opp": "NO",
+    "stat": "rush_yds",
+    "normal": 45.14,
+    "proj": 56.5,
+    "actual": 43,
+    "hit": false
+   },
+   {
+    "name": "Rachaad White",
+    "pos": "RB",
+    "team": "WSH",
+    "opp": "LAR",
+    "stat": "rush_yds",
+    "normal": 30.49,
+    "proj": 37.74,
+    "actual": 28,
+    "hit": false
+   },
+   {
+    "name": "Daniel Jones",
+    "pos": "QB",
+    "team": "IND",
+    "opp": "DAL",
+    "stat": "pass_yds",
+    "normal": 190.47,
+    "proj": 239.94,
+    "actual": 180,
+    "hit": false
+   },
+   {
+    "name": "Malik Willis",
+    "pos": "QB",
+    "team": "MIA",
+    "opp": "DET",
+    "stat": "pass_yds",
+    "normal": 173.04,
+    "proj": 214.47,
+    "actual": 128,
+    "hit": false
+   },
+   {
+    "name": "Justin Herbert",
+    "pos": "QB",
+    "team": "LAC",
+    "opp": "HOU",
+    "stat": "pass_yds",
+    "normal": 205.66,
+    "proj": 245.49,
+    "actual": 193,
+    "hit": false
+   },
+   {
+    "name": "Michael Penix Jr.",
+    "pos": "QB",
+    "team": "ATL",
+    "opp": "CIN",
+    "stat": "pass_yds",
+    "normal": 205.2,
+    "proj": 224.27,
+    "actual": 162,
+    "hit": false
+   },
+   {
+    "name": "Matthew Stafford",
+    "pos": "QB",
+    "team": "LAR",
+    "opp": "WSH",
+    "stat": "pass_yds",
+    "normal": 259.14,
+    "proj": 267.24,
+    "actual": 228,
+    "hit": false
+   },
+   {
+    "name": "Saquon Barkley",
+    "pos": "RB",
+    "team": "PHI",
+    "opp": "NYG",
+    "stat": "tds",
+    "normal": 0.41,
+    "proj": 0.64,
+    "actual": 1,
+    "hit": true
+   },
+   {
+    "name": "Quinshon Judkins",
+    "pos": "RB",
+    "team": "CLE",
+    "opp": "NO",
+    "stat": "tds",
+    "normal": 0.41,
+    "proj": 0.63,
+    "actual": 0,
+    "hit": false
+   },
+   {
+    "name": "Tyler Warren",
+    "pos": "TE",
+    "team": "IND",
+    "opp": "DAL",
+    "stat": "tds",
+    "normal": 0.34,
+    "proj": 0.5,
+    "actual": 0,
+    "hit": false
+   },
+   {
+    "name": "Omarion Hampton",
+    "pos": "RB",
+    "team": "LAC",
+    "opp": "HOU",
+    "stat": "tds",
+    "normal": 0.4,
+    "proj": 0.59,
+    "actual": 0,
+    "hit": false
+   },
+   {
+    "name": "Jaxon Smith-Njigba",
+    "pos": "WR",
+    "team": "SEA",
+    "opp": "ARI",
+    "stat": "tds",
+    "normal": 0.82,
+    "proj": 1.18,
+    "actual": 0,
+    "hit": false
+   }
+  ],
+  "under": [
+   {
+    "name": "Dalton Kincaid",
+    "pos": "TE",
+    "team": "BUF",
+    "opp": "MIN",
+    "stat": "rec_yds",
+    "normal": 45.77,
+    "proj": 34.48,
+    "actual": 28,
+    "hit": true
+   },
+   {
+    "name": "Brenton Strange",
+    "pos": "TE",
+    "team": "JAX",
+    "opp": "BAL",
+    "stat": "rec_yds",
+    "normal": 45.22,
+    "proj": 34.7,
+    "actual": 22,
+    "hit": true
+   },
+   {
+    "name": "Michael Wilson",
+    "pos": "WR",
+    "team": "ARI",
+    "opp": "SEA",
+    "stat": "rec_yds",
+    "normal": 59.94,
+    "proj": 46.84,
+    "actual": 60,
+    "hit": false
+   },
+   {
+    "name": "Khalil Shakir",
+    "pos": "WR",
+    "team": "BUF",
+    "opp": "MIN",
+    "stat": "rec_yds",
+    "normal": 45.84,
+    "proj": 38.24,
+    "actual": 58,
+    "hit": false
+   },
+   {
+    "name": "Omar Cooper Jr.",
+    "pos": "WR",
+    "team": "NYJ",
+    "opp": "KC",
+    "stat": "rec_yds",
+    "normal": 78.45,
+    "proj": 65.49,
+    "actual": 58,
+    "hit": true
+   },
+   {
+    "name": "Tyler Allgeier",
+    "pos": "RB",
+    "team": "ARI",
+    "opp": "SEA",
+    "stat": "rush_yds",
+    "normal": 41.97,
+    "proj": 31.42,
+    "actual": 46,
+    "hit": false
+   },
+   {
+    "name": "Josh Allen",
+    "pos": "QB",
+    "team": "BUF",
+    "opp": "MIN",
+    "stat": "rush_yds",
+    "normal": 37.44,
+    "proj": 29.21,
+    "actual": 15,
+    "hit": true
+   },
+   {
+    "name": "Bhayshul Tuten",
+    "pos": "RB",
+    "team": "JAX",
+    "opp": "BAL",
+    "stat": "rush_yds",
+    "normal": 56.36,
+    "proj": 47.22,
+    "actual": 29,
+    "hit": true
+   },
+   {
+    "name": "Braelon Allen",
+    "pos": "RB",
+    "team": "NYJ",
+    "opp": "KC",
+    "stat": "rush_yds",
+    "normal": 70.55,
+    "proj": 59.47,
+    "actual": 33,
+    "hit": true
+   },
+   {
+    "name": "Mike Washington Jr.",
+    "pos": "RB",
+    "team": "LV",
+    "opp": "SF",
+    "stat": "rush_yds",
+    "normal": 35.11,
+    "proj": 31.61,
+    "actual": -3,
+    "hit": true
+   },
+   {
+    "name": "Josh Allen",
+    "pos": "QB",
+    "team": "BUF",
+    "opp": "MIN",
+    "stat": "pass_yds",
+    "normal": 248.65,
+    "proj": 192.14,
+    "actual": 234,
+    "hit": true
+   },
+   {
+    "name": "Jameis Winston",
+    "pos": "QB",
+    "team": "NYG",
+    "opp": "PHI",
+    "stat": "pass_yds",
+    "normal": 158.25,
+    "proj": 125.73,
+    "actual": 71,
+    "hit": true
+   },
+   {
+    "name": "Trevor Lawrence",
+    "pos": "QB",
+    "team": "JAX",
+    "opp": "BAL",
+    "stat": "pass_yds",
+    "normal": 247.85,
+    "proj": 210.82,
+    "actual": 242,
+    "hit": true
+   },
+   {
+    "name": "Geno Smith",
+    "pos": "QB",
+    "team": "NYJ",
+    "opp": "KC",
+    "stat": "pass_yds",
+    "normal": 238,
+    "proj": 204.55,
+    "actual": 165,
+    "hit": true
+   },
+   {
+    "name": "C.J. Stroud",
+    "pos": "QB",
+    "team": "HOU",
+    "opp": "LAC",
+    "stat": "pass_yds",
+    "normal": 249.78,
+    "proj": 222.59,
+    "actual": 384,
+    "hit": false
+   },
+   {
+    "name": "Trey McBride",
+    "pos": "TE",
+    "team": "ARI",
+    "opp": "SEA",
+    "stat": "tds",
+    "normal": 0.58,
+    "proj": 0.35,
+    "actual": 0,
+    "hit": true
+   },
+   {
+    "name": "Josh Allen",
+    "pos": "QB",
+    "team": "BUF",
+    "opp": "MIN",
+    "stat": "tds",
+    "normal": 1.09,
+    "proj": 0.66,
+    "actual": 0,
+    "hit": true
+   },
+   {
+    "name": "Omar Cooper Jr.",
+    "pos": "WR",
+    "team": "NYJ",
+    "opp": "KC",
+    "stat": "tds",
+    "normal": 0.62,
+    "proj": 0.37,
+    "actual": 0,
+    "hit": true
+   },
+   {
+    "name": "DJ Moore",
+    "pos": "WR",
+    "team": "BUF",
+    "opp": "MIN",
+    "stat": "tds",
+    "normal": 0.38,
+    "proj": 0.24,
+    "actual": 0,
+    "hit": true
+   },
+   {
+    "name": "Parker Washington",
+    "pos": "WR",
+    "team": "JAX",
+    "opp": "BAL",
+    "stat": "tds",
+    "normal": 0.44,
+    "proj": 0.29,
+    "actual": 1,
+    "hit": false
+   }
+  ],
+  "hits": 19,
+  "n": 40
+ },
+ "markets": {
+  "has_archive": false,
+  "props": 0,
+  "model_brier": null,
+  "market_brier": null,
+  "disagreements": 0,
+  "model_right": 0,
+  "list": []
+ },
+ "misses": [
+  {
+   "name": "C.J. Stroud",
+   "pos": "QB",
+   "team": "HOU",
+   "opp": "LAC",
+   "proj": 13.9,
+   "actual": 36.4,
+   "err": -22.4,
+   "why": [
+    "+15 pts from TDs"
+   ]
+  },
+  {
+   "name": "Jordan Love",
+   "pos": "QB",
+   "team": "GB",
+   "opp": "NE",
+   "proj": 17.7,
+   "actual": 34.2,
+   "err": -16.5,
+   "why": [
+    "+10 pts from TDs"
+   ]
+  },
+  {
+   "name": "Kenneth Walker III",
+   "pos": "RB",
+   "team": "KC",
+   "opp": "NYJ",
+   "proj": 17.9,
+   "actual": 34.3,
+   "err": -16.4,
+   "why": [
+    "+13 pts from TDs"
+   ]
+  },
+  {
+   "name": "Matthew Golden",
+   "pos": "WR",
+   "team": "GB",
+   "opp": "NE",
+   "proj": 11.3,
+   "actual": 27.4,
+   "err": -16.1,
+   "why": [
+    "Efficiency (yards per play)"
+   ]
+  },
+  {
+   "name": "CeeDee Lamb",
+   "pos": "WR",
+   "team": "DAL",
+   "opp": "IND",
+   "proj": 14.1,
+   "actual": 28.5,
+   "err": -14.4,
+   "why": [
+    "More work: 16 targets vs 11"
+   ]
+  },
+  {
+   "name": "Malik Willis",
+   "pos": "QB",
+   "team": "MIA",
+   "opp": "DET",
+   "proj": 19,
+   "actual": 4.8,
+   "err": 14.1,
+   "why": [
+    "-9 pts from TDs"
+   ]
+  },
+  {
+   "name": "Bucky Irving",
+   "pos": "RB",
+   "team": "TB",
+   "opp": "CHI",
+   "proj": 12.5,
+   "actual": 26.5,
+   "err": -14,
+   "why": [
+    "+9 pts from TDs"
+   ]
+  },
+  {
+   "name": "Darren Waller",
+   "pos": "TE",
+   "team": "CAR",
+   "opp": "DEN",
+   "proj": 5.6,
+   "actual": 19,
+   "err": -13.4,
+   "why": [
+    "More work: 10 targets vs 3"
+   ]
+  }
+ ],
+ "right": [
+  {
+   "name": "Kirk Cousins",
+   "pos": "QB",
+   "team": "LV",
+   "opp": "SF",
+   "proj": 15.7,
+   "actual": 15.6,
+   "err": 0.1
+  },
+  {
+   "name": "Michael Penix Jr.",
+   "pos": "QB",
+   "team": "ATL",
+   "opp": "CIN",
+   "proj": 14.6,
+   "actual": 14.5,
+   "err": 0.1
+  },
+  {
+   "name": "Amon-Ra St. Brown",
+   "pos": "WR",
+   "team": "DET",
+   "opp": "MIA",
+   "proj": 13,
+   "actual": 12.6,
+   "err": 0.4
+  },
+  {
+   "name": "Chris Olave",
+   "pos": "WR",
+   "team": "NO",
+   "opp": "CLE",
+   "proj": 12.5,
+   "actual": 13.3,
+   "err": -0.8
+  },
+  {
+   "name": "Omar Cooper Jr.",
+   "pos": "WR",
+   "team": "NYJ",
+   "opp": "KC",
+   "proj": 10.6,
+   "actual": 9.8,
+   "err": 0.8
+  }
+ ]
+}

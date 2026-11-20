@@ -2,6 +2,33 @@
   "reviews": [
     {
       "season": 2026,
+      "week": 10,
+      "generated_at": "2026-11-20T01:02:23Z",
+      "headline": "Catch-up review of Weeks 6-10: the model roughly tied each player's normal game (5.20/5.31/5.70/5.02/6.13 average miss vs 5.26/5.29/5.72/4.75/6.05). Over/Under picks went 122 of 200 (61%).",
+      "right": [
+        "QBs stayed better than their normal game after the Week 4 change (season average miss 6.00 vs 6.25), and QB bias is now near zero (+0.75, +0.05, +1.47, +0.67, -0.94 in Weeks 6-10).",
+        "Over/Under picks hit 26, 28 and 26 of 40 in Weeks 6-8. TD unders went 27 of 35 for the season.",
+        "Tight ends were the most accurate group all season (4.76 average miss)."
+      ],
+      "missed": [
+        "Weeks 9 and 10 were the weakest: 5.02 vs 4.75 for the normal game in Week 9, and the Over/Under picks went 19 and 23 of 40.",
+        "Running backs were projected too low again in Weeks 7, 8 and 10 (bias -2.51, -1.77, -1.97). They tie the normal game for the season (5.82 vs 5.82).",
+        "Wide receivers were slightly worse than their normal game for the season (5.22 vs 5.13).",
+        "No market prices were saved for Weeks 7-10 because the scheduled updates were paused, so there is no model-vs-market comparison for those weeks."
+      ],
+      "lessons": [
+        "Average miss is lowest when the projection sits near a typical (median) game rather than the average game, because big games pull the average up. For RB/WR/TE yardage and volume, the best backtested shading is about 0.82 of the weighted baseline.",
+        "Touchdown projections should stay on the average scale, because TD odds treat the projection as a mean.",
+        "Defense weight, usage-model weight and pass-volume weight changes all moved the backtest by less than 0.005, so those settings are already close to the best available."
+      ],
+      "changes": [
+        "Applied (local only, not on the live site): RB/WR/TE yardage and volume stats use TYPICAL_YDS = 0.82 instead of 0.90, with TDs left at 0.90. Backtest average miss 2024 5.285 -> 5.263, 2025 5.256 -> 5.205, 2026 5.315 -> 5.277 (weighted 5.280 -> 5.242).",
+        "Tested, not kept: defense weight 0.2-0.6, usage weight for non-pass stats 0.10-0.30, pass usage weight 0.5-0.75, separate RB/WR shading (each within 0.005 of the baseline, or worse).",
+        "Proposed (not applied): re-save projections Saturday night so late scratches drop out of the saved snapshot."
+      ]
+    },
+    {
+      "season": 2026,
       "week": 5,
       "generated_at": "2026-10-13T12:30:25Z",
       "headline": "Average miss 5.79 FanDuel pts across 162 players, better than each player's normal game alone (6.07), with QBs again well ahead of their normal game (6.58 vs 7.55). Over/Under picks went 26 of 40, and the betting markets were slightly sharper than the model for the second week (Brier 0.227 vs 0.236).",

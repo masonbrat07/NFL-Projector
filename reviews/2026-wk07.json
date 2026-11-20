@@ -1,0 +1,642 @@
+{
+ "season": 2026,
+ "week": 7,
+ "players": 146,
+ "dnp": 34,
+ "overall": {
+  "n": 146,
+  "mae": 5.308305877892288,
+  "bias": -0.7199119324233351,
+  "normal_mae": 5.291394169761751
+ },
+ "byPos": {
+  "QB": {
+   "n": 29,
+   "mae": 5.3370021599362625,
+   "bias": 0.05016601670091528,
+   "normal_mae": 5.566716156006102
+  },
+  "RB": {
+   "n": 37,
+   "mae": 5.648863515184238,
+   "bias": -2.511787915950736,
+   "normal_mae": 6.046095593323701
+  },
+  "WR": {
+   "n": 52,
+   "mae": 5.654146287949526,
+   "bias": -0.09000736246190619,
+   "normal_mae": 5.127454517709124
+  },
+  "TE": {
+   "n": 28,
+   "mae": 4.1862870892475055,
+   "bias": -0.3194793171406128,
+   "normal_mae": 4.313414585256712
+  }
+ },
+ "ou": {
+  "over": [
+   {
+    "name": "Darius Cooper",
+    "pos": "WR",
+    "team": "PHI",
+    "opp": "DAL",
+    "stat": "rec_yds",
+    "normal": 27.76,
+    "proj": 36.5,
+    "actual": 17,
+    "hit": false
+   },
+   {
+    "name": "Justin Jefferson",
+    "pos": "WR",
+    "team": "MIN",
+    "opp": "IND",
+    "stat": "rec_yds",
+    "normal": 54.8,
+    "proj": 71.66,
+    "actual": 44,
+    "hit": false
+   },
+   {
+    "name": "A.J. Brown",
+    "pos": "WR",
+    "team": "NE",
+    "opp": "CHI",
+    "stat": "rec_yds",
+    "normal": 48.18,
+    "proj": 61.88,
+    "actual": 48,
+    "hit": false
+   },
+   {
+    "name": "KC Concepcion",
+    "pos": "WR",
+    "team": "CLE",
+    "opp": "TEN",
+    "stat": "rec_yds",
+    "normal": 27.46,
+    "proj": 34.3,
+    "actual": 129,
+    "hit": true
+   },
+   {
+    "name": "Jaylen Waddle",
+    "pos": "WR",
+    "team": "DEN",
+    "opp": "ARI",
+    "stat": "rec_yds",
+    "normal": 34.06,
+    "proj": 42.1,
+    "actual": 48,
+    "hit": true
+   },
+   {
+    "name": "Woody Marks",
+    "pos": "RB",
+    "team": "HOU",
+    "opp": "NYG",
+    "stat": "rush_yds",
+    "normal": 36.68,
+    "proj": 51.93,
+    "actual": 66,
+    "hit": true
+   },
+   {
+    "name": "Tony Pollard",
+    "pos": "RB",
+    "team": "TEN",
+    "opp": "CLE",
+    "stat": "rush_yds",
+    "normal": 56.48,
+    "proj": 77.31,
+    "actual": 129,
+    "hit": true
+   },
+   {
+    "name": "J.K. Dobbins",
+    "pos": "RB",
+    "team": "DEN",
+    "opp": "ARI",
+    "stat": "rush_yds",
+    "normal": 47.3,
+    "proj": 58,
+    "actual": 23,
+    "hit": false
+   },
+   {
+    "name": "Quinshon Judkins",
+    "pos": "RB",
+    "team": "CLE",
+    "opp": "TEN",
+    "stat": "rush_yds",
+    "normal": 41.72,
+    "proj": 49.7,
+    "actual": 96,
+    "hit": true
+   },
+   {
+    "name": "Bucky Irving",
+    "pos": "RB",
+    "team": "TB",
+    "opp": "CAR",
+    "stat": "rush_yds",
+    "normal": 67.29,
+    "proj": 78.53,
+    "actual": 106,
+    "hit": true
+   },
+   {
+    "name": "Bo Nix",
+    "pos": "QB",
+    "team": "DEN",
+    "opp": "ARI",
+    "stat": "pass_yds",
+    "normal": 180.91,
+    "proj": 209.19,
+    "actual": 222,
+    "hit": true
+   },
+   {
+    "name": "Cam Ward",
+    "pos": "QB",
+    "team": "TEN",
+    "opp": "CLE",
+    "stat": "pass_yds",
+    "normal": 165.71,
+    "proj": 182.57,
+    "actual": 181,
+    "hit": true
+   },
+   {
+    "name": "Jacoby Brissett",
+    "pos": "QB",
+    "team": "ARI",
+    "opp": "DEN",
+    "stat": "pass_yds",
+    "normal": 229.27,
+    "proj": 248.24,
+    "actual": 272,
+    "hit": true
+   },
+   {
+    "name": "Malik Willis",
+    "pos": "QB",
+    "team": "MIA",
+    "opp": "NYJ",
+    "stat": "pass_yds",
+    "normal": 152.71,
+    "proj": 163.98,
+    "actual": 208,
+    "hit": true
+   },
+   {
+    "name": "Geno Smith",
+    "pos": "QB",
+    "team": "NYJ",
+    "opp": "MIA",
+    "stat": "pass_yds",
+    "normal": 213.61,
+    "proj": 228.88,
+    "actual": 287,
+    "hit": true
+   },
+   {
+    "name": "Dameon Pierce",
+    "pos": "RB",
+    "team": "PHI",
+    "opp": "DAL",
+    "stat": "tds",
+    "normal": 0.26,
+    "proj": 0.52,
+    "actual": 1,
+    "hit": true
+   },
+   {
+    "name": "Quinshon Judkins",
+    "pos": "RB",
+    "team": "CLE",
+    "opp": "TEN",
+    "stat": "tds",
+    "normal": 0.29,
+    "proj": 0.46,
+    "actual": 2,
+    "hit": true
+   },
+   {
+    "name": "Aaron Jones Sr.",
+    "pos": "RB",
+    "team": "MIN",
+    "opp": "IND",
+    "stat": "tds",
+    "normal": 0.31,
+    "proj": 0.47,
+    "actual": 0,
+    "hit": false
+   },
+   {
+    "name": "Tucker Kraft",
+    "pos": "TE",
+    "team": "GB",
+    "opp": "DET",
+    "stat": "tds",
+    "normal": 0.31,
+    "proj": 0.46,
+    "actual": 1,
+    "hit": true
+   },
+   {
+    "name": "J.K. Dobbins",
+    "pos": "RB",
+    "team": "DEN",
+    "opp": "ARI",
+    "stat": "tds",
+    "normal": 0.35,
+    "proj": 0.49,
+    "actual": 1,
+    "hit": true
+   }
+  ],
+  "under": [
+   {
+    "name": "Mike Gesicki",
+    "pos": "TE",
+    "team": "CIN",
+    "opp": "BAL",
+    "stat": "rec_yds",
+    "normal": 30.15,
+    "proj": 22.52,
+    "actual": 6,
+    "hit": true
+   },
+   {
+    "name": "Isaiah Likely",
+    "pos": "TE",
+    "team": "NYG",
+    "opp": "HOU",
+    "stat": "rec_yds",
+    "normal": 54.96,
+    "proj": 42.48,
+    "actual": 12,
+    "hit": true
+   },
+   {
+    "name": "Hunter Henry",
+    "pos": "TE",
+    "team": "NE",
+    "opp": "CHI",
+    "stat": "rec_yds",
+    "normal": 37.36,
+    "proj": 29.73,
+    "actual": 71,
+    "hit": false
+   },
+   {
+    "name": "Jahmyr Gibbs",
+    "pos": "RB",
+    "team": "DET",
+    "opp": "GB",
+    "stat": "rec_yds",
+    "normal": 41.97,
+    "proj": 33.63,
+    "actual": 27,
+    "hit": true
+   },
+   {
+    "name": "Travis Kelce",
+    "pos": "TE",
+    "team": "KC",
+    "opp": "SEA",
+    "stat": "rec_yds",
+    "normal": 46.47,
+    "proj": 38.3,
+    "actual": 44,
+    "hit": true
+   },
+   {
+    "name": "Jonathan Taylor",
+    "pos": "RB",
+    "team": "IND",
+    "opp": "MIN",
+    "stat": "rush_yds",
+    "normal": 71.92,
+    "proj": 56.8,
+    "actual": 95,
+    "hit": false
+   },
+   {
+    "name": "Cam Skattebo",
+    "pos": "RB",
+    "team": "NYG",
+    "opp": "HOU",
+    "stat": "rush_yds",
+    "normal": 51.23,
+    "proj": 41.88,
+    "actual": 124,
+    "hit": false
+   },
+   {
+    "name": "Drake Maye",
+    "pos": "QB",
+    "team": "NE",
+    "opp": "CHI",
+    "stat": "rush_yds",
+    "normal": 29.46,
+    "proj": 24.71,
+    "actual": 26,
+    "hit": true
+   },
+   {
+    "name": "Chuba Hubbard",
+    "pos": "RB",
+    "team": "CAR",
+    "opp": "TB",
+    "stat": "rush_yds",
+    "normal": 67.36,
+    "proj": 57.17,
+    "actual": 33,
+    "hit": true
+   },
+   {
+    "name": "Kenneth Walker III",
+    "pos": "RB",
+    "team": "KC",
+    "opp": "SEA",
+    "stat": "rush_yds",
+    "normal": 102.1,
+    "proj": 87.29,
+    "actual": 36,
+    "hit": true
+   },
+   {
+    "name": "Patrick Mahomes",
+    "pos": "QB",
+    "team": "KC",
+    "opp": "SEA",
+    "stat": "pass_yds",
+    "normal": 258.19,
+    "proj": 209.9,
+    "actual": 165,
+    "hit": true
+   },
+   {
+    "name": "Jared Goff",
+    "pos": "QB",
+    "team": "DET",
+    "opp": "GB",
+    "stat": "pass_yds",
+    "normal": 298.46,
+    "proj": 259.06,
+    "actual": 303,
+    "hit": false
+   },
+   {
+    "name": "Daniel Jones",
+    "pos": "QB",
+    "team": "IND",
+    "opp": "MIN",
+    "stat": "pass_yds",
+    "normal": 220.88,
+    "proj": 192.67,
+    "actual": 108,
+    "hit": true
+   },
+   {
+    "name": "Jameis Winston",
+    "pos": "QB",
+    "team": "NYG",
+    "opp": "HOU",
+    "stat": "pass_yds",
+    "normal": 198.88,
+    "proj": 177.26,
+    "actual": 0,
+    "hit": true
+   },
+   {
+    "name": "Drake Maye",
+    "pos": "QB",
+    "team": "NE",
+    "opp": "CHI",
+    "stat": "pass_yds",
+    "normal": 254.83,
+    "proj": 230.79,
+    "actual": 321,
+    "hit": false
+   },
+   {
+    "name": "Jonathan Taylor",
+    "pos": "RB",
+    "team": "IND",
+    "opp": "MIN",
+    "stat": "tds",
+    "normal": 1,
+    "proj": 0.62,
+    "actual": 1,
+    "hit": false
+   },
+   {
+    "name": "J.J. McCarthy",
+    "pos": "QB",
+    "team": "NYG",
+    "opp": "HOU",
+    "stat": "tds",
+    "normal": 0.26,
+    "proj": 0.17,
+    "actual": 0,
+    "hit": true
+   },
+   {
+    "name": "Jake Ferguson",
+    "pos": "TE",
+    "team": "DAL",
+    "opp": "PHI",
+    "stat": "tds",
+    "normal": 0.4,
+    "proj": 0.28,
+    "actual": 0,
+    "hit": true
+   },
+   {
+    "name": "Mike Gesicki",
+    "pos": "TE",
+    "team": "CIN",
+    "opp": "BAL",
+    "stat": "tds",
+    "normal": 0.49,
+    "proj": 0.34,
+    "actual": 1,
+    "hit": false
+   },
+   {
+    "name": "Isaiah Likely",
+    "pos": "TE",
+    "team": "NYG",
+    "opp": "HOU",
+    "stat": "tds",
+    "normal": 0.5,
+    "proj": 0.37,
+    "actual": 0,
+    "hit": true
+   }
+  ],
+  "hits": 28,
+  "n": 40
+ },
+ "markets": {
+  "has_archive": false,
+  "props": 0,
+  "model_brier": null,
+  "market_brier": null,
+  "disagreements": 0,
+  "model_right": 0,
+  "list": []
+ },
+ "misses": [
+  {
+   "name": "Tony Pollard",
+   "pos": "RB",
+   "team": "TEN",
+   "opp": "CLE",
+   "proj": 10.9,
+   "actual": 35,
+   "err": -24.1,
+   "why": [
+    "+16 pts from TDs",
+    "More work: 28 touches vs 19"
+   ]
+  },
+  {
+   "name": "Mason Taylor",
+   "pos": "TE",
+   "team": "NYJ",
+   "opp": "MIA",
+   "proj": 5.9,
+   "actual": 20.7,
+   "err": -14.8,
+   "why": [
+    "+11 pts from TDs"
+   ]
+  },
+  {
+   "name": "Jameson Williams",
+   "pos": "WR",
+   "team": "DET",
+   "opp": "GB",
+   "proj": 9.3,
+   "actual": 23.6,
+   "err": -14.3,
+   "why": [
+    "+10 pts from TDs",
+    "More work: 9 targets vs 6"
+   ]
+  },
+  {
+   "name": "KC Concepcion",
+   "pos": "WR",
+   "team": "CLE",
+   "opp": "TEN",
+   "proj": 5.7,
+   "actual": 19.2,
+   "err": -13.5,
+   "why": [
+    "More work: 10 targets vs 6"
+   ]
+  },
+  {
+   "name": "Jalon Daniels",
+   "pos": "QB",
+   "team": "TB",
+   "opp": "CAR",
+   "proj": 13.2,
+   "actual": -0.3,
+   "err": 13.5,
+   "why": [
+    "Less work: 0 attempts vs 28"
+   ]
+  },
+  {
+   "name": "Luther Burden III",
+   "pos": "WR",
+   "team": "CHI",
+   "opp": "NE",
+   "proj": 9.6,
+   "actual": 21.7,
+   "err": -12.1,
+   "why": [
+    "Efficiency (yards per play)"
+   ]
+  },
+  {
+   "name": "Tee Higgins",
+   "pos": "WR",
+   "team": "CIN",
+   "opp": "BAL",
+   "proj": 11.7,
+   "actual": 23.8,
+   "err": -12.1,
+   "why": [
+    "Efficiency (yards per play)"
+   ]
+  },
+  {
+   "name": "Malik Willis",
+   "pos": "QB",
+   "team": "MIA",
+   "opp": "NYJ",
+   "proj": 14,
+   "actual": 26,
+   "err": -12.1,
+   "why": [
+    "+9 pts from TDs"
+   ]
+  }
+ ],
+ "right": [
+  {
+   "name": "Jacoby Brissett",
+   "pos": "QB",
+   "team": "ARI",
+   "opp": "DEN",
+   "proj": 16.8,
+   "actual": 16.5,
+   "err": 0.3
+  },
+  {
+   "name": "Jaylen Warren",
+   "pos": "RB",
+   "team": "PIT",
+   "opp": "NO",
+   "proj": 14.5,
+   "actual": 15.2,
+   "err": -0.7
+  },
+  {
+   "name": "Jared Goff",
+   "pos": "QB",
+   "team": "DET",
+   "opp": "GB",
+   "proj": 17,
+   "actual": 18,
+   "err": -1
+  },
+  {
+   "name": "Puka Nacua",
+   "pos": "WR",
+   "team": "LAR",
+   "opp": "LV",
+   "proj": 18.9,
+   "actual": 17.8,
+   "err": 1.1
+  },
+  {
+   "name": "Tyler Huntley",
+   "pos": "QB",
+   "team": "BAL",
+   "opp": "CIN",
+   "proj": 15,
+   "actual": 16.1,
+   "err": -1.1
+  }
+ ]
+}
