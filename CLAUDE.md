@@ -13,6 +13,10 @@ No build step, no dependencies. Pushing to `main` deploys in ~1–2 minutes.
 - `scripts/update-data.mjs` — Node 18+ script that refreshes `data.json` from ESPN + Open-Meteo. Its parsing must stay in sync with `parseBox`/`fetchRosters`/`fetchDepth`/`fetchWeather` in `index.html`.
 - A scheduled Claude routine (8 AM / 5 PM ET) runs both update scripts, writes `news-feed.json`, and commits. A weekly routine (Tuesday 8 AM ET) refreshes the data, runs the review, writes `reviews.json`, applies backtested model fixes, then saves the new week's projections. Don't change those file formats without updating the routine prompt and the app together.
 
+## NBA (local tools in `nba/`, not on the website)
+- `nba/update.mjs` (data → `nba/data.json`), `nba/project.mjs`, `nba/grade.mjs` (prop lines → `nba/picks/`), `nba/review.mjs`, `nba/backtest.mjs`; model in `nba/model.mjs`. Details and backtest numbers in `nba/README.md`.
+- After changing the NBA model, run `node nba/backtest.mjs` and report MAE vs the previous version.
+
 ## How the app works (index.html)
 - Data: ESPN public JSON (`site.api.espn.com`, core API for depth charts), Open-Meteo for weather. Stored per visitor in IndexedDB (`nfl_projector`). `loadSnapshot()` seeds it from `data.json` when that is newer than the visitor's last sync.
 - Model: final projection = blend of a recent-form model (`project` → `P.form`: weighted baseline × defense^0.5 × matchup history × Vegas × home) and a usage model (`usageProj`: team volume × role share × efficiency, with injury redistribution via `teamCtx`, game script, depth-chart QB). Weights `W_USE` (pass .7 / other .25), `DEF_W` .5, `TYPICAL` .9 (`TYPICAL_QB` 1.0 since 2026 wk4; RB/WR/TE non-TD stats use `TYPICAL_YDS` .82 since 2026 wk10; no extra pass volume for underdogs since 2026 wk11) were tuned on 2024–2025 backtests (Accuracy tab). Weather applied last (`wxEffect`).
