@@ -9,12 +9,13 @@ No build step, no dependencies. Pushing to `main` deploys in ~1–2 minutes.
 - `news-feed.json` — Claude-written news that can adjust projections; format in README.md.
 - `markets.json`, `markets/<season>-wk<NN>.json` — Kalshi/Polymarket prices from `scripts/update-markets.mjs` (format in its header comment). The archive keeps each game's last pre-kickoff prices.
 - `reviews.json`, `reviews/<season>-wk<NN>.json` — weekly review notes and the numbers behind them (`scripts/weekly-review.py` calls the page's `weekReview()` in headless Chromium).
-- `projections/<season>-wk<NN>.json` — the next week's projections saved before kickoff by `scripts/week-projections.py` (calls the page's `weekProjections()` in headless Chromium).
+- `projections/<season>-wk<NN>.json` — the next week's projections saved before kickoff by `scripts/week-projections.py` (calls the page's `weekProjections()` in headless Chromium; non-backup players projected for 1.5+ FanDuel points, so depth backs are in for the simulator).
 - `scripts/update-data.mjs` — Node 18+ script that refreshes `data.json` from ESPN + Open-Meteo. Its parsing must stay in sync with `parseBox`/`fetchRosters`/`fetchDepth`/`fetchWeather` in `index.html`.
 - A scheduled Claude routine (8 AM / 5 PM ET) runs both update scripts, writes `news-feed.json`, and commits. A weekly routine (Tuesday 8 AM ET) refreshes the data, runs the review, writes `reviews.json`, applies backtested model fixes, then saves the new week's projections. Don't change those file formats without updating the routine prompt and the app together.
 
 ## NBA (local tools in `nba/`, not on the website)
 - `nba/update.mjs` (data → `nba/data.json`), `nba/project.mjs`, `nba/grade.mjs` (prop lines → `nba/picks/`), `nba/review.mjs`, `nba/backtest.mjs`; model in `nba/model.mjs`. Details and backtest numbers in `nba/README.md`.
+- Simulators: `nba/sim.mjs` (NBA, per date) and `scripts/sim-week.mjs` (NFL, per week, built on `projections/<season>-wk<NN>.json` + `data.json`; `OUT=Name` rules a player out and hands their work to same-position teammates).
 - After changing the NBA model, run `node nba/backtest.mjs` and report MAE vs the previous version.
 
 ## How the app works (index.html)

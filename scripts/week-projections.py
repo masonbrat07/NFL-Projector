@@ -15,7 +15,7 @@ STATS = ["pass_att", "cmp", "pass_yds", "pass_td", "int", "rush_att", "rush_yds"
 
 # Runs in the page: every fantasy-relevant player plus the Over/Under picks for each stat
 JS = """([season,week])=>{const W=weekProjections(season,week),r1=v=>Math.round(v*10)/10;
-  const rows=W.rows.filter(P=>!P.backup&&(P.proj.fd>=4||(P.pos==='QB'&&P.proj.pass_att>=10)));
+  const rows=W.rows.filter(P=>!P.backup&&(P.proj.fd>=1.5||(P.pos==='QB'&&P.proj.pass_att>=10)));
   const pick=P=>({name:P.name,pos:P.pos,team:P.team});
   return {season,week,games:W.games.map(g=>({id:g.id,date:g.date,away:g.away,home:g.home,spread_home:g.odds?g.odds.hs:null,total:g.odds?g.odds.ou:null})),
     players:rows.sort((a,b)=>b.proj.fd-a.proj.fd).map(P=>({pid:P.pid,name:P.name,pos:P.pos,team:P.team,opp:P.opp,home:P.home,status:P.status||null,

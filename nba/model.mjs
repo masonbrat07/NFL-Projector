@@ -89,7 +89,10 @@ export function projectGame(X, g, outFn, opts = {}) {
     const pids = new Set(); for (const x of tg) for (const r of X.byGame.get(x.id) || []) if (r.team === team) pids.add(r.pid);
     if (opts.extra && opts.extra[team]) for (const p of opts.extra[team]) pids.add(p);
     const B = [];
-    for (const pid of pids) { const b = baseline(X, pid, team, cutoff, season); if (!b) continue; const out = outFn(pid, team);
+    // live only: also out if missing from the team's last 3 box scores, or the last 2 games were injury DNPs (ESPN's report can lag)
+    const absent = pid => { if (tg.length < 3) return false; const rs = tg.slice(-3).map(x => (X.byGame.get(x.id) || []).find(r => r.pid === pid));
+      if (rs.every(r => !r)) return true; const l2 = rs.slice(-2); return l2.every(r => r && r.dnp && INJURY_DNP.test(r.dnp)); };
+    for (const pid of pids) { const b = baseline(X, pid, team, cutoff, season); if (!b) continue; const out = outFn(pid, team) || (opts.live && absent(pid));
       const pg = posGroup(b.last.pos), lr = LR[pg] || LR.G;
       for (const s of STATS) b.rate[s] = (b.rate[s] * b.wmin + lr[s] * P.SHRINK_MIN) / (b.wmin + P.SHRINK_MIN);
       B.push({ pid, name: b.last.name, pos: b.last.pos, b, out }); }

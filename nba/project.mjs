@@ -12,7 +12,7 @@ export function projectDate(X, date) {
   const inj = (pid, team) => (X.D.injuries[team] || []).find(i => i.pid === pid);
   return games.map(g => {
     const box = g.done ? new Set((X.byGame.get(g.id) || []).filter(r => !r.dnp && r.min > 0).map(r => r.pid)) : null;
-    const rows = projectGame(X, g, (pid, team) => g.done ? !box.has(pid) : injuredOut(X.D, pid, team));
+    const rows = projectGame(X, g, (pid, team) => g.done ? !box.has(pid) : injuredOut(X.D, pid, team), { live: !g.done });
     for (const r of rows) { const i = inj(r.pid, r.team); r.status = i ? i.status + (i.type ? ' (' + i.type + ')' : '') : ''; }
     return { game: g, rows };
   });
