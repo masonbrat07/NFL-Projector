@@ -757,7 +757,8 @@ function usageProj(b,pos,team,opp,home,odds,season,D,ctx,vr){
   const sh=shares(b.rows),R=rates(b.rows,season,D.lgEff[pos]),v=D.vol[team]||D.lgVol;
   const fav=odds&&odds.hs!=null?(home?-odds.hs:odds.hs):0;// points this team is favored by
   const volM=vr?clamp(Math.pow(vr,.3),.9,1.12):1;
-  const passV=clamp(1-.008*fav,.85,1.15)*volM,rushV=clamp(1+.012*fav,.8,1.25)*volM;
+  // favorites throw less; big underdogs don't actually throw more (2024-26: QBs on 7+ pt dogs were over-projected by ~35 pass yds), so no extra volume for dogs
+  const passV=clamp(1-.008*Math.max(fav,0),.85,1.15)*volM,rushV=clamp(1+.012*fav,.8,1.25)*volM;
   const bt=(ctx.boost&&ctx.boost[pos])||{tgt:1,car:1};
   const tSh=Math.min(sh.tgt*bt.tgt,.4),cSh=Math.min(sh.car*bt.car,.85);
   let pSh=sh.pa;if(ctx.qbRole==='starter')pSh=Math.max(pSh,.97);else if(ctx.qbRole==='backup')pSh=Math.min(pSh,.03);

@@ -1,143 +1,172 @@
 {
-  "reviews": [
-    {
-      "season": 2026,
-      "week": 10,
-      "generated_at": "2026-11-20T01:02:23Z",
-      "headline": "Catch-up review of Weeks 6-10: the model roughly tied each player's normal game (5.20/5.31/5.70/5.02/6.13 average miss vs 5.26/5.29/5.72/4.75/6.05). Over/Under picks went 122 of 200 (61%).",
-      "right": [
-        "QBs stayed better than their normal game after the Week 4 change (season average miss 6.00 vs 6.25), and QB bias is now near zero (+0.75, +0.05, +1.47, +0.67, -0.94 in Weeks 6-10).",
-        "Over/Under picks hit 26, 28 and 26 of 40 in Weeks 6-8. TD unders went 27 of 35 for the season.",
-        "Tight ends were the most accurate group all season (4.76 average miss)."
-      ],
-      "missed": [
-        "Weeks 9 and 10 were the weakest: 5.02 vs 4.75 for the normal game in Week 9, and the Over/Under picks went 19 and 23 of 40.",
-        "Running backs were projected too low again in Weeks 7, 8 and 10 (bias -2.51, -1.77, -1.97). They tie the normal game for the season (5.82 vs 5.82).",
-        "Wide receivers were slightly worse than their normal game for the season (5.22 vs 5.13).",
-        "No market prices were saved for Weeks 7-10 because the scheduled updates were paused, so there is no model-vs-market comparison for those weeks."
-      ],
-      "lessons": [
-        "Average miss is lowest when the projection sits near a typical (median) game rather than the average game, because big games pull the average up. For RB/WR/TE yardage and volume, the best backtested shading is about 0.82 of the weighted baseline.",
-        "Touchdown projections should stay on the average scale, because TD odds treat the projection as a mean.",
-        "Defense weight, usage-model weight and pass-volume weight changes all moved the backtest by less than 0.005, so those settings are already close to the best available."
-      ],
-      "changes": [
-        "Applied (local only, not on the live site): RB/WR/TE yardage and volume stats use TYPICAL_YDS = 0.82 instead of 0.90, with TDs left at 0.90. Backtest average miss 2024 5.285 -> 5.263, 2025 5.256 -> 5.205, 2026 5.315 -> 5.277 (weighted 5.280 -> 5.242).",
-        "Tested, not kept: defense weight 0.2-0.6, usage weight for non-pass stats 0.10-0.30, pass usage weight 0.5-0.75, separate RB/WR shading (each within 0.005 of the baseline, or worse).",
-        "Proposed (not applied): re-save projections Saturday night so late scratches drop out of the saved snapshot."
-      ]
-    },
-    {
-      "season": 2026,
-      "week": 5,
-      "generated_at": "2026-10-13T12:30:25Z",
-      "headline": "Average miss 5.79 FanDuel pts across 162 players, better than each player's normal game alone (6.07), with QBs again well ahead of their normal game (6.58 vs 7.55). Over/Under picks went 26 of 40, and the betting markets were slightly sharper than the model for the second week (Brier 0.227 vs 0.236).",
-      "right": [
-        "QBs beat their normal-game number for the fourth week in a row (miss 6.58 vs 7.55), and the QB bias shrank to -1.11 pts after the TYPICAL_QB = 1.0 change in Week 4.",
-        "Close calls were Daniel Jones (11.4 vs 11.1), Brock Purdy (15.9 vs 15.2), Javonte Williams (14.0 vs 13.2) and Trey McBride (16.1 vs 17.1).",
-        "Rush-yards over picks went 5 of 5 (Braelon Allen 116 yards vs 45 projected with Breece Hall out, Jayden Daniels 103, Jacory Croskey-Merritt 82), pass-yards under picks went 4 of 5, and TD picks went 8 of 10."
-      ],
-      "missed": [
-        "Touchdown swings drove the biggest misses: Drake Maye (18.0 vs 39.5), Bucky Irving (9.4 vs 30.5 on 21 carries vs 13 projected), Jaylen Warren (13.8 vs 33.8) and Jahmyr Gibbs (20.7 vs 35.2).",
-        "Passing volume moved with the quarterback: Jameis Winston threw 54 times (24.7 projected) with Jaxson Dart out, so Malik Nabers had 20 targets (7 projected) and Isaiah Likely 13 (6 projected). CeeDee Lamb scored 1.9 vs 15.7 projected.",
-        "Role changes were wrong in both directions: Case Keenum (19.8 vs 1.7) and Tyler Shough (16.8 vs 1.8) threw far fewer passes than projected, and Tee Higgins (13.1 vs 3.2) and Michael Wilson (14.8 vs 5.3) saw fewer targets than expected."
-      ],
-      "lessons": [
-        "Players taking over a missing starter's work were under-projected in both Week 4 and Week 5 (WRs +1.1 and +1.6 pts, RBs +2.3 and +1.8), but the 2024-2026 backtests do not support redistributing more, so this reads as noise plus a few outliers like Braelon Allen.",
-        "The pre-kickoff projections are saved mid-week, so 29 players projected for 5+ pts did not play (Lamar Jackson 13.8, Breece Hall 13.8, Kyle Monangai 10.3, Saquon Barkley 7.4) and 5 of the 73 saved Over/Under picks were wasted on players who sat. Scored on players who did play, the saved projections missed by 5.78 vs 5.89 for the normal game.",
-        "The markets beat the model on rush-yards lines (model right on 48% of 62 disagreements, Brier 0.313 vs 0.248), and when the model was higher than the market it was right only 44% of the time (55% when lower), so its upside tails are too wide."
-      ],
-      "changes": [
-        "No model change this week. Current backtest average miss (2024 / 2025 / 2026): 5.28 / 5.26 / 5.27.",
-        "Tested and not kept: QB baseline 1.03 (5.28 / 5.27 / 5.28), QB baseline 1.05 (5.28 / 5.28 / 5.28), and a stronger injury redistribution of 1.0 instead of 0.8 (5.29 / 5.27 / 5.28). None improved the average miss, so TYPICAL_QB stays at 1.0 and the 0.8 redistribution factor stays.",
-        "Proposed (not applied): re-save the projections and Over/Under picks on Saturday evening after the news refresh so ruled-out players drop off, and shrink the model's rush-yards probabilities toward the market.",
-        "Still proposed from Week 3: skip injury-shortened games when computing a QB's pass share."
-      ]
-    },
-    {
-      "season": 2026,
-      "week": 4,
-      "generated_at": "2026-10-06T12:51:49Z",
-      "headline": "Average miss 5.27 FanDuel pts across 171 players, better than each player's normal game alone (5.41). Over/Under picks went 22 of 40 on the new per-stat lists, and the betting markets were slightly sharper than the model (Brier 0.232 vs 0.243).",
-      "right": [
-        "Pass-yards over picks went 4 of 5: C.J. Stroud (projected 239, threw 347), Bryce Young (253, 329), Deshaun Watson (185, 268) and Cam Ward (173, 222).",
-        "Near-exact projections for Michael Wilson (13.0 vs 13.0), Harold Fannin Jr. (10.3 vs 10.2), Josh Allen (19.2 vs 19.5) and Drake London (12.4 vs 12.1).",
-        "TD under picks went 4 of 5, and QBs beat their normal-game number for a second week (4.05 vs about 4.9 pt average miss)."
-      ],
-      "missed": [
-        "Running backs were projected 2.95 pts too low. Kyren Williams (12.1 vs 31.7), Kyle Monangai (7.7 vs 27.5), Javonte Williams (9.9 vs 28.8) and Brian Robinson Jr. (5.7 vs 25.2) all got far more touches and short TDs than their usual share.",
-        "Target spikes after injuries: Tetairoa McMillan had 16 targets with Jalen Coker out (projected 10.8, scored 38.2), and CeeDee Lamb had 21 targets against about 7 projected (11.7 vs 32.8).",
-        "Pass-yards under picks went 1 of 5. Matthew Stafford, Josh Allen, Lamar Jackson and Drake Maye all beat their normal game, the same QB under-projection seen every week.",
-        "Emanuel Wilson (5.5 vs 25.5) took over Seattle's backfield once Jadarian Price went on IR, but the model still split the work as before."
-      ],
-      "lessons": [
-        "QBs have been projected too low in all four weeks (bias -3.4, -1.7, -2.2, -0.7), so the 0.9 typical-game discount was too strong for QBs.",
-        "RB bias flips between weeks (-1.9, +1.7, +1.2, -2.95), so it reads as touchdown and game-script noise rather than a fixed offset.",
-        "When the No. 1 or No. 2 receiver or the lead back is ruled out, the replacement's role grows more than the share redistribution gives them (McMillan, Wilson)."
-      ],
-      "changes": [
-        "Applied: QBs no longer get the 0.9 typical-game discount (TYPICAL_QB = 1.0). Backtest average miss 2024 5.33 to 5.29, 2025 5.25 to 5.26, 2026 5.14 to 5.14. QB pass-yards miss fell in every season (66.7 to 63.8, 66.2 to 64.4, 63.3 to 59.1). Rescoring Week 4 with it gives 5.31 overall, with bias -1.40 to -1.09.",
-        "Proposed (not applied): give a larger share boost to the direct backup when a starter is ruled out, and backtest it on 2024-2026 before adopting.",
-        "Still proposed from Week 3: skip injury-shortened games when computing a QB's pass share."
-      ]
-    },
-    {
-      "season": 2026,
-      "week": 3,
-      "generated_at": "2026-10-01T01:30:00Z",
-      "headline": "Average miss 4.97 FanDuel pts across 185 players, about the same as each player's normal game alone (4.94). Over/Under picks went 12 of 20.",
-      "right": [
-        "Over/Under picks hit 12 of 20 (60%), the third straight week at 60% or better.",
-        "Wide receivers were the most accurate group (4.6 pt average miss, almost no bias)."
-      ],
-      "missed": [
-        "Sam Darnold (SEA): projected 11.4, scored 29.7. He threw 2 passes in Week 1 before leaving and missed Week 2, so his share of team passes looked tiny and he was projected for 21 attempts. He threw 45.",
-        "QBs were projected 2.2 pts too low on average.",
-        "Shedeur Sanders (CLE): projected 14.3, threw 1 pass and scored 0.",
-        "Big TD games for Jahmyr Gibbs and Bijan Robinson (8 to 11 pts from TDs each) drove most of the other large misses."
-      ],
-      "lessons": [
-        "A game a player leaves early should not shrink their role share when they return as the starter.",
-        "Matchup adjustments did not beat the plain normal-game number this week; check whether the defense effect is still worth applying early in the season."
-      ],
-      "changes": [
-        "Proposed (not applied yet): skip injury-shortened games when computing a QB's pass share, and backtest the change on 2024, 2025 and 2026 before adopting it."
-      ]
-    },
-    {
-      "season": 2026,
-      "week": 2,
-      "generated_at": "2026-10-01T01:30:00Z",
-      "headline": "Average miss 5.18 pts, better than the normal game alone (5.33). Over/Under picks went 13 of 20.",
-      "right": [
-        "Matchup adjustments helped this week: 0.15 pts better than the normal-game baseline.",
-        "No overall bias (0.0 pts)."
-      ],
-      "missed": [
-        "Jaxon Smith-Njigba scored 24.6 more than projected: 15 pts from TDs on 11 targets (7 projected).",
-        "QBs were projected 1.7 pts too low; Josh Allen and Jared Goff each had 10+ pts from TDs above projection."
-      ],
-      "lessons": [
-        "Most big misses are touchdown swings, which no projection can call reliably; workload misses are the fixable kind."
-      ],
-      "changes": []
-    },
-    {
-      "season": 2026,
-      "week": 1,
-      "generated_at": "2026-10-01T01:30:00Z",
-      "headline": "Average miss 6.09 pts, slightly worse than the normal game alone (6.02). Over/Under picks went 12 of 20.",
-      "right": [
-        "Over/Under picks hit 12 of 20 even with no 2026 games to learn from yet."
-      ],
-      "missed": [
-        "QBs were projected 3.4 pts too low and RBs 1.9 pts too low.",
-        "Caleb Williams, Josh Allen and D'Andre Swift each scored 13 to 14 pts more from TDs than projected."
-      ],
-      "lessons": [
-        "Week 1 leans on last season's numbers and is the least accurate week; expect misses to shrink as 2026 games come in."
-      ],
-      "changes": []
-    }
-  ]
+ "reviews": [
+  {
+   "season": 2026,
+   "week": 11,
+   "generated_at": "2026-11-24T04:28:25Z",
+   "headline": "Best week of the season: 4.57 average miss vs 4.70 for each player's normal game. Over/Under picks went 26 of 40. The betting-line picks were mixed: 8 of 16 on Sunday, 5 of 11 on Sunday night, 12 of 16 on Monday night.",
+   "right": [
+    "Lowest average miss of the season (4.57). Every position beat its normal game: QB 5.45 vs 5.49, RB 4.97 vs 5.19, WR 4.16 vs 4.26, TE 3.60 vs 3.76.",
+    "Monday night props went 10 of 13, and the game Under (54.5, final 42) and the Commanders team total Under (24.5, final 22) both hit.",
+    "Backfield calls held up: Ekeler over 13.5 rush and 22.5 rush+rec, Chase Brown under 76.5 rush+rec and no TD.",
+    "TD unders keep winning: 32 of 40 on the season in the Over/Under lists."
+   ],
+   "missed": [
+    "Passing-yard unders on favored QBs lost: Josh Allen (304 vs 227.5), Trevor Lawrence (301 vs 234.5), Brock Purdy (255 vs 239.5), Jacoby Brissett (276 vs 226.5).",
+    "Injury status: ESPN still listed Jacory Croskey-Merritt on IR, but he played (54 rush yds, 1 TD). The betting app had lines for him and was right.",
+    "When the WR1 (McLaurin) was out, the model spread his targets evenly; Antonio Williams took most of them (11 targets, 122 yds vs a 35.5 line).",
+    "Model vs market on 864 Week 11 prop lines: market Brier 0.223, model 0.238. The market was better calibrated overall."
+   ],
+   "lessons": [
+    "Across all 1,335 archived market lines, the model beats the market in specific spots only: TD unders where the model is lower than the market (67% right, better Brier than the market), passing-yard overs where the model is higher (68%), and receptions overs (62%). Rushing yards are about 57% either way.",
+    "The model is weak in other spots: TD overs where the model is higher than the market (18% right), passing-yard unders where the model is lower (44%), and receiving yards either way (about 50%). Treat those as no-bets.",
+    "When the betting market lists a player the injury report says is out, trust the market until the official inactives list (about 90 minutes before kickoff).",
+    "QBs on 7+ point underdogs were over-projected by about 35 passing yards (2024-26, 64 games) because the model gave big underdogs extra pass volume."
+   ],
+   "changes": [
+    "Applied (local only, not on the live site): no extra pass volume for underdogs in the usage model (favorites still throw less). Backtest average miss 5.2203 -> 5.2174; QB passing-yard miss for 7+ point underdogs 59.7 -> 53.5 yds.",
+    "Tested, not kept: scaling passing efficiency with implied team points (exponents 0.5-1.0) - helped big underdogs but raised the overall passing-yard miss.",
+    "Proposed (not applied): give a missing WR1's targets more to the next WR on the depth chart instead of spreading them across the position group."
+   ]
+  },
+  {
+   "season": 2026,
+   "week": 10,
+   "generated_at": "2026-11-20T01:02:23Z",
+   "headline": "Catch-up review of Weeks 6-10: the model roughly tied each player's normal game (5.20/5.31/5.70/5.02/6.13 average miss vs 5.26/5.29/5.72/4.75/6.05). Over/Under picks went 122 of 200 (61%).",
+   "right": [
+    "QBs stayed better than their normal game after the Week 4 change (season average miss 6.00 vs 6.25), and QB bias is now near zero (+0.75, +0.05, +1.47, +0.67, -0.94 in Weeks 6-10).",
+    "Over/Under picks hit 26, 28 and 26 of 40 in Weeks 6-8. TD unders went 27 of 35 for the season.",
+    "Tight ends were the most accurate group all season (4.76 average miss)."
+   ],
+   "missed": [
+    "Weeks 9 and 10 were the weakest: 5.02 vs 4.75 for the normal game in Week 9, and the Over/Under picks went 19 and 23 of 40.",
+    "Running backs were projected too low again in Weeks 7, 8 and 10 (bias -2.51, -1.77, -1.97). They tie the normal game for the season (5.82 vs 5.82).",
+    "Wide receivers were slightly worse than their normal game for the season (5.22 vs 5.13).",
+    "No market prices were saved for Weeks 7-10 because the scheduled updates were paused, so there is no model-vs-market comparison for those weeks."
+   ],
+   "lessons": [
+    "Average miss is lowest when the projection sits near a typical (median) game rather than the average game, because big games pull the average up. For RB/WR/TE yardage and volume, the best backtested shading is about 0.82 of the weighted baseline.",
+    "Touchdown projections should stay on the average scale, because TD odds treat the projection as a mean.",
+    "Defense weight, usage-model weight and pass-volume weight changes all moved the backtest by less than 0.005, so those settings are already close to the best available."
+   ],
+   "changes": [
+    "Applied (local only, not on the live site): RB/WR/TE yardage and volume stats use TYPICAL_YDS = 0.82 instead of 0.90, with TDs left at 0.90. Backtest average miss 2024 5.285 -> 5.263, 2025 5.256 -> 5.205, 2026 5.315 -> 5.277 (weighted 5.280 -> 5.242).",
+    "Tested, not kept: defense weight 0.2-0.6, usage weight for non-pass stats 0.10-0.30, pass usage weight 0.5-0.75, separate RB/WR shading (each within 0.005 of the baseline, or worse).",
+    "Proposed (not applied): re-save projections Saturday night so late scratches drop out of the saved snapshot."
+   ]
+  },
+  {
+   "season": 2026,
+   "week": 5,
+   "generated_at": "2026-10-13T12:30:25Z",
+   "headline": "Average miss 5.79 FanDuel pts across 162 players, better than each player's normal game alone (6.07), with QBs again well ahead of their normal game (6.58 vs 7.55). Over/Under picks went 26 of 40, and the betting markets were slightly sharper than the model for the second week (Brier 0.227 vs 0.236).",
+   "right": [
+    "QBs beat their normal-game number for the fourth week in a row (miss 6.58 vs 7.55), and the QB bias shrank to -1.11 pts after the TYPICAL_QB = 1.0 change in Week 4.",
+    "Close calls were Daniel Jones (11.4 vs 11.1), Brock Purdy (15.9 vs 15.2), Javonte Williams (14.0 vs 13.2) and Trey McBride (16.1 vs 17.1).",
+    "Rush-yards over picks went 5 of 5 (Braelon Allen 116 yards vs 45 projected with Breece Hall out, Jayden Daniels 103, Jacory Croskey-Merritt 82), pass-yards under picks went 4 of 5, and TD picks went 8 of 10."
+   ],
+   "missed": [
+    "Touchdown swings drove the biggest misses: Drake Maye (18.0 vs 39.5), Bucky Irving (9.4 vs 30.5 on 21 carries vs 13 projected), Jaylen Warren (13.8 vs 33.8) and Jahmyr Gibbs (20.7 vs 35.2).",
+    "Passing volume moved with the quarterback: Jameis Winston threw 54 times (24.7 projected) with Jaxson Dart out, so Malik Nabers had 20 targets (7 projected) and Isaiah Likely 13 (6 projected). CeeDee Lamb scored 1.9 vs 15.7 projected.",
+    "Role changes were wrong in both directions: Case Keenum (19.8 vs 1.7) and Tyler Shough (16.8 vs 1.8) threw far fewer passes than projected, and Tee Higgins (13.1 vs 3.2) and Michael Wilson (14.8 vs 5.3) saw fewer targets than expected."
+   ],
+   "lessons": [
+    "Players taking over a missing starter's work were under-projected in both Week 4 and Week 5 (WRs +1.1 and +1.6 pts, RBs +2.3 and +1.8), but the 2024-2026 backtests do not support redistributing more, so this reads as noise plus a few outliers like Braelon Allen.",
+    "The pre-kickoff projections are saved mid-week, so 29 players projected for 5+ pts did not play (Lamar Jackson 13.8, Breece Hall 13.8, Kyle Monangai 10.3, Saquon Barkley 7.4) and 5 of the 73 saved Over/Under picks were wasted on players who sat. Scored on players who did play, the saved projections missed by 5.78 vs 5.89 for the normal game.",
+    "The markets beat the model on rush-yards lines (model right on 48% of 62 disagreements, Brier 0.313 vs 0.248), and when the model was higher than the market it was right only 44% of the time (55% when lower), so its upside tails are too wide."
+   ],
+   "changes": [
+    "No model change this week. Current backtest average miss (2024 / 2025 / 2026): 5.28 / 5.26 / 5.27.",
+    "Tested and not kept: QB baseline 1.03 (5.28 / 5.27 / 5.28), QB baseline 1.05 (5.28 / 5.28 / 5.28), and a stronger injury redistribution of 1.0 instead of 0.8 (5.29 / 5.27 / 5.28). None improved the average miss, so TYPICAL_QB stays at 1.0 and the 0.8 redistribution factor stays.",
+    "Proposed (not applied): re-save the projections and Over/Under picks on Saturday evening after the news refresh so ruled-out players drop off, and shrink the model's rush-yards probabilities toward the market.",
+    "Still proposed from Week 3: skip injury-shortened games when computing a QB's pass share."
+   ]
+  },
+  {
+   "season": 2026,
+   "week": 4,
+   "generated_at": "2026-10-06T12:51:49Z",
+   "headline": "Average miss 5.27 FanDuel pts across 171 players, better than each player's normal game alone (5.41). Over/Under picks went 22 of 40 on the new per-stat lists, and the betting markets were slightly sharper than the model (Brier 0.232 vs 0.243).",
+   "right": [
+    "Pass-yards over picks went 4 of 5: C.J. Stroud (projected 239, threw 347), Bryce Young (253, 329), Deshaun Watson (185, 268) and Cam Ward (173, 222).",
+    "Near-exact projections for Michael Wilson (13.0 vs 13.0), Harold Fannin Jr. (10.3 vs 10.2), Josh Allen (19.2 vs 19.5) and Drake London (12.4 vs 12.1).",
+    "TD under picks went 4 of 5, and QBs beat their normal-game number for a second week (4.05 vs about 4.9 pt average miss)."
+   ],
+   "missed": [
+    "Running backs were projected 2.95 pts too low. Kyren Williams (12.1 vs 31.7), Kyle Monangai (7.7 vs 27.5), Javonte Williams (9.9 vs 28.8) and Brian Robinson Jr. (5.7 vs 25.2) all got far more touches and short TDs than their usual share.",
+    "Target spikes after injuries: Tetairoa McMillan had 16 targets with Jalen Coker out (projected 10.8, scored 38.2), and CeeDee Lamb had 21 targets against about 7 projected (11.7 vs 32.8).",
+    "Pass-yards under picks went 1 of 5. Matthew Stafford, Josh Allen, Lamar Jackson and Drake Maye all beat their normal game, the same QB under-projection seen every week.",
+    "Emanuel Wilson (5.5 vs 25.5) took over Seattle's backfield once Jadarian Price went on IR, but the model still split the work as before."
+   ],
+   "lessons": [
+    "QBs have been projected too low in all four weeks (bias -3.4, -1.7, -2.2, -0.7), so the 0.9 typical-game discount was too strong for QBs.",
+    "RB bias flips between weeks (-1.9, +1.7, +1.2, -2.95), so it reads as touchdown and game-script noise rather than a fixed offset.",
+    "When the No. 1 or No. 2 receiver or the lead back is ruled out, the replacement's role grows more than the share redistribution gives them (McMillan, Wilson)."
+   ],
+   "changes": [
+    "Applied: QBs no longer get the 0.9 typical-game discount (TYPICAL_QB = 1.0). Backtest average miss 2024 5.33 to 5.29, 2025 5.25 to 5.26, 2026 5.14 to 5.14. QB pass-yards miss fell in every season (66.7 to 63.8, 66.2 to 64.4, 63.3 to 59.1). Rescoring Week 4 with it gives 5.31 overall, with bias -1.40 to -1.09.",
+    "Proposed (not applied): give a larger share boost to the direct backup when a starter is ruled out, and backtest it on 2024-2026 before adopting.",
+    "Still proposed from Week 3: skip injury-shortened games when computing a QB's pass share."
+   ]
+  },
+  {
+   "season": 2026,
+   "week": 3,
+   "generated_at": "2026-10-01T01:30:00Z",
+   "headline": "Average miss 4.97 FanDuel pts across 185 players, about the same as each player's normal game alone (4.94). Over/Under picks went 12 of 20.",
+   "right": [
+    "Over/Under picks hit 12 of 20 (60%), the third straight week at 60% or better.",
+    "Wide receivers were the most accurate group (4.6 pt average miss, almost no bias)."
+   ],
+   "missed": [
+    "Sam Darnold (SEA): projected 11.4, scored 29.7. He threw 2 passes in Week 1 before leaving and missed Week 2, so his share of team passes looked tiny and he was projected for 21 attempts. He threw 45.",
+    "QBs were projected 2.2 pts too low on average.",
+    "Shedeur Sanders (CLE): projected 14.3, threw 1 pass and scored 0.",
+    "Big TD games for Jahmyr Gibbs and Bijan Robinson (8 to 11 pts from TDs each) drove most of the other large misses."
+   ],
+   "lessons": [
+    "A game a player leaves early should not shrink their role share when they return as the starter.",
+    "Matchup adjustments did not beat the plain normal-game number this week; check whether the defense effect is still worth applying early in the season."
+   ],
+   "changes": [
+    "Proposed (not applied yet): skip injury-shortened games when computing a QB's pass share, and backtest the change on 2024, 2025 and 2026 before adopting it."
+   ]
+  },
+  {
+   "season": 2026,
+   "week": 2,
+   "generated_at": "2026-10-01T01:30:00Z",
+   "headline": "Average miss 5.18 pts, better than the normal game alone (5.33). Over/Under picks went 13 of 20.",
+   "right": [
+    "Matchup adjustments helped this week: 0.15 pts better than the normal-game baseline.",
+    "No overall bias (0.0 pts)."
+   ],
+   "missed": [
+    "Jaxon Smith-Njigba scored 24.6 more than projected: 15 pts from TDs on 11 targets (7 projected).",
+    "QBs were projected 1.7 pts too low; Josh Allen and Jared Goff each had 10+ pts from TDs above projection."
+   ],
+   "lessons": [
+    "Most big misses are touchdown swings, which no projection can call reliably; workload misses are the fixable kind."
+   ],
+   "changes": []
+  },
+  {
+   "season": 2026,
+   "week": 1,
+   "generated_at": "2026-10-01T01:30:00Z",
+   "headline": "Average miss 6.09 pts, slightly worse than the normal game alone (6.02). Over/Under picks went 12 of 20.",
+   "right": [
+    "Over/Under picks hit 12 of 20 even with no 2026 games to learn from yet."
+   ],
+   "missed": [
+    "QBs were projected 3.4 pts too low and RBs 1.9 pts too low.",
+    "Caleb Williams, Josh Allen and D'Andre Swift each scored 13 to 14 pts more from TDs than projected."
+   ],
+   "lessons": [
+    "Week 1 leans on last season's numbers and is the least accurate week; expect misses to shrink as 2026 games come in."
+   ],
+   "changes": []
+  }
+ ]
 }
