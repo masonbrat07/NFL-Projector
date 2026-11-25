@@ -7,7 +7,7 @@ import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 
 // tuned on the Dec 2025-Nov 2026 backtest (node nba/backtest.mjs)
-export const P = { HL_MIN: 3, HL_RATE: 20, PRIOR_W: .35, SHRINK_MIN: 20, OPP_W: .3, VEGAS_W: .7, USE_B: .6, REB_B: .5, B2B: .94, BLOWOUT: .012, TYPICAL: .94, TYP_CNT: .9, SD_K: 1.15 };
+export const P = { HL_MIN: 3, HL_RATE: 20, PRIOR_W: .35, SHRINK_MIN: 20, OPP_W: .3, VEGAS_W: .7, USE_B: .6, REB_B: .5, B2B: .94, BLOWOUT: .012, TYPICAL: .94, TYP_CNT: .9, SD_K: 1.15, STAR_TYP: .045 };
 export const STATS = ['pts', 'reb', 'ast', 'tpm', 'stl', 'blk', 'tov', 'fga', 'fta'];
 export const COMBOS = { pra: ['pts', 'reb', 'ast'], pr: ['pts', 'reb'], pa: ['pts', 'ast'], ra: ['reb', 'ast'], stocks: ['stl', 'blk'] };
 export const LABEL = { pts: 'Points', reb: 'Rebounds', ast: 'Assists', tpm: '3-pointers made', stl: 'Steals', blk: 'Blocks', tov: 'Turnovers', pra: 'Pts+Reb+Ast', pr: 'Pts+Reb', pa: 'Pts+Ast', ra: 'Reb+Ast', stocks: 'Stl+Blk', min: 'Minutes' };
@@ -117,7 +117,10 @@ export function projectGame(X, g, outFn, opts = {}) {
     for (const x of B) {
       const m = x.out ? 0 : (mins.get(x.pid) || 0), r = x.b.rate, proj = { min: m };
       const fac = { pts: useF * vegF, tpm: useF * vegF, ast: Math.sqrt(useF) * vegF, fga: useF, fta: useF, tov: Math.sqrt(useF), reb: rebF, stl: 1, blk: 1 };
-      for (const s of STATS) proj[s] = m * r[s] * fac[s] * (s === 'fga' || s === 'fta' ? 1 : oppF(s)) * (COUNT.has(s) ? P.TYP_CNT : P.TYPICAL);
+      // stars' scoring/playmaking is less right-skewed than role players': shade it less (live-like backtest: stars beat the
+      // 0.94-shaded points 54.8% of the time, PRA 56.6%); full adjustment at 30+ minutes, none below 22
+      const star = P.STAR_TYP * clamp((x.b.min - 22) / 8, 0, 1), typ = s => (COUNT.has(s) ? P.TYP_CNT : P.TYPICAL) + (s === 'pts' || s === 'ast' || s === 'tpm' ? star : 0);
+      for (const s of STATS) proj[s] = m * r[s] * fac[s] * (s === 'fga' || s === 'fta' ? 1 : oppF(s)) * typ(s);
       for (const [c, parts] of Object.entries(COMBOS)) proj[c] = parts.reduce((a, k) => a + proj[k], 0);
       const sd = {}; for (const s of [...STATS, ...Object.keys(COMBOS)]) sd[s] = P.SD_K * (x.b.sd[s] != null ? Math.max(x.b.sd[s] * m, Math.sqrt(Math.max(proj[s], .5))) : Math.max(.35 * proj[s], 1));
       res.push({ pid: x.pid, name: x.name, pos: x.pos, team, opp, home, out: x.out, proj, sd, base: x.b, implied, spread: sp, b2b, useF, rebF, vegF, gid: g.id, date: g.date });

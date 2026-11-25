@@ -18,7 +18,7 @@ Projection = projected minutes × per-minute rates, then:
 - minutes: recent rotation role (half-life 3 games; coach's-decision DNPs count as 0), the active rotation rescaled to 240 when players are out, blowout trim from the spread, back-to-back trim;
 - rates: weighted per-minute stats (half-life 20 games, last season at 0.35 weight), shrunk toward the position average;
 - teammates out: usage and rebound share boosts; opponent: stat allowed vs league (^0.3); Vegas implied team points (^0.7);
-- shaded to a typical game (0.94; 0.90 for 3PM/steals/blocks/turnovers) because box-score stats are right-skewed;
+- shaded to a typical game (0.94; 0.90 for 3PM/steals/blocks/turnovers) because box-score stats are right-skewed; stars' points/assists/3PM shaded less (+0.045 at 30+ minutes, scaled down to 0 at 22) — in a live-like backtest (coach's-decision DNPs unknown beforehand) stars beat the old projection 54.8% of the time on points, now 50.1%;
 - over/under odds: normal distribution with the player's per-minute spread × projected minutes (×1.15 for calibration); Poisson for 3PM/steals/blocks/turnovers.
 
 Backtest Dec 2025 – Nov 2026 (24,592 player-games), average miss vs a last-10-game average:
