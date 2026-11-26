@@ -439,6 +439,8 @@ const num=x=>{const n=parseFloat(x);return isFinite(n)?n:0};
 const DEF_W=.5,TYPICAL=.9,TYPICAL_QB=1,TYP=p=>p==='QB'?TYPICAL_QB:TYPICAL;// QB games are steadier than skill players', so their baseline isn't shaded down (backtest: QB pass-yds miss lower in 2024-26)
 // RB/WR/TE yardage and volume shade to .82 of the weighted baseline (closer to a median game; backtest 2024-26 avg miss 5.280 -> 5.242).
 // TDs keep TYPICAL because TD odds treat the projection as a mean (Poisson).
+// share of a teammate's role taken from recent games without today's missing players (WO_W at 3+ such games)
+const WO_W=.3;
 const TYPICAL_YDS=.82,TYPS=(p,s)=>p==='QB'||TDSET.has(s)?TYP(p):TYPICAL_YDS;
 // Weight on the usage model vs the recent-form model. Tuned on 2024+2025 backtests:
 // usage wins for QB passing, recent form wins for receiving/rushing.
@@ -760,7 +762,7 @@ function usageProj(b,pos,team,opp,home,odds,season,D,ctx,vr){
   // favorites throw less; big underdogs don't actually throw more (2024-26: QBs on 7+ pt dogs were over-projected by ~35 pass yds), so no extra volume for dogs
   const passV=clamp(1-.008*Math.max(fav,0),.85,1.15)*volM,rushV=clamp(1+.012*fav,.8,1.25)*volM;
   const bt=(ctx.boost&&ctx.boost[pos])||{tgt:1,car:1};
-  const tSh=Math.min(sh.tgt*bt.tgt,.4),cSh=Math.min(sh.car*bt.car,.85);
+  const k=ctx.wo?ctx.woK:0,tSh=Math.min((1-k)*sh.tgt*bt.tgt+k*(ctx.wo?ctx.wo.tgt:0),.4),cSh=Math.min((1-k)*sh.car*bt.car+k*(ctx.wo?ctx.wo.car:0),.85);
   let pSh=sh.pa;if(ctx.qbRole==='starter')pSh=Math.max(pSh,.97);else if(ctx.qbRole==='backup')pSh=Math.min(pSh,.03);
   const dm=s=>Math.pow(D.mult(opp,pos,s),DEF_W),tdV=vr?clamp(Math.pow(vr,1.2),.75,1.3):1,ha=home?1.015:.985;
   const u=zero();
@@ -778,7 +780,7 @@ function blend(form,use,w,wxe){const o={};for(const s of BASE){const x=PASS_STAT
 function teamCtx(team,cands,cutoff,outFn,useDepth,g){
   const vac={},act={},outs=[];POS.forEach(p=>{vac[p]={tgt:0,car:0,pa:0};act[p]={tgt:0,car:0}});let topQB=null,topPa=-1;
   for(const pid of cands){const rows=(IDX.byPlayer.get(pid)||[]).filter(r=>r.date<cutoff);const pos=IDX.pos.get(pid);if(!rows.length||!pos)continue;const sh=shares(rows);
-    if(outFn(pid)){vac[pos].tgt+=sh.tgt;vac[pos].car+=sh.car;vac[pos].pa+=sh.pa;if(sh.tgt>=.08||sh.car>=.15||sh.pa>=.5)outs.push({name:rows[rows.length-1].name,pos,tgt:sh.tgt,car:sh.car,pa:sh.pa})}
+    if(outFn(pid)){vac[pos].tgt+=sh.tgt;vac[pos].car+=sh.car;vac[pos].pa+=sh.pa;if(sh.tgt>=.08||sh.car>=.15||sh.pa>=.5)outs.push({pid,name:rows[rows.length-1].name,pos,tgt:sh.tgt,car:sh.car,pa:sh.pa})}
     else{act[pos].tgt+=sh.tgt;act[pos].car+=sh.car;if(pos==='QB'&&sh.pa>topPa){topPa=sh.pa;topQB=pid}}}
   // vacated work goes mostly to the same position group (80%, capped at 2x a player's share)
   const boost={};POS.forEach(p=>boost[p]={tgt:act[p].tgt>.01?clamp(1+.8*vac[p].tgt/act[p].tgt,1,2):1,car:act[p].car>.01?clamp(1+.8*vac[p].car/act[p].car,1,2):1});
@@ -788,7 +790,17 @@ function teamCtx(team,cands,cutoff,outFn,useDepth,g){
   const qbRoleOf=pid=>{if(IDX.pos.get(pid)!=='QB')return null;
     if(depthStarter)return pid===depthStarter?'starter':'backup';
     return vac.QB.pa>.5&&pid===topQB?'starter':null};
-  return {boost,outs,wx:g&&g.wx,qbRoleOf,depthStarter}}
+  // role without the missing players: recent games (last 8) in which none of today's significant non-QB outs played. When the
+  // team has already played 2+ such games, each teammate's target/carry share in them shows the real new pecking order.
+  const woSh=new Map(),outP=new Set(outs.filter(o=>o.pos!=='QB').map(o=>o.pid));
+  if(outP.size){const tg=(IDX.teamGames.get(team)||[]).filter(x=>x.date<cutoff).slice(-8).reverse();
+    const has=(x,pid)=>(IDX.byGame.get(x.id)||[]).some(r=>r.pid===pid&&r.team===team);
+    const wo=tg.filter(x=>![...outP].some(pid=>has(x,pid)));
+    if(wo.length>=2&&wo.length<tg.length)for(const pid of cands){if(outFn(pid)||IDX.pos.get(pid)==='QB')continue;let W=0,t=0,c=0,n=0;
+      wo.forEach((x,j)=>{const r=(IDX.byGame.get(x.id)||[]).find(r=>r.pid===pid&&r.team===team),T=IDX.teamTot.get(x.id+'|'+team);if(!r||!T)return;
+        const w=Math.pow(.72,j);W+=w;n++;t+=w*(T.tgt?r.tgt/T.tgt:0);c+=w*(T.rush_att?r.rush_att/T.rush_att:0)});
+      if(n>=2)woSh.set(pid,{tgt:t/W,car:c/W,n})}}
+  return {boost,outs,wx:g&&g.wx,qbRoleOf,depthStarter,woSh}}
 
 function project(pid,team,opp,home,odds,cutoff,season,D,ctx){ctx=ctx||{};
   const b=baseline(pid,cutoff,season);if(!b)return null;const pos=IDX.pos.get(pid);if(!pos)return null;
@@ -801,7 +813,10 @@ function project(pid,team,opp,home,odds,cutoff,season,D,ctx){ctx=ctx||{};
     const vm=vr&&s!=='int'&&s!=='fum_lost'?clamp(Math.pow(vr,td?1.2:.6),.75,1.3):1;
     const ha=home?1.015:.985;const bb=b.mean[s]*TYPS(pos,s);f[s]={b:bb,dm,hm,vm,ha};proj[s]=bb*dm*hm*vm*ha}
   derive(proj);
-  const U=usageProj(b,pos,team,opp,home,odds,season,D,ctx,vr),wxe=wxEffect(ctx.wx);
+  const wo=ctx.woSh&&ctx.woSh.get(pid);let woK=0;
+  if(wo){woK=WO_W*Math.min(1,wo.n/3);const bs=shares(b.rows),rt=clamp(1+woK*(wo.tgt/Math.max(bs.tgt,.02)-1),.4,3),rc=clamp(1+woK*(wo.car/Math.max(bs.car,.02)-1),.4,3);
+    for(const s of ['tgt','rec','rec_yds','rec_td'])proj[s]*=rt;for(const s of ['rush_att','rush_yds','rush_td'])proj[s]*=rc;derive(proj)}
+  const U=usageProj(b,pos,team,opp,home,odds,season,D,wo?{...ctx,wo,woK}:ctx,vr),wxe=wxEffect(ctx.wx);
   // a QB newly promoted to starter has little relevant form history: trust the usage model
   // role changes at QB: trust the usage model (new starter has no starter history; benched starter won't throw)
   const w=pos==='QB'&&ctx.qbRole==='starter'&&U.sh.pa<.7?{pass:1,other:1}:pos==='QB'&&ctx.qbRole==='backup'&&U.sh.pa>=.3?{pass:1,other:1}:W_USE;
